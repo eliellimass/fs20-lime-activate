@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeableTypes>
+    <placeableType name="placeable" className="Placeable" filename="dataS/scripts/placeables/Placeable.lua" />
+    <placeableType name="windTurbine" className="WindTurbinePlaceable" filename="dataS/scripts/placeables/WindTurbinePlaceable.lua" />
+    <placeableType name="tree" className="TreePlaceable" filename="dataS/scripts/placeables/TreePlaceable.lua" />
+    <placeableType name="solarCollector" className="SolarCollectorPlaceable" filename="dataS/scripts/placeables/SolarCollectorPlaceable.lua" />
+    <placeableType name="beehive" className="BeehivePlaceable" filename="dataS/scripts/placeables/BeehivePlaceable.lua" />
+    <placeableType name="greenhouse" className="GreenhousePlaceable" filename="dataS/scripts/placeables/GreenhousePlaceable.lua" />
+    <placeableType name="highPressureWasher" className="HighPressureWasher" filename="dataS/scripts/placeables/HighPressureWasherPlaceable.lua" />
+    <placeableType name="siloExtension" className="SiloExtensionPlaceable" filename="dataS/scripts/placeables/SiloExtensionPlaceable.lua" />
+    <placeableType name="simpleBgaPlaceable" className="SimpleBgaPlaceable" filename="dataS/scripts/placeables/SimpleBgaPlaceable.lua" />
+    <placeableType name="woodCrusher" className="WoodCrusherPlaceable" filename="dataS/scripts/placeables/WoodCrusherPlaceable.lua" />
+    <placeableType name="heatingPlant" className="HeatingPlantPlaceable" filename="dataS/scripts/placeables/HeatingPlantPlaceable.lua" />
+    <placeableType name="workshop" className="Workshop" filename="dataS/scripts/placeables/Workshop.lua" />
+    <placeableType name="doghouse" className="Doghouse" filename="dataS/scripts/placeables/Doghouse.lua" />
+    <placeableType name="farmhouse" className="FarmhousePlaceable" filename="dataS/scripts/placeables/FarmhousePlaceable.lua" />
+    <placeableType name="husbandry" className="AnimalHusbandry" filename="dataS/scripts/animals/AnimalHusbandry.lua" />
+    <placeableType name="vehicle" className="VehiclePlaceable" filename="dataS/scripts/placeables/VehiclePlaceable.lua" />
+    <placeableType name="washingStation" className="WashingStationPlaceable" filename="dataS/scripts/placeables/WashingStationPlaceable.lua" />
+    <placeableType name="silo" className="SiloPlaceable" filename="dataS/scripts/placeables/SiloPlaceable.lua" />
+    <placeableType name="sellingStation" className="SellingStationPlaceable" filename="dataS/scripts/placeables/SellingStationPlaceable.lua" />
+    <placeableType name="buyingStation" className="BuyingStationPlaceable" filename="dataS/scripts/placeables/BuyingStationPlaceable.lua" />
+    <placeableType name="trainPlaceable" className="TrainPlaceable" filename="dataS/scripts/trainSystem/TrainPlaceable.lua" />
+    <placeableType name="woodSellPlacable" className="WoodSellStationPlaceable" filename="dataS/scripts/placeables/WoodSellStationPlaceable.lua" />
+    <placeableType name="bgaPlacable" className="BgaPlaceable" filename="dataS/scripts/placeables/BgaPlaceable.lua" />
+    <placeableType name="bunkerSiloPlaceable" className="BunkerSiloPlaceable" filename="dataS/scripts/placeables/BunkerSiloPlaceable.lua" />
+    <placeableType name="baleStorage" className="BaleStoragePlaceable" filename="dataS/scripts/placeables/BaleStoragePlaceable.lua" />
+</placeableTypes>

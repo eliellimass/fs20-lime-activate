@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="drivingParticleSystem" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../fx_smoke6x6_01_diffuse.dds"/>
+    <File fileId="2" filename="../fx_smoke6x6_01_normal.dds"/>
+    <File fileId="3" filename="../../shaders/psSubUVShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="fx_smoke01_mat" materialId="5" alphaBlending="true" customShaderId="3" customShaderVariation="SUBUV_MOVIE">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="psPlayScale" value="30 60 1 0"/>
+      <CustomParameter name="psColor" value="0.664 0.619 0.546 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="horseStepParticleSystem.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="emitter1Ref" dynamicId="1" type="sprite" rate="1" lifespan="1500" maxCount="40" maxEmit="5" speed="0.0005" speedRandom="0" tangentSpeed="0.2" normalSpeed="1" spriteScaleX="0.05" spriteScaleY="0.05" spriteScaleXGain="0.001" spriteScaleYGain="0.001" blendFactor="0.1" blendInFactor="0" blendOutFactor="0" depthSort="true" randomInitRotation="true" deltaRotateMin="-0.000349066" deltaRotateMax="0.000349066" textureAtlasSizeX="6" textureAtlasSizeY="6">
+      <Gravity force="0 0 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="12" name="emitter1" clipDistance="200" nodeId="11" materialIds="5" distanceBlending="false">
+      <Shape shapeId="2" name="pPlaneShape2" rotation="15.6302 -0 0" scale="0.5 0.7 1" nodeId="12" materialIds="4" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+</i3D>

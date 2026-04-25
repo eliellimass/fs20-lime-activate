@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="mapUSM" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="21" filename="../foliage/bush01_diffuse.png"/>
+    <File fileId="22" filename="../foliage/bush01_normal.png"/>
+    <File fileId="32" filename="../maps/textures/mobile/americanFlag_diffuse.png"/>
+    <File fileId="33" filename="../maps/textures/mobile/americanFlag_normal.png"/>
+    <File fileId="34" filename="../maps/textures/mobile/americanFlag_specular.png"/>
+    <File fileId="6" filename="../maps/textures/mobile/buildingDetails_diffuse.dds"/>
+    <File fileId="7" filename="../maps/textures/mobile/buildingDetails_normal.dds"/>
+    <File fileId="8" filename="../maps/textures/mobile/buildingDetails_specular.dds"/>
+    <File fileId="1" filename="../maps/textures/mobile/buildingsWindows01_diffuse.dds"/>
+    <File fileId="5" filename="../maps/textures/mobile/buildingsWindows01_emissive.dds"/>
+    <File fileId="2" filename="../maps/textures/mobile/buildingsWindows01_normal.dds"/>
+    <File fileId="3" filename="../maps/textures/mobile/buildingsWindows01_specular.dds"/>
+    <File fileId="13" filename="../maps/textures/mobile/huts_specular.png"/>
+    <File fileId="9" filename="../maps/textures/mobile/materialCollection03_diffuse.png"/>
+    <File fileId="10" filename="../maps/textures/mobile/materialCollection03_normal.png"/>
+    <File fileId="11" filename="../maps/textures/mobile/materialCollection03_specular.png"/>
+    <File fileId="19" filename="../maps/textures/mobile/mountainRock01_diffuse.png"/>
+    <File fileId="20" filename="../maps/textures/mobile/mountainRock01_normal.png"/>
+    <File fileId="15" filename="../maps/textures/mobile/stoneBoulder14_diffuse.png"/>
+    <File fileId="16" filename="../maps/textures/mobile/stoneBoulder14_normal.png"/>
+    <File fileId="17" filename="../maps/textures/mobile/stoneBoulder14_specular.png"/>
+    <File fileId="29" filename="../maps/trees/pine3LOD_diffuse_H.png"/>
+    <File fileId="30" filename="../maps/trees/pine3LOD_normal_H.png"/>
+    <File fileId="26" filename="../maps/trees/pineBranch_diffuse.png"/>
+    <File fileId="27" filename="../maps/trees/pineBranch_normal.png"/>
+    <File fileId="23" filename="../maps/trees/pineTrunk_diffuse.png"/>
+    <File fileId="24" filename="../maps/trees/pineTrunk_normal.png"/>
+    <File fileId="12" filename="../shaders/buildingShader.xml"/>
+    <File fileId="4" filename="../shaders/dashboardLightsShader.xml"/>
+    <File fileId="35" filename="../shaders/flagShader.xml"/>
+    <File fileId="31" filename="../shaders/treeBillboardShader.xml"/>
+    <File fileId="28" filename="../shaders/treeBranchShader.xml"/>
+    <File fileId="25" filename="../shaders/treeTrunkShader.xml"/>
+    <File fileId="18" filename="../shaders/triPlanarShader.xml"/>
+    <File fileId="14" filename="../shared/mapDirt_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="pineTrunk_mat" materialId="12" customShaderId="25">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="bush02_mat" materialId="5">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+    </Material>
+    <Material name="pine3LOD_mat" materialId="4" customShaderId="31" customShaderVariation="billboard180">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="americanFlag_mat" materialId="7" customShaderId="35">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+      <CustomParameter name="displacementSpeedFrequencyAndTexOff" value="-0.2 6 2 0"/>
+    </Material>
+    <Material name="buildingsWindows01_mat" materialId="8" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mEmissiveMap" fileId="5"/>
+      <CustomParameter name="lightControl" value="0 1 1 1"/>
+    </Material>
+    <Material name="buildingDetails_mat" materialId="10">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="pineBranch_mat" materialId="9" customShaderId="28">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="stoneBoulder14_mat" materialId="6" customShaderId="18" customShaderVariation="enable_proj2_masking_terrainFormat_diffuseMix">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="projDiffuse1" fileId="19"/>
+      <Custommap name="projNormal1" fileId="20"/>
+      <CustomParameter name="uvScale" value="0.25 0.25 0.25 0.25"/>
+      <CustomParameter name="diffuseMix" value="0.5 0 0 0"/>
+    </Material>
+    <Material name="huts_mat" materialId="11" customShaderId="12">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+      <Custommap name="mMaskMap" fileId="13"/>
+      <Custommap name="mDirtDiffuse" fileId="14"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="preShaderContent.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Light name="sun" rotation="-90 -0 0" objectMask="67043328" nodeId="36" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.001" depthMapResolution="2048" shadowFarDistance="400" shadowExtrusionDistance="320" shadowPerspective="true" numShadowMapSplits="3" shadowMapSplitDistance0="30" shadowMapSplitDistance1="80" shadowMapSplitDistance2="400" shadowMapSplitDistance3="400" decayRate="1" range="10000" scattering="true"/>
+    <TransformGroup name="shed_SET" nodeId="23">
+      <Shape shapeId="1" name="glass" translation="0 -5.14566e-05 0" scale="0.1 0.1 0.1" clipDistance="30" nodeId="24" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="addons" scale="0.3 0.3 0.3" clipDistance="30" nodeId="25" materialIds="10" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="shed" scale="0.1 0.1 0.1" clipDistance="30" nodeId="26" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <Shape shapeId="4" name="stoneBoulderLower15" rotation="0 0 3.51752e-07" clipDistance="30" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true" instanced="true"/>
+    <Shape shapeId="5" name="LOD0" clipDistance="30" nodeId="28" materialIds="5" castsShadows="true" receiveShadows="true" instanced="true"/>
+    <Shape shapeId="6" name="pine10mLod0" scale="0.1 0.1 0.1" clipDistance="30" nodeId="29" materialIds="12" castsShadows="true" receiveShadows="true" instanced="true" splitType="2" splitUvs="0 0 1 0.064 1.8">
+      <Shape shapeId="7" name="pine10mLod0Attachments" clipDistance="30" nodeId="30" materialIds="9" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="8" name="pine10mLod1" scale="0.1 0.1 0.1" clipDistance="30" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true" instanced="true"/>
+    <Shape shapeId="9" name="flag" scale="0.2 0.2 0.2" clipDistance="30" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+</i3D>

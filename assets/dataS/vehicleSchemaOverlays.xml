@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicleSchemaOverlays filename="$dataS2/menu/schemas/vehicleSchemas.dds" imageSize="256 256">
+    <overlay name="DEFAULT_VEHICLE"                 uvs="0px 0px 64px 64px"     size="30px 30px"/>
+    <overlay name="DEFAULT_VEHICLE_SELECTED"        uvs="64px 0px 64px 64px"    size="30px 30px"/>
+    <overlay name="DEFAULT_VEHICLE_SELECTED_ON"     uvs="192px 0px 64px 64px"   size="30px 30px"/>
+    <overlay name="DEFAULT_VEHICLE_ON"              uvs="128px 0px 64px 64px"   size="30px 30px"/>
+    <overlay name="DEFAULT_IMPLEMENT"               uvs="0px 96px 32px 32px"    size="15px 15px"/>
+    <overlay name="DEFAULT_IMPLEMENT_SELECTED"      uvs="64px 96px 32px 32px"   size="15px 15px"/>
+    <overlay name="DEFAULT_IMPLEMENT_SELECTED_ON"   uvs="192px 96px 32px 32px"  size="15px 15px"/>
+    <overlay name="DEFAULT_IMPLEMENT_ON"            uvs="128px 96px 32px 32px"  size="15px 15px"/>
+</vehicleSchemaOverlays>

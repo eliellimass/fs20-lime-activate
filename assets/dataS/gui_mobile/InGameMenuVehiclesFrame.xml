@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="garageOverview">
+
+    <GuiElement type="bitmap" profile="uiInGameMenuPageHeader" id="pageHeader">
+        <GuiElement type="empty" profile="uiInGameMenuHeaderSubPagingSelector"  id="subPageSelector">
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonLeft" id="subPagingButtonLeft" onClick="onClickSubPageSelection" />
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonRight" id="subPagingButtonRight" onClick="onClickSubPageSelection" />
+        </GuiElement>
+        <GuiElement type="text" profile="uiInGameMenuPagingTitle" id="pagingTitle" text="$l10n_ui_garageOverview" />
+    </GuiElement>
+
+    <GuiElement type="empty" profile="uiInGameMenuFrame">
+        <GuiElement type="empty" profile="ingameMenuSettingsBox" id="mainBox">
+            <!-- Vehicle table header -->
+            <GuiElement type="flowLayout" profile="ingameMenuPriceTableHeaderBox" position="1px 0px" id="tableHeaderBox">
+                <GuiElement type="tableHeader" profile="ingameMenuGarageTableHeaderVehicle" text="$l10n_ui_vehicle" targetTableId="vehicleTable" columnName="vehicleName" handleFocus="false" />
+                <GuiElement type="tableHeader" profile="ingameMenuGarageTableHeaderAge" targetTableId="vehicleTable" columnName="age" id="ageHeader" handleFocus="false" />
+                <GuiElement type="tableHeader" profile="ingameMenuGarageTableHeaderOperatingHours" targetTableId="vehicleTable" columnName="operatingHours" id="operatingHoursHeader" handleFocus="false" />
+                <GuiElement type="tableHeader" profile="ingameMenuGarageTableHeaderValue" targetTableId="vehicleTable" columnName="value" id="valueHeader" handleFocus="false" />
+            </GuiElement>
+
+            <!-- Vehicle table -->
+            <GuiElement type="table" profile="ingameMenuGarageTable" position="1px -104px" rowTemplateName="vehicleRowTemplate" updateChildrenOverlayState="false" columnNames="vehicleName age ageIcon operatingHours operatingHoursIcon damage damageIcon value valueIcon" id="vehicleTable" focusId="focus_vehicle_table" focusInit="onOpen" onSelectionChanged="onSelectionChanged">
+                <GuiElement type="listItem" profile="ingameMenuVehicleRow" name="vehicleRowTemplate">
+                    <GuiElement type="bitmap" profile="ingameMenuVehicleRowBackground">
+                        <GuiElement type="text" profile="ingameMenuVehicleRowVehicleCell" name="vehicleName" onCreate="onDataBindVehicleName"/>
+
+                        <GuiElement type="button" profile="ingameMenuVehicleRowAttributeCell" position="768px 0px" name="age" onCreate="onDataBindAge"/>
+                        <GuiElement type="button" profile="ingameMenuVehicleRowAttributeCell" position="1101px 0px" name="operatingHours" onCreate="onDataBindOperatingHours"/>
+                        <GuiElement type="button" profile="ingameMenuVehicleRowAttributeCell" position="1434px 0px" name="value" onCreate="onDataBindValue"/>
+                    </GuiElement>
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="indexState" profile="selectionStateBoxDocked" id="pagingIndexState" stateElementTemplateId="circleTemplate">
+                <GuiElement type="bitmap" profile="selectionStateDocked" id="circleTemplate"/>
+            </GuiElement>
+
+        </GuiElement>
+    </GuiElement>
+</GUI>

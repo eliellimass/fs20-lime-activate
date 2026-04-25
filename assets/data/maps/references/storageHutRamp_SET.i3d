@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="storageHutRamp_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../textures/mobile/materialCollection01_diffuse.png"/>
+    <File fileId="2" filename="../textures/mobile/materialCollection01_normal.png"/>
+    <File fileId="3" filename="../textures/mobile/materialCollection01_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="materialCollection01_mat" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="lambert1" materialId="4" diffuseColor="0.235294 0.117647 0.117647 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="storageHutRamp_SET.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="storageHutRamp_SET" lockedgroup="true" nodeId="10">
+      <Shape shapeId="1" name="stairs" translation="-10 -1.42109e-16 0" clipDistance="250" nodeId="11" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="storageRamp" clipDistance="500" nodeId="12" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="col" visibility="false" static="true" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

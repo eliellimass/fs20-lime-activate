@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<animation>
+	<states>
+		<state index="0" type="blend" clip0="1" clip1="1" start="260" speed="2.5" name="walk" />
+		<state index="1" type="blend" clip0="4" clip1="4" start="260" speed="2.5" name="run" />
+		<state index="2" type="single" clip0="5" start="0" speed="1" name="idle" />
+		<state index="3" type="single" clip0="0" start="0" speed="1" name="eat" />
+		<state index="4" type="single" clip0="6" start="0" speed="1" name="sleep" />
+		<state index="5" type="single" clip0="5" start="0" speed="1" name="chew" />
+		<state index="6" type="single" clip0="2" start="0" speed="1" name="turnLeft" />
+		<state index="7" type="single" clip0="3" start="0" speed="1" name="turnRight" />
+	</states>
+	<transitions defaultBlendTime="1250">
+		<transition index="0" state0="6" state1="0" blendTime="200" name="turnLeftWalk" />
+		<transition index="1" state0="7" state1="0" blendTime="200" name="turnRightWalk" />
+	</transitions>
+</animation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="weighingStation_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../textures/mobile/materialCollection01_diffuse.png"/>
+    <File fileId="2" filename="../textures/mobile/materialCollection01_normal.png"/>
+    <File fileId="3" filename="../textures/mobile/materialCollection01_specular.png"/>
+    <File fileId="4" filename="../../shaders/buildingShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="materialCollection01_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="weighingStation_SET.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="weighingStation_SET" lockedgroup="true" nodeId="9">
+      <Shape shapeId="1" name="weighingStation" clipDistance="150" nodeId="10" materialIds="5" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="col" visibility="false" static="true" nodeId="11" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

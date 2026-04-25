@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="rain" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor - DEBUG 64bit" version="7.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="dust.png" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="dustMaterial" materialId="1" ambientColor="0 0 0" alphaBlending="true" allowSubsequentPasses="false">
+      <Emissivemap fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes>
+    <Precipitation shapeId="2" name="dustGeom" maxNumDrops="16" dropMaterialId="1" boundsWidth="12" boundsHeight="12" dropWidth="0.075" dropHeight="0.075" dropAtlasSize="8" dropMinVelocity="0.001" dropMaxVelocity="0.002" dropMinMass="0.1" dropMaxMass="0.2" windVelocity="0.0001 0.00015 0.0001" rotateWithCameraVelocity="false" useVelocityAlignedBillboards="true"/>
+  </Shapes>
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="2" name="mist" />
+  </Scene>
+
+</i3D>

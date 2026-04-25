@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>$l10n_animalPen_cow</name>
+        <image>dummy.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>934544</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>115542</indexBufferMemoryUsage>
+        <textureMemoryUsage>24941392</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <placeableType>husbandry</placeableType>
+    <filename>$data/placeables/animalHusbandry/husbandryCow.i3d</filename>
+    <placement testSizeX="36.0" testSizeZ="36.0" sizeX="30" sizeZ="30" useRandomYRotation="false" useManualYRotation="true" placementRotationSnapAngle="90" placementPositionSnapSize="0.5" placementPositionSnapOffset="0.25"/>
+
+    <triggerMarkers>
+        <triggerMarker node="0|10" />
+    </triggerMarkers>
+
+    <husbandry saveId="Animals_COW" hasStatistics="false">
+        <modules>
+            <module name="animals">
+                <config type="COW" navmeshNode="0|8" animalLoadTriggerNode="0|0" maxNumAnimals="50" husbandryFileName="$dataS/character/cowAnimalHusbandry.xml" placementRaycastDistance="2.0" carryingCapacity="50" rideableDeliveryStartNode="0|6|0" rideableDeliveryWidthNode="0|6|0|0" rideableDeliveryHeightNode="0|6|0|1" />
+            </module>
+            <module name="food">
+                <config node="0|1|0" exactFillRootNode="0" animalPlacesNode="1" >
+                    <fillPlane node="0|1|1" minY="-0.3" maxY="-0.05" colorChange="true" />
+                    <baleTrigger triggerNode="2" />
+                </config>
+            </module>
+            <module name="water">
+                <config node="0|2|0" exactFillRootNode="0" fillTypes="WATER" acceptedToolTypes="undefined trailer">
+                    <fillPlane node="0|2|1" minY="0.06" maxY="0.275" colorChange="true" />
+                </config>
+            </module>
+            <module name="liquidManure">
+                <config node="0|3" fillTypes="LIQUIDMANURE" triggerNode="0">
+                    <fillPlane node="0|3|1" minY="-0.15" maxY="0.3" />
+                </config>
+            </module>
+            <module name="manure">
+                <config node="0|4" fillTypes="MANURE" triggerNode="1" capacity="75000">
+                    <fillPlane node="0|4|2" minY="-1.58" maxY="0" />
+                </config>
+            </module>
+            <module name="milk">
+                <config node="0|7" fillTypes="MILK" triggerNode="0" />
+            </module>
+            <module name="straw">
+                <config node="0|5" exactFillRootNode="0" fillTypes="STRAW">
+                    <fillPlane node="0|5|1" minY="-0.27" maxY="0.0" colorChange="false" />
+                </config>
+            </module>
+        </modules>
+        <placementRaycast distance="2" />
+        <poiTriggers>
+            <poiTrigger node="0|11|0" text="$l10n_poi_animalFood" />
+            <poiTrigger node="0|11|1" text="$l10n_poi_animalStraw" />
+            <poiTrigger node="0|11|2" text="$l10n_poi_animalWater" />
+            <poiTrigger node="0|11|3" text="$l10n_poi_animalLoad" />
+            <poiTrigger node="0|11|4" text="$l10n_poi_animalManure" />
+            <poiTrigger node="0|11|5" text="$l10n_poi_animalLiquidManure" />
+            <poiTrigger node="0|11|6" text="$l10n_poi_animalMilk" />
+        </poiTriggers>
+    </husbandry>
+
+    <hotspots>
+        <hotspot name="Cow barn" title="$l10n_animals_cowPasture" linkNode="0">
+            <icon uvs="DEFAULT_ANIMAL_COW" />
+            <background />
+            <text textWrapWidth="150px" bold="true" />
+        </hotspot>
+    </hotspots>
+
+</placeable>

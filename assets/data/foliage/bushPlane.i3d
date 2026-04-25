@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="bushPlane" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/foliage/bush01LOD03_diffuse_H.png" />
+    <File fileId="2" filename="$data/foliage/bush01LOD03_normal_H.png" />
+    <File fileId="3" filename="$data/shaders/treeBillboardShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="bushSimple02:bush01LOD03_mat" materialId="1" cosPower="100" specularColor="0 1 0" ambientColor="1 1 1" customShaderId="3" customShaderVariation="billboard180">
+      <CustomParameter name="windScale" value="0"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="bushPlane.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="bushPlane" shapeId="1" castsShadows="false" receiveShadows="true" materialIds="1" clipDistance="800" nodeId="1"/>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

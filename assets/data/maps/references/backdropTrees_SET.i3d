@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="backdropTrees_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/maps/textures/mobile/distantTrees_diffuse.png" />
+    <File fileId="4" filename="$data/shaders/decalShader.xml" />
+    <File fileId="2" filename="$data/shared/default_normal.png" />
+    <File fileId="3" filename="$data/shared/default_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="distantTrees_mat" materialId="1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="backdropTrees_SET.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="backdropTrees_SET" collision="false" nodeId="1">
+      <Shape name="backDropTrees" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="2"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="frontLight_01" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="1" filename="$data/shared/assets/lights/lizard/frontLight_01_normal.png" />
+    <File fileId="2" filename="$data/shared/assets/lights/lizard/frontLight_01_specular.png" />
+    <File fileId="4" filename="$data/shared/clearPlastic_diffuse.png" />
+  </Files>
+
+  <Materials>
+    <Material name="frontLight_01_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat2" value="1.00 1.00 1.00 2"/>
+      <CustomParameter name="colorMat0" value="0.014 0.014 0.014 1"/>
+      <CustomParameter name="colorMat1" value="1.00 0.25 0.00 2"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="clearPlastic_mat" materialId="2" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat0" value="1.00 0.25 0.00 2"/>
+      <CustomParameter name="colorMat1" value="1.00 1.00 1.00 2"/>
+      <Texture fileId="4"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="frontLight_01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="frontLight_01_left" translation="2.05994e-06 4.88348e-06 -2.1687e-21" rotation="-90 0 0" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="defaultLightStatic" translation="2.71051e-22 0 0" shapeId="2" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="1" clipDistance="35" nodeId="2"/>
+      <Shape name="turnlightLeftStatic" translation="2.71051e-22 0 0" shapeId="3" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="1" clipDistance="35" nodeId="3"/>
+      <Shape name="Glass_static" translation="0.000131359 0.000406265 0.0800888" shapeId="4" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="35" nodeId="4"/>
+    </Shape>
+    <Shape name="frontLight_01_right" translation="0 4.88348e-06 -2.1684e-21" rotation="-90 0 0" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="5">
+      <Shape name="defaultLightStatic" shapeId="6" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="1" clipDistance="35" nodeId="6"/>
+      <Shape name="turnlightRightStatic" shapeId="7" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="1" clipDistance="35" nodeId="7"/>
+      <Shape name="Glass_static" translation="-0.000131359 0.000406265 0.0800888" shapeId="8" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="35" nodeId="8"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

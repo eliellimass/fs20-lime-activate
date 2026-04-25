@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="5">
+    <UvUsages>
+        <UvUsage textureName="baseMap"   uvType="custom"/>
+        <UvUsage textureName="normalMap" uvType="custom"/>
+        <UvUsage textureName="glossMap"  uvType="custom"/>
+    </UvUsages>
+    <Parameters>
+        <Parameter name="alphaBlendStartEnd" target="alphaBlendStartEnd" type="float3" defaultValue="70 75 0 0" />
+        <Parameter name="cellSizeTerrainSizeScaleXZScaleY" target="cellSizeTerrainSizeScaleXZScaleY" type="float4"/>
+    </Parameters>
+    <VertexAttributes>
+        <VertexAttribute name="uv1" group="base"/>
+        <VertexAttribute name="uv2" group="base"/>
+        <VertexAttribute name="color" group="base"/>
+        <VertexAttribute name="blendweights" group="base"/>
+        <IgnoredVertexAttribute name="normal" group="base"/>
+    </VertexAttributes>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="GET_POSITION_VS">
+<![CDATA[
+float3 position1 = In.position.xyz * float3(16.0, 16.0, 16.0); // get mesh XYZ
+position1 *= In.color.xyx * 8;	// scale by widthScale & heightScale
+float3 position = rotateVectorToTerrainNormal(In, rotateFoliageVector(In, position1, In.blendWeights.w*3.1415926), In.texCoords1.xyz - 0.5);
+
+float3 blockPos = In.blendWeights.xyz;
+blockPos.xz = blockPos.xz*cellSizeTerrainSizeScaleXZScaleY.x;
+blockPos.y = (blockPos.y+0.5) * cellSizeTerrainSizeScaleXZScaleY.w;
+
+position += blockPos; // add blockPositionX,Y,Z
+return position;
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_NORMAL_VS">
+<![CDATA[
+#ifdef LIGHTING
+    float3 normal = float3(In.position.w, In.texCoords0.zw); // get mesh normal
+    return rotateVectorToTerrainNormal(In, rotateFoliageVector(In, normal, In.blendWeights.w*3.1415926), In.texCoords1.xyz - 0.5);
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_DEFAULT_TEXCOORDS_VS">
+<![CDATA[
+return getFoliageTexCoords(In);
+]]>
+            </CodeInjection>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float4 alphaBlendStartEnd;
+uniform float4 cellSizeTerrainSizeScaleXZScaleY;
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_OUTPUT">
+<![CDATA[
+float alphaScale : TEXCOORDn;
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_END">
+<![CDATA[
+//Out.alphaScale = 1 + saturate((length(viewDir)-alphaBlendStartEnd.x)/(alphaBlendStartEnd.y-alphaBlendStartEnd.x))*alphaBlendStartEnd.z;
+
+Out.alphaScale = 1.0 - saturate((length(viewDir)-(alphaBlendStartEnd.x))/(alphaBlendStartEnd.y-alphaBlendStartEnd.x));
+//Out.alphaScale = 1.0 - saturate((length(viewDir)-60)/(80-60));
+]]>
+            </CodeInjection>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+alpha *= In.vs.alphaScale;
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

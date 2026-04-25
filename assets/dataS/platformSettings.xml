@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<platformSettings>
+    <settings platform="any">
+        <setting name="safeFrameOffset" value="25" type="number"/>
+        <setting name="forcedUIResolution" value="" type="number"/>
+        <setting name="defaultTimeScale" value="5" type="number"/>
+
+        <!-- map -->
+        <setting name="sprayLevelMaxValue" value="2" type="number"/>
+        <setting name="harvestScaleRation" value="0.5 0.15 0.15 0.2" type="vector"/> <!-- spray, plow, lime, weed -->
+        <setting name="useSprayDiffuseMaps" value="true" type="boolean"/>
+        <setting name="useTerrainDetailAngle" value="true" type="boolean"/>
+        <setting name="useMultipleSprayLevels" value="true" type="boolean"/>
+        <setting name="usePlowCounter" value="true" type="boolean"/>
+        <setting name="useLimeCounter" value="true" type="boolean"/>
+
+        <!-- vehicles -->
+        <setting name="automaticDischarge" value="false" type="boolean"/>
+        <setting name="automaticFilling" value="false" type="boolean"/>
+        <setting name="automaticAttach" value="false" type="boolean"/>
+        <setting name="automaticBaleDrop" value="false" type="boolean"/>
+        <setting name="automaticLights" value="false" type="boolean"/>
+        <setting name="automaticPipeUnfolding" value="false" type="boolean"/>
+        <setting name="keepFoldingWhileDetached" value="false" type="boolean"/>
+        <setting name="lightsProfile" value="" type="string"/>
+        <setting name="changeSeedButton" value="IMPLEMENT_EXTRA3" type="string"/>
+        <setting name="foliageBending" value="true" type="boolean"/>
+        <setting name="useWorldCameraInside" value="true" type="boolean"/>
+        <setting name="useWorldCameraOutside" value="true" type="boolean"/>
+        <setting name="maxCameraZoomFactor" value="1" type="float"/>
+
+        <!-- wheels -->
+        <setting name="wheelSink" value="true" type="boolean"/>
+        <setting name="wheelDensityHeightSmooth" value="true" type="boolean"/>
+        <setting name="wheelVisualPressure" value="true" type="boolean"/>
+
+        <!-- default settings -->
+        <setting name="defaultGyroscopeSteering" value="false" type="boolean"/>
+        <setting name="defaultCameraTilt" value="false" type="boolean"/>
+    </settings>
+
+    <settings platform="GS_IS_CONSOLE_VERSION">
+        <setting name="forcedUIResolution" value="1080" type="number"/>
+    </settings>
+
+    <settings platform="GS_IS_MOBILE_VERSION">
+        <setting name="safeFrameOffset" value="50" type="number"/>
+        <setting name="forcedUIResolution" value="1080" type="number"/>
+        <setting name="defaultTimeScale" value="30" type="number"/>
+
+        <!-- map -->
+        <setting name="sprayLevelMaxValue" value="1" type="number"/>
+        <setting name="harvestScaleRation" value="1 0 0 0" type="vector"/> <!-- spray, plow, lime, weed -->
+        <setting name="useSprayDiffuseMaps" value="false" type="boolean"/>
+        <setting name="useTerrainDetailAngle" value="false" type="boolean"/>
+        <setting name="useMultipleSprayLevels" value="false" type="boolean"/>
+        <setting name="usePlowCounter" value="false" type="boolean"/>
+        <setting name="useLimeCounter" value="false" type="boolean"/>
+
+        <!-- vehicles -->
+        <setting name="automaticDischarge" value="true" />
+        <setting name="automaticFilling" value="true" type="boolean"/>
+        <setting name="automaticAttach" value="true" type="boolean"/>
+        <setting name="automaticBaleDrop" value="true" type="boolean"/>
+        <setting name="automaticLights" value="true" type="boolean" />
+        <setting name="automaticPipeUnfolding" value="true" type="boolean"/>
+        <setting name="keepFoldingWhileDetached" value="true" type="boolean"/>
+        <setting name="lightsProfile" value="GS_PROFILE_LOW" type="string"/>
+        <setting name="changeSeedButton" value="TOGGLE_SEEDS" type="string"/>
+        <setting name="foliageBending" value="false" type="boolean"/>
+        <setting name="useWorldCameraInside" value="false" type="boolean"/>
+        <setting name="useWorldCameraOutside" value="true" type="boolean"/>
+        <setting name="maxCameraZoomFactor" value="0.6" type="float"/>
+
+        <!-- wheels -->
+        <setting name="wheelSink" value="false" type="boolean"/>
+        <setting name="wheelDensityHeightSmooth" value="false" type="boolean"/>
+        <setting name="wheelVisualPressure" value="false" type="boolean"/>
+    </settings>
+
+    <settings platform="GS_PLATFORM_TYPE_SWITCH">
+        <!-- default settings -->
+        <setting name="defaultGyroscopeSteering" value="false" type="boolean"/>
+        <setting name="defaultCameraTilt" value="false" type="boolean"/>
+    </settings>
+
+</platformSettings>

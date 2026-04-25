@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>$l10n_shopItem_sellingStationBales</name>
+        <image>$data/placeables/mapDE/sellingStations/store_sellingStationBales.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>1152</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>144</indexBufferMemoryUsage>
+        <textureMemoryUsage>64</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <placeableType>baleStorage</placeableType>
+    <filename>$data/placeables/baleStorage/baleStorage.i3d</filename>
+    <placement testSizeX="15" testSizeZ="8" sizeX="4" sizeZ="3" useRandomYRotation="false" useManualYRotation="true" />
+
+    <baleStorage triggerNode="0" fillTypes="straw" capacity="100" physicalBalePlace="1|8">
+        <balePlace node="1|0"/>
+        <balePlace node="1|1"/>
+        <balePlace node="1|2"/>
+        <balePlace node="1|3"/>
+        <balePlace node="1|4"/>
+        <balePlace node="1|5"/>
+        <balePlace node="1|6"/>
+        <balePlace node="1|7"/>
+
+        <poiTrigger node="3" text="$l10n_poi_baleStorage" />
+    </baleStorage>
+
+    <!-- <hotspots>
+        <hotspot name="Selling station bales" title="$l10n_station_barn" linkNode="0">
+            <icon uvs="DEFAULT_SELLING_BALE" />
+            <background />
+            <text textWrapWidth="150px" bold="true" />
+        </hotspot>
+    </hotspots> -->
+
+</placeable>

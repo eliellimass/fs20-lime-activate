@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="R30_axioBib" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="1" filename="$data/shared/wheels/michelin/axioBib/axioBib_normal.png" />
+    <File fileId="2" filename="$data/shared/wheels/michelin/axioBib/axioBib_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="axioBib_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <CustomParameter name="morphPosition" value="-0.418 -0.795 0.5 0.05"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="axioBib_mat1" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <CustomParameter name="morphPosition" value="-0.416 -0.838 0.5 0.05"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="axioBib_mat2" materialId="3" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <CustomParameter name="morphPosition" value="-0.418 -0.863 0.5 0.05"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="R30_axioBib.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="IF_600_70_R30_" nodeId="1">
+      <Shape name="shape1" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="2"/>
+    </TransformGroup>
+    <TransformGroup name="IF_620_75_R30_" nodeId="3">
+      <Shape name="shape" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="4"/>
+    </TransformGroup>
+    <TransformGroup name="IF_650_75_R30_" nodeId="5">
+      <Shape name="shape2" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="6"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="connectors" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="4" filename="$data/shared/assets/assetLibraryDecals_diffuse.png" />
+    <File fileId="5" filename="$data/shared/assets/assetLibraryDecals_normal.png" />
+    <File fileId="9" filename="$data/shared/connectionHoses/airConnector_normal.png" />
+    <File fileId="10" filename="$data/shared/connectionHoses/airConnector_specular.png" />
+    <File fileId="7" filename="$data/shared/connectionHoses/connectors1_normal.png" />
+    <File fileId="8" filename="$data/shared/connectionHoses/connectors1_specular.png" />
+    <File fileId="1" filename="$data/shared/connectionHoses/connectors_normal.png" />
+    <File fileId="2" filename="$data/shared/connectionHoses/connectors_specular.png" />
+    <File fileId="11" filename="$data/shared/connectionHoses/frontConnector_normal.png" />
+    <File fileId="12" filename="$data/shared/connectionHoses/frontConnector_specular.png" />
+    <File fileId="6" filename="$data/shared/default_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="connectors_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="RDT" value="1.0 1.0 20.0 20.0"/>
+      <CustomParameter name="colorMat2" value="0.6730 0.4704 0.0220 1"/>
+      <CustomParameter name="colorMat0" value="0.5356 0.0254 0.0254 1"/>
+      <CustomParameter name="colorMat1" value="0.5356 0.0254 0.0254 8"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="assetLibraryDecals_mat" materialId="3" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="RDT" value="1.0 1.0 20.0 20.0"/>
+      <CustomParameter name="colorMat2" value="0.6730 0.4704 0.0220 1"/>
+      <CustomParameter name="colorMat0" value="0.5356 0.0254 0.0254 1"/>
+      <CustomParameter name="colorMat1" value="0.5356 0.0254 0.0254 8"/>
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="connectors1_mat" materialId="4" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat2" value="0.01 0.01 0.01 1"/>
+      <CustomParameter name="colorMat0" value="0.3587 0.0328 0.0352 1"/>
+      <CustomParameter name="colorMat1" value="0.6730 0.4783 0.0230 1"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="airConnector_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.5356 0.0254 0.0254 1"/>
+      <CustomParameter name="colorMat1" value="0.6730 0.4704 0.0220 1"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="frontConnector_mat" materialId="5" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.5924 0.0078 0.0220 1"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="connectors.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="connectors" nodeId="1">
+      <Shape name="hydraulic" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="50" nodeId="2">
+        <TransformGroup name="referencePoint" translation="0 0 -0.116469" nodeId="3"/>
+      </Shape>
+      <Shape name="electric" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="50" nodeId="4">
+        <TransformGroup name="referencePoint" translation="0 0 -0.0692918" nodeId="5"/>
+      </Shape>
+      <Shape name="airYellow" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="50" nodeId="6">
+        <TransformGroup name="referencePoint" translation="-0.00627288 0.000206222 -0.0681544" nodeId="7"/>
+      </Shape>
+      <Shape name="airRed" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="50" nodeId="8">
+        <TransformGroup name="referencePoint" translation="-0.00627288 0.000206222 -0.0681544" nodeId="9"/>
+      </Shape>
+      <Shape name="electricMetal" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="50" nodeId="10">
+        <TransformGroup name="referencePoint" translation="0 0 -0.0692918" nodeId="11"/>
+      </Shape>
+    </TransformGroup>
+    <TransformGroup name="linkableConnectors" nodeId="12">
+      <Shape name="hydraulic" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="50" nodeId="13"/>
+      <Shape name="electric" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="50" nodeId="14"/>
+      <Shape name="airYellow" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="50" nodeId="15"/>
+      <Shape name="airRed" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="50" nodeId="16"/>
+    </TransformGroup>
+    <TransformGroup name="linkableSockets" nodeId="17">
+      <Shape name="electric" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="50" nodeId="18">
+        <TransformGroup name="referencePoint" translation="0 0 -0.0439611" nodeId="19"/>
+        <Shape name="cab" translation="0 0.0284315 -0.040487" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="50" nodeId="20"/>
+        <Shape name="decals" translation="0.000168574 -0.00623945 -0.0219512" shapeId="12" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="21"/>
+      </Shape>
+      <Shape name="electric_metal" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="50" nodeId="22">
+        <TransformGroup name="referencePoint" translation="0 0 -0.0439611" nodeId="23"/>
+        <Shape name="cab" translation="0 0.0284315 -0.040487" shapeId="14" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="50" nodeId="24"/>
+        <Shape name="decals" translation="0.000168574 -0.00623945 -0.0219512" shapeId="15" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="25"/>
+      </Shape>
+      <Shape name="hydraulic01" translation="3.8147e-08 9.31323e-12 -1.52896e-07" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="50" nodeId="26">
+        <TransformGroup name="referencePoint" translation="-4.45064e-08 -1.08658e-11 -0.0557194" nodeId="27"/>
+        <Shape name="detachedCab" translation="-1.97047e-08 8.5563e-08 -0.0445183" rotation="0 0 -45" visibility="false" shapeId="17" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="50" nodeId="28"/>
+        <Shape name="attachedCab" translation="-1.97047e-08 8.5563e-08 -0.0445183" rotation="0 0 -44.7599" shapeId="18" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="50" nodeId="29"/>
+      </Shape>
+      <Shape name="hydraulic02" translation="-1.90735e-08 0 -3.0803e-10" shapeId="19" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="50" nodeId="30">
+        <TransformGroup name="referencePoint" translation="1.90735e-08 0 -0.0412251" nodeId="31"/>
+        <Shape name="detachedCab" translation="8.53212e-09 8.43309e-08 -0.0352999" visibility="false" shapeId="20" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="50" nodeId="32"/>
+        <Shape name="attachedCab" translation="8.53212e-09 8.43309e-08 -0.0352999" rotation="0 0 -22.5" shapeId="21" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="50" nodeId="33"/>
+      </Shape>
+      <Shape name="airYellow" shapeId="22" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="50" nodeId="34">
+        <TransformGroup name="referencePoint" translation="-0.0156625 0 -0.0680247" nodeId="35"/>
+        <Shape name="cab" translation="-0.0174319 0.0273966 -0.0398716" rotation="-95 0 0" shapeId="23" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="50" nodeId="36"/>
+      </Shape>
+      <Shape name="airRed" shapeId="24" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="50" nodeId="37">
+        <TransformGroup name="referencePoint" translation="-0.0156625 0 -0.0680247" nodeId="38"/>
+        <Shape name="cab" translation="-0.0174319 0.0273966 -0.0398716" rotation="-95 0 0" shapeId="25" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="50" nodeId="39"/>
+      </Shape>
+      <Shape name="hydraulic04" shapeId="26" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="50" nodeId="40">
+        <TransformGroup name="referencePoint" translation="0 -1.2524e-12 -0.103035" nodeId="41"/>
+        <Shape name="cab" translation="-0.0229128 -2.38072e-05 -0.0966733" shapeId="27" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="50" nodeId="42"/>
+      </Shape>
+      <Shape name="hydraulic05" shapeId="28" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="50" nodeId="43">
+        <TransformGroup name="referencePoint" translation="0 -1.2524e-12 -0.103035" nodeId="44"/>
+        <Shape name="cab" translation="-0.0229128 -2.89477e-05 -0.0966733" shapeId="29" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="50" nodeId="45"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

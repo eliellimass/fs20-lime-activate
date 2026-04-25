@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="roads_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="../textures/mobile/roadsUSmobileDirt_specular.png"/>
+    <File fileId="1" filename="../textures/mobile/roadsUSmobile_diffuse.png"/>
+    <File fileId="2" filename="../textures/mobile/roadsUSmobile_normal.png"/>
+    <File fileId="3" filename="../textures/mobile/roadsUSmobile_specular.png"/>
+    <File fileId="4" filename="../../shaders/buildingShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="roadsUSmobile_mat" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="roads_SET.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="roads_SET" lockedgroup="true" nodeId="36">
+      <Shape shapeId="1" name="levelout01" translation="-529.915 27.362 -107.001" clipDistance="1500" nodeId="37" materialIds="4"/>
+      <Shape shapeId="2" name="levelout02" translation="514.459 76.4437 -195.607" clipDistance="1500" nodeId="38" materialIds="4"/>
+      <Shape shapeId="3" name="roadSpinnery" translation="-294.92 36.131 -429.421" static="true" clipDistance="250" nodeId="39" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="4" name="roadPlayerFarm" translation="-21.4349 57.9739 -135.906" static="true" clipDistance="250" nodeId="40" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="5" name="roadCarDealer" translation="42.9129 60.2902 -138.977" static="true" clipDistance="250" nodeId="41" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="6" name="roadLakeSide" translation="-367.87 30.1446 -132.528" static="true" clipDistance="250" nodeId="42" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="7" name="roadGrainElavator01" translation="-15.38 50.4942 -455.606" static="true" clipDistance="250" nodeId="43" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="8" name="roadGrainElavator02" translation="-15.38 50.4942 -455.606" static="true" clipDistance="250" nodeId="44" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="9" name="roadRiver" translation="300.927 47.466 387.4" static="true" clipDistance="250" nodeId="45" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="10" name="roadPigfarm" translation="309.004 48.6691 239.067" static="true" clipDistance="250" nodeId="46" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="11" name="roadFarmersMarket" translation="-162.788 26.5929 341.714" static="true" clipDistance="250" nodeId="47" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="12" name="roadBGA" translation="354.613 56.5037 92.0463" static="true" clipDistance="250" nodeId="48" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="13" name="roadMainEast" translation="19.7881 60.1414 -131.87" static="true" clipDistance="250" nodeId="49" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="14" name="roadMainWest" translation="20.5449 60.1414 -140.491" static="true" clipDistance="250" nodeId="50" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="15" name="roadHorseRanch" translation="158.759 65.7193 -130.761" static="true" clipDistance="250" nodeId="51" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="16" name="roadSheepFarm" translation="371.941 71.7161 -177.076" static="true" clipDistance="250" nodeId="52" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="17" name="roadForest" translation="216.855 40.7888 296.497" static="true" clipDistance="250" nodeId="53" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="18" name="roadAnimalTrader" translation="-307.893 34.0213 -48.405" static="true" clipDistance="250" nodeId="54" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="19" name="roadLakesideHotel" translation="-307.893 34.0213 -48.4029" static="true" clipDistance="250" nodeId="55" materialIds="4" receiveShadows="true"/>
+      <Shape shapeId="20" name="roadFactory" translation="-474.033 28.4985 73.9753" static="true" clipDistance="250" nodeId="56" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="21" name="roadmarkingBar01" translation="-303.53 34.3907 -139.896" clipDistance="250" nodeId="57" materialIds="4" receiveShadows="true" decalLayer="2"/>
+      <Shape shapeId="22" name="roadMarkingStop01" translation="-304.376 34.1965 -137.904" rotation="0 0 2.19187" clipDistance="250" nodeId="58" materialIds="4" receiveShadows="true" decalLayer="2"/>
+      <Shape shapeId="23" name="roadmarkingBar02" translation="-370.615 29.9963 -132.856" clipDistance="250" nodeId="59" materialIds="4" receiveShadows="true" decalLayer="2"/>
+      <Shape shapeId="24" name="roadMarkingStop02" translation="-370.201 30.0353 -134.807" rotation="0 0 1.79808" clipDistance="250" nodeId="60" materialIds="4" receiveShadows="true" decalLayer="2"/>
+      <Shape shapeId="25" name="roadmarkingBar03" translation="40.4627 60.2885 -140.289" clipDistance="250" nodeId="61" materialIds="4" receiveShadows="true" decalLayer="2"/>
+      <Shape shapeId="26" name="roadMarkingStop03" translation="369.907 71.7344 -179.492" clipDistance="250" nodeId="62" materialIds="4" receiveShadows="true" decalLayer="2"/>
+      <Shape shapeId="27" name="roadmarkingBar04" translation="161.38 65.8385 -129.718" clipDistance="250" nodeId="63" materialIds="4" receiveShadows="true" decalLayer="2"/>
+      <Shape shapeId="28" name="roadMarkingStop04" translation="160.619 65.8451 -127.714" clipDistance="250" nodeId="64" materialIds="4" receiveShadows="true" decalLayer="2"/>
+      <Shape shapeId="29" name="roadmarkingBar05" translation="368.46 71.6625 -177.496" clipDistance="250" nodeId="65" materialIds="4" receiveShadows="true" decalLayer="2"/>
+      <Shape shapeId="30" name="roadMarkingStop05" translation="41.5732 60.3086 -142.137" clipDistance="250" nodeId="66" materialIds="4" receiveShadows="true" decalLayer="2"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

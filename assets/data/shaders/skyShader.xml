@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="5">
+    <Parameters>
+        <Parameter name="partScale" target="partScale" type="float4" group="skybox"/>
+        <Parameter name="rainScale" target="rainScale" type="float4" group="skybox"/>
+    </Parameters>
+    <UvUsages/>
+    <Textures>
+        <Texture group="skybox" name="sunsetTexture" />
+        <Texture group="skybox" name="nightTexture" />
+        <Texture group="skybox" name="sunriseTexture" />
+        <Texture group="skybox" name="rainDayTexture" />
+        <Texture group="skybox" name="rainNightTexture" />
+    </Textures>
+    <Variations>
+        <Variation name="skybox" groups="skybox">
+<![CDATA[
+    #define USE_SKYBOX
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="VS_END">
+<![CDATA[
+// No need to apply depth correction and apply a small offset from all the way to far plane to avoid issues with imprecise position interpolation
+#undef TRANSFORM_VS_DEPTH_OUTPUT
+Out.position.z = Out.position.w - 0.1;
+
+]]>
+            </CodeInjection>
+            <CodeInjection position="SAMPLERS">
+<![CDATA[
+sampler2D sunsetTexture;
+sampler2D nightTexture;
+sampler2D sunriseTexture;
+sampler2D rainDayTexture;
+sampler2D rainNightTexture;
+]]>
+            </CodeInjection>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float4 partScale;
+uniform float4 rainScale;
+]]>
+            </CodeInjection>
+            <CodeInjection position="EMISSIVE_FS">
+<![CDATA[
+#if defined(USE_SKYBOX)
+float3 emissiveColorSunset = tex2D(sunsetTexture, In.vs.ALBEDOMAP_TEXCOORD).xyz;
+float3 emissiveColorNight = tex2D(nightTexture, In.vs.ALBEDOMAP_TEXCOORD).xyz;
+float3 emissiveColorSunrise = tex2D(sunriseTexture, In.vs.ALBEDOMAP_TEXCOORD).xyz;
+float3 emissiveColorRainDay = tex2D(rainDayTexture, In.vs.ALBEDOMAP_TEXCOORD).xyz;
+float3 emissiveColorRainNight = tex2D(rainNightTexture, In.vs.ALBEDOMAP_TEXCOORD).xyz;
+emissiveColor.xyz = emissiveColor.xyz*partScale.x + emissiveColorSunset.xyz*partScale.y + emissiveColorNight.xyz*partScale.z + emissiveColorSunrise.xyz*partScale.w + emissiveColorRainDay*rainScale.x + emissiveColorRainNight*rainScale.y;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_ENV_MAP_COLOR_FS">
+<![CDATA[
+#if !defined(USE_SKYBOX)
+#if defined(ENV_MAP_SPECULAR)
+        return texCUBElod(envMap, -viewDir, 0).xyz;
+#endif
+    return float3(0);
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_FOG_COLOR_FS">
+<![CDATA[
+{
+#if defined(ADD_FOG) && (defined(FOG_EXTINCTION) || defined(FOG_INSCATTERING))
+
+    float heightNorm = -normalize(In.vs.vertToEyeVector).y;
+    float distance = lerp(3000, 200, saturate(heightNorm));
+    #if defined(GS_LOW_SPEC_FOG)
+        float extinction = exp(-expFogDensity*distance);
+        return lerp(expFogColor*translucentLightingScale, oColor.xyz, extinction);
+    #else
+        return applyFogLightScattering(distance, oColor.xyz, translucentLightingScale, scatteringDirLightDirection, viewDir, lightColorAtGround, fogRayleighExtinctionCoeff, fogMieExtinctionCoeff);
+    #endif
+
+#endif
+}
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>
+

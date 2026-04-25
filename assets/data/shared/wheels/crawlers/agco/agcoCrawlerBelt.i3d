@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="agcoCrawlerBelt" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="9" filename="agcoCrawlerAlpha_diffuse.png" />
+    <File fileId="10" filename="agcoCrawlerAlpha_normal.png" />
+    <File fileId="11" filename="agcoCrawlerAlpha_specular.png" />
+    <File fileId="1" filename="agcoCrawlerBelt_normal.png" />
+    <File fileId="2" filename="agcoCrawlerBelt_specular.png" />
+    <File fileId="6" filename="agcoCrawlerDisc_diffuse.png" />
+    <File fileId="7" filename="agcoCrawlerDisc_normal.png" />
+    <File fileId="8" filename="agcoCrawlerDisc_specular.png" />
+    <File fileId="4" filename="agcoCrawler_normal.png" />
+    <File fileId="5" filename="agcoCrawler_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="agcoCrawlerBelt_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="uvScroll_colorMask">
+      <CustomParameter name="colorMat2" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat3" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat0" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat1" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat6" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat7" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat4" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat5" value="0.0278 0.0254 0.0231 5"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="agcoCrawler_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="agcoCrawlerDisc_mat" materialId="4" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="Decal_colorMask">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="agcoCrawlerAlpha_mat" materialId="3" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="uvScroll_colorMask">
+      <CustomParameter name="colorMat2" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat3" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat0" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat1" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat6" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat7" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat4" value="0.0278 0.0254 0.0231 5"/>
+      <CustomParameter name="colorMat5" value="0.0278 0.0254 0.0231 5"/>
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="agcoCrawlerBelt.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="_01_" nodeId="1">
+      <Shape name="crawlerRight" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" skinBindNodeIds="2 5 7 8 9 10" clipDistance="300" nodeId="2">
+        <Shape name="beltRight" translation="4.31061e-06 0.450103 0.967362" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="3">
+          <Shape name="crawlerInteriorRight" translation="0.000836639 8.26454e-05 1.52588e-07" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="4"/>
+        </Shape>
+        <TransformGroup name="mainWheelRight" translation="1.35422e-05 0.880345 0.91" collision="false" clipDistance="300" nodeId="5">
+          <Shape name="mainWheelRightInterior" translation="-0.00165466 1.90735e-08 -1.90735e-08" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="6"/>
+        </TransformGroup>
+        <TransformGroup name="supportWheelRight1" translation="0 0 1.93473" collision="false" clipDistance="300" nodeId="7"/>
+        <TransformGroup name="supportWheelRight2" translation="-4.64249e-05 -0.284155 1.195" collision="false" clipDistance="300" nodeId="8"/>
+        <TransformGroup name="supportWheelRight3" translation="-4.64249e-05 -0.284155 0.685" rotation="120 0 0" collision="false" clipDistance="300" nodeId="9"/>
+        <TransformGroup name="supportWheelRight4" rotation="-112.5 0 0" collision="false" clipDistance="300" nodeId="10"/>
+        <Shape name="decalRight" translation="-0.196852 0.233458 0.909036" shapeId="5" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="30" nodeId="11"/>
+      </Shape>
+      <Shape name="crawlerLeft" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="1" skinBindNodeIds="12 15 17 18 19 20" clipDistance="300" nodeId="12">
+        <Shape name="beltLeft" translation="-4.31061e-06 0.450103 0.967362" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="13">
+          <Shape name="crawlerInteriorLeft" translation="-0.000836639 8.26454e-05 1.52588e-07" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="14"/>
+        </Shape>
+        <TransformGroup name="mainWheelLeft" translation="0 0.88 0.91" collision="false" clipDistance="300" nodeId="15">
+          <Shape name="mainWheelLeftInterior" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="16"/>
+        </TransformGroup>
+        <TransformGroup name="supportWheelLeft1" translation="0 0 1.93473" collision="false" clipDistance="300" nodeId="17"/>
+        <TransformGroup name="supportWheelLeft2" translation="-4.64249e-05 -0.284155 1.195" collision="false" clipDistance="300" nodeId="18"/>
+        <TransformGroup name="supportWheelLeft3" translation="-4.64249e-05 -0.284155 0.685" rotation="120 0 0" collision="false" clipDistance="300" nodeId="19"/>
+        <TransformGroup name="supportWheelLeft4" rotation="-112.5 0 0" collision="false" clipDistance="300" nodeId="20"/>
+        <Shape name="decalLeft" translation="0.198 0.233458 0.909036" shapeId="10" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="30" nodeId="21"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

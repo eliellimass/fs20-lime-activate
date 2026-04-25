@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<crawler>
+    <file name="$data/shared/wheels/tracks/grimme/varitronTracks.i3d" leftNode="0|0" rightNode="0|1"/>
+    <scrollerNodes>
+        <scrollerNode node="0" scrollSpeed="-0.45" scrollLength="9.85" shaderParameterName="offsetUV" shaderParameterComponent="2"/>
+    </scrollerNodes>
+    <rotatingParts>
+        <rotatingPart node="1" radius="0.461" />
+        <rotatingPart node="2" radius="0.461" />
+        <rotatingPart node="3" radius="0.172" />
+        <rotatingPart node="4" radius="0.172" />
+    </rotatingParts>
+</crawler>

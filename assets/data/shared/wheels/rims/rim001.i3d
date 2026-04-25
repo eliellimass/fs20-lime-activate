@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="rim001" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="../../../shaders/vehicleShader.xml" />
+    <File fileId="1" filename="rim001_normal.png" />
+    <File fileId="2" filename="rim001_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="rim001_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="RIM_colorMask">
+      <CustomParameter name="colorMat0" value="0.294 0.294 0.294 0"/>
+      <CustomParameter name="widthAndDiam" value="12 40 0.0 0.0"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="rim001.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="w" collision="false" clipDistance="800" nodeId="1">
+      <Shape name="shape" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="800" nodeId="2"/>
+    </TransformGroup>
+    <TransformGroup name="dw" collision="false" clipDistance="800" nodeId="3">
+      <Shape name="shape" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="800" nodeId="4"/>
+    </TransformGroup>
+    <TransformGroup name="w_inner" collision="false" clipDistance="800" nodeId="5">
+      <Shape name="w_innerLeft" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="800" nodeId="6"/>
+      <Shape name="w_innerRight" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="800" nodeId="7"/>
+    </TransformGroup>
+    <TransformGroup name="dw_inner" collision="false" clipDistance="800" nodeId="8">
+      <Shape name="dw_innerLeft" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="800" nodeId="9"/>
+      <Shape name="dw_innerRight" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="800" nodeId="10"/>
+    </TransformGroup>
+    <TransformGroup name="dw_inner_hole" collision="false" clipDistance="800" nodeId="11">
+      <Shape name="dw_inner_holeLeft" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="800" nodeId="12"/>
+      <Shape name="dw_inner_holeRight" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="800" nodeId="13"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

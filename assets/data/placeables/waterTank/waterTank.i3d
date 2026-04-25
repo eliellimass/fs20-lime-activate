@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="../../maps/textures/shared/blackStripe_diffuse.png"/>
+    <File fileId="6" filename="../../maps/textures/shared/default_normal.png"/>
+    <File fileId="7" filename="../../maps/textures/shared/default_specular.png"/>
+    <File fileId="2" filename="../../maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="../../maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="../../maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="8" filename="../animalHusbandry/symbolWater_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="UnnamedMaterial" materialId="4" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="symbolWater_mat" materialId="5" alphaBlending="true">
+      <Normalmap fileId="6"/>
+      <Emissivemap fileId="8"/>
+    </Material>
+    <Material name="blackStripe_mat" materialId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="waterTank.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="waterTank" nodeId="15">
+      <Shape shapeId="1" name="waterFillTrigger" static="true" trigger="true" collisionMask="1088421888" nodeId="16" materialIds="4" nonRenderable="true" distanceBlending="false"/>
+      <TransformGroup name="warningStripes" nodeId="17">
+        <Shape shapeId="2" name="warningStripesCorner1" translation="-6 0 -6" visibility="false" clipDistance="250" nodeId="18" materialIds="6" receiveShadows="true">
+          <Shape shapeId="3" name="border" clipDistance="250" nodeId="19" materialIds="7" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="warningStripesCorner2" translation="6 0 -6" visibility="false" clipDistance="250" nodeId="20" materialIds="6" receiveShadows="true">
+          <Shape shapeId="5" name="border" clipDistance="250" nodeId="21" materialIds="7" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="2" name="warningStripesCorner1" translation="6 0 6" rotation="180 -5.00896e-06 180" visibility="false" clipDistance="250" nodeId="22" materialIds="6" receiveShadows="true">
+          <Shape shapeId="3" name="border" clipDistance="250" nodeId="23" materialIds="7" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="warningStripesCorner2" translation="-6 0 6" rotation="0 180 0" visibility="false" clipDistance="250" nodeId="24" materialIds="6" receiveShadows="true">
+          <Shape shapeId="5" name="border" clipDistance="250" nodeId="25" materialIds="7" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="6" name="symbolWater" translation="0 0 2.5" clipDistance="250" nodeId="26" materialIds="5" receiveShadows="true"/>
+      </TransformGroup>
+      <Shape shapeId="1" name="poiTrigger" static="true" trigger="true" collisionMask="7340032" nodeId="29" materialIds="4" nonRenderable="true" distanceBlending="false"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

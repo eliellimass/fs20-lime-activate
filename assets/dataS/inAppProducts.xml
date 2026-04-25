@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<inAppPurchases>
+    <inAppPurchase productId="1" iosProductId="fs2020_coins_2_200000" androidProductId="fs2020_coins_200000" amazonProductId="" coins="200000" imageFilename="dataS2/menu/iap_1.png" />
+    <inAppPurchase productId="2" iosProductId="fs2020_coins_2_500000" androidProductId="fs2020_coins_500000" amazonProductId="" coins="500000" imageFilename="dataS2/menu/iap_2.png" />
+    <inAppPurchase productId="3" iosProductId="fs2020_coins_2_1000000" androidProductId="fs2020_coins_1000000" amazonProductId="" coins="1000000" imageFilename="dataS2/menu/iap_3.png" />
+</inAppPurchases>

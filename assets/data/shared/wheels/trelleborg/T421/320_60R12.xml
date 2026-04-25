@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.344" width="0.32" mass="0.046" tireType="mud" frictionScale="1.60" maxLongStiffness="12" maxLatStiffness="140" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/trelleborg/T421/R12_T421.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.038" isCareWheel="false" tireTrackAtlasIndex="9" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="0|0" widthAndDiam="9.45 11.58" />
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="9.45 11.58" scale="0.5 1 1" />
+    </default>
+</wheel>

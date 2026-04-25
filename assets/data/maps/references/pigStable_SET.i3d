@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pigStable_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../textures/mobile/buildingDetails_diffuse.png"/>
+    <File fileId="2" filename="../textures/mobile/buildingDetails_normal.png"/>
+    <File fileId="3" filename="../textures/mobile/buildingDetails_specular.png"/>
+    <File fileId="4" filename="../textures/mobile/buildingsWindows01_diffuse.png"/>
+    <File fileId="8" filename="../textures/mobile/buildingsWindows01_emissive.png"/>
+    <File fileId="5" filename="../textures/mobile/buildingsWindows01_normal.png"/>
+    <File fileId="6" filename="../textures/mobile/buildingsWindows01_specular.png"/>
+    <File fileId="9" filename="../textures/mobile/materialCollection01_diffuse.png"/>
+    <File fileId="10" filename="../textures/mobile/materialCollection01_normal.png"/>
+    <File fileId="11" filename="../textures/mobile/materialCollection01_specular.png"/>
+    <File fileId="13" filename="../textures/mobile/pigStable_specular.png"/>
+    <File fileId="12" filename="../../shaders/buildingShader.xml"/>
+    <File fileId="7" filename="../../shaders/dashboardLightsShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.235294 0.117647 0.117647 1">
+    </Material>
+    <Material name="buildingDetails_mat" materialId="7">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="buildingsWindows01_mat" materialId="5" customShaderId="7">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+      <Custommap name="mEmissiveMap" fileId="8"/>
+      <CustomParameter name="lightControl" value="0 1 1 1"/>
+    </Material>
+    <Material name="pigStable_mat" materialId="6" customShaderId="12">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+      <Custommap name="mMaskMap" fileId="13"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pigStable_SET.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="pigStable_SET" lockedgroup="true" nodeId="13">
+      <Shape shapeId="1" name="addons" clipDistance="250" nodeId="14" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="glass" clipDistance="500" nodeId="15" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="pigStable" clipDistance="500" nodeId="16" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="4" name="col" visibility="false" static="true" clipDistance="150" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

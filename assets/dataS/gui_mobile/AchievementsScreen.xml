@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose">
+    <!-- Background FullScreen Relative -->
+    <GuiElement type="bitmap" profile="uiFullBlurBG"/>
+
+    <GuiElement type="bitmap" id="backgroundBlurImage" profile="mainScreenSidebar">
+        <GuiElement type="bitmap" id="glassEdgeOverlay" profile="mainScreenBackgroundBlur" />
+        <GuiElement type="bitmap" id="glassEdgeOverlay" profile="mainScreenSidebarGlassEdge" />
+        <GuiElement type="bitmap" id="logo" profile="mainScreenLogo" />
+
+        <!-- Main Button Container -->
+        <GuiElement id="buttonBox" type="boxLayout" profile="mainScreenButtonBox">
+        <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_career" onClick="onCareerClick" />
+        <GuiElement type="button" profile="mainMenuButtonActive" text="$l10n_button_achievements" id="achievementsButton" focusId="menu" />
+        <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_credits" id="creditsButton" onClick="onCreditsClick" />
+        </GuiElement>
+    </GuiElement>
+
+    <!-- Body - Central -->
+    <GuiElement type="bitmap" profile="mobileMainMenuContainer">
+        <GuiElement type="empty" profile="mobileMainMenuContentContainer">
+
+            <GuiElement type="flowLayout" profile="achievementStatsBox">
+                <GuiElement type="text"   profile="achievementTotalValue" id="statsValue" visible="false" /> <!-- Keep so we don't nil it -->
+            </GuiElement>
+
+            <GuiElement type="slider" profile="sliderInvisible" id="listSlider" dataElementId="achievementList" handleFocus="false">
+                <GuiElement type="button" profile="achievementListScrollButtonDown" handleFocus="false" />
+                <GuiElement type="button" profile="achievementListScrollButtonUp" handleFocus="false" />
+            </GuiElement>
+
+            <GuiElement type="list" profile="achievementList" onCreate="onCreateList" onSelectionChanged="onListSelectionChanged" focusInit="onOpen" id="achievementList" focusId="list" focusChangeLeft="menu" focusChangeTop="nil" focusChangeBottom="nil">
+                <GuiElement type="listItem" profile="achievementItem" id="listTemplate">
+                    <GuiElement type="bitmap" profile="achievementItemCircle">
+                        <GuiElement type="bitmap" profile="achievementItemIcon" onCreate="onCreateAchievementBitmap"/>
+                        <GuiElement type="bitmap" profile="achievementItemCircleChecked" onCreate="onCreateAchievementSuccess">
+                            <GuiElement type="bitmap" profile="achievementItemTick"/>
+                        </GuiElement>
+                    </GuiElement>
+                    <GuiElement type="text" profile="achievementItemTitle" onCreate="onCreateAchievementTitle" onCreateArgs="1"/>
+                    <GuiElement type="text" profile="achievementItemText" onCreate="onCreateAchievementDesc"/>
+
+                    <GuiElement type="bitmap" profile="mainMenuListItemSelector"/>
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="flowLayout" profile="mainMenuButtonBoxDocked" id="buttonsPC">
+                <GuiElement type="button" profile="buttonBack" text="$l10n_button_back" onClick="onClickBack" margin="32px 0px 0px 0px" fitExtraWidth="0px" />
+            </GuiElement>
+
+        </GuiElement>
+    </GuiElement>
+
+</GUI>

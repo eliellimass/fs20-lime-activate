@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor" version="6.0.4"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="positions" nodeId="745438">
+      <TransformGroup name="transform" translation="-891.96 103.909 -520.134" rotation="180 1.07124 180" nodeId="745439"/>
+      <TransformGroup name="transform" translation="-897.87 106.577 -495.926" rotation="180 37.5528 180" nodeId="745440"/>
+      <TransformGroup name="transform" translation="-904.913 108.17 -477.14" rotation="-180 3.92103 180" nodeId="745441"/>
+      <TransformGroup name="transform" translation="-901.439 109.449 -457.096" rotation="-180 -15.6672 180" nodeId="745442"/>
+      <TransformGroup name="transform" translation="-889.035 111 -439.639" rotation="-180 -56.0804 180" nodeId="745443"/>
+      <TransformGroup name="transform" translation="-866.151 113.552 -421.954" rotation="-180 -56.0804 180" nodeId="745444"/>
+      <TransformGroup name="transform" translation="-847.521 114.782 -406.266" rotation="-180 -38.1551 180" nodeId="745445"/>
+      <TransformGroup name="transform" translation="-838.323 116.076 -394.131" rotation="-180 -24.3488 180" nodeId="745446"/>
+      <TransformGroup name="transform" translation="-837.699 115.967 -372.983" rotation="-180 6.60669 180" nodeId="745447"/>
+      <TransformGroup name="transform" translation="-839.645 114.67 -350.11" rotation="-180 6.60669 180" nodeId="745448"/>
+      <TransformGroup name="transform" translation="-844.581 114.996 -325.815" rotation="-180 18.6015 180" nodeId="745449"/>
+      <TransformGroup name="transform" translation="-853.177 114.762 -292.975" rotation="-180 6.94065 180" nodeId="745450"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

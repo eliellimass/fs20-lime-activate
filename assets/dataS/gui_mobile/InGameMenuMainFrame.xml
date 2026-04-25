@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="ingameMenuMain">
+
+<!--     <GuiElement type="bitmap" profile="uiInGameMenuPageHeader" id="pageHeader">
+        <GuiElement type="multiTextOption" profile="uiInGameMenuHeaderSubPagingSelector" onClick="onClickSubPageSelection" id="subPageSelector" soundDisabled="true">
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonLeft" id="subPagingButtonLeft" />
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonRight" id="subPagingButtonRight" />
+        </GuiElement>
+        <GuiElement type="text" profile="uiInGameMenuPagingTitle" id="pagingTitle" text="SHOP - BRANDS" />
+    </GuiElement> -->
+
+
+    <GuiElement type="empty" profile="uiInGameMenuFrame">
+
+        <GuiElement type="boxLayout" profile="ingameMenuMainLayout" id="container">
+
+            <GuiElement type="button" profile="ingameMenuMainButton" onClick="onClickPrices" focusInit="onOpen" id="buttonPrices">
+                <GuiElement type="bitmap" profile="ingameMenuMainFrontBg">
+                    <GuiElement type="bitmap" profile="ingameMenuMainFrontIcon"  imageUVs="325px 144px 65px 65px" />
+                </GuiElement>
+
+                <GuiElement type="bitmap" profile="ingameMenuMainContent">
+                    <GuiElement type="text" text="$l10n_ui_prices" profile="ingameMenuMainContentText" />
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="button" profile="ingameMenuMainButton" onClick="onClickVehicles" id="buttonVehicles">
+                <GuiElement type="bitmap" profile="ingameMenuMainFrontBg">
+                    <GuiElement type="bitmap" profile="ingameMenuMainFrontIcon"  imageUVs="130px 144px 65px 65px" />
+                </GuiElement>
+
+                <GuiElement type="bitmap" profile="ingameMenuMainContent">
+                    <GuiElement type="text" text="$l10n_ui_vehicles" profile="ingameMenuMainContentText" />
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="button" profile="ingameMenuMainButton" onClick="onClickFinances" id="buttonFinances" >
+                <GuiElement type="bitmap" profile="ingameMenuMainFrontBg">
+                    <GuiElement type="bitmap" profile="ingameMenuMainFrontIcon"  imageUVs="260px 144px 65px 65px" />
+                </GuiElement>
+
+                <GuiElement type="bitmap" profile="ingameMenuMainContent">
+                    <GuiElement type="text" text="$l10n_ui_finances" profile="ingameMenuMainContentText" />
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="button" profile="ingameMenuMainButton" onClick="onClickSettings" id="buttonSettings">
+                <GuiElement type="bitmap" profile="ingameMenuMainFrontBg">
+                    <GuiElement type="bitmap" profile="ingameMenuMainFrontIcon"  imageUVs="390px 144px 65px 65px" />
+                </GuiElement>
+
+                <GuiElement type="bitmap" profile="ingameMenuMainContent">
+                    <GuiElement type="text" text="$l10n_ui_inGameMenuModeSettings" profile="ingameMenuMainContentText" />
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="button" profile="ingameMenuMainButton" onClick="onClickAnimals" id="buttonAnimals">
+                <GuiElement type="bitmap" profile="ingameMenuMainFrontBg">
+                    <GuiElement type="bitmap" profile="ingameMenuMainFrontIcon"  imageUVs="195px 144px 65px 65px" />
+                </GuiElement>
+
+                <GuiElement type="bitmap" profile="ingameMenuMainContent">
+                    <GuiElement type="text" text="$l10n_ui_ingameMenuAnimals" profile="ingameMenuMainContentText" />
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="button" profile="ingameMenuMainButton" onClick="onClickStatistics" id="buttonStatistics">
+                <GuiElement type="bitmap" profile="ingameMenuMainFrontBg">
+                    <GuiElement type="bitmap" profile="ingameMenuMainFrontIcon"  imageUVs="520px 144px 65px 65px" />
+                </GuiElement>
+
+                <GuiElement type="bitmap" profile="ingameMenuMainContent">
+                    <GuiElement type="text" text="$l10n_ui_statistics" profile="ingameMenuMainContentText" />
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="button" profile="ingameMenuMainButton" onClick="onClickHelp" id="buttonHelp">
+                <GuiElement type="bitmap" profile="ingameMenuMainFrontBg">
+                    <GuiElement type="bitmap" profile="ingameMenuMainFrontIcon" imageUVs="455px 144px 65px 65px" />
+                </GuiElement>
+
+                <GuiElement type="bitmap" profile="ingameMenuMainContent">
+                    <GuiElement type="text" text="$l10n_ui_helpLine" profile="ingameMenuMainContentText" />
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="button" profile="ingameMenuMainButton" onClick="onClickQuitGame" id="buttonQuit">
+                <GuiElement type="bitmap" profile="ingameMenuMainFrontBg">
+                    <GuiElement type="bitmap" profile="ingameMenuMainFrontIcon" imageUVs="585px 209px 65px 65px" />
+                </GuiElement>
+
+                <GuiElement type="bitmap" profile="ingameMenuMainContent">
+                    <GuiElement type="text" text="$l10n_button_cancelGame" profile="ingameMenuMainContentText" />
+                </GuiElement>
+            </GuiElement>
+
+        </GuiElement>
+
+    </GuiElement>
+</GUI>

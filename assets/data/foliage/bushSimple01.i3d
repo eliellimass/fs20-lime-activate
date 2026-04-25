@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="bushSimple01" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/foliage/bush01LOD03_diffuse_H.png" />
+    <File fileId="4" filename="$data/foliage/bush01LOD03_normal_H.png" />
+    <File fileId="1" filename="$data/foliage/bush01_diffuse.png" />
+    <File fileId="2" filename="$data/foliage/bush01_normal.png" />
+    <File fileId="5" filename="$data/shaders/treeBillboardShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="bush04_mat" materialId="1" cosPower="100" specularColor="0 0 0" ambientColor="1 1 1">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="bush01LOD03_mat" materialId="2" cosPower="100" specularColor="0 1 0" ambientColor="1 1 1" customShaderId="5" customShaderVariation="billboard180">
+      <CustomParameter name="windScale" value="0"/>
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="bushSimple01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="bushSimple01" lodDistance="0 120" collision="false" clipDistance="800" nodeId="1">
+      <Shape name="LOD0" shapeId="1" castsShadows="false" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="2"/>
+      <Shape name="LOD1" shapeId="2" castsShadows="false" receiveShadows="true" materialIds="2" clipDistance="1000" nodeId="3"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

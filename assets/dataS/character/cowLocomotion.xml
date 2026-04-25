@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<locomotion>
+	<steering>
+		<radius>2.1</radius>
+		<maxForce>0.01</maxForce>
+		<maxSpeed>0.05</maxSpeed>
+	</steering>
+	<animation filename="cowAnimation.xml" />
+</locomotion>

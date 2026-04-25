@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="backdropGround_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/maps/textures/mobile/backdrop360_diffuse.png" />
+    <File fileId="2" filename="$data/maps/textures/mobile/backdrop360_normal.png" />
+  </Files>
+
+  <Materials>
+    <Material name="backdropGround_SET:backdrop360_mat" materialId="1" specularColor="0 0 0" ambientColor="1 1 1">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="backdropGround_SET.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="backdropNicasio5x5km" shapeId="1" castsShadows="false" receiveShadows="false" materialIds="1" nodeId="1"/>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

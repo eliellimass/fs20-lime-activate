@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<brands>
+    <brand name="AGCO"                      title="AGCO"                     title_cs="爱科"                        image="$data/store/brands/brand_agco.png" />
+    <brand name="AGRISEM"                   title="AGRISEM"                  title_cs="AGRISEM"                     image="$data/store/brands/brand_agrisem.png" />
+    <brand name="AGROMASZ"                  title="AGROMASZ"                 title_cs="AGROMASZ"                    image="$data/store/brands/brand_agromasz.png" />
+    <brand name="ALPEGO"                    title="Alpego"                   title_cs="阿派克"                      image="$data/store/brands/brand_alpego.png" />
+    <brand name="AMAZONE"                   title="AMAZONE"                  title_cs="阿玛松"                      image="$data/store/brands/brand_amazone.png" />
+    <brand name="ANNABURGER"                title="ANNABURGER"               title_cs="安娜博格农用车辆有限公司"    image="$data/store/brands/brand_annaburger.png" />
+    <brand name="ANDERSONGROUP"             title="Anderson Group"           title_cs="安德森"                      image="$data/store/brands/brand_andersonGroup.png"/>
+    <brand name="ARCUSIN"                   title="Arcusin"                  title_cs="阿科森"                      image="$data/store/brands/brand_arcusin.png" />
+    <brand name="ARMATRAC"                  title="Armatrac"                 title_cs="Armatrac"                    image="$data/store/brands/brand_armatrac.png" />
+    <brand name="BEDNAR"                    title="Bednar"                   title_cs="拜德纳"                      image="$data/store/brands/brand_bednar.png" />
+    <brand name="BERGMANN"                  title="BERGMANN"                 title_cs="贝格曼"                      image="$data/store/brands/brand_bergmann.png" />
+    <brand name="BOECKMANN"                 title="BÖCKMANN"                 title_cs="波克曼"                      image="$data/store/brands/brand_boeckmann.png"/>
+    <brand name="BOURGAULT"                 title="Bourgault"                title_cs="布尔高"                      image="$data/store/brands/brand_bourgault.dds"/>
+    <brand name="BREDAL"                    title="BREDAL"                   title_cs="佰利佃有限公司"              image="$data/store/brands/brand_bredal.png" />
+    <brand name="CAPELLO"                   title="Capello"                  title_cs="卡佩罗"                      image="$data/store/brands/brand_capello.png" />
+    <brand name="CASEIH"                    title="Case IH"                  title_cs="凯斯农业机械"                image="$data/store/brands/brand_caseIH.png" />
+    <brand name="CLAAS"                     title="CLAAS"                    title_cs="科乐收"                      image="$data/store/brands/brand_claas.png" />
+    <brand name="CHALLENGER"                title="Challenger"               title_cs="挑战者"                      image="$data/store/brands/brand_challenger.png" />
+    <brand name="DAMCON"                    title="Damcon"                   title_cs="Damcon"                      image="$data/store/brands/brand_damcon.png" />
+    <brand name="DEUTZFAHR"                 title="DEUTZ-FAHR"               title_cs="道依茨法尔机械"               image="$data/store/brands/brand_deutzfahr.png" />
+    <brand name="DFM"                       title="DFM"                      title_cs="DFM"                         image="$data/store/brands/brand_dfm.png" />
+    <brand name="DUEVELSDORF"               title="Düvelsdorf"               title_cs="Düvelsdorf"                  image="$data/store/brands/brand_duevelsdorf.png" />
+    <brand name="EASYSHEDS"                 title="EasySheds"                title_cs="EasySheds"                   image="$data/store/brands/brand_easySheds.png" />
+    <brand name="EINBOECK"                  title="Einböck"                  title_cs="Einböck"                     image="$data/store/brands/brand_einboeck.png" />
+    <brand name="ELMERSMFG"                 title="Elmer's Manufacturing"    title_cs="埃尔纳"                       image="$data/store/brands/brand_elmersMfg.png" />
+    <brand name="FARMTECH"                  title="Farmtech"                 title_cs="农会"                        image="$data/store/brands/brand_farmtech.png" />
+    <brand name="FENDT"                     title="Fendt"                    title_cs="芬特"                        image="$data/store/brands/brand_fendt.png" />
+    <brand name="FIAT"                      title="Fiat"                     title_cs="Fiat"                        image="$data/store/brands/brand_fiat.png" />
+    <brand name="FLEXICOIL"                 title="Flexi-Coil"               title_cs="Flexi-Coil"                  image="$data/store/brands/brand_flexicoil.png" />
+    <brand name="FLIEGL"                    title="Fliegl"                   title_cs="福林格"                      image="$data/store/brands/brand_fliegl.png" />
+    <brand name="FMZ"                       title="FMŻ"                      title_cs="FMŻ"                         image="$data/store/brands/brand_fmz.png" />
+    <brand name="FORTSCHRITT"               title="Fortschritt"              title_cs="Fortschritt"                 image="$data/store/brands/brand_fortschritt.png" />
+    <brand name="FSI"                       title="FSI"                      title_cs="FSI"                         image="$data/store/brands/brand_fsi.png" />
+    <brand name="GESSNER"                   title="Gessner Industries"       title_cs="Gessner Industries"          image="$data/store/brands/brand_gessner.png" />
+    <brand name="GOLDHOFER"                 title="Goldhofer"                title_cs="Goldhofer"                   image="$data/store/brands/brand_goldhofer.png" />
+    <brand name="GREATPLAINS"               title="Great Plains"             title_cs="Great Plains"                image="$data/store/brands/brand_greatPlains.png" />
+    <brand name="GREGOIREBESSON"            title="Grégoire-Besson"          title_cs="Grégoire-Besson"             image="$data/store/brands/brand_gregoireBesson.png" />
+    <brand name="GRIMME"                    title="Grimme"                   title_cs="格立莫"                      image="$data/store/brands/brand_grimme.png" />
+    <brand name="HARDI"                     title="Hardi"                    title_cs="哈滴"                        image="$data/store/brands/brand_hardi.png" />
+    <brand name="HEIZOMAT"                  title="Heizomat"                 title_cs="Heizomat"                    image="$data/store/brands/brand_heizomat.png" />
+    <brand name="HATZENBICHLER"             title="Hatzenbichler"            title_cs="Hatzenbichler"               image="$data/store/brands/brand_hatzenbichler.png" />
+    <brand name="HOLMER"                    title="HOLMER"                   title_cs="荷马"                        image="$data/store/brands/brand_holmer.png" />
+    <brand name="HOLARAS"                   title="Holaras"                  title_cs="Holaras"                     image="$data/store/brands/brand_holaras.png" />
+    <brand name="HORSCH"                    title="HORSCH"                   title_cs="豪狮"                        image="$data/store/brands/brand_horsch.png" />
+    <brand name="HUSQVARNA"                 title="Husqvarna"                title_cs="Husqvarna"                   image="$data/store/brands/brand_husqvarna.png" />
+    <brand name="JCB"                       title="JCB"                      title_cs="吉士美"                      image="$data/store/brands/brand_jcb.png" />
+    <brand name="JENZ"                      title="JENZ"                     title_cs="JENZ"                        image="$data/store/brands/brand_jenz.png" />
+    <brand name="JOHNDEERE"                 title="John Deere"               title_cs="约翰迪尔"                     image="$data/store/brands/brand_johnDeere.png" />
+    <brand name="JONSERED"                  title="Jonsered"                 title_cs="Jonsered"                    image="$data/store/brands/brand_jonsered.png" />
+    <brand name="JOSKIN"                    title="JOSKIN"                   title_cs="农夫"                        image="$data/store/brands/brand_joskin.png" />
+    <brand name="KAERCHER"                  title="Kärcher"                  title_cs="Kärcher"                     image="$data/store/brands/brand_kaercher.png" />
+    <brand name="KEMPER"                    title="KEMPER"                   title_cs="KEMPER"                      image="$data/store/brands/brand_kemper.png" />
+    <brand name="KINZE"                     title="KINZE"                    title_cs="金茨"                        image="$data/store/brands/brand_kinze.png" />
+    <brand name="KOMATSU"                   title="Komatsu Forest"           title_cs="Komatsu Forest"              image="$data/store/brands/brand_komatsu.png" />
+    <brand name="KOTTE"                     title="Kotte"                    title_cs="科特"                        image="$data/store/brands/brand_kotte.png" />
+    <brand name="KRAMER"                    title="Kramer"                   title_cs="Kramer"                      image="$data/store/brands/brand_kramer.png" />
+    <brand name="KRAMPE"                    title="Krampe"                   title_cs="克兰佩"                      image="$data/store/brands/brand_krampe.png" />
+    <brand name="KROEGER"                   title="Kröger"                   title_cs="克罗格"                      image="$data/store/brands/brand_kroeger.png" />
+    <brand name="KRONE"                     title="KRONE"                    title_cs="科罗尼"                      image="$data/store/brands/brand_krone.png" />
+    <brand name="KUHN"                      title="KUHN"                     title_cs="库恩农业机械"                image="$data/store/brands/brand_kuhn.png" />
+    <brand name="KVERNELAND"                title="Kverneland"               title_cs="克弗内兰"                    image="$data/store/brands/brand_kverneland.png" />
+    <brand name="LELY"                      title="Lely"                     title_cs="莱力"                        image="$data/store/brands/brand_lely.png" />
+    <brand name="LEMKEN"                    title="LEMKEN"                   title_cs="雷肯农业机械"                image="$data/store/brands/brand_lemken.png" />
+    <brand name="LODEKING"                  title="LODE KING"                title_cs="洛德国王"                    image="$data/store/brands/brand_lodeking.png" />
+    <brand name="LINDNER"                   title="Lindner"                  title_cs="Lindner"                     image="$data/store/brands/brand_lindner.png" />
+    <brand name="LIZARD"                    title="Lizard"                   title_cs="丽萨德"                      image="$data/store/brands/brand_lizard.png" />
+    <brand name="MAN"                       title="MAN"                      title_cs="曼恩"                        image="$data/store/brands/brand_man.png" />
+    <brand name="MAGSI"                     title="MAGSI"                    title_cs="MAGSI"                       image="$data/store/brands/brand_magsi.png" />
+    <brand name="MAHINDRA"                  title="Mahindra"                 title_cs="Mahindra"                    image="$data/store/brands/brand_mahindra.png" />
+    <brand name="MANITOU"                   title="Manitou"                  title_cs="Manitou"                     image="$data/store/brands/brand_manitou.png" />
+    <brand name="MASSEYFERGUSON"            title="Massey Ferguson"          title_cs="麦赛福格森"                  image="$data/store/brands/brand_masseyFerguson.png" />
+    <brand name="MCCULLOCH"                 title="McCulloch"                title_cs="McCulloch"                   image="$data/store/brands/brand_mcculloch.png" />
+    <brand name="MCCORMACK"                 title="McCormack"                title_cs="麦考马克"                     image="$data/store/brands/brand_mcCormack.png" />
+    <brand name="MICHELIN"                  title="Michelin"                 title_cs="Michelin"                    image="$data/store/brands/brand_michelin.png" />
+    <brand name="MICHIELETTO"               title="Michieletto"              title_cs="Michieletto"                 image="$data/store/brands/brand_michieletto.png" />
+    <brand name="MITAS"                     title="Mitas"                    title_cs="Mitas"                       image="$data/store/brands/brand_empty.png" />
+    <brand name="NEWHOLLAND"                title="New Holland"              title_cs="纽荷兰"                      image="$data/store/brands/brand_newholland.png" />
+    <brand name="NOKIAN"                    title="Nokian"                   title_cs="Nokian"                      image="$data/store/brands/brand_nokian.png" />
+    <brand name="PALADIN"                   title="Paladin"                  title_cs="Paladin"                     image="$data/store/brands/brand_paladin.png" />
+    <brand name="OLOFSFORS"                 title="Olofsfors "               title_cs="Olofsfors "                  image="$data/store/brands/brand_olofsfors.png"/>
+    <brand name="POETTINGER"                title="PÖTTINGER"                title_cs="波廷格"                      image="$data/store/brands/brand_poettinger.png" />
+    <brand name="PONSSE"                    title="PONSSE"                   title_cs="PONSSE"                      image="$data/store/brands/brand_ponsse.png" />
+    <brand name="RABE"                      title="RABE"                     title_cs="拉贝"                        image="$data/store/brands/brand_rabe.png" />
+    <brand name="RANDON"                    title="RANDON"                   title_cs="RANDON"                      image="$data/store/brands/brand_randon.png" />
+    <brand name="RAU"                       title="Rau"                      title_cs="Rau"                         image="$data/store/brands/brand_rau.png" />
+    <brand name="ROPA"                      title="Ropa"                     title_cs="罗霸"                        image="$data/store/brands/brand_ropa.png" />
+    <brand name="ROSTSELMASH"               title="Rostselmash"              title_cs="Rostselmash"                 image="$data/store/brands/brand_rostselmash.png" />
+    <brand name="SALFORD"                   title="Salford"                  title_cs="Salford"                     image="$data/store/brands/brand_salford.png" />
+    <brand name="SAMPOROSENLEW"             title="Sampo Rosenlew"           title_cs="Sampo Rosenlew"              image="$data/store/brands/brand_samporosenlew.png" />
+    <brand name="SAMSONAGRO"                title="Samson Agro"              title_cs="萨姆森"                      image="$data/store/brands/brand_samsonAgro.png" />
+    <brand name="SCHUITEMAKER"              title="Schuitemaker"             title_cs="斯海特马克"                  image="$data/store/brands/brand_schuitemaker.png" />
+    <brand name="SILOKING"                  title="SILOKING"                 title_cs="SILOKING"                    image="$data/store/brands/brand_siloking.png" />
+    <brand name="STARA"                     title="Stara"                    title_cs="Stara"                       image="$data/store/brands/brand_stara.png" />
+    <brand name="STARKINDUSTRIES"           title="Stark Industries"         title_cs="Stark Industries"            image="$data/store/brands/brand_starkIndustries.png" />
+    <brand name="STEPA"                     title="STEPA"                    title_cs="STEPA"                       image="$data/store/brands/brand_stepa.png" />
+    <brand name="STEYR"                     title="STEYR"                    title_cs="斯太尔"                       image="$data/store/brands/brand_steyr.png" />
+    <brand name="STIHL"                     title="STIHL"                    title_cs="STIHL"                       image="$data/store/brands/brand_stihl.png" />
+    <brand name="STOLL"                     title="STOLL"                    title_cs="STOLL"                       image="$data/store/brands/brand_stoll.png" />
+    <brand name="STRAUTMANN"                title="Strautmann"               title_cs="斯特劳特曼"                  image="$data/store/brands/brand_strautmann.png" />
+    <brand name="SUER"                      title="Suer"                     title_cs="Suer"                        image="$data/store/brands/brand_suer.png" />
+    <brand name="TATRA"                     title="TATRA"                    title_cs="TATRA"                       image="$data/store/brands/brand_tatra.png" />
+    <brand name="THUERINGERAGRAR"           title="Thüringer Agrartechnik"   title_cs="Thüringer Agrartechnik"      image="$data/store/brands/brand_thueringerAgrar.png" />
+    <brand name="THUNDERCREEK"              title="Thunder Creek Equipment"  title_cs="Thunder Creek Equipment"     image="$data/store/brands/brand_thunderCreek.png" />
+    <brand name="TREFFLER"                  title="Treffler"                 title_cs="Treffler"                    image="$data/store/brands/brand_treffler.png" />
+    <brand name="TRELLEBORG"                title="Trelleborg"               title_cs="Trelleborg"                  image="$data/store/brands/brand_trelleborg.png" />
+    <brand name="TT"                        title="TT"                       title_cs="TT"                          image="$data/store/brands/brand_doblett.png" />
+    <brand name="UNVERFERTH"                title="Unverferth"               title_cs="Unverferth"                  image="$data/store/brands/brand_unverferth.png" />
+    <brand name="VAEDERSTAD"                title="Väderstad"                title_cs="韦德斯塔德"                  image="$data/store/brands/brand_vaederstad.png" />
+    <brand name="VALTRA"                    title="Valtra"                   title_cs="维美德"                      image="$data/store/brands/brand_valtra.png" />
+    <brand name="VEENHUIS"                  title="Veenhuis"                 title_cs="Veenhuis"                    image="$data/store/brands/brand_veenhuis.png" />
+    <brand name="VICON"                     title="Vicon"                    title_cs="维康"                        image="$data/store/brands/brand_vicon.png" />
+    <brand name="WILSON"                    title="Wilson Trailer"           title_cs="威尔逊拖车"                  image="$data/store/brands/brand_wilson.png" />
+    <brand name="WARZEE"                    title="Warzee"                   title_cs="Warzee"                      image="$data/store/brands/brand_warzee.png" />
+    <brand name="ZIEGLER"                   title="Ziegler"                  title_cs="齐格勒"                      image="$data/store/brands/brand_ziegler.png" />
+    <brand name="ZUNHAMMER"                 title="Zunhammer"                title_cs="尊哈默"                      image="$data/store/brands/brand_zunhammer.png" />
+</brands>

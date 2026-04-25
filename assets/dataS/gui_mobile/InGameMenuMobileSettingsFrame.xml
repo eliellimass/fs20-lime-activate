@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="ingameMenuMobileSettings">
+
+    <GuiElement type="bitmap" profile="uiInGameMenuPageHeader" id="pageHeader">
+        <GuiElement type="empty" profile="uiInGameMenuHeaderSubPagingSelector"  id="subPageSelector">
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonLeft" id="subPagingButtonLeft" onClick="onClickSubPageSelection" />
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonRight" id="subPagingButtonRight" onClick="onClickSubPageSelection" />
+        </GuiElement>
+        <GuiElement type="text" profile="uiInGameMenuPagingTitle" id="pagingTitle" text="$l10n_ui_inGameMenuModeSettings" />
+    </GuiElement>
+
+    <GuiElement type="empty" profile="uiInGameMenuFrame">
+        <GuiElement type="empty" profile="ingameMenuSettingsBox" id="settingsContainer" hasFrame="false">
+            <GuiElement type="boxLayout" profile="ingameMenuSettingsLayout" id="boxLayout">
+                <GuiElement type="multiTextOption" profile="multiTextOptionSettings" onClick="onClickTimeScale" id="multiTimeScale">
+                    <GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+                    <GuiElement type="button" profile="multiTextOptionSettingsRight"/>
+                    <GuiElement type="text"   profile="multiTextOptionSettingsText" />
+                    <GuiElement type="text"   profile="multiTextOptionSettingsTitle" text="$l10n_setting_timeScale"/>
+                    <GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+                </GuiElement>
+
+                <GuiElement type="multiTextOption" profile="multiTextOptionSettings" onClick="onClickMultiOption" id="multiGraphics">
+                    <GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+                    <GuiElement type="button" profile="multiTextOptionSettingsRight"/>
+                    <GuiElement type="text"   profile="multiTextOptionSettingsText" />
+                    <GuiElement type="text"   profile="multiTextOptionSettingsTitle" text="$l10n_setting_graphics"/>
+                    <GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+                </GuiElement>
+
+                <GuiElement type="multiTextOption" profile="multiTextOptionSettings" onClick="onClickMultiOption" id="multiSteeringSensitivity">
+                    <GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+                    <GuiElement type="button" profile="multiTextOptionSettingsRight"/>
+                    <GuiElement type="text"   profile="multiTextOptionSettingsText" />
+                    <GuiElement type="text"   profile="multiTextOptionSettingsTitle" text="$l10n_setting_steeringSensitivity"/>
+                    <GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+                </GuiElement>
+
+                <GuiElement type="checkedOption" profile="multiTextOptionSettings" onClick="onClickCheckbox" id="checkGyroscope">
+                    <GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+                    <GuiElement type="button" profile="multiTextOptionSettingsRight"/>
+                    <GuiElement type="text"   profile="multiTextOptionSettingsText" />
+                    <GuiElement type="text"   profile="multiTextOptionSettingsTitle" text="$l10n_setting_gyroscopeSteering"/>
+                    <GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+                </GuiElement>
+                <GuiElement type="checkedOption" profile="multiTextOptionSettings" onClick="onClickCheckbox" id="checkTilt">
+                    <GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+                    <GuiElement type="button" profile="multiTextOptionSettingsRight"/>
+                    <GuiElement type="text"   profile="multiTextOptionSettingsText" />
+                    <GuiElement type="text"   profile="multiTextOptionSettingsTitle" text="$l10n_setting_cameraTilt"/>
+                    <GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+                </GuiElement>
+
+                <GuiElement type="checkedOption" profile="multiTextOptionSettings" onClick="onClickTraffic" id="checkTraffic">
+                    <GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+                    <GuiElement type="button" profile="multiTextOptionSettingsRight"/>
+                    <GuiElement type="text"   profile="multiTextOptionSettingsText" />
+                    <GuiElement type="text"   profile="multiTextOptionSettingsTitle" text="$l10n_setting_traffic"/>
+                    <GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+                </GuiElement>
+                <GuiElement type="checkedOption" profile="multiTextOptionSettings" onClick="onClickHelperRefill" id="checkHelperRefill">
+                    <GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+                    <GuiElement type="button" profile="multiTextOptionSettingsRight"/>
+                    <GuiElement type="text"   profile="multiTextOptionSettingsText" />
+                    <GuiElement type="text"   profile="multiTextOptionSettingsTitle" text="$l10n_setting_helperRefill"/>
+                    <GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+                </GuiElement>
+
+                <GuiElement type="multiTextOption" profile="multiTextOptionSettings" onClick="onClickMultiOption" id="multiMusicVolume">
+                    <GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+                    <GuiElement type="button" profile="multiTextOptionSettingsRight"/>
+                    <GuiElement type="text"   profile="multiTextOptionSettingsText" />
+                    <GuiElement type="text"   profile="multiTextOptionSettingsTitle" text="$l10n_setting_musicVolume"/>
+                    <GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+                </GuiElement>
+                <GuiElement type="multiTextOption" profile="multiTextOptionSettings" onClick="onClickMultiOption" id="multiSfxVolume">
+                    <GuiElement type="button" profile="multiTextOptionSettingsLeft" />
+                    <GuiElement type="button" profile="multiTextOptionSettingsRight"/>
+                    <GuiElement type="text"   profile="multiTextOptionSettingsText" />
+                    <GuiElement type="text"   profile="multiTextOptionSettingsTitle" text="$l10n_setting_sfxVolume"/>
+                    <GuiElement type="bitmap" profile="multiTextOptionSettingsBg" />
+                </GuiElement>
+
+            </GuiElement>
+        </GuiElement>
+    </GuiElement>
+</GUI>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<crawler>
+    <file name="$data/shared/wheels/crawlers/agco/agcoCrawlerBelt.i3d" leftNode="0|1" rightNode="0|0"/>
+    <scrollerNodes>
+        <scrollerNode node="0" scrollSpeed="0.4" scrollLength="8.23" shaderParameterName="offsetUV" shaderParameterComponent="1"/>
+        <scrollerNode node="0|0" scrollSpeed="0.4" scrollLength="8.23" shaderParameterName="offsetUV" shaderParameterComponent="1"/>
+    </scrollerNodes>
+    <rotatingParts>
+        <rotatingPart node="1" radius="0.610" />
+        <rotatingPart node="2" radius="0.477" />
+        <rotatingPart node="3" radius="0.297" />
+        <rotatingPart node="4" radius="0.297" />
+        <rotatingPart node="5" radius="0.477" />
+    </rotatingParts>
+</crawler>

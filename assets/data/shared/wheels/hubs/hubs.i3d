@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hubs" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="../../../shaders/vehicleShader.xml" />
+    <File fileId="37" filename="decals_diffuse.png" />
+    <File fileId="38" filename="decals_normal.png" />
+    <File fileId="39" filename="decals_specular.png" />
+    <File fileId="12" filename="dual001_normal.png" />
+    <File fileId="13" filename="dual001_specular.png" />
+    <File fileId="1" filename="hub001_normal.png" />
+    <File fileId="2" filename="hub001_specular.png" />
+    <File fileId="4" filename="hub002_normal.png" />
+    <File fileId="5" filename="hub002_specular.png" />
+    <File fileId="6" filename="hub003_normal.png" />
+    <File fileId="7" filename="hub003_specular.png" />
+    <File fileId="8" filename="hub004_normal.png" />
+    <File fileId="9" filename="hub004_specular.png" />
+    <File fileId="10" filename="hub005_normal.png" />
+    <File fileId="11" filename="hub005_specular.png" />
+    <File fileId="14" filename="hub006_normal.png" />
+    <File fileId="15" filename="hub006_specular.png" />
+    <File fileId="16" filename="hub007_normal.png" />
+    <File fileId="17" filename="hub007_specular.png" />
+    <File fileId="18" filename="hub008_normal.png" />
+    <File fileId="19" filename="hub008_specular.png" />
+    <File fileId="20" filename="hub009_normal.png" />
+    <File fileId="21" filename="hub009_specular.png" />
+    <File fileId="22" filename="hub010_normal.png" />
+    <File fileId="23" filename="hub010_specular.png" />
+    <File fileId="24" filename="hub011_normal.png" />
+    <File fileId="25" filename="hub011_specular.png" />
+    <File fileId="26" filename="hub012_normal.png" />
+    <File fileId="27" filename="hub012_specular.png" />
+    <File fileId="28" filename="hub013_normal.png" />
+    <File fileId="29" filename="hub013_specular.png" />
+    <File fileId="30" filename="hub014_normal.png" />
+    <File fileId="31" filename="hub014_specular.png" />
+    <File fileId="32" filename="hub015_normal.png" />
+    <File fileId="33" filename="hub015_specular.png" />
+    <File fileId="34" filename="hub016_normal.png" />
+    <File fileId="35" filename="hub016_specular.png" />
+    <File fileId="36" filename="hub017_specular.png" />
+    <File fileId="40" filename="hub018_normal.png" />
+    <File fileId="41" filename="hub018_specular.png" />
+    <File fileId="42" filename="hub019_normal.png" />
+    <File fileId="43" filename="hub019_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="hub001_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="hub002_mat" materialId="8" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <CustomParameter name="colorMat3" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="hub003_mat" materialId="9" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="hub004_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <CustomParameter name="colorMat2" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="hub005_mat" materialId="3" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="dual001_mat" materialId="10" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <CustomParameter name="colorMat2" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="hub006_mat" materialId="11" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="hub007_mat" materialId="21" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="hub008_mat" materialId="4" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+    </Material>
+    <Material name="hub009_mat" materialId="5" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <CustomParameter name="colorMat2" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="hub010_mat" materialId="6" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="hub011_mat" materialId="13" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="hub012_mat" materialId="14" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <CustomParameter name="colorMat2" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+    </Material>
+    <Material name="hub013_mat" materialId="15" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+    </Material>
+    <Material name="hub014_mat" materialId="18" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <CustomParameter name="colorMat2" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="30"/>
+      <Glossmap fileId="31"/>
+    </Material>
+    <Material name="hub015_mat" materialId="7" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="33"/>
+    </Material>
+    <Material name="hub016_mat" materialId="16" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="34"/>
+      <Glossmap fileId="35"/>
+    </Material>
+    <Material name="hub017_mat" materialId="17" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="36"/>
+    </Material>
+    <Material name="decals_mat" materialId="12" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="reflector_colorMask">
+      <Texture fileId="37"/>
+      <Normalmap fileId="38"/>
+      <Glossmap fileId="39"/>
+    </Material>
+    <Material name="hub018_mat" materialId="19" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+    </Material>
+    <Material name="hub019_mat" materialId="20" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="42"/>
+      <Glossmap fileId="43"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hubs.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="n08" collision="false" clipDistance="150" nodeId="1">
+      <TransformGroup name="_01_" collision="false" clipDistance="150" nodeId="2">
+        <Shape name="left" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="150" nodeId="3"/>
+        <Shape name="right" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="150" nodeId="4"/>
+      </TransformGroup>
+      <TransformGroup name="_02_" collision="false" clipDistance="150" nodeId="5">
+        <Shape name="left" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="150" nodeId="6"/>
+        <Shape name="right" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="150" nodeId="7"/>
+      </TransformGroup>
+      <TransformGroup name="_03_" collision="false" clipDistance="150" nodeId="8">
+        <Shape name="left" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="150" nodeId="9"/>
+        <Shape name="right" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="150" nodeId="10"/>
+      </TransformGroup>
+      <TransformGroup name="_04_" collision="false" clipDistance="150" nodeId="11">
+        <Shape name="left" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="12"/>
+        <Shape name="right" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="13"/>
+      </TransformGroup>
+      <TransformGroup name="_05_" collision="false" clipDistance="150" nodeId="14">
+        <Shape name="left" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="15"/>
+        <Shape name="right" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="16"/>
+      </TransformGroup>
+      <TransformGroup name="_06_" collision="false" clipDistance="150" nodeId="17">
+        <Shape name="left" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="150" nodeId="18"/>
+        <Shape name="right" shapeId="12" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="150" nodeId="19"/>
+      </TransformGroup>
+      <TransformGroup name="_07_" collision="false" clipDistance="150" nodeId="20">
+        <Shape name="left" translation="0 -3.5194e-07 0" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="150" nodeId="21"/>
+        <Shape name="right" shapeId="14" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="150" nodeId="22"/>
+      </TransformGroup>
+      <TransformGroup name="_08_" collision="false" clipDistance="150" nodeId="23">
+        <Shape name="left" shapeId="15" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="150" nodeId="24"/>
+        <Shape name="right" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="150" nodeId="25"/>
+      </TransformGroup>
+      <TransformGroup name="_09_" collision="false" clipDistance="150" nodeId="26">
+        <Shape name="left" shapeId="17" castsShadows="true" receiveShadows="true" materialIds="7" clipDistance="150" nodeId="27"/>
+        <Shape name="right2" shapeId="18" castsShadows="true" receiveShadows="true" materialIds="7" clipDistance="150" nodeId="28"/>
+      </TransformGroup>
+      <TransformGroup name="_10_" collision="false" clipDistance="150" nodeId="29">
+        <Shape name="left" shapeId="19" castsShadows="true" receiveShadows="true" materialIds="7" clipDistance="150" nodeId="30"/>
+        <Shape name="right" shapeId="20" castsShadows="true" receiveShadows="true" materialIds="7" clipDistance="150" nodeId="31"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="n10" collision="false" clipDistance="150" nodeId="32">
+      <TransformGroup name="_01_" collision="false" clipDistance="150" nodeId="33">
+        <Shape name="left" shapeId="21" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="150" nodeId="34"/>
+        <Shape name="right" shapeId="22" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="150" nodeId="35"/>
+      </TransformGroup>
+      <TransformGroup name="_02_" collision="false" clipDistance="150" nodeId="36">
+        <Shape name="left" shapeId="23" castsShadows="true" receiveShadows="true" materialIds="9" clipDistance="150" nodeId="37"/>
+        <Shape name="right" shapeId="24" castsShadows="true" receiveShadows="true" materialIds="9" clipDistance="150" nodeId="38"/>
+      </TransformGroup>
+      <TransformGroup name="_03_" collision="false" clipDistance="150" nodeId="39">
+        <Shape name="left" shapeId="25" castsShadows="true" receiveShadows="true" materialIds="10" clipDistance="150" nodeId="40"/>
+        <Shape name="right" shapeId="26" castsShadows="true" receiveShadows="true" materialIds="10" clipDistance="150" nodeId="41"/>
+      </TransformGroup>
+      <TransformGroup name="_04_" collision="false" clipDistance="150" nodeId="42">
+        <Shape name="left" translation="-4.16773e-19 0 0" shapeId="27" castsShadows="true" receiveShadows="true" materialIds="11" clipDistance="150" nodeId="43"/>
+        <Shape name="right" shapeId="28" castsShadows="true" receiveShadows="true" materialIds="11" clipDistance="150" nodeId="44"/>
+      </TransformGroup>
+      <TransformGroup name="_05_" collision="false" clipDistance="150" nodeId="45">
+        <Shape name="left" shapeId="29" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="150" nodeId="46"/>
+        <Shape name="right" shapeId="30" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="150" nodeId="47"/>
+      </TransformGroup>
+      <TransformGroup name="_06_" collision="false" clipDistance="150" nodeId="48">
+        <Shape name="left" shapeId="31" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="150" nodeId="49">
+          <Shape name="decal" translation="0.101191 4.9087e-07 -2.53353e-07" shapeId="32" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="150" nodeId="50"/>
+        </Shape>
+        <Shape name="right" shapeId="33" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="150" nodeId="51">
+          <Shape name="decal1" translation="-0.101191 4.9087e-07 -2.53353e-07" rotation="0 -180 0" shapeId="34" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="150" nodeId="52"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="_07_" collision="false" clipDistance="150" nodeId="53">
+        <Shape name="left" shapeId="35" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="150" nodeId="54">
+          <Shape name="decal" shapeId="36" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="150" nodeId="55"/>
+        </Shape>
+        <Shape name="right" shapeId="37" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="150" nodeId="56">
+          <Shape name="decal" shapeId="38" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="150" nodeId="57"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="_08_" collision="false" clipDistance="150" nodeId="58">
+        <Shape name="left" translation="0 0 -1.05909e-31" shapeId="39" castsShadows="true" receiveShadows="true" materialIds="13" clipDistance="150" nodeId="59"/>
+        <Shape name="right1" shapeId="40" castsShadows="true" receiveShadows="true" materialIds="13" clipDistance="150" nodeId="60"/>
+      </TransformGroup>
+      <TransformGroup name="_09_" collision="false" clipDistance="150" nodeId="61">
+        <Shape name="left" shapeId="41" castsShadows="true" receiveShadows="true" materialIds="14" clipDistance="150" nodeId="62"/>
+        <Shape name="right" shapeId="42" castsShadows="true" receiveShadows="true" materialIds="14" clipDistance="150" nodeId="63"/>
+      </TransformGroup>
+      <TransformGroup name="_10_" collision="false" clipDistance="150" nodeId="64">
+        <Shape name="left" shapeId="43" castsShadows="true" receiveShadows="true" materialIds="14" clipDistance="150" nodeId="65">
+          <Shape name="decal" translation="0.613015 1.11618e-07 -1.27563e-07" shapeId="44" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="150" nodeId="66"/>
+        </Shape>
+        <Shape name="right" shapeId="45" castsShadows="true" receiveShadows="true" materialIds="14" clipDistance="150" nodeId="67">
+          <Shape name="decal2" translation="-0.613015 1.11618e-07 -1.27563e-07" shapeId="46" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="12" clipDistance="150" nodeId="68"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="_11_" collision="false" clipDistance="150" nodeId="69">
+        <Shape name="left" shapeId="47" castsShadows="true" receiveShadows="true" materialIds="15" clipDistance="150" nodeId="70"/>
+        <Shape name="right" shapeId="48" castsShadows="true" receiveShadows="true" materialIds="15" clipDistance="150" nodeId="71"/>
+      </TransformGroup>
+      <TransformGroup name="_12_" collision="false" clipDistance="150" nodeId="72">
+        <Shape name="left" shapeId="49" castsShadows="true" receiveShadows="true" materialIds="16" clipDistance="150" nodeId="73"/>
+        <Shape name="right" shapeId="50" castsShadows="true" receiveShadows="true" materialIds="16" clipDistance="150" nodeId="74"/>
+      </TransformGroup>
+      <TransformGroup name="_13_" collision="false" clipDistance="150" nodeId="75">
+        <Shape name="left" shapeId="51" castsShadows="true" receiveShadows="true" materialIds="16" clipDistance="150" nodeId="76"/>
+        <Shape name="right" shapeId="52" castsShadows="true" receiveShadows="true" materialIds="16" clipDistance="150" nodeId="77"/>
+      </TransformGroup>
+      <TransformGroup name="_14_" nodeId="78">
+        <Shape name="left" shapeId="53" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="150" nodeId="79"/>
+        <Shape name="right" shapeId="54" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="150" nodeId="80"/>
+      </TransformGroup>
+      <TransformGroup name="_15_" nodeId="81">
+        <Shape name="left" shapeId="55" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="150" nodeId="82"/>
+        <Shape name="right" shapeId="56" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="150" nodeId="83"/>
+      </TransformGroup>
+      <TransformGroup name="_16_" nodeId="84">
+        <Shape name="left" shapeId="57" castsShadows="true" receiveShadows="true" materialIds="17" clipDistance="150" nodeId="85"/>
+        <Shape name="right" shapeId="58" castsShadows="true" receiveShadows="true" materialIds="17" clipDistance="150" nodeId="86"/>
+      </TransformGroup>
+      <TransformGroup name="_17_" collision="false" clipDistance="150" nodeId="87">
+        <Shape name="left" shapeId="59" castsShadows="true" receiveShadows="true" materialIds="9" clipDistance="150" nodeId="88"/>
+        <Shape name="right" shapeId="60" castsShadows="true" receiveShadows="true" materialIds="9" clipDistance="150" nodeId="89"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="n12" collision="false" clipDistance="150" nodeId="90">
+      <TransformGroup name="_01_" collision="false" clipDistance="150" nodeId="91">
+        <Shape name="left" shapeId="61" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="150" nodeId="92"/>
+        <Shape name="right" shapeId="62" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="150" nodeId="93"/>
+      </TransformGroup>
+      <TransformGroup name="_02_" collision="false" clipDistance="150" nodeId="94">
+        <Shape name="left" shapeId="63" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="150" nodeId="95"/>
+        <Shape name="right" shapeId="64" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="150" nodeId="96"/>
+      </TransformGroup>
+      <TransformGroup name="_03_" collision="false" clipDistance="150" nodeId="97">
+        <Shape name="left" shapeId="65" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="150" nodeId="98"/>
+        <Shape name="right" shapeId="66" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="150" nodeId="99"/>
+      </TransformGroup>
+      <TransformGroup name="_04_" collision="false" clipDistance="150" nodeId="100">
+        <Shape name="left" shapeId="67" castsShadows="true" receiveShadows="true" materialIds="15" clipDistance="150" nodeId="101"/>
+        <Shape name="right" shapeId="68" castsShadows="true" receiveShadows="true" materialIds="15" clipDistance="150" nodeId="102"/>
+      </TransformGroup>
+      <TransformGroup name="_05_" collision="false" clipDistance="150" nodeId="103">
+        <Shape name="left" shapeId="69" castsShadows="true" receiveShadows="true" materialIds="18" clipDistance="150" nodeId="104"/>
+        <Shape name="right" shapeId="70" castsShadows="true" receiveShadows="true" materialIds="18" clipDistance="150" nodeId="105"/>
+      </TransformGroup>
+      <TransformGroup name="_06_" collision="false" clipDistance="150" nodeId="106">
+        <Shape name="left" shapeId="71" castsShadows="true" receiveShadows="true" materialIds="18" clipDistance="150" nodeId="107"/>
+        <Shape name="right" shapeId="72" castsShadows="true" receiveShadows="true" materialIds="18" clipDistance="150" nodeId="108"/>
+      </TransformGroup>
+      <TransformGroup name="_07_" collision="false" clipDistance="150" nodeId="109">
+        <Shape name="left" shapeId="73" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="150" nodeId="110"/>
+        <Shape name="right" shapeId="74" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="150" nodeId="111"/>
+      </TransformGroup>
+      <TransformGroup name="_08_" collision="false" clipDistance="150" nodeId="112">
+        <Shape name="left" shapeId="75" castsShadows="true" receiveShadows="true" materialIds="18" clipDistance="150" nodeId="113"/>
+        <Shape name="right" shapeId="76" castsShadows="true" receiveShadows="true" materialIds="18" clipDistance="150" nodeId="114"/>
+      </TransformGroup>
+      <TransformGroup name="_09_" nodeId="115">
+        <Shape name="left" shapeId="77" castsShadows="true" receiveShadows="true" materialIds="19" clipDistance="150" nodeId="116"/>
+        <Shape name="right" shapeId="78" castsShadows="true" receiveShadows="true" materialIds="19" clipDistance="150" nodeId="117"/>
+      </TransformGroup>
+      <TransformGroup name="_10_" nodeId="118">
+        <Shape name="left" shapeId="79" castsShadows="true" receiveShadows="true" materialIds="20" clipDistance="150" nodeId="119"/>
+        <Shape name="right" shapeId="80" castsShadows="true" receiveShadows="true" materialIds="20" clipDistance="150" nodeId="120"/>
+      </TransformGroup>
+      <TransformGroup name="_11_" nodeId="121">
+        <Shape name="left" shapeId="81" castsShadows="true" receiveShadows="true" materialIds="20" clipDistance="150" nodeId="122"/>
+        <Shape name="right" shapeId="82" castsShadows="true" receiveShadows="true" materialIds="20" clipDistance="150" nodeId="123"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="n06" collision="false" clipDistance="150" nodeId="124">
+      <TransformGroup name="_01_" collision="false" clipDistance="150" nodeId="125">
+        <Shape name="left" shapeId="83" castsShadows="true" receiveShadows="true" materialIds="21" clipDistance="150" nodeId="126"/>
+        <Shape name="right" shapeId="84" castsShadows="true" receiveShadows="true" materialIds="21" clipDistance="150" nodeId="127"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="n16" collision="false" clipDistance="150" nodeId="128">
+      <TransformGroup name="_01_" collision="false" clipDistance="150" nodeId="129">
+        <Shape name="left" translation="0 1.62393e-39 -4.90801e-16" shapeId="85" castsShadows="true" receiveShadows="true" materialIds="13" clipDistance="150" nodeId="130"/>
+        <Shape name="right" shapeId="86" castsShadows="true" receiveShadows="true" materialIds="13" clipDistance="150" nodeId="131"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="n18" collision="false" clipDistance="150" nodeId="132">
+      <TransformGroup name="_01_" collision="false" clipDistance="150" nodeId="133">
+        <Shape name="left" shapeId="87" castsShadows="true" receiveShadows="true" materialIds="18" clipDistance="150" nodeId="134">
+          <Shape name="left1" translation="0.601737 0 0" shapeId="88" castsShadows="true" receiveShadows="true" materialIds="12" clipDistance="150" nodeId="135"/>
+        </Shape>
+        <Shape name="right" shapeId="89" castsShadows="true" receiveShadows="true" materialIds="18" clipDistance="150" nodeId="136">
+          <Shape name="right3" translation="-0.601737 0 0" shapeId="90" castsShadows="true" receiveShadows="true" materialIds="12" clipDistance="150" nodeId="137"/>
+        </Shape>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

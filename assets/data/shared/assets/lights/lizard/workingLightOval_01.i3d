@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="workingLightOval_01" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="2" filename="$data/shared/assets/lights/lizard/workingLightOval_01_normal.png" />
+    <File fileId="3" filename="$data/shared/assets/lights/lizard/workingLightOval_01_specular.png" />
+    <File fileId="1" filename="$data/shared/clearPlastic_diffuse.png" />
+  </Files>
+
+  <Materials>
+    <Material name="clearPlastic_mat" materialId="3" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat0" value="1.0 1.0 1.0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="workingLightOval_01_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="4" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat0" value="1.0 1.0 1.0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="workingLightOval_01_mat1" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat0" value="1.0 1.0 1.0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="workingLightOval_01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="workingLightOval_01Left" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="rotArm" translation="0 0.0304645 1.22833e-05" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="2">
+        <Shape name="innerPartStatic" shapeId="3" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="35" nodeId="3"/>
+        <Shape name="workLightStatic" translation="-0.0703474 0.0778244 6.67572e-08" shapeId="4" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="4"/>
+      </Shape>
+    </Shape>
+    <Shape name="workingLightOval_01Right" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="5">
+      <Shape name="rotArm" translation="0 0.0304645 1.22833e-05" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="6">
+        <Shape name="innerPartStatic" shapeId="7" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="35" nodeId="7"/>
+        <Shape name="workLightStatic" translation="0.0703474 0.0778244 6.67572e-08" shapeId="8" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="8"/>
+      </Shape>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

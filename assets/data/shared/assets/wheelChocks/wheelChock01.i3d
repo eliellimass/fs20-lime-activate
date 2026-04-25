@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="wheelChock01" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="1" filename="$data/shared/assets/wheelChocks/wheelChock01_normal.png" />
+    <File fileId="2" filename="$data/shared/assets/wheelChocks/wheelChock01_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="wheelChock01_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.7156 0.5115 0.0329 1"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="wheelChock01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="wheelChock01" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="50" nodeId="1">
+      <TransformGroup name="posRefNode" translation="0 0.219621 0.155776" nodeId="2"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="1">
+      <Attribute name="posRefNode" type="string" value="0"/>
+    </UserAttribute>
+  </UserAttributes>
+</i3D>

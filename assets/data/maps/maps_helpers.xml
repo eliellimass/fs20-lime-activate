@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <helpers>
+        <helper name="A" filename="$dataS2/character/helper/helper01.xml" />
+        <helper name="B" filename="$dataS2/character/helper/helper02.xml" />
+        <helper name="C" filename="$dataS2/character/helper/helper03.xml" />
+        <helper name="D" filename="$dataS2/character/helper/helper04.xml" />
+        <helper name="E" filename="$dataS2/character/helper/helper05.xml" />
+        <helper name="F" filename="$dataS2/character/helper/helper06.xml" />
+        <helper name="G" filename="$dataS2/character/helper/helper07.xml" />
+        <helper name="H" filename="$dataS2/character/helper/helper08.xml" />
+        <helper name="I" filename="$dataS2/character/helper/helper09.xml" />
+        <helper name="J" filename="$dataS2/character/helper/helper10.xml" />
+    </helpers>
+</map>

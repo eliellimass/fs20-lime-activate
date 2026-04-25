@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="rearMultipointLight_01" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="1" filename="$data/shared/assets/lights/lizard/rearMultipointLight_01_normal.png" />
+    <File fileId="2" filename="$data/shared/assets/lights/lizard/rearMultipointLight_01_specular.png" />
+    <File fileId="4" filename="$data/shared/clearPlastic_diffuse.png" />
+  </Files>
+
+  <Materials>
+    <Material name="rearMultipointLight_01_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat0" value="1.0 1.0 1.0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="clearPlastic_mat" materialId="3" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat0" value="1.0 1.0 1.0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Texture fileId="4"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="rearMultipointLight_01_mat1" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat0" value="1.0 1.0 1.0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="rearMultipointLight_01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="rearMultipointLight_01Left" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="innerPartStatic" shapeId="2" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="35" nodeId="2"/>
+      <Shape name="reflectorLeft" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="3"/>
+      <Shape name="reflector" translation="-1.52588e-07 0.0410232 -0.000348485" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="4"/>
+      <Shape name="reverseLightLeftStatic" translation="-1.52588e-07 0.0410232 -0.000348485" shapeId="5" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="5"/>
+      <Shape name="breakLightLeftStatic" translation="-1.52588e-07 0.0410232 -0.000348485" shapeId="6" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="6"/>
+      <Shape name="defaultLightLeftStatic" translation="-1.52588e-07 0.0410232 -0.000348485" shapeId="7" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="7"/>
+      <Shape name="turnLightLeftStatic" translation="-1.52588e-07 0.0410232 -0.000348485" shapeId="8" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="8"/>
+      <Shape name="lightStatic" translation="-1.52588e-07 0.0410232 -0.000348485" shapeId="9" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="9"/>
+    </Shape>
+    <Shape name="rearMultipointLight_01Right" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="10">
+      <Shape name="innerPartStatic" shapeId="11" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="35" nodeId="11"/>
+      <Shape name="reflectorRight" shapeId="12" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="12"/>
+      <Shape name="reflector" translation="1.52588e-07 0.0410232 -0.000348485" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="13"/>
+      <Shape name="reverseLightRightStatic" translation="1.52588e-07 0.0410232 -0.000348485" shapeId="14" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="14"/>
+      <Shape name="breakLightRightStatic" translation="1.52588e-07 0.0410232 -0.000348485" shapeId="15" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="15"/>
+      <Shape name="defaultLightRightStatic" translation="1.52588e-07 0.0410232 -0.000348485" shapeId="16" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="16"/>
+      <Shape name="turnLightRightStatic" translation="1.52588e-07 0.0410232 -0.000348485" shapeId="17" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="17"/>
+      <Shape name="lightStatic" translation="1.52588e-07 0.0410232 -0.000348485" shapeId="18" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="18"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<hub>
+    <filename>$data/shared/wheels/hubs/hubSmall01.i3d</filename>
+    <nodes left="0|0" right="0|1" />
+    <color0>0.294 0.294 0.294 0</color0>
+    <scale>0.3 0.3 0.3</scale>
+</hub>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="5">
+    <Parameters>
+        <Parameter name="scrollPosition" target="scrollPosition" type="float4" defaultValue="0 0 0 0"/>
+        <Parameter name="lengthAndRadius" target="lengthAndRadius" type="float4" defaultValue="1 0.146 0 0"/>
+    </Parameters>
+    <UvUsages/>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+#if defined( ALPHA_TESTED )
+    #undef ALPHA_TESTED    
+#endif
+    uniform float4 scrollPosition;
+    uniform float4 lengthAndRadius;
+]]>
+            </CodeInjection>
+            <CodeInjection position="START_POS_VS">
+<![CDATA[
+    #ifdef NORMAL_MAP
+    #error "Normal map not supported"
+    #endif
+
+    float crawlerRadius = lengthAndRadius.y;
+    float crawlerRadiusPi = 3.1415926*crawlerRadius;
+    float crawlerLength = lengthAndRadius.x;
+
+    float posFirstRot = 0;
+    float posAfterRot = posFirstRot + crawlerRadiusPi;
+
+    float offsetYRaw = scrollPosition.x;
+    position.y += offsetYRaw;
+
+    float3 origPosition = position.xyz;
+
+    if (origPosition.y > posFirstRot) {
+        // y=0 -> 0
+        // y=pi*r -> pi
+        float angle = (origPosition.y - posFirstRot) / crawlerRadius;
+
+        position.y = posFirstRot - sin(angle)*origPosition.z;
+        position.z = cos(angle)*origPosition.z;
+        
+        if (origPosition.y > posAfterRot) {
+            position.y = posFirstRot - (origPosition.y - posAfterRot);
+            position.z = -origPosition.z;
+        }
+    }
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_NORMAL_VS">
+<![CDATA[
+    float3 normal = In.normal.xyz;
+
+    float crawlerRadius = lengthAndRadius.y;
+    float crawlerRadiusPi = 3.1415926*crawlerRadius;
+    float crawlerLength = lengthAndRadius.x;
+
+    float posFirstRot = 0;
+    float posAfterRot = posFirstRot + crawlerRadiusPi;
+
+
+    float offsetYRaw = scrollPosition.x;
+    float posY = getPosition(In).y + offsetYRaw;
+
+    if (posY > posFirstRot) {
+        // z=0 -> 0
+        // z=pi*r -> pi
+        
+        float angle = (posY - posFirstRot) / crawlerRadius;
+
+        float cosAngle = cos(angle);
+        float sinAngle = sin(angle);
+
+        normal.z = cosAngle*In.normal.z + sinAngle*In.normal.y;
+        normal.y = -sinAngle*In.normal.z + cosAngle*In.normal.y;
+        if (posY > posAfterRot) {
+            normal.yz = -In.normal.yz;
+        }
+    }
+
+    return normal;
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

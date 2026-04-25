@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<animalHusbandry>
+    <animals>
+        <animal radius="2.1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="8000" chewTimeMax="12000" eatTimeMin="6000" eatTimeMax="9000" canBeCleaned="true" interessDistance="10.0" >
+            <assets filename="$dataS2/character/horse/horse.i3d" skeletonIndex="0>0" meshIndex="0>3" proxyIndex="0>4" moverIndex="0>5" shaderIndex="0>3|0|0" shaderHairIndex="0>3|0|1">
+                <texture multi="true" tileU="4" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="horseLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/horse/husbandry/horse_eat_idle_1.wav" volume="0.25" range="20" innerRange="2" />
+            </audio>
+        </animal>
+        <animal radius="2.1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="8000" chewTimeMax="12000" eatTimeMin="6000" eatTimeMax="9000" canBeCleaned="true" interessDistance="10.0" >
+            <assets filename="$dataS2/character/horse/horse.i3d" skeletonIndex="0>0" meshIndex="0>3" proxyIndex="0>4" moverIndex="0>5" shaderIndex="0>3|0|0" shaderHairIndex="0>3|0|1">
+                <texture multi="true" tileU="4" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="horseLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/horse/husbandry/horse_eat_idle_1.wav" volume="0.25" range="20" innerRange="2" />
+            </audio>
+        </animal>
+        <animal radius="2.1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="8000" chewTimeMax="12000" eatTimeMin="6000" eatTimeMax="9000" canBeCleaned="true" interessDistance="10.0" >
+            <assets filename="$dataS2/character/horse/horse.i3d" skeletonIndex="0>0" meshIndex="0>3" proxyIndex="0>4" moverIndex="0>5" shaderIndex="0>3|0|0" shaderHairIndex="0>3|0|1">
+                <texture multi="true" tileU="4" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="horseLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/horse/husbandry/horse_eat_idle_1.wav" volume="0.25" range="20" innerRange="2" />
+            </audio>
+        </animal>
+        <animal radius="2.1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="8000" chewTimeMax="12000" eatTimeMin="6000" eatTimeMax="9000" canBeCleaned="true" interessDistance="10.0" >
+            <assets filename="$dataS2/character/horse/horse.i3d" skeletonIndex="0>0" meshIndex="0>3" proxyIndex="0>4" moverIndex="0>5" shaderIndex="0>3|0|0" shaderHairIndex="0>3|0|1">
+                <texture multi="true" tileU="4" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="horseLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/horse/husbandry/horse_eat_idle_1.wav" volume="0.25" range="20" innerRange="2" />
+            </audio>
+        </animal>
+        <animal radius="2.1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="8000" chewTimeMax="12000" eatTimeMin="6000" eatTimeMax="9000" canBeCleaned="true" interessDistance="10.0" >
+            <assets filename="$dataS2/character/horse/horse.i3d" skeletonIndex="0>0" meshIndex="0>3" proxyIndex="0>4" moverIndex="0>5" shaderIndex="0>3|0|0" shaderHairIndex="0>3|0|1">
+                <texture multi="true" tileU="4" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="horseLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/horse/husbandry/horse_eat_idle_1.wav" volume="0.25" range="20" innerRange="2" />
+            </audio>
+        </animal>
+        <animal radius="2.1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="8000" chewTimeMax="12000" eatTimeMin="6000" eatTimeMax="9000" canBeCleaned="true" interessDistance="10.0" >
+            <assets filename="$dataS2/character/horse/horse.i3d" skeletonIndex="0>0" meshIndex="0>3" proxyIndex="0>4" moverIndex="0>5" shaderIndex="0>3|0|0" shaderHairIndex="0>3|0|1">
+                <texture multi="true" tileU="4" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="horseLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/horse/husbandry/horse_eat_idle_1.wav" volume="0.25" range="20" innerRange="2" />
+            </audio>
+        </animal>
+        <animal radius="2.1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="8000" chewTimeMax="12000" eatTimeMin="6000" eatTimeMax="9000" canBeCleaned="true" interessDistance="10.0" >
+            <assets filename="$dataS2/character/horse/horse.i3d" skeletonIndex="0>0" meshIndex="0>3" proxyIndex="0>4" moverIndex="0>5" shaderIndex="0>3|0|0" shaderHairIndex="0>3|0|1">
+                <texture multi="true" tileU="4" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="horseLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/horse/husbandry/horse_eat_idle_1.wav" volume="0.25" range="20" innerRange="2" />
+            </audio>
+        </animal>
+        <animal radius="2.1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="8000" chewTimeMax="12000" eatTimeMin="6000" eatTimeMax="9000" canBeCleaned="true" interessDistance="10.0" >
+            <assets filename="$dataS2/character/horse/horse.i3d" skeletonIndex="0>0" meshIndex="0>3" proxyIndex="0>4" moverIndex="0>5" shaderIndex="0>3|0|0" shaderHairIndex="0>3|0|1">
+                <texture multi="true" tileU="4" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="horseLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/horse/husbandry/horse_eat_idle_1.wav" volume="0.25" range="20" innerRange="2" />
+            </audio>
+        </animal>
+        <audio>
+            <yells volume="0.8" range="70" innerRange="4" minInterval="7000" maxInterval="18000" animalTypes="0,1,2,3,4,5,6,7" >
+                <yell filename="$data/sounds/animals/horse/husbandry/horse_neigh_01.wav" />
+                <yell filename="$data/sounds/animals/horse/husbandry/horse_neigh_02.wav" />
+                <yell filename="$data/sounds/animals/horse/husbandry/horse_neigh_03.wav" />
+                <yell filename="$data/sounds/animals/horse/husbandry/horse_neigh_04.wav" />
+            </yells>
+        </audio>
+    </animals>
+</animalHusbandry>

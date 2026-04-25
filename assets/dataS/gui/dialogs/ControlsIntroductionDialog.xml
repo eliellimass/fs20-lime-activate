@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement type="empty" profile="newLayer" />
+    <GuiElement type="bitmap" profile="dialogFullscreenBg" />
+
+    <GuiElement type="bitmap" profile="controlsIntroductionDialogBg" id="dialogElement">
+        
+        <GuiElement type="bitmap" profile="controlsIntroductionDialogImage"/>
+
+        <GuiElement type="flowLayout" profile="buttonBoxDialog" id="buttonsPC" >
+            <GuiElement type="button" profile="buttonOK" text="$l10n_button_ok" onClick="onClickOk" id="okButton" />
+        </GuiElement>
+    </GuiElement>
+</GUI>

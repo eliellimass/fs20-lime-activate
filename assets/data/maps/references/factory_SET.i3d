@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="factory_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../textures/mobile/buildingsWindows01_diffuse.png"/>
+    <File fileId="5" filename="../textures/mobile/buildingsWindows01_emissive.png"/>
+    <File fileId="2" filename="../textures/mobile/buildingsWindows01_normal.png"/>
+    <File fileId="3" filename="../textures/mobile/buildingsWindows01_specular.png"/>
+    <File fileId="10" filename="../textures/mobile/factory_specular.png"/>
+    <File fileId="6" filename="../textures/mobile/materialCollection01_diffuse.png"/>
+    <File fileId="7" filename="../textures/mobile/materialCollection01_normal.png"/>
+    <File fileId="8" filename="../textures/mobile/materialCollection01_specular.png"/>
+    <File fileId="12" filename="../textures/mobile/materialCollection02_diffuse.png"/>
+    <File fileId="13" filename="../textures/mobile/materialCollection02_normal.png"/>
+    <File fileId="14" filename="../textures/mobile/materialCollection02_specular.png"/>
+    <File fileId="9" filename="../../shaders/buildingShader.xml"/>
+    <File fileId="4" filename="../../shaders/dashboardLightsShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.235294 0.117647 0.117647 1">
+    </Material>
+    <Material name="materialCollection02_mat" materialId="6" customShaderId="9">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+      <Custommap name="mMaskMap" fileId="10"/>
+    </Material>
+    <Material name="buildingsWindows01_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mEmissiveMap" fileId="5"/>
+      <CustomParameter name="lightControl" value="0 1 1 1"/>
+    </Material>
+    <Material name="materialCollection01_mat" materialId="7" customShaderId="9">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+      <Custommap name="mMaskMap" fileId="10"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="factory_SET.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="factory_SET" lockedgroup="true" nodeId="14">
+      <Shape shapeId="1" name="glass" clipDistance="600" nodeId="15" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="addons" clipDistance="600" nodeId="16" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="pipes" translation="-4 0 21" clipDistance="250" nodeId="17" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="4" name="factorYBuilding" clipDistance="600" nodeId="18" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="5" name="col" visibility="false" static="true" clipDistance="150" nodeId="19" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

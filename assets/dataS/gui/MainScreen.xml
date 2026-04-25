@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onCreate="onCreate" onOpen="onOpen" onClose="onClose">
+    <GuiElement type="bitmap" id="backgroundImage" profile="backgroundImage" />
+
+    <GuiElement type="bitmap" id="backgroundBlurImage" profile="mainScreenSidebar">
+        <GuiElement type="bitmap" id="glassEdgeOverlay" profile="mainScreenBackgroundBlur" />
+        <GuiElement type="bitmap" id="glassEdgeOverlay" profile="mainScreenSidebarGlassEdge" />
+        <GuiElement type="bitmap" id="logo" profile="mainScreenLogo" />
+
+        <!-- Main Button Container -->
+        <GuiElement id="buttonBox" type="boxLayout" profile="mainScreenButtonBox">
+            <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_career" onClick="onCareerClick" id="careerButton" onHighlight="onHighlight" visible="false" />
+            <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_multiplayer" onClick="onMultiplayerClick" id="multiplayerButton" onHighlight="onHighlight" visible="false" />
+            <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_tutorials" onClick="onTutorialsClick" id="tutorialsButton" onHighlight="onHighlight" visible="false" />
+            <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_modHub" onClick="onDownloadModsClick" id="downloadModsButton" onHighlight="onHighlight" visible="false" />
+            <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_achievements" onClick="onAchievementsClick" id="achievementsButton" onHighlight="onHighlight" visible="false" />
+            <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_dlcStore" onClick="onStoreClick" id="storeButton" onHighlight="onHighlight" visible="false" />
+            <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_settings" onClick="onSettingsClick" id="settingsButton" onHighlight="onHighlight" visible="false" />
+            <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_credits" onClick="onCreditsClick" id="creditsButton" onHighlight="onHighlight" visible="false" />
+            <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_changeUser" onClick="onChangeUserClick" id="changeUserButton" onHighlight="onHighlight" visible="false" />
+            <GuiElement type="button" profile="mainMenuButton" text="$l10n_button_quit" onClick="onQuitClick" id="quitButton" onHighlight="onHighlight" visible="false" />
+        </GuiElement>
+    </GuiElement>
+
+    <GuiElement type="button" imageFilename="dataS2/menu/chinaAgeRating.png" size="200px 256px" position="-45px 45px" anchors="1 1 0 0" id="chinaAgeRating" onClick="onClickChinaAgeRating"/>
+
+    <GuiElement type="bitmap" id="backgroundTractor" profile="mainScreenTractor"  />
+
+    <!-- Notifications Container -->
+    <GuiElement type="bitmap" profile="notificationBg" id="notificationElement" position="0px 0px">
+        <GuiElement type="bitmap" id="notificationImage" profile="notificationImage" position="0px -1px"/>
+
+        <GuiElement type="empty" profile="notificationHeader">
+            <GuiElement type="text" id="notificationTitle" profile="notificationTitle" text="Title" />
+            <GuiElement type="text" id="notificationDate" profile="notificationDate" text="Date" />
+        </GuiElement>
+
+        <GuiElement type="text" id="notificationMessage" profile="notificationText" text="Description" />
+
+        <GuiElement type="empty" profile="notificationFooter" position="1px 5px">
+            <GuiElement type="button" profile="notificationLeft" onClick="onClickPreviousNotification" position="20px 0px" id="notificationButtonLeft"/>
+
+            <GuiElement type="indexState" profile="notificationIndexState" stateElementTemplateId="stateIconTemplate" id="indexState">
+                <GuiElement type="bitmap" profile="selectionStateDocked" id="stateIconTemplate"/>
+            </GuiElement>
+
+            <GuiElement type="button" profile="notificationRight" onClick="onClickNextNotification" position="-20px 0px" id="notificationButtonRight" focusId="notificationButtonRight" focusChangeRight="notificationButtonRight"/>
+        </GuiElement>
+
+        <!-- Dialog-style bottom button -->
+        <GuiElement type="button" profile="notificationOpen" text="" onClick="onClickOpenNotification" id="notificationButtonOpen"/>
+    </GuiElement>
+
+    <GuiElement type="text" profile="versionText" onCreate="onCreateGameVersion"/>
+    <GuiElement type="text" profile="gamerTagText" id="gamerTagElement" />
+
+    <GuiElement type="button" profile="googlePlayButton" id="googlePlayButton" onClick="onClickGooglePlayButton" />
+</GUI>
+

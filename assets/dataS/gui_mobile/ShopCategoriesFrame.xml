@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="shopCategories">
+    <GuiElement type="bitmap" profile="uiInGameMenuPageHeader" id="pageHeader">
+        <GuiElement type="empty" profile="uiInGameMenuHeaderSubPagingSelector"  id="subPageSelector">
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonLeft" id="subPagingButtonLeft" onClick="onClickSubPageSelection" />
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonRight" id="subPagingButtonRight" onClick="onClickSubPageSelection" />
+        </GuiElement>
+        <GuiElement type="text" profile="uiInGameMenuPagingTitle" id="pagingTitle" text="$l10n_ui_ingameMenuPrices" />
+    </GuiElement>
+
+    <GuiElement type="empty" profile="ingameMenuBox">
+        <GuiElement type="list" profile="shopCategoryList" id="categoryList" onClick="onClickCategory" onDoubleClick="onDoubleClickCategory" onSelectionChanged="onCategorySelected" onScroll="onScroll">
+            <!-- Category template -->
+            <GuiElement type="listItem" profile="shopCategoryItemCoins" id="categoryTemplate">
+                <GuiElement type="empty" profile="shopCategoryItemImagePanel">
+                    <GuiElement type="bitmap" profile="shopCategoryItemImage" name="categoryImage"/>
+                </GuiElement>
+                <GuiElement type="text" profile="shopCategoryItemText" name="categoryText"/>
+            </GuiElement>
+        </GuiElement>
+
+        <GuiElement type="indexState" profile="selectionStateBoxDocked" id="pagingIndexState" stateElementTemplateId="circleTemplate">
+            <GuiElement type="bitmap" profile="selectionStateDocked" id="circleTemplate"/>
+        </GuiElement>
+    </GuiElement>
+</GUI>

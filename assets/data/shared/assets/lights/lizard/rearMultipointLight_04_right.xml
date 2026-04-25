@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<light>
+    <filename>$data/shared/assets/lights/lizard/rearMultipointLight_04.i3d</filename>
+    <rootNode node="1" />
+    <defaultLight node="1|4" lightTypes="0" />
+    <defaultLight node="1|8" lightTypes="0" intensity="0.5"/>
+    <defaultLight node="1|9" lightTypes="0" intensity="0.5"/>
+    <brakeLight node="1|5" />
+    <brakeLight node="1|9" intensity="0.5" />
+    <reverseLight node="1|3" />
+    <reverseLight node="1|7" intensity="0.5" />
+    <turnLightRight node="1|2" />
+    <turnLightRight node="1|6" intensity="0.5" />
+</light>

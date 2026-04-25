@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<light>
+    <filename>$data/shared/assets/lights/lizard/frontLightRectangle_02.i3d</filename>
+    <rootNode node="0" />
+    <defaultLight node="0|0" lightTypes="0" intensity="20" />
+    <defaultLight node="0|1" lightTypes="0" intensity="5" />
+    <turnLightRight node="0|2" intensity="20"/>
+    <turnLightRight node="0|3" intensity="0.5"/>
+</light>

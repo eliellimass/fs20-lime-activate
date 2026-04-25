@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="threshingChopperParticleSystem" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../fx_smoke6x6_01_diffuse.png"/>
+    <File fileId="2" filename="../fx_smoke6x6_01_normal.png"/>
+    <File fileId="3" filename="../../shaders/psSubUVShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="fx_smoke01_mat" materialId="5" alphaBlending="true" customShaderId="3" customShaderVariation="SUBUV_MOVIE">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="psPlayScale" value="20 40 1 0"/>
+      <CustomParameter name="psColor" value="0.462 0.323 0.133 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="threshingStrawParticles.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="smokeEmitter" dynamicId="1" type="sprite" rate="0.005" lifespan="4000" maxCount="290" speed="0.0012" speedRandom="0" tangentSpeed="0" normalSpeed="1" emitterShapeVelocityScale="0.25" damping="0.25" spriteScaleX="1.2" spriteScaleY="1.2" spriteScaleXGain="0.001" spriteScaleYGain="0.001" blendFactor="0.15" blendInFactor="0.2" blendOutFactor="0.8" randomInitRotation="true" textureAtlasSizeX="6" textureAtlasSizeY="6">
+      <Gravity force="0 0.02 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="12" name="smoke" clipDistance="100" nodeId="11" materialIds="5" distanceBlending="false">
+      <Shape shapeId="2" name="emitShape" rotation="9.11934 -0 0" nodeId="12" materialIds="4" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+</i3D>

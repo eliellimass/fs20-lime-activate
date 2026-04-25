@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.35" width="0.28" mass="0.046" tireType="street" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/lizard/implement/R16.i3d" nodeLeft="0|0" nodeRight="0|1" maxDeformation="0.029" isCareWheel="false" tireTrackAtlasIndex="4" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="0|0" widthAndDiam="8 15" />
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="7 15" scale="0.6 1 1" />
+    </default>
+    <configurations>
+        <configuration id="trailer" >
+            <innerRim filename="$data/shared/wheels/rims/rimsPickup.i3d" nodeLeft="0|0" nodeRight="0|1" scale="-" />
+        </configuration>
+        <configuration id="bockmann" >
+            <outerRim filename="-" node="-" widthAndDiam="-" />
+            <innerRim filename="$data/shared/wheels/rims/bockmann/rim001.i3d" nodeLeft="0|0" nodeRight="0|1" widthAndDiam="8 16" scale="-" />
+        </configuration>
+        <configuration id="car1" >
+            <outerRim filename="-" node="-" widthAndDiam="-" />
+            <innerRim filename="$data/shared/wheels/rims/rimsPickup.i3d" nodeLeft="1|0" nodeRight="1|1" widthAndDiam="8 16" scale="-" />
+        </configuration>
+        <configuration id="car2" >
+            <outerRim filename="-" node="-" widthAndDiam="-" />
+            <innerRim filename="$data/shared/wheels/rims/rimsPickup.i3d" widthAndDiam="8 16" scale="-" />
+        </configuration>
+        <configuration id="car3" >
+            <outerRim filename="-" node="-" widthAndDiam="-" />
+            <innerRim filename="$data/shared/wheels/rims/rimsPickup.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="8 16" scale="-" />
+        </configuration>
+        <configuration id="car4" >
+            <outerRim filename="-" node="-" widthAndDiam="-" />
+            <innerRim filename="$data/shared/wheels/rims/rimsPickup.i3d" nodeLeft="4|0" nodeRight="4|1" widthAndDiam="8 16" scale="-" />
+        </configuration>
+        <configuration id="car5" >
+            <innerRim filename="$data/shared/wheels/rims/rimsCar.i3d" nodeLeft="0|0" nodeRight="0|1" offset="-0.04" widthAndDiam="8 16" scale="-" />
+        </configuration>
+        <configuration id="car6" >
+            <outerRim filename="-" node="-" widthAndDiam="-" />
+            <innerRim filename="$data/shared/wheels/rims/rimsCar.i3d" nodeLeft="1|0" nodeRight="1|1" offset="0.03" widthAndDiam="8 16" scale="-" />
+        </configuration>
+        <configuration id="car7" >
+            <innerRim filename="$data/shared/wheels/rims/rimsCar.i3d" offset="-0.01" widthAndDiam="8 16" scale="-" />
+        </configuration>
+        <configuration id="car8" >
+            <innerRim filename="$data/shared/wheels/rims/rimsCar.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="8 16" scale="-" />
+        </configuration>
+    </configurations>
+</wheel>

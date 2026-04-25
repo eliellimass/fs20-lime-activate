@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>$l10n_storageSilo</name>
+        <image>$data/store/store_empty.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <boughtWithFarmland>true</boughtWithFarmland>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>25248</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>3336</indexBufferMemoryUsage>
+        <textureMemoryUsage>1179768</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <placeableType>simpleBgaPlaceable</placeableType>
+    <filename>$data/placeables/bga/bga.i3d</filename>
+    <placement testSizeX="1" testSizeZ="1" sizeX="1" sizeZ="1" useRandomYRotation="false" useManualYRotation="true" />
+
+    <simpleBgaSellingStation stationName="$l10n_station_bgaBunker" appearsOnPDA="true" storageRadius="0" litersForFullPriceDrop="100000" fullPriceRecoverHours="48" hasDynamic="false" hideFromPricesMenu="true">
+        <unloadTrigger exactFillRootNode="0|0" baleTriggerNode="0|1" />
+        <unloadTrigger exactFillRootNode="1|0" baleTriggerNode="1|1" />
+        <unloadTrigger exactFillRootNode="2|0" baleTriggerNode="2|1" />
+
+        <fillType name="chaff"            priceScale="1" supportsGreatDemand="false" disablePriceDrop="true" />
+        <fillType name="silage"           priceScale="1" supportsGreatDemand="false" disablePriceDrop="true" />
+
+        <bunkerSilos consumePerDay="45000" manurePercentage="0.2">
+            <bunkerSilo unloadingTriggerIndex="1" capacity="45000">
+                <fillPlane  node="3|0" minY="0" maxY="2"/>
+            </bunkerSilo>
+            <bunkerSilo unloadingTriggerIndex="2" capacity="45000">
+                <fillPlane  node="3|1" minY="0" maxY="2"/>
+            </bunkerSilo>
+            <bunkerSilo unloadingTriggerIndex="3" capacity="45000">
+                <fillPlane  node="3|2" minY="0" maxY="2"/>
+            </bunkerSilo>
+        </bunkerSilos>
+
+        <loadingStation node="4" stationName="$l10n_station_bgaBunker" appearsOnPDA="false" storageRadius="50" fillSoundIdentifier="fillSound01">
+            <loadTrigger triggerNode="0" fillLitersPerSecond="2000" dischargeNode="1" />
+        </loadingStation>
+
+        <storages>
+            <storage node="5" fillTypes="LIQUIDMANURE" capacityPerFillType="100000" />
+        </storages>
+
+        <poiTriggers>
+            <poiTrigger node="7|0" text="$l10n_poi_bgaBunkerSilo" />
+            <poiTrigger node="7|1" text="$l10n_poi_bgaLoading" />
+        </poiTriggers>
+    </simpleBgaSellingStation>
+
+    <hotspots>
+        <hotspot name="BGA" title="$l10n_station_bgaBunker" >
+            <icon uvs="DEFAULT_SELLING_BGA" />
+            <background />
+            <text textWrapWidth="150px" bold="true" />
+        </hotspot>
+    </hotspots>
+</placeable>

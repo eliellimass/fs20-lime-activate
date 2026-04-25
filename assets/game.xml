@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<game>
+    <language>-1</language>
+    <graphic>
+        <display>
+            <width>1280</width>
+            <height>720</height>
+            <gamma>1</gamma>
+            <fullscreen>true</fullscreen>
+            <vsync adaptive="true">true</vsync>
+            <userConfirmed>true</userConfirmed>
+            <previousWidth>1280</previousWidth>
+            <previousHeight>720</previousHeight>
+        </display>
+        <scalability>
+            <performanceClass>auto</performanceClass>
+        </scalability>
+        <renderer>D3D_11</renderer>
+    </graphic>
+    <audio enable="true" volume="1" />
+    <input>
+        <joystick enable="true" vibration="false" deadzone="0.14" />
+        <mouse enable="true" />
+        <keyboard enable="true" />
+    </input>
+    <logging>
+        <file enable="true" filename="log.txt" />
+        <console enable="true" />
+    </logging>
+    <development>
+        <controls>false</controls>
+    </development>
+</game>

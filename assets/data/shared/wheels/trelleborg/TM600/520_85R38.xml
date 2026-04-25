@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.924" width="0.52" mass="0.239" tireType="mud" frictionScale="1.60" maxLongStiffness="9" maxLatStiffness="110" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/trelleborg/TM600/R38_TM600.i3d" nodeLeft="7|0" nodeRight="7|0" maxDeformation="0.088" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="1|0" widthAndDiam="18 38" />
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="18 38" />
+    </default>
+</wheel>

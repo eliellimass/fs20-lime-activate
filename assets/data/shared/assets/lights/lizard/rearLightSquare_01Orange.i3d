@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="rearLightSquare_01Orange" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="1" filename="$data/shared/assets/lights/lizard/rearLightSquare_01_normal.png" />
+    <File fileId="2" filename="$data/shared/assets/lights/lizard/rearLightSquare_01_specular.png" />
+    <File fileId="4" filename="$data/shared/clearPlastic_diffuse.png" />
+  </Files>
+
+  <Materials>
+    <Material name="rearMultipointLight_01_mat1" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="1.00 0.25 0.00 2"/>
+      <CustomParameter name="colorMat1" value="0.50 0.00 0.00 2"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="clearPlastic_mat1" materialId="2" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat0" value="1.00 0.25 0.00 2"/>
+      <CustomParameter name="colorMat1" value="0.50 0.00 0.00 2"/>
+      <Texture fileId="4"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="rearLightSquare_01Orange.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="rearLightSquare_01Orange" rotation="90 -0 0" shapeId="1" kinematic="true" collision="false" density="0" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="1e+06" nodeId="1">
+      <Shape name="glass_static" translation="6.12438e-06 -0.0298404 -0.0456954" shapeId="2" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="35" nodeId="2"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

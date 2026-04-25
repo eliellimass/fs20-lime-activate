@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../sounds/map/map_river_loop.wav"/>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="audio_group" nodeId="22761">
+      <Camera name="audio_map_view" translation="0 250 0" rotation="-93.4377 2.97938 -3.86388e-06" nodeId="22762" fov="60" nearClip="0.1" farClip="10000" orthographic="true" orthographicHeight="2250"/>
+      <TransformGroup name="river" nodeId="22763">
+        <TransformGroup name="controlNodes" nodeId="22764">
+          <TransformGroup name="transform" translation="293.595 22.372 504.192" nodeId="22765"/>
+          <TransformGroup name="transform" translation="-496.176 22.3717 504.192" nodeId="22766"/>
+          <TransformGroup name="transform" translation="-509.069 21.2225 -509.318" nodeId="22767"/>
+        </TransformGroup>
+        <TransformGroup name="sounds" nodeId="22768">
+          <AudioSource name="map_river_loop" translation="293.595 22.372 504.192" nodeId="22769" fileIds="1" range="100" innerRange="30" volume="0.15" loops="1" audioGroup="DEFAULT" randomPlayback="0"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="22763">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreatePolygonChain"/>
+    </UserAttribute>
+    <UserAttribute nodeId="22769">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateSoundNode"/>
+      <Attribute name="playByDay" type="boolean" value="true"/>
+      <Attribute name="playByNight" type="boolean" value="true"/>
+      <Attribute name="playDuringHail" type="boolean" value="true"/>
+      <Attribute name="playDuringRain" type="boolean" value="true"/>
+      <Attribute name="playDuringSun" type="boolean" value="true"/>
+      <Attribute name="playExterior" type="boolean" value="true"/>
+      <Attribute name="playHour" type="boolean" value="false"/>
+      <Attribute name="playHourEnd" type="float" value="0"/>
+      <Attribute name="playHourInverted" type="boolean" value="false"/>
+      <Attribute name="playHourStart" type="float" value="0"/>
+      <Attribute name="playInsideBuilding" type="boolean" value="true"/>
+      <Attribute name="playInterior" type="boolean" value="false"/>
+      <Attribute name="retriggerMaxDelay" type="float" value="0"/>
+      <Attribute name="retriggerMinDelay" type="float" value="0"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

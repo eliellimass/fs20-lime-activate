@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hubTrucks" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="1" filename="$data/shared/wheels/hubs/hubTruck001_normal.png" />
+    <File fileId="2" filename="$data/shared/wheels/hubs/hubTruck001_specular.png" />
+    <File fileId="4" filename="$data/shared/wheels/hubs/hubTruck002_normal.png" />
+    <File fileId="5" filename="$data/shared/wheels/hubs/hubTruck002_specular.png" />
+    <File fileId="6" filename="$data/shared/wheels/hubs/hubTruck003_normal.png" />
+    <File fileId="7" filename="$data/shared/wheels/hubs/hubTruck003_specular.png" />
+    <File fileId="8" filename="$data/shared/wheels/hubs/hubTruck004_normal.png" />
+    <File fileId="9" filename="$data/shared/wheels/hubs/hubTruck004_specular.png" />
+    <File fileId="10" filename="$data/shared/wheels/hubs/hubTruck005_normal.png" />
+    <File fileId="11" filename="$data/shared/wheels/hubs/hubTruck005_specular.png" />
+    <File fileId="12" filename="$data/shared/wheels/hubs/hubTruck009_normal.png" />
+    <File fileId="13" filename="$data/shared/wheels/hubs/hubTruck009_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="hubTruck001_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.294 0.294 0.294 0"/>
+      <CustomParameter name="colorMat1" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat2" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="hubTruck002_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.294 0.294 0.294 0"/>
+      <CustomParameter name="colorMat1" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat2" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="hubTruck003_mat" materialId="3" diffuseColor="0.5 0.5 0.5 1" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.294 0.294 0.294 0"/>
+      <CustomParameter name="colorMat1" value="0.03 0.03 0.03 0"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="hubTruck004_mat" materialId="4" diffuseColor="0.5 0.5 0.5 1" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.294 0.294 0.294 0"/>
+      <CustomParameter name="colorMat1" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat2" value="0.98 0.98 0.98 8"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="hubTruck005_mat" materialId="5" diffuseColor="0.5 0.5 0.5 1" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.98 0.98 0.98 8"/>
+      <CustomParameter name="colorMat1" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat2" value="0.03 0.03 0.03 0"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="hubTruck009_mat" materialId="6" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat2" value="0.98 0.98 0.98 8"/>
+      <CustomParameter name="colorMat0" value="0.98 0.98 0.98 8"/>
+      <CustomParameter name="colorMat1" value="0.03 0.03 0.03 0"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hubTrucks.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="hubTruck001" collision="false" clipDistance="300" nodeId="1">
+      <Shape name="hubTruck001L" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="2"/>
+      <Shape name="hubTruck001R" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="3"/>
+    </TransformGroup>
+    <TransformGroup name="hubTruck002" collision="false" clipDistance="300" nodeId="4">
+      <Shape name="hubTruck002L" translation="-2.27471e-53 9.37151e-23 7.20886e-23" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="5"/>
+      <Shape name="hubTruck002R" translation="-7.28558e-38 9.37151e-23 -7.20886e-23" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="6"/>
+    </TransformGroup>
+    <TransformGroup name="hubTruck003" collision="false" clipDistance="300" nodeId="7">
+      <Shape name="hubTruck003L" translation="0 -4.83233e-08 2.96673e-08" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="8"/>
+      <Shape name="hubTruck003R" translation="7.2664e-24 -4.83233e-08 2.96673e-08" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="9"/>
+    </TransformGroup>
+    <TransformGroup name="hubTruck004" collision="false" clipDistance="300" nodeId="10">
+      <Shape name="hubTruck004L" translation="-5.0788e-23 -2.67685e-32 -5.02531e-08" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="11"/>
+      <Shape name="hubTruck004R" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="12"/>
+    </TransformGroup>
+    <TransformGroup name="hubTruck005" collision="false" clipDistance="300" nodeId="13">
+      <Shape name="hubTruck005L" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="14"/>
+      <Shape name="hubTruck005R" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="15"/>
+    </TransformGroup>
+    <TransformGroup name="hubTruck007" collision="false" clipDistance="300" nodeId="16">
+      <Shape name="hubTruck007L" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="300" nodeId="17"/>
+      <Shape name="hubTruck007R" shapeId="12" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="300" nodeId="18"/>
+    </TransformGroup>
+    <TransformGroup name="hubTruck008" collision="false" clipDistance="300" nodeId="19">
+      <Shape name="hubTruck008L" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="300" nodeId="20"/>
+      <Shape name="hubTruck008R" shapeId="14" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="300" nodeId="21"/>
+    </TransformGroup>
+    <TransformGroup name="hubTruck009" nodeId="22">
+      <Shape name="hubTruck009L" shapeId="15" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="23"/>
+      <Shape name="hubTruck009R" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="24"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

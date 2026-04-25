@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sellingStationBales" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="../../maps/textures/shared/blackStripe_diffuse.png"/>
+    <File fileId="6" filename="../../maps/textures/shared/default_normal.png"/>
+    <File fileId="7" filename="../../maps/textures/shared/default_specular.png"/>
+    <File fileId="2" filename="../../maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="../../maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="../../maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="8" filename="symbolBale_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="blackStripe_mat" materialId="5">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="symboBale_mat" materialId="4" alphaBlending="true">
+      <Normalmap fileId="6"/>
+      <Emissivemap fileId="8"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingStationBales.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="sellingStationBales" nodeId="16">
+      <Shape shapeId="1" name="exactFillRootNode" static="true" collisionMask="1073741824" nodeId="17" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="2" name="baleTrigger" translation="0 2 0" static="true" trigger="true" collisionMask="16789504" nodeId="18" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="warningStripes" nodeId="19">
+        <Shape shapeId="3" name="warningStripesCorner1" translation="-4 0 -4" visibility="false" clipDistance="250" nodeId="20" materialIds="6" receiveShadows="true">
+          <Shape shapeId="4" name="border" clipDistance="250" nodeId="21" materialIds="5" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="warningStripesCorner2" translation="4 0 -4" visibility="false" clipDistance="250" nodeId="22" materialIds="6" receiveShadows="true">
+          <Shape shapeId="6" name="border" clipDistance="250" nodeId="23" materialIds="5" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="warningStripesCorner1" translation="4 0 4" rotation="0 180 0" visibility="false" clipDistance="250" nodeId="24" materialIds="6" receiveShadows="true">
+          <Shape shapeId="4" name="border" clipDistance="250" nodeId="25" materialIds="5" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="warningStripesCorner2" translation="-4 -1.13687e-15 4" rotation="0 180 0" visibility="false" clipDistance="250" nodeId="26" materialIds="6" receiveShadows="true">
+          <Shape shapeId="6" name="border" clipDistance="250" nodeId="27" materialIds="5" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="7" name="symbolBale" clipDistance="250" nodeId="28" materialIds="4" receiveShadows="true"/>
+      </TransformGroup>
+      <Shape shapeId="2" name="poiTrigger" translation="0 2 0" static="true" trigger="true" collisionMask="7340032" nodeId="31" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

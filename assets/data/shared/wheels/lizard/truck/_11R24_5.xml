@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.556" width="0.272" mass="0.08" tireType="street" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/lizard/truck/_11R24_5.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.024" isCareWheel="false" tireTrackAtlasIndex="4" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="0|0" widthAndDiam="8.25 24.5" />
+        <innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="0|0" nodeRight="0|1" offset="0.07" widthAndDiam="8.28 24.5" />
+    </default>
+    <configurations>
+        <configuration id="dualRim" >
+            <innerRim nodeLeft="7|0" nodeRight="7|1" offset="-0.18" widthAndDiam="21.1 24.5" />
+        </configuration>
+        <configuration id="dual" >
+            <innerRim filename="-" nodeLeft="-" nodeRight="-" offset="-" widthAndDiam="-" />
+        </configuration>
+    </configurations>
+</wheel>

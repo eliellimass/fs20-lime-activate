@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sky" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/shaders/skyShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="sky_mat" materialId="1" diffuseColor="0 0 0 1" cosPower="2" specularColor="0 0 0" ambientColor="1 1 1" customShaderId="1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sky.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="sky" shapeId="1" castsShadows="false" receiveShadows="false" materialIds="1" objectMask="33536" nodeId="1"/>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <npcs>
+        <npc name="NPC_01" title="James Harris"    category="young"  imageFilename="$dataS2/character/humans/npc/npc01_diffuse.png" />
+        <npc name="NPC_02" title="Victor Robinson" category="young"  imageFilename="$dataS2/character/humans/npc/npc08_diffuse.png" />
+        <npc name="NPC_03" title="Alex Young"      category="young"  imageFilename="$dataS2/character/humans/npc/npc13_diffuse.png" />
+        <npc name="NPC_04" title="Able Nelson"     category="young"  imageFilename="$dataS2/character/humans/npc/npc15_diffuse.png" />
+        <npc name="NPC_05" title="Garry Turner"    category="middle" imageFilename="$dataS2/character/humans/npc/npc18_diffuse.png" />
+        <npc name="NPC_06" title="Peter Wood"      category="middle" imageFilename="$dataS2/character/humans/npc/npc03_diffuse.png" />
+        <npc name="NPC_07" title="George Watson"   category="middle" imageFilename="$dataS2/character/humans/npc/npc04_diffuse.png" />
+        <npc name="NPC_08" title="Dennis Jenkins"  category="middle" imageFilename="$dataS2/character/humans/npc/npc17_diffuse.png" />
+        <npc name="NPC_09" title="Joshua Allen"    category="middle" imageFilename="$dataS2/character/humans/npc/npc06_diffuse.png" />
+        <npc name="NPC_10" title="Edward Gomez"    category="old"    imageFilename="$dataS2/character/humans/npc/npc05_diffuse.png" />
+        <npc name="NPC_11" title="Erick Roberts"   category="old"    imageFilename="$dataS2/character/humans/npc/npc19_diffuse.png" />
+        <npc name="NPC_12" title="Steven Bell"     category="old"    imageFilename="$dataS2/character/humans/npc/npc07_diffuse.png" />
+        <npc name="NPC_13" title="Robert Cook"     category="old"    imageFilename="$dataS2/character/humans/npc/npc10_diffuse.png" />
+        <npc name="NPC_14" title="Simon Collins"   category="old"    imageFilename="$dataS2/character/humans/npc/npc14_diffuse.png" />
+        <npc name="NPC_15" title="Richard Wright"  category="old"    imageFilename="$dataS2/character/humans/npc/npc11_diffuse.png" />
+        <npc name="NPC_16" title="Maria King"      category="female" imageFilename="$dataS2/character/humans/npc/npc02_diffuse.png" />
+        <npc name="NPC_17" title="Daria White"     category="female" imageFilename="$dataS2/character/humans/npc/npc09_diffuse.png" />
+        <npc name="NPC_18" title="Mary Evans"      category="female" imageFilename="$dataS2/character/humans/npc/npc16_diffuse.png" />
+        <npc name="NPC_19" title="Natalie Johnson" category="female" imageFilename="$dataS2/character/humans/npc/npc12_diffuse.png" />
+    </npcs>
+</map>

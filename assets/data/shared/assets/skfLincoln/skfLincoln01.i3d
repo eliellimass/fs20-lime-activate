@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="skfLincoln01" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="2" filename="$data/shared/assets/skfLincoln/skfLincoln01_specular.png" />
+    <File fileId="6" filename="$data/shared/assets/skfLincoln/skfLincolnDecals_diffuse.png" />
+    <File fileId="7" filename="$data/shared/assets/skfLincoln/skfLincolnDecals_specular.png" />
+    <File fileId="1" filename="$data/shared/default_normal.png" />
+    <File fileId="4" filename="$data/shared/window02_diffuse.png" />
+    <File fileId="5" filename="$data/shared/window_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="skfLincoln01_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="window02_mat" materialId="2" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3">
+      <Texture fileId="4"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="skfLincolnDecals_mat" materialId="3" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <CustomParameter name="RDT" value="1.0 1.0 5.0 5.0"/>
+      <Texture fileId="6"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="skfLincoln01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="skf_body" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="80" nodeId="1">
+      <Shape name="skf_glass" translation="7.8387e-06 0.115646 0.134" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="80" nodeId="2">
+        <Shape name="skf_decal" translation="5.75304e-08 -0.0154036 0.0661001" shapeId="3" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="80" nodeId="3"/>
+      </Shape>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

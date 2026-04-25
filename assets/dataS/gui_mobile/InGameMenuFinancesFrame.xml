@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="ingameMenuFinances">
+
+    <GuiElement type="bitmap" profile="uiInGameMenuPageHeader" id="pageHeader">
+        <GuiElement type="empty" profile="uiInGameMenuHeaderSubPagingSelector"  id="subPageSelector">
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonLeft" id="subPagingButtonLeft" onClick="onClickSubPageSelection" />
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonRight" id="subPagingButtonRight" onClick="onClickSubPageSelection" />
+        </GuiElement>
+        <GuiElement type="text" profile="uiInGameMenuPagingTitle" id="pagingTitle" text="$l10n_ui_ingameMenuFinances" />
+    </GuiElement>
+
+    <GuiElement type="empty" profile="uiInGameMenuFrame">
+        <GuiElement type="empty" profile="ingameMenuSettingsBox" id="mainBox">
+
+            <!-- Finances table header -->
+            <GuiElement type="boxLayout" profile="ingameMenuPriceTableHeaderBox" position="1px 0px" id="tableHeaderBox">
+                <GuiElement type="tableHeader" profile="ingameMenuFinancesTableHeaderType" text="$l10n_ui_incomeExpenditure" targetTableId="financesTable" columnName="type"/>
+                <GuiElement type="tableHeader" profile="ingameMenuFinancesTableHeader" targetTableId="financesTable" columnName="day2" id="pastDayHeader[3]"/>
+                <GuiElement type="tableHeader" profile="ingameMenuFinancesTableHeader" targetTableId="financesTable" columnName="day3" id="pastDayHeader[2]"/>
+                <GuiElement type="tableHeader" profile="ingameMenuFinancesTableHeader" targetTableId="financesTable" columnName="day4" id="pastDayHeader[1]"/>
+                <GuiElement type="tableHeader" profile="ingameMenuFinancesTableHeader" targetTableId="financesTable" columnName="day5" text="$l10n_ui_today"/>
+            </GuiElement>
+
+            <!-- Finances table -->
+            <GuiElement type="table" profile="ingameMenuFinancesTable" position="1px -104px" rowTemplateName="financesRowTemplate" updateChildrenOverlayState="false" columnNames="type day2 day3 day4 day5" id="financesTable" periodicUpdate="true" updateInterval="5" onUpdate="updateFinances" handleFocus="false">
+                <GuiElement type="listItem" profile="ingameMenuFinancesRow" name="financesRowTemplate">
+                    <GuiElement type="bitmap" profile="ingameMenuFinancesRowBackground">
+                        <GuiElement type="text" profile="ingameMenuFinancesRowTypeCell" name="type" onCreate="onDataBindType"/>
+                        <GuiElement type="text" profile="ingameMenuFinancesRowCell" position="596px 0px" name="day2" onCreate="onDataBindDay" onCreateArgs="4"/>
+                        <GuiElement type="text" profile="ingameMenuFinancesRowCell" position="889px 0px" name="day3" onCreate="onDataBindDay" onCreateArgs="3"/>
+                        <GuiElement type="text" profile="ingameMenuFinancesRowCell" position="1182px 0px" name="day4" onCreate="onDataBindDay" onCreateArgs="2"/>
+                        <GuiElement type="text" profile="ingameMenuFinancesRowCell" position="1475px 0px" name="day5" onCreate="onDataBindDay" onCreateArgs="1"/>
+                    </GuiElement>
+                </GuiElement>
+            </GuiElement>
+
+            <!-- Separate balance footer of table (does not scroll) -->
+            <GuiElement type="boxLayout" profile="ingameMenuFinancesFooter" position="0px -464px" id="balanceFooter" handleFocus="false">
+                <!-- Total expenditures / incomes of days -->
+                <GuiElement type="bitmap" profile="ingameMenuFinancesRow" margin="0px 4px 0px 0px">
+                    <GuiElement type="bitmap" profile="ingameMenuFinancesRowBackgroundAlternate" position="1px 0px">
+                        <GuiElement type="text" profile="ingameMenuFinancesRowTypeCell" name="type" text="$l10n_ui_total" textUpperCase="true"/>
+                        <GuiElement type="text" profile="ingameMenuFinancesRowCell" position="596px 0px" id="totalText[4]"/>
+                        <GuiElement type="text" profile="ingameMenuFinancesRowCell" position="889px 0px" id="totalText[3]"/>
+                        <GuiElement type="text" profile="ingameMenuFinancesRowCell" position="1182px 0px" id="totalText[2]"/>
+                        <GuiElement type="text" profile="ingameMenuFinancesRowCell" position="1475px 0px" id="totalText[1]"/>
+                    </GuiElement>
+                </GuiElement>
+                <!-- Balance -->
+                <GuiElement type="bitmap" profile="ingameMenuFinancesRow">
+                    <GuiElement type="bitmap" profile="ingameMenuFinancesRowBackground" position="1px 0px">
+                        <GuiElement type="text" profile="ingameMenuFinancesRowTypeCell" name="type" text="$l10n_ui_balance" textUpperCase="true"/>
+                        <GuiElement type="text" profile="ingameMenuFinancesRowCell" position="1475px 0px" id="balanceText"/>
+                    </GuiElement>
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="indexState" profile="selectionStateBoxDocked" id="pagingIndexState" stateElementTemplateId="circleTemplate">
+                <GuiElement type="bitmap" profile="selectionStateDocked" id="circleTemplate"/>
+            </GuiElement>
+
+        </GuiElement>
+    </GuiElement>
+</GUI>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+
+<dog type="dog" maxDistanceToSpawn="10.0" randomSpawnRadius="0.0" >
+    <asset filename="dataS2/character/dog/dog.i3d" skeletonNode="0" meshNode="1" playerInteractionTriggerNode="0|1" fetchAttachNode="0|0|2|0|0|0|0|0|0|2|0|0|0" >
+        <texture multi="true" tileU="2" tileV="2" mirrorV="false" />
+    </asset>
+    <!-- "steeringSystem#collisionMask" : bitfield defined in \lsim2019\documents\collisionMasks.txt -->
+    <steeringSystem wanderRange="5.0" collisionMask="32" swimOffset="-0.6"/>
+    
+    <sounds>
+        <barkSounds volume="0.8" range="50" innerRange="10" minInterval="8000" maxInterval="16000">
+            <barkSound filename="$data/sounds/animals/dog/dog_bark_01.wav" />
+            <barkSound filename="$data/sounds/animals/dog/dog_bark_02.wav" />
+            <barkSound filename="$data/sounds/animals/dog/dog_bark_03.wav" />
+            <barkSound filename="$data/sounds/animals/dog/dog_bark_04.wav" />
+        </barkSounds>
+        <eatSounds volume="0.6" range="15" innerRange="10" minInterval="8000" maxInterval="16000">
+            <eatSound filename="$data/sounds/animals/dog/dog_eat_01.wav" />
+            <eatSound filename="$data/sounds/animals/dog/dog_eat_02.wav" />
+            <eatSound filename="$data/sounds/animals/dog/dog_eat_03.wav" />
+            <eatSound filename="$data/sounds/animals/dog/dog_eat_04.wav" />
+        </eatSounds>
+        <retrieveSounds volume="0.8" range="30" innerRange="10" minInterval="8000" maxInterval="16000">
+            <retrieveSound filename="$data/sounds/animals/dog/dog_retrieve_01.wav" />
+            <retrieveSound filename="$data/sounds/animals/dog/dog_retrieve_02.wav" />
+            <retrieveSound filename="$data/sounds/animals/dog/dog_retrieve_03.wav" />
+            <retrieveSound filename="$data/sounds/animals/dog/dog_retrieve_04.wav" />
+        </retrieveSounds>
+        <rollSounds volume="0.6" range="20" innerRange="10" minInterval="8000" maxInterval="16000">
+            <rollSound filename="$data/sounds/animals/dog/dog_roll_01.wav" />
+            <rollSound filename="$data/sounds/animals/dog/dog_roll_02.wav" />
+            <rollSound filename="$data/sounds/animals/dog/dog_roll_03.wav" />
+            <rollSound filename="$data/sounds/animals/dog/dog_roll_04.wav" />
+        </rollSounds>
+        <sitSounds volume="0.5" range="20" innerRange="10" minInterval="8000" maxInterval="16000">
+            <sitSound filename="$data/sounds/animals/dog/dog_sit_breath_01_01.wav" />
+            <sitSound filename="$data/sounds/animals/dog/dog_sit_breath_01_02.wav" />
+            <sitSound filename="$data/sounds/animals/dog/dog_sit_breath_01_03.wav" />
+            <sitSound filename="$data/sounds/animals/dog/dog_sit_breath_01_04.wav" />
+        </sitSounds>
+        <sniffSounds volume="0.6" range="20" innerRange="10" minInterval="8000" maxInterval="16000">
+            <sniffSound filename="$data/sounds/animals/dog/dog_sniff_01.wav" />
+            <sniffSound filename="$data/sounds/animals/dog/dog_sniff_02.wav" />
+            <sniffSound filename="$data/sounds/animals/dog/dog_sniff_03.wav" />
+            <sniffSound filename="$data/sounds/animals/dog/dog_sniff_04.wav" />
+        </sniffSounds>
+        <swimSounds volume="0.8" range="30" innerRange="10" minInterval="8000" maxInterval="16000">
+            <swimSound filename="$data/sounds/animals/dog/dog_swim_01.wav" />
+            <swimSound filename="$data/sounds/animals/dog/dog_swim_02.wav" />
+            <swimSound filename="$data/sounds/animals/dog/dog_swim_03.wav" />
+            <swimSound filename="$data/sounds/animals/dog/dog_swim_04.wav" />
+        </swimSounds>
+        <walkSounds volume="0.5" range="15" innerRange="10" minInterval="8000" maxInterval="16000">
+            <walkSound filename="$data/sounds/animals/dog/dog_step_01.wav" />
+            <walkSound filename="$data/sounds/animals/dog/dog_step_02.wav" />
+            <walkSound filename="$data/sounds/animals/dog/dog_step_03.wav" />
+            <walkSound filename="$data/sounds/animals/dog/dog_step_04.wav" />
+        </walkSounds>
+        <runSounds volume="0.6" range="20" innerRange="10" minInterval="8000" maxInterval="16000">
+            <runSound filename="$data/sounds/animals/dog/dog_run_01.wav" />
+            <runSound filename="$data/sounds/animals/dog/dog_run_02.wav" />
+            <runSound filename="$data/sounds/animals/dog/dog_run_03.wav" />
+            <runSound filename="$data/sounds/animals/dog/dog_run_04.wav" />
+        </runSounds>
+    </sounds>
+    
+    <conditionalAnimation>
+        <!-- sit -->
+        <item id="sit" >
+            <clips>
+                <clip clipName="sitSource" />
+            </clips>
+            <callbacks>
+                <callback name="onIdleAnimStart" time="0.0" />
+            </callbacks>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="absForwardVelocity" lower="0.001" />
+                    <condition parameter="absYawVelocity" lower="0.001" />
+                    <condition parameter="isHappy" equal="false" />
+                    <condition parameter="isBeingPet" equal="false" />
+                    <condition parameter="isSleeping" equal="false" />
+                    <condition parameter="isEating" equal="false" />
+                    <condition parameter="isSwimming" equal="false" />
+                    <condition parameter="isGrabbing" equal="false" />
+                    <condition parameter="isYawning" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <!-- happy -->
+        <item id="happy" >
+            <clips>
+                <clip clipName="happySource" />
+            </clips>
+            <callbacks>
+                <callback name="onHappyAnimStart" time="0.0" />
+                <callback name="onHappyAnimBark" time="1.970" />
+                <callback name="onHappyAnimFinish" />
+            </callbacks>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="absForwardVelocity" lower="0.001" />
+                    <condition parameter="absYawVelocity" lower="0.001" />
+                    <condition parameter="isHappy" equal="true" />
+                    <condition parameter="isBeingPet" equal="false" />
+                    <condition parameter="isSleeping" equal="false" />
+                    <condition parameter="isEating" equal="false" />
+                    <condition parameter="isSwimming" equal="false" />
+                    <condition parameter="isGrabbing" equal="false" />
+                    <condition parameter="isYawning" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <!-- roll -->
+        <item id="pet" >
+            <clips>
+                <clip clipName="rollSource" />
+            </clips>
+            <callbacks>
+                <callback name="onPetAnimStart" time="0.0" />
+                <callback name="onPetAnimFinish" />
+            </callbacks>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="absForwardVelocity" lower="0.001" />
+                    <condition parameter="absYawVelocity" lower="0.001" />
+                    <condition parameter="isHappy" equal="false" />
+                    <condition parameter="isBeingPet" equal="true" />
+                    <condition parameter="isSleeping" equal="false" />
+                    <condition parameter="isEating" equal="false" />
+                    <condition parameter="isSwimming" equal="false" />
+                    <condition parameter="isGrabbing" equal="false" />
+                    <condition parameter="isYawning" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <!-- eat -->
+        <item id="eat" entryTransitionDuration="0.5" exitTransitionDuration="0.5" >
+            <clips>
+                <clip clipName="eatSource" />
+            </clips>
+            <callbacks>
+                <callback name="onEatAnimStart" time="0" />
+                <callback name="onEatAnimFinish" />
+            </callbacks>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="absForwardVelocity" lower="0.001" />
+                    <condition parameter="absYawVelocity" lower="0.001" />
+                    <condition parameter="isHappy" equal="false" />
+                    <condition parameter="isBeingPet" equal="false" />
+                    <condition parameter="isSleeping" equal="false" />
+                    <condition parameter="isEating" equal="true" />
+                    <condition parameter="isSwimming" equal="false" />
+                    <condition parameter="isGrabbing" equal="false" />
+                    <condition parameter="isYawning" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <!-- sleep -->
+        <item id="sleep" entryTransitionDuration="0.5" exitTransitionDuration="0.5" >
+            <clips>
+                <clip clipName="sleepSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="absForwardVelocity" lower="0.001" />
+                    <condition parameter="absYawVelocity" lower="0.001" />
+                    <condition parameter="isHappy" equal="false" />
+                    <condition parameter="isBeingPet" equal="false" />
+                    <condition parameter="isSleeping" equal="true" />
+                    <condition parameter="isEating" equal="false" />
+                    <condition parameter="isSwimming" equal="false" />
+                    <condition parameter="isGrabbing" equal="false" />
+                    <condition parameter="isYawning" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <!-- swim -->
+        <item id="swim" entryTransitionDuration="0.0" >
+            <clips blended="true" blendingParameter="yawVelocity" blendingParameterType="angular" >
+                <clip id="swimL" clipName="swimLeftSource" blendingThreshold="-15.0" />
+                <clip id="swimR" clipName="swimRightSource" blendingThreshold="15.0" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isHappy" equal="false" />
+                    <condition parameter="isBeingPet" equal="false" />
+                    <condition parameter="isSleeping" equal="false" />
+                    <condition parameter="isEating" equal="false" />
+                    <condition parameter="isSwimming" equal="true" />
+                    <condition parameter="isGrabbing" equal="false" />
+                    <condition parameter="isYawning" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <!-- walk -->
+        <item id="walk" exitTransitionDuration="0.3" >
+            <clips blended="true" blendingParameter="yawVelocity" blendingParameterType="angular" speedScaleType="distance" speedScaleParameter="0.825">
+                <clip id="walkL" clipName="walkLeftSource" blendingThreshold="-8.0" />
+                <clip id="walkR" clipName="walkRightSource" blendingThreshold="8.0" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="absForwardVelocity" between="0.001, 1.5" />
+                    <condition parameter="isHappy" equal="false" />
+                    <condition parameter="isBeingPet" equal="false" />
+                    <condition parameter="isSleeping" equal="false" />
+                    <condition parameter="isEating" equal="false" />
+                    <condition parameter="isSwimming" equal="false" />
+                    <condition parameter="isGrabbing" equal="false" />
+                    <condition parameter="isYawning" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <!-- run -->
+        <item id="run" exitTransitionDuration="0.3" >
+            <clips blended="true" blendingParameter="yawVelocity" blendingParameterType="angular" speedScaleType="distance" speedScaleParameter="1.5">
+                <clip id="runL" clipName="runLeftSource" blendingThreshold="-8.0" />
+                <clip id="runR" clipName="runRightSource" blendingThreshold="8.0" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="forwardVelocity" greater="1.5" />
+                    <condition parameter="isHappy" equal="false" />
+                    <condition parameter="isBeingPet" equal="false" />
+                    <condition parameter="isSleeping" equal="false" />
+                    <condition parameter="isEating" equal="false" />
+                    <condition parameter="isSwimming" equal="false" />
+                    <condition parameter="isGrabbing" equal="false" />
+                    <condition parameter="isYawning" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <!-- grab -->
+        <item id="grab" >
+            <clips>
+                <clip clipName="sniffSource" loop="false" />
+            </clips>
+            <callbacks>
+                <callback name="onGrabAnimStart" time="0.0" />
+                <callback name="onGrabAnimFinish" />
+            </callbacks>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isBeingPet" equal="false" />
+                    <condition parameter="isSleeping" equal="false" />
+                    <condition parameter="isEating" equal="false" />
+                    <condition parameter="isSwimming" equal="false" />
+                    <condition parameter="isGrabbing" equal="true" />
+                    <condition parameter="isYawning" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <!-- yawn -->
+        <item id="yawn" entryTransitionDuration="0.5" exitTransitionDuration="0.5" >
+            <clips>
+                <clip clipName="yawnSource" loop="false" />
+            </clips>
+            <callbacks>
+                <callback name="onYawnAnimStart" time="0.0" />
+                <callback name="onYawnAnimFinish"  time="1.5" />
+            </callbacks>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="absForwardVelocity" lower="0.001" />
+                    <condition parameter="absYawVelocity" lower="0.001" />
+                    <condition parameter="isBeingPet" equal="false" />
+                    <condition parameter="isSleeping" equal="false" />
+                    <condition parameter="isEating" equal="false" />
+                    <condition parameter="isSwimming" equal="false" />
+                    <condition parameter="isGrabbing" equal="false" />
+                    <condition parameter="isYawning" equal="true" />
+                </conditionGroup>
+            </conditions>
+        </item>
+    </conditionalAnimation>
+</dog>

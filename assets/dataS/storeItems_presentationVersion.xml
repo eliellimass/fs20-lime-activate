@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<storeItems>
+<!-- GAMESCOM -->
+    <storeItem xmlFilename="$data/vehicles/lizard/pickup1978/pickup1978.xml" />
+    <storeItem xmlFilename="$data/vehicles/johnDeere/series8R/series8R.xml" />
+    <storeItem xmlFilename="$data/vehicles/fendt/fendt700/fendt700.xml" />
+    <storeItem xmlFilename="$data/vehicles/johnDeere/pickUp1800/pickUp1800.xml" />
+    <storeItem xmlFilename="$data/vehicles/vaderstad/fh2200/fh2200.xml" />
+    <storeItem xmlFilename="$data/vehicles/vaderstad/tempoVTPV8/tempoVTPV8.xml" />
+    <storeItem xmlFilename="$data/objects/bigBagContainer/bigBagContainerSeeds.xml" />
+    <storeItem xmlFilename="$data/vehicles/einboeck/rotation1200/rotation1200.xml" />
+    <storeItem xmlFilename="$data/vehicles/kuhn/kuhnDeltis1302/kuhnDeltis1302.xml" />
+    <storeItem xmlFilename="$data/vehicles/kuhn/kuhnPF1500/kuhnPF1500.xml" />
+    <storeItem xmlFilename="$data/vehicles/johnDeere/625X/625X.xml" />
+    <storeItem xmlFilename="$data/vehicles/johnDeere/T560/T560.xml" />
+    <storeItem xmlFilename="$data/vehicles/caseIH/optum/optum.xml" />
+    <storeItem xmlFilename="$data/vehicles/bredal/K165/K165.xml" />
+    <storeItem xmlFilename="$data/vehicles/komatsu/xc931/xc931.xml" />
+    <storeItem xmlFilename="$data/vehicles/magsi/telehandlerShovel/telehandlerShovel.xml" />
+    <storeItem xmlFilename="$data/vehicles/manitou/MLT737/MLT737.xml" />
+    <storeItem xmlFilename="$data/vehicles/elmersMfg/haulMaster/haulMaster.xml" />
+    <storeItem xmlFilename="$data/vehicles/agco/ideal9/IDEAL9.xml" />
+    <storeItem xmlFilename="$data/vehicles/agco/powerFlow/powerFlow.xml" />
+    <storeItem xmlFilename="$data/vehicles/hardi/rubicon9000/rubicon9000.xml" />
+    <storeItem xmlFilename="$data/vehicles/caseIH/moduleExpress635/moduleExpress635.xml" />
+<!-- HORSES -->
+    <storeItem xmlFilename="dataS/character/horse/horse.xml" />
+<!-- CHAINSAWS -->
+    <storeItem xmlFilename="$data/firstPerson/chainsaws/stihl/stihlMS261.xml" />
+    <storeItem xmlFilename="$data/firstPerson/chainsaws/husqvarna/husqvarna550.xml" />
+    <storeItem xmlFilename="$data/firstPerson/chainsaws/jonsered/jonsered2252.xml" />
+    <storeItem xmlFilename="$data/firstPerson/chainsaws/mcCulloch/mcCullochCS410.xml" />
+
+<!-- PLACEABLES -->
+    <storeItem xmlFilename="$data/placeables/sandCastle/sandCastle.xml" />
+    <storeItem xmlFilename="$data/placeables/highPressureWasher/kaercher/kaercherHDS918-4M.xml" />
+    <storeItem xmlFilename="$data/placeables/workshop/workshop.xml" />
+    <storeItem xmlFilename="$data/placeables/doghouse/doghouse.xml" />
+    <!-- storeItem xmlFilename="$data/placeables/animalHusbandry/testHusbandry.xml" / -->
+    <storeItem xmlFilename="$data/placeables/animalHusbandry/husbandryChicken.xml" />
+    <storeItem xmlFilename="$data/placeables/animalHusbandry/husbandryCow.xml" />
+    <storeItem xmlFilename="$data/placeables/animalHusbandry/husbandryHorse.xml" />
+    <storeItem xmlFilename="$data/placeables/animalHusbandry/husbandryPig.xml" />
+    <storeItem xmlFilename="$data/placeables/animalHusbandry/husbandrySheep.xml" />
+    <storeItem xmlFilename="$data/placeables/woodCrusher/jenz/jenzHE700.xml" />
+    <storeItem xmlFilename="$data/placeables/sheds/easyShed01.xml" />
+    <storeItem xmlFilename="$data/placeables/sheds/easyShed02.xml" />
+    <storeItem xmlFilename="$data/placeables/sheds/easyShed03.xml" />
+
+<!-- PLACEABLE DECO -->
+<!--    <storeItem xmlFilename="$data/placeables/constructionModules/constructionModule01.xml" />-->
+
+
+<!-- PLACEABLE SILOS-->
+    <storeItem xmlFilename="$data/placeables/farmSilos/farmSiloSmall.xml" />
+    <storeItem xmlFilename="$data/placeables/farmSilos/farmSiloLarge.xml" />
+    <storeItem xmlFilename="$data/placeables/farmSilos/siloExtension.xml" />
+    <storeItem xmlFilename="$data/placeables/hayLoft/hayLoft.xml" />
+
+<!-- PLACEABLES MAP SA -->
+    <storeItem xmlFilename="$data/placeables/mapSA/gasStation/gasStation.xml" />
+    <storeItem xmlFilename="$data/placeables/mapSA/farmSilo/farmSilo.xml" />
+    <storeItem xmlFilename="$data/placeables/mapSA/storageSilo/storageSilo.xml" />
+    <storeItem xmlFilename="$data/placeables/mapSA/sellingStations/sellingStationGeneric.xml" />
+    <storeItem xmlFilename="$data/placeables/mapSA/sellingStations/sellingStationHarbor.xml" />
+    <storeItem xmlFilename="$data/placeables/mapSA/sellingStations/sellingStationBakery.xml" />
+    <storeItem xmlFilename="$data/placeables/mapSA/sellingStations/sellingStationTrain.xml" />
+    <storeItem xmlFilename="$data/placeables/mapSA/sellingStations/sellingStationBales.xml" />
+    <storeItem xmlFilename="$data/placeables/mapSA/trainSystem/trainSystem.xml" />
+
+<!-- PLACEABLES MAP US -->
+    <storeItem xmlFilename="$data/placeables/mapUS/bga/bga.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/gasStation/gasStation.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/gasStationPump/gasStationPump.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/grainSiloRailroad01/grainSiloRailroad01.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/grainSiloRailroad02/grainSiloRailroad02.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/grainSiloPort/grainSiloPort.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/grainSiloCentral/grainSiloCentral.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/sellingStationGeneric/sellingStationRestaurant.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/sellingStationGeneric/sellingStationRanch.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/sellingStationWood/sellingStationWood.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/sellingStationWoodHeatingPlant/sellingStationWoodHeatingPlant.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/sellingStationWoodChips/sellingStationWoodChips.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/sellingStationWool/sellingStationWool.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/sellingStationBales/sellingStationBales.xml" />
+    <storeItem xmlFilename="$data/placeables/mapUS/trainSystem/trainSystem.xml" />
+
+<!-- PLACEABLES MAP DE -->
+    <storeItem xmlFilename="$data/placeables/mapDE/bga/bga.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/gasStation/gasStation.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/sellingStationGeneric/sellingStationPort01.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/sellingStationGeneric/sellingStationPort02.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/sellingStationGeneric/sellingStationMill01.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/sellingStationGeneric/sellingStationMill01.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/grainElevatorEast/grainElevatorEast.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/railroadSilo01/railroadSilo01.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/railroadSilo02/railroadSilo02.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/sellingStationWood/sellingStationWood.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/sellingStationWoodChips/sellingStationWoodChips.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/sellingStationWool/sellingStationWool.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/sellingStationBales/sellingStationBales.xml" />
+    <storeItem xmlFilename="$data/placeables/mapDE/trainSystem/trainSystem.xml" />
+
+<!-- PLACEABLES MAP BASE -->
+    <storeItem xmlFilename="$data/placeables/mapBase/farmSilo/farmSilo.xml" />
+    <storeItem xmlFilename="$data/placeables/mapBase/sellStation/sellStation.xml" />
+    <storeItem xmlFilename="$data/placeables/mapBase/limeStation/limeStation.xml" />
+    <storeItem xmlFilename="$data/placeables/mapBase/trainSystem/trainSystem.xml" />
+    <storeItem xmlFilename="$data/placeables/mapBase/woodSellStation/woodSellStation.xml" />
+
+<!-- Farm building -->
+    <storeItem xmlFilename="$data/placeables/farmhouse/farmhouse.xml" />
+    <storeItem xmlFilename="$data/placeables/bunkerSilo/bunkerSiloSmall.xml" />
+    <storeItem xmlFilename="$data/placeables/bunkerSilo/bunkerSiloMedium.xml" />
+    <storeItem xmlFilename="$data/placeables/bunkerSilo/bunkerSiloLarge.xml" />
+    <storeItem xmlFilename="$data/placeables/bunkerSilo/bunkerSiloSmallDouble.xml" />
+    <storeItem xmlFilename="$data/placeables/bunkerSilo/bunkerSiloMediumDouble.xml" />
+    <storeItem xmlFilename="$data/placeables/bunkerSilo/bunkerSiloLargeDouble.xml" />
+
+<!-- CRANES -->
+    <storeItem xmlFilename="$data/placeables/crane/crane.xml" />
+    <storeItem xmlFilename="$data/vehicles/lizard/crane/crane.xml" />
+
+<!-- BIGBAGS -->
+    <storeItem xmlFilename="$data/objects/bigBagContainer/bigBagContainerFertilizer.xml" />
+    <storeItem xmlFilename="$data/objects/bigBagContainer/bigBagContainerPigFood.xml" />
+    <storeItem xmlFilename="$data/objects/bigBagContainer/bigBagContainerSeeds.xml" />
+    <storeItem xmlFilename="$data/objects/bigBagContainer/bigBagContainerLime.xml" />
+
+<!-- PALLETS -->
+    <storeItem xmlFilename="$data/objects/pallets/liquidTank/fertilizerTank.xml" />
+    <storeItem xmlFilename="$data/objects/pallets/liquidTank/herbicideTank.xml" />
+    <storeItem xmlFilename="$data/objects/pallets/treeSaplingPallet/treeSaplingPallet.xml" />
+    <storeItem xmlFilename="$data/objects/pallets/palletPoplar/palletPoplar.xml" />
+    <storeItem xmlFilename="$data/objects/pallets/palletSugarCane/palletSugarCane.xml" />
+    <storeItem xmlFilename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+    <storeItem xmlFilename="$data/objects/pallets/woolPallet/woolPallet.xml" />
+    <storeItem xmlFilename="$data/objects/pallets/eggBox/eggBox.xml" />
+
+<!-- TRAIN -->
+    <storeItem xmlFilename="$data/vehicles/train/locomotive01/locomotive01.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/locomotive02/locomotive02.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/locomotive03/locomotive03.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/locomotive04/locomotive04.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonGrain/wagonGrain.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonSugarbeets/wagonSugarbeets.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonWoodChips/wagonWoodChips.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonTimber/wagonTimber.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonVehicles/wagonVehicles.xml" />
+</storeItems>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="bgaTank_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/fillPlanes/silage_diffuse.png" />
+    <File fileId="2" filename="$data/fillPlanes/silage_normal.png" />
+    <File fileId="3" filename="$data/fillPlanes/silage_specular.png" />
+    <File fileId="8" filename="$data/maps/textures/mobile/bgaTank_specular.png" />
+    <File fileId="4" filename="$data/maps/textures/mobile/materialCollection01_diffuse.png" />
+    <File fileId="5" filename="$data/maps/textures/mobile/materialCollection01_normal.png" />
+    <File fileId="6" filename="$data/maps/textures/mobile/materialCollection01_specular.png" />
+    <File fileId="7" filename="$data/shaders/buildingShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="3" diffuseColor="0.2375 0.121 0.121 1" specularColor="0 0 0" ambientColor="1 1 1">
+    </Material>
+    <Material name="silage_mat" materialId="1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="bgaTank_mat" materialId="2" cosPower="255" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="7">
+      <Custommap name="mMaskMap" fileId="8"/>
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="bgaTank_SET.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="bgaTank_SET" translation="0 2.47955e-06 0" collision="false" nodeId="1">
+      <Shape name="fillPlane" translation="0 -2.47955e-06 0" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="2"/>
+      <Shape name="bgaTank" translation="0 -2.47955e-06 5.45697e-14" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="500" nodeId="3"/>
+      <Shape name="col" translation="0 -2.47955e-06 0" visibility="false" shapeId="3" static="true" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="4"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="2">
+      <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+      <Attribute name="UDP3DSMAX" type="string" value="MapChannel:1 = map1"/>
+      <Attribute name="MaxHandle" type="integer" value="171"/>
+    </UserAttribute>
+  </UserAttributes>
+</i3D>

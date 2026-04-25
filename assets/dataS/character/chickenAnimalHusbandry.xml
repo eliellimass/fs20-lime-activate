@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<animalHusbandry>
+    <animals>
+        <animal radius="0.35" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.3" allowMilkingPlace="false" canFeed="false" canSleep="true" canEatDuringNight="false" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="4000" chewTimeMax="8000" eatTimeMin="7000" eatTimeMax="15000">
+            <assets filename="$dataS2/character/chicken/hen.i3d" skeletonIndex="0" meshIndex="1" shaderIndex="1" >
+                <texture multi="true" tileU="2" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="henLocomotion.xml"/>
+        </animal>
+        <animal radius="0.35" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.3" allowMilkingPlace="false" canFeed="false" canSleep="true" canEatDuringNight="false" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="4000" chewTimeMax="8000" eatTimeMin="7000" eatTimeMax="15000">
+            <assets filename="$dataS2/character/chicken/hen.i3d" skeletonIndex="0" meshIndex="1" shaderIndex="1" >
+                <texture multi="true" tileU="2" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="henLocomotion.xml"/>
+        </animal>
+        <animal radius="0.35" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.3" allowMilkingPlace="false" canFeed="false" canSleep="true" canEatDuringNight="false" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="4000" chewTimeMax="8000" eatTimeMin="7000" eatTimeMax="15000">
+            <assets filename="$dataS2/character/chicken/hen.i3d" skeletonIndex="0" meshIndex="1" shaderIndex="1" >
+                <texture multi="true" tileU="2" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="henLocomotion.xml"/>
+        </animal>
+        <animal radius="0.4" handleThreats="true" threatAwarenessRadius="7" slowingDistance="0.3" allowMilkingPlace="false" canFeed="false" canSleep="true" canEatDuringNight="false" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="4000" chewTimeMax="8000" eatTimeMin="7000" eatTimeMax="15000">
+            <assets filename="$dataS2/character/chicken/rooster.i3d" skeletonIndex="0" meshIndex="1" shaderIndex="1">
+                <texture multi="false" tileU="1" tileV="1" mirrorV="false" />
+            </assets>
+            <locomotion filename="roosterLocomotion.xml"/>
+        </animal>
+        <audio>
+            <yells volume="0.7" range="40" innerRange="1" minInterval="4000" maxInterval="8000" animalTypes="0,1,2" >
+                <yell filename="$data/sounds/animals/chicken/hen_01.wav" />
+                <yell filename="$data/sounds/animals/chicken/hen_02.wav" />
+                <yell filename="$data/sounds/animals/chicken/hen_03.wav" />
+                <yell filename="$data/sounds/animals/chicken/hen_04.wav" />
+                <yell filename="$data/sounds/animals/chicken/hen_05.wav" />
+                <yell filename="$data/sounds/animals/chicken/hen_06.wav" />
+                <yell filename="$data/sounds/animals/chicken/hen_07.wav" />
+                <yell filename="$data/sounds/animals/chicken/hen_08.wav" />
+                <yell filename="$data/sounds/animals/chicken/hen_09.wav" />
+                <yell filename="$data/sounds/animals/chicken/hen_10.wav" />
+                <yell filename="$data/sounds/animals/chicken/hen_11.wav" />
+            </yells>
+            <yells volume="0.7" range="60" innerRange="1" minInterval="20000" maxInterval="30000" animalTypes="3" >
+                <yell filename="$data/sounds/animals/chicken/rooster_01.wav" />
+                <yell filename="$data/sounds/animals/chicken/rooster_02.wav" />
+            </yells>
+        </audio>
+    </animals>
+</animalHusbandry>

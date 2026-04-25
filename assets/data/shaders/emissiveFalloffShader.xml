@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="5">
+    <Parameters>
+        <Parameter name = "colorScale"    target = "colorScale"    type = "float3"  defaultValue = "1.0 0.0 0.0 1.0"  minValue = "0.0 0.0 0.0 0.0"          maxValue = "1.0 1.0 1.0 1.0"/>
+    </Parameters>
+    <UvUsages/>
+    <Variations>
+        <Variation name = "colorScale">
+<![CDATA[
+    #define COLOR_SCALE
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="CONFIG_DEFINES">
+<![CDATA[
+#if defined(ALPHA_BLENDED)
+// In additive blending mode, we only apply the fog extinction
+#undef FOG_INSCATTERING
+#endif
+]]>
+            </CodeInjection>		
+            <CodeInjection position = "MATERIALINFO">
+<![CDATA[
+#if defined( COLOR_SCALE )
+    uniform float3 colorScale;
+#endif
+]]>
+            </CodeInjection>             
+            <CodeInjection position="EMISSIVE_FS">
+<![CDATA[
+#if defined( COLOR_SCALE )
+    float visScale = getFresnel( facing, 0.15 , 4.0 ) * (cos( 3.0 * cTime_s )* 0.5 + 1.0);
+    emissiveColor.rgb *= colorScale.rgb*visScale;
+#endif
+]]>
+            </CodeInjection>   
+            <CodeInjection position="POST_GLOSS_COLOR_FS">
+<![CDATA[
+// Disable specular color for alphablended billboards
+#if defined(SPECULAR) && defined(ALPHA_BLENDED)
+    #undef SPECULAR
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="FINAL_POS_FS">
+<![CDATA[
+#if defined(ALPHA_BLENDED)
+    oColor.a = 0.0; // additive blending
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>
+
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="tireTrackMaterialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="../../shaders/tireTrackShader.xml"/>
+    <File fileId="1" filename="tireTrack_diffuse.png"/>
+    <File fileId="2" filename="tireTrack_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="tireTrackSystemMaterial" materialId="4" alphaBlending="true" customShaderId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="tireTrackMaterialHolder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="tireTrackMaterialHolder" nodeId="7" materialIds="4" receiveShadows="true" buildNavMeshMask="96" decalLayer="3"/>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="7">
+      <Attribute name="onCreate" type="scriptCallback" value="TireTrackSystem.onCreateTireTrackSystem"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

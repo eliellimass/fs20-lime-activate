@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="manureHeapWalls_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="../../fillPlanes/manure_diffuse.png"/>
+    <File fileId="8" filename="../../fillPlanes/manure_normal.png"/>
+    <File fileId="9" filename="../../fillPlanes/manure_specular.png"/>
+    <File fileId="5" filename="../textures/mobile/manureHeapWalls_specular.png"/>
+    <File fileId="1" filename="../textures/mobile/materialCollection01_diffuse.png"/>
+    <File fileId="2" filename="../textures/mobile/materialCollection01_normal.png"/>
+    <File fileId="3" filename="../textures/mobile/materialCollection01_specular.png"/>
+    <File fileId="4" filename="../../shaders/buildingShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="manureHeapWalls_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+    </Material>
+    <Material name="lambert1" materialId="4" diffuseColor="0.235294 0.117647 0.117647 1">
+    </Material>
+    <Material name="manureHeap_mat" materialId="6">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="manureHeapWalls_SET.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="manureHeapWalls_SET" nodeId="11">
+      <Shape shapeId="1" name="manureHeapWalls" clipDistance="300" nodeId="12" materialIds="5" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="manureHeap" static="true" clipDistance="300" nodeId="13" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="3" name="col" visibility="false" static="true" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="14">
+      <Attribute name="collisionHeight" type="float" value="3"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

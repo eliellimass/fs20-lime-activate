@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <treeTypes>
+        <treeType name="treeFir" nameI18N="ui_treeFir" growthTimeHours="240" >
+            <stage filename="data/objects/pallets/treeSaplingPallet/treeSapling.i3d" />
+            <stage filename="data/maps/trees/pine01.i3d" />
+            <stage filename="data/maps/trees/pine02.i3d" />
+            <stage filename="data/maps/trees/pine03.i3d" />
+            <stage filename="data/maps/trees/pine04.i3d" />
+            <stage filename="data/maps/trees/pine05.i3d" />
+            <stage filename="data/maps/trees/pine06.i3d" />
+        </treeType>
+    </treeTypes>
+</map>

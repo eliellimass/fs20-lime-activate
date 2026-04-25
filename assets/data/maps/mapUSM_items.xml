@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<items>
+    <item mapBoundId="washingStation" className="WashingStationPlaceable" filename="data/placeables/washingStation/washingStation.xml" position="4 60 -169" rotation="0 0 0" />
+    <item mapBoundId="simpleBgaPlaceable" className="SimpleBgaPlaceable" filename="data/placeables/bga/bga.xml" position="422.359 55.7 93.713" rotation="0 90 0" />
+
+    <item mapBoundId="sellingStationGrainMill" className="SellingStationPlaceable" filename="data/placeables/sellingStationGeneric/sellingStationGrainMill.xml" position="394.25 72.25 -205" rotation="0 0 0" />
+    <item mapBoundId="sellingStationCerealFactory" className="SellingStationPlaceable" filename="data/placeables/sellingStationGeneric/sellingStationCerealFactory.xml" position="-377.5 26.875 349" rotation="0 0 0" />
+    <item mapBoundId="sellingStationGrainStorage" className="SellingStationPlaceable" filename="data/placeables/sellingStationGeneric/sellingStationGrainStorage.xml" position="-58 50.25 -471.3" rotation="0 0 0" />
+    <item mapBoundId="sellingStationFarmersMarket" className="SellingStationPlaceable" filename="data/placeables/sellingStationGeneric/sellingStationFarmersMarket.xml" position="86.2 32.425 264.34" rotation="0 0 0" />
+
+    <item mapBoundId="sellingStationWool" className="SellingStationPlaceable" filename="data/placeables/sellingStationWool/sellingStationWool.xml" position="-382 27.5 -465.2" rotation="0 90 0" />
+    <item mapBoundId="sellingStationBales" className="SellingStationPlaceable" filename="data/placeables/sellingStationBales/sellingStationBales.xml" position="-270.5 34 201.5" rotation="0 270 0" />
+
+    <item mapBoundId="baleStorage" className="BaleStoragePlaceable" filename="data/placeables/baleStorage/baleStorage.xml" position="-51 59.25 -32.5" rotation="0 -90 0" farmId="1"/>
+
+    <item mapBoundId="gasStation" className="BuyingStationPlaceable" filename="data/placeables/gasStation/gasStation.xml" position="62 60 -165" rotation="0 0 0" />
+
+    <item mapBoundId="farmSilo" className="SiloPlaceable" filename="data/placeables/farmSilo/farmSilo.xml" position="6 59 -37" rotation="0 90 0" defaultFarmProperty="true" farmId="1" />
+
+    <item mapBoundId="seedStation" className="BuyingStationPlaceable" filename="data/placeables/seedStation/seedStation.xml" position="5.75 59.125 4.5" rotation="0 90 0" />
+    <item mapBoundId="fertilizerStation" className="BuyingStationPlaceable" filename="data/placeables/fertilizerStation/fertilizerStation.xml" position="-11.5 59.125 4.5" rotation="0 90 0" />
+    <item mapBoundId="liquidFertilizerStation" className="BuyingStationPlaceable" filename="data/placeables/liquidFertilizerStation/liquidFertilizerStation.xml" position="-18 59.125 8.25" rotation="0 180 0" />
+
+    <item mapBoundId="waterTank01" className="BuyingStationPlaceable" filename="data/placeables/waterTank/waterTank.xml" position="63 32.8 287" rotation="0 90 0" />
+    <item mapBoundId="waterTank02" className="BuyingStationPlaceable" filename="data/placeables/waterTank/waterTank.xml" position="230.5 69.5 -121.5" rotation="0 0 0" />
+    <item mapBoundId="waterTank03" className="BuyingStationPlaceable" filename="data/placeables/waterTank/waterTank.xml" position="408 63.9 -440" rotation="0 0 1" />
+    <item mapBoundId="waterTank04" className="BuyingStationPlaceable" filename="data/placeables/waterTank/waterTank.xml" position="-363.5 27.7 -445.8" rotation="0 180 0" />
+    <item mapBoundId="waterTank05" className="BuyingStationPlaceable" filename="data/placeables/waterTank/waterTank.xml" position="-85.5 70 130.5" rotation="2 45 0" />
+    <item mapBoundId="waterTank06" className="BuyingStationPlaceable" filename="data/placeables/waterTank/waterTank.xml" position="-267.6 34 134" rotation="0 0 0" />
+    <item mapBoundId="waterTank07" className="BuyingStationPlaceable" filename="data/placeables/waterTank/waterTank.xml" position="327 58 -408" rotation="0 0 0" />
+
+    <item mapBoundId="husbandryCow" className="AnimalHusbandry" filename="data/placeables/animalHusbandry/husbandryCow.xml" position="-36 59.25 -60" rotation="0 0 0" defaultFarmProperty="true" farmId="1" />
+    <item mapBoundId="husbandrySheep" className="AnimalHusbandry" filename="data/placeables/animalHusbandry/husbandrySheep.xml" position="424 64 -390" rotation="0 0 0" defaultFarmProperty="true" farmId="1" />
+    <item mapBoundId="husbandryPig" className="AnimalHusbandry" filename="data/placeables/animalHusbandry/husbandryPig.xml" position="455 50.5 330" rotation="0 0 0" defaultFarmProperty="true" farmId="1" />
+    <item mapBoundId="husbandryHorse" className="AnimalHusbandry" filename="data/placeables/animalHusbandry/husbandryHorse.xml" position="254 69.5 -85" rotation="0 0 0" defaultFarmProperty="true" farmId="1" />
+</items>

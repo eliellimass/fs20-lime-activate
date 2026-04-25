@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="mapUSM" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="../../maps/textures/shared/blackStripe_diffuse.png"/>
+    <File fileId="6" filename="../../maps/textures/shared/default_normal.dds"/>
+    <File fileId="7" filename="../../maps/textures/shared/default_specular.png"/>
+    <File fileId="2" filename="../../maps/textures/shared/warningStripes_diffuse.dds"/>
+    <File fileId="3" filename="../../maps/textures/shared/warningStripes_normal.dds"/>
+    <File fileId="4" filename="../../maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="8" filename="symbolWashing_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="blackStripe_mat" materialId="4">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="5" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="symbolWashing_mat" materialId="6" alphaBlending="true">
+      <Normalmap fileId="6"/>
+      <Emissivemap fileId="8"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="7">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="washingStation.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="washingStation" nodeId="42">
+      <TransformGroup name="gameplay" nodeId="43">
+        <Shape shapeId="1" name="trigger" static="true" trigger="true" collisionMask="32514048" nodeId="44" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+        <TransformGroup name="mapPosition" nodeId="45"/>
+        <Shape shapeId="2" name="emitter" nodeId="46" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+        <Shape shapeId="1" name="poiTrigger" static="true" trigger="true" collisionMask="7340032" nodeId="47" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+      </TransformGroup>
+      <TransformGroup name="triggerMarkers" nodeId="48">
+        <Shape shapeId="3" name="warningStripesCorner1" translation="-4.5 0.2 -4.5" visibility="false" clipDistance="250" nodeId="49" materialIds="7" receiveShadows="true">
+          <Shape shapeId="4" name="border" clipDistance="250" nodeId="50" materialIds="4" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="warningStripesCorner2" translation="4.5 0.2 -4.5" visibility="false" clipDistance="250" nodeId="51" materialIds="7" receiveShadows="true">
+          <Shape shapeId="6" name="border" clipDistance="250" nodeId="52" materialIds="4" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="warningStripesCorner1" translation="4.5 0.2 4.5" rotation="180 -5.00896e-06 180" visibility="false" clipDistance="250" nodeId="53" materialIds="7" receiveShadows="true">
+          <Shape shapeId="4" name="border" clipDistance="250" nodeId="54" materialIds="4" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="warningStripesCorner2" translation="-4.5 0.2 4.5" rotation="180 -5.00896e-06 180" visibility="false" clipDistance="250" nodeId="55" materialIds="7" receiveShadows="true">
+          <Shape shapeId="6" name="border" clipDistance="250" nodeId="56" materialIds="4" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="7" name="symbolWashing" translation="0 0.2 0" clipDistance="250" nodeId="57" materialIds="6" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="42">
+      <Attribute name="mapPositionIndex" type="string" value="0|1"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sky_day_night" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="../shaders/skyShader.xml"/>
+    <File fileId="8" filename="day_sky_SIDE.png"/>
+    <File fileId="1" filename="day_sky_TOP.png"/>
+    <File fileId="10" filename="night_sky_SIDE.png"/>
+    <File fileId="4" filename="night_sky_TOP.png"/>
+    <File fileId="12" filename="overcast_day_sky_SIDE.png"/>
+    <File fileId="6" filename="overcast_day_sky_TOP.png"/>
+    <File fileId="13" filename="overcast_night_sky_SIDE.png"/>
+    <File fileId="7" filename="overcast_night_sky_TOP.png"/>
+    <File fileId="11" filename="sunrise_sky_SIDE.png"/>
+    <File fileId="5" filename="sunrise_sky_TOP.png"/>
+    <File fileId="9" filename="sunset_sky_SIDE.png"/>
+    <File fileId="3" filename="sunset_sky_TOP.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert10" materialId="4" customShaderId="2" customShaderVariation="skybox">
+      <Emissivemap fileId="1" wrap="false"/>
+      <Custommap name="sunsetTexture" fileId="3" wrap="false"/>
+      <Custommap name="nightTexture" fileId="4" wrap="false"/>
+      <Custommap name="sunriseTexture" fileId="5" wrap="false"/>
+      <Custommap name="rainDayTexture" fileId="6" wrap="false"/>
+      <Custommap name="rainNightTexture" fileId="7" wrap="false"/>
+      <CustomParameter name="partScale" value="1 0 0 0"/>
+      <CustomParameter name="rainScale" value="0 0 0 0"/>
+    </Material>
+    <Material name="lambert9" materialId="5" customShaderId="2" customShaderVariation="skybox">
+      <Emissivemap fileId="8" wrap="false"/>
+      <Custommap name="sunsetTexture" fileId="9" wrap="false"/>
+      <Custommap name="nightTexture" fileId="10" wrap="false"/>
+      <Custommap name="sunriseTexture" fileId="11" wrap="false"/>
+      <Custommap name="rainDayTexture" fileId="12" wrap="false"/>
+      <Custommap name="rainNightTexture" fileId="13" wrap="false"/>
+      <CustomParameter name="partScale" value="1 0 0 0"/>
+      <CustomParameter name="rainScale" value="0 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sky_day_night.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="sky" objectMask="16777215" nodeId="8" materialIds="4,5"/>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="preShaderContentVehicle" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="4" filename="$data/shared/assets/assetLibraryDecals_diffuse.png" />
+    <File fileId="5" filename="$data/shared/assets/assetLibraryDecals_normal.png" />
+    <File fileId="7" filename="$data/shared/clearPlastic_diffuse.png" />
+    <File fileId="11" filename="$data/shared/default_normal.png" />
+    <File fileId="12" filename="$data/shared/window_specular.png" />
+    <File fileId="10" filename="$data/shared/windowsMobile_diffuse.png" />
+    <File fileId="6" filename="$data/vehicles/deutz/series9/series9Decals_specular.png" />
+    <File fileId="8" filename="$data/vehicles/deutz/series9/series9Lights_normal.png" />
+    <File fileId="9" filename="$data/vehicles/deutz/series9/series9Lights_specular.png" />
+    <File fileId="1" filename="$data/vehicles/deutz/series9/series9_normal.png" />
+    <File fileId="2" filename="$data/vehicles/deutz/series9/series9_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="series9_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat2" value="0.6870 0.5356 0.0119 1"/>
+      <CustomParameter name="colorMat3" value="0.0090 0.1139 0.5295 1"/>
+      <CustomParameter name="colorMat0" value="0.1701 0.5295 0.0546 0"/>
+      <CustomParameter name="colorMat1" value="0.0280 0.0260 0.0240 1"/>
+      <CustomParameter name="colorMat6" value="0.060 0.060 0.060 0"/>
+      <CustomParameter name="colorMat4" value="0.6870 0.0399 0.0119 1"/>
+      <CustomParameter name="colorMat5" value="0.6870 0.5356 0.0119 2"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="assetLibraryDecals_mat" materialId="2" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="clearPlastic_mat" materialId="4" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat0" value="1.0 1.0 1.0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="windowsMobile_mat" materialId="3" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="Window">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="preShaderContentVehicle.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="steeringBarLeft" scale="1 1 1" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="30" nodeId="1"/>
+    <Shape name="screws_decal2" rotation="0 6.95746e-16 1.65861e-15" scale="1 1 1" shapeId="2" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="30" nodeId="2"/>
+    <Shape name="wheelFrontLeftFender" scale="1 1 1" clipDistance="30" nodeId="3" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" skinBindNodeIds="3 4"/>
+    <TransformGroup name="wheelFrontLeftFender1" translation="-0.603778 0 0" scale="1 1 1" collision="false" clipDistance="30" nodeId="4"/>
+    <Shape name="windowOutside1" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="30" nodeId="5"/>
+    <Shape name="turnlightRightStatic" shapeId="5" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="30" nodeId="6"/>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

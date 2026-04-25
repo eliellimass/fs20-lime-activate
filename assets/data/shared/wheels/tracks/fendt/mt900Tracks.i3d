@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="mt900Tracks" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="8" filename="$data/shared/assets/assetLibraryDecals_diffuse.png" />
+    <File fileId="9" filename="$data/shared/assets/assetLibraryDecals_normal.png" />
+    <File fileId="4" filename="$data/shared/assets/assetLibraryStickers_diffuse.png" />
+    <File fileId="1" filename="$data/shared/wheels/tracks/fendt/mt900TracksAnimated_normal.png" />
+    <File fileId="2" filename="$data/shared/wheels/tracks/fendt/mt900TracksAnimated_specular.png" />
+    <File fileId="5" filename="$data/shared/wheels/tracks/fendt/mt900TracksDecals_specular.png" />
+    <File fileId="6" filename="$data/shared/wheels/tracks/fendt/mt900Tracks_normal.png" />
+    <File fileId="7" filename="$data/shared/wheels/tracks/fendt/mt900Tracks_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="mt900TracksAnimated_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="uvScroll_colorMask">
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="assetLibraryStickers_mat" materialId="4" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="mt900Tracks_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.5418 0.0000 0.0189 0"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="assetLibraryDecals_mat" materialId="3" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="Decal_colorMask">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="mt900Tracks.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="_01_" nodeId="1">
+      <TransformGroup name="crawlerFrameLeftRot" nodeId="2">
+        <Shape name="crawlerFrameLeft" rotation="-6.35511 0 0" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" skinBindNodeIds="3 5 7 9 11 13" nodeId="3">
+          <Shape name="crawlerLeft" translation="7.62939e-08 -2.99858e-05 1.13514" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="4"/>
+          <TransformGroup name="frontWheel" translation="-1.23978e-07 -0.285971 2.5665" collision="false" nodeId="5">
+            <Shape name="decals" translation="0.217148 -0.00805455 6.86646e-07" shapeId="3" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="6"/>
+          </TransformGroup>
+          <TransformGroup name="smallWheel01" translation="-0.00157103 -0.58773 1.87192" collision="false" nodeId="7">
+            <Shape name="decals" translation="0.217391 4.76837e-09 -0.000645866" shapeId="4" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="8"/>
+          </TransformGroup>
+          <TransformGroup name="smallWheel02" translation="-0.00157103 -0.58773 1.35542" collision="false" nodeId="9">
+            <Shape name="decals" translation="0.217391 0.00132275 5.42831e-05" shapeId="5" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="10"/>
+          </TransformGroup>
+          <TransformGroup name="smallWheel03" translation="-0.00157103 -0.58773 0.841335" collision="false" nodeId="11">
+            <Shape name="decals" translation="0.217391 -0.00207714 -0.00125767" shapeId="6" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="12"/>
+          </TransformGroup>
+          <TransformGroup name="backWheel" translation="-0.00262819 -2.97951e-05 -4.69761e-05" collision="false" nodeId="13">
+            <Shape name="decals" translation="0.0108333 -1.90735e-07 -1.33514e-07" shapeId="7" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="14"/>
+          </TransformGroup>
+          <Shape name="sticker_decals" translation="-0.0298344 -0.123195 1.43862" shapeId="8" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="50" nodeId="15"/>
+          <Shape name="screw_decals" translation="-0.0298344 -0.123195 1.43862" shapeId="9" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="16"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="crawlerFrameRightRot" nodeId="17">
+        <Shape name="crawlerFrameRight" rotation="-6.355 0 0" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="1" skinBindNodeIds="18 20 23 25 27 29" nodeId="18">
+          <Shape name="crawlerLeft" translation="-7.62939e-08 -2.78472e-05 1.13514" rotation="-0.000107946 0 0" scale="1 1 1" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="19"/>
+          <TransformGroup name="frontWheel" translation="0 -0.285938 2.5674" rotation="6.355 0 0" scale="1 1 1" collision="false" nodeId="20">
+            <Shape name="decals" shapeId="12" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="21"/>
+            <TransformGroup name="frontWheelRef" translation="1.23978e-07 0.468822 -0.0531213" rotation="-6.35511 0 0" scale="1 1 1" nodeId="22"/>
+          </TransformGroup>
+          <TransformGroup name="smallWheel01" translation="0 -0.587727 1.87195" rotation="6.355 0 0" scale="1 1 1" collision="false" nodeId="23">
+            <Shape name="decals" shapeId="13" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="24"/>
+          </TransformGroup>
+          <TransformGroup name="smallWheel02" translation="0 -0.587728 1.35544" rotation="6.355 0 0" scale="1 1 1" collision="false" nodeId="25">
+            <Shape name="decal" shapeId="14" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="26"/>
+          </TransformGroup>
+          <TransformGroup name="smallWheel03" translation="0 -0.587729 0.841365" rotation="6.355 0 0" scale="1 1 1" collision="false" nodeId="27">
+            <Shape name="decals" shapeId="15" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="28"/>
+          </TransformGroup>
+          <TransformGroup name="backWheel" rotation="6.355 0 0" scale="1 1 1" collision="false" nodeId="29">
+            <Shape name="decals" shapeId="16" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="30"/>
+          </TransformGroup>
+          <Shape name="sticker_decals" translation="0.0298344 -0.123192 1.43862" rotation="-0.000107946 0 0" scale="1 1 1" shapeId="17" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="50" nodeId="31"/>
+          <Shape name="screw_decals" translation="0.0298344 -0.123192 1.43862" rotation="-0.000107946 0 0" scale="1 1 1" shapeId="18" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="32"/>
+        </Shape>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

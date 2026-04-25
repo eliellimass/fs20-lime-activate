@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="rear3ChamberLight_03" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="1" filename="$data/shared/assets/lights/lizard/rear3ChamberLight_03_normal.png" />
+    <File fileId="2" filename="$data/shared/assets/lights/lizard/rear3ChamberLight_03_specular.png" />
+    <File fileId="4" filename="$data/shared/clearPlastic_diffuse.png" />
+  </Files>
+
+  <Materials>
+    <Material name="rear3ChamberLight_03_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="RDT" value="1.0 1.0 20.0 20.0"/>
+      <CustomParameter name="colorMat0" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="clearPlastic_mat" materialId="2" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat0" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Texture fileId="4"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="rear3ChamberLight_03_mat1" materialId="3" diffuseColor="0.5 0.5 0.5 1" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat0" value="1.0 1.0 1.0 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="rear3ChamberLight_03.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="rear3ChamberLight_03" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="75" nodeId="1">
+      <Shape name="defaultLightStatic" translation="6.9818e-10 0.0623627 0.0362389" shapeId="2" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="35" nodeId="2"/>
+      <Shape name="brakeLightStatic" translation="6.9818e-10 0.0623627 -0.0362388" shapeId="3" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="35" nodeId="3"/>
+      <Shape name="turnLightStatic" translation="6.9818e-10 0.0635743 1.46877e-09" shapeId="4" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="35" nodeId="4"/>
+      <Shape name="innerPartStatic" shapeId="5" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="35" nodeId="5"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.232" width="0.203" mass="0.009" tireType="offRoad" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/trelleborg/T510/R08_T510.i3d" nodeLeft="3|0" nodeRight="3|0" maxDeformation="0.026" isCareWheel="true" tireTrackAtlasIndex="4" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="0|0" widthAndDiam="14 16" scale="0.48 0.52 0.52" />
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="28 32" scale="0.25 0.3 0.3" />
+    </default>
+    <configurations>
+        <configuration id="axis" >
+            <additional filename="$data/shared/wheels/hubs/hubSmall01.i3d" nodeLeft="0|1" nodeRight="0|0" scale="0.2 0.13 0.13" />
+        </configuration>
+    </configurations>
+</wheel>

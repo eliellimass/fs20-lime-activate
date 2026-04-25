@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.0"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="positions" nodeId="250351">
+      <TransformGroup name="transform" translation="-607.931 97.437 -291.083" rotation="0 90 0" nodeId="250352"/>
+      <TransformGroup name="transform" translation="-655.766 97.437 -291.083" rotation="0 90 0" nodeId="250362"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

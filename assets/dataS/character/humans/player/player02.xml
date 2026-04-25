@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<player>
+    <filename>dataS2/character/humans/player/player02.i3d</filename>
+    <camera index="3|0" />
+    <light index="3|0|0" thirdPersonTranslation="0 -0.25 0" thirdPersonRotation="-90 0 0" />
+    <pickUpKinematicHelper index="3|0|1"/>
+
+    <sounds>
+        <footsteps distancePerFootstepCrouch="1.5" distancePerFootstepWalk="3" distancePerFootstepRun="2.25" />
+        <water>
+            <swim file="$data/sounds/player/swim/swim.wav" linkNode="0>" innerRadius="3.0" outerRadius="10.0" loops="0" fadeIn="0.5" fadeOut="0.7">
+                <volume indoor="0" outdoor="1.0" />
+                <pitch indoor="0" outdoor="1.0" />
+                <lowpassGain indoor="0.50" outdoor="1.00" />
+            </swim>
+            <swimIdle file="$data/sounds/player/swim/swim_no_movement.wav" linkNode="0>" innerRadius="3.0" outerRadius="10.0" loops="0" fadeIn="0.5" fadeOut="0.7">
+                <volume indoor="0" outdoor="1.0" />
+                <pitch indoor="0" outdoor="1.0" />
+                <lowpassGain indoor="0.50" outdoor="1.00" />
+            </swimIdle>
+            <plunge file="$data/sounds/player/swim/splash.wav" linkNode="0>" innerRadius="3.0" outerRadius="10.0" loops="1">
+                <volume indoor="0" outdoor="1.0" />
+                <pitch indoor="0" outdoor="1.0" />
+                <lowpassGain indoor="0.50" outdoor="1.00" />
+            </plunge>
+        </water>
+        <tools>
+            <flashlight file="$data/sounds/player/flashlight/flashlight.wav" linkNode="0>" innerRadius="1.0" outerRadius="2.0" >
+                <volume indoor="1.0" outdoor="1.0" />
+            </flashlight>
+            <horseBrush file="$data/sounds/animals/horse/rideable/animation/horse_brush.wav" linkNode="0>" innerRadius="1.0" outerRadius="2.0" >
+                <volume indoor="1.0" outdoor="1.0" />
+            </horseBrush>
+        </tools>
+    </sounds>
+
+    <particleSystems>
+        <swim   file="$data/particleSystems/shared/waterRingParticleSystem.i3d" />
+        <plunge file="$data/particleSystems/shared/waterSplashParticleSystem.i3d" />
+    </particleSystems>
+
+    <character type="female" physicsCapsuleHeight="1.0" physicsCapsuleRadius="0.4" >
+        <thirdPerson
+            mesh="1|0"
+            skeleton="0"
+            animRootNode="2"
+            spine="0|0"
+            suspension="0|0|2"
+            leftHandNode="0|0|2|0|0|1|0|0|1"
+            rightHandNode="0|0|2|0|0|2|0|0|1"
+            headNode="0|0|2|0|0|0|0"
+        />
+        <firstPerson
+            cutFocusOffset="0 0.45 0.1"
+            cutFocusRotation="180 0 0"
+            minCutDistance="0.5"
+            maxCutDistance="2.0"
+            cutDetectionDistance="10.0"
+            cuttingCameraNode="3|0|2"
+        />
+
+        <playerStyle defaultHat="2" defaultAccessory="1" defaultHaistyle="1" defaultBody="1" >
+            <hats rootNode="0|0|2|0|0|0|0|0" filename="$dataS/playerClothing.xml" />
+            <accessories rootNode="0|0|2|0|0|0|0|0" filename="$dataS/playerClothing.xml" />
+
+            <hairStyles hatHairNode="0|0|2|0|0|0|0|1|0">
+                <variant node="0|0|2|0|0|0|0|1|1" name="$l10n_character_hair_variant_1" />
+                <variant node="0|0|2|0|0|0|0|1|2" name="$l10n_character_hair_variant_2" />
+                <variant node="0|0|2|0|0|0|0|1|3" name="$l10n_character_hair_variant_3" />
+                <variant node="0|0|2|0|0|0|0|1|4" name="$l10n_character_hair_variant_4" />
+            </hairStyles>
+
+            <bodies>
+                <variant headNode="1|0|0|0" armNode="1|0|1|0" />
+                <variant headNode="1|0|0|1" armNode="1|0|1|1" />
+                <variant headNode="1|0|0|2" armNode="1|0|1|2" />
+                <variant headNode="1|0|0|3" armNode="1|0|1|3" />
+            </bodies>
+
+            <helmet node="0|0|2|0|0|0|0|0|0" />
+            <gloves node="1|0|2|0" />
+        </playerStyle>
+
+    </character>
+
+    <ikChains>
+        <ikChain id="rightFoot" target="0" targetOffset="0 0.125 0.065" alignToTarget="true" isDirtyOnLoad="true" positionThreshold="0.002">
+            <node index="0|0|1"    minRx="-2" maxRx="2" minRy="-30" maxRy="30" minRz="0" maxRz="100" localLimits="true" />
+            <node index="0|0|1|0"  minRx="-2" maxRx="2" minRy="0"   maxRy="0"  minRz="-100" maxRz="0" localLimits="true" />
+            <node index="0|0|1|0|0" />
+        </ikChain>
+        <ikChain id="leftFoot" target="0" targetOffset="0 0.125 0.065" alignToTarget="true" isDirtyOnLoad="true">
+            <node index="0|0|0"     minRx="-2" maxRx="2" minRy="-30" maxRy="30" minRz="0"    maxRz="100" localLimits="true" />
+            <node index="0|0|0|0"   minRx="-2" maxRx="2" minRy="0"   maxRy="0"  minRz="-100" maxRz="0" localLimits="true" />
+            <node index="0|0|0|0|0" />
+        </ikChain>
+        <ikChain id="rightArm" target="0" targetOffset="0.09 0.025 -0.005" alignToTarget="true" isDirtyOnLoad="true" positionThreshold="0.001">
+            <node index="0|0|2|0|0|2|0"   minRx="-40" maxRx="40" minRy="40" maxRy="90" minRz="-130" maxRz="40" localLimits="true" />
+            <node index="0|0|2|0|0|2|0|0" minRx="-25" maxRx="25" minRy="0" maxRy="0" minRz="-144" maxRz="3" localLimits="true" />
+            <node index="0|0|2|0|0|2|0|0|1"  />
+
+            <pose id="narrowFingers" isDefaultPose="true">
+                <rotationNode index="0|0|2|0|0|2|0|0|1|0"       rotation="100 40 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|0|0"     rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|0|0|0"   rotation="0 0 0" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|1"       rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|1|0"     rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|1|0|0"   rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|2"       rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|2|0"     rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|2|0|0"   rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|3"       rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|3|0"     rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|3|0|0"   rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|4"       rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|4|0"     rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|4|0|0"   rotation="0 0 70" />
+            </pose>
+            <pose id="wideFingers">
+                <rotationNode index="0|0|2|0|0|2|0|0|1|0"       rotation="110 30 30" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|0|0"     rotation="0 15 -10" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|0|0|0"   rotation="0 0 0" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|1"       rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|1|0"     rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|1|0|0"   rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|2"       rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|2|0"     rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|2|0|0"   rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|3"       rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|3|0"     rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|3|0|0"   rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|4"       rotation="0 0 10" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|4|0"     rotation="0 0 45" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|4|0|0"   rotation="0 0 45" />
+            </pose>
+            <pose id="flatFingers">
+                <rotationNode index="0|0|2|0|0|2|0|0|1|0"       rotation="110 30 30" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|0|0"     rotation="0 15 -10" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|0|0|0"   rotation="0 0 0" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|1"       rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|1|0"     rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|1|0|0"   rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|2"       rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|2|0"     rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|2|0|0"   rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|3"       rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|3|0"     rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|3|0|0"   rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|4"       rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|4|0"     rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|2|0|0|1|4|0|0"   rotation="0 0 15" />
+            </pose>
+        </ikChain>
+        <ikChain id="leftArm" target="0" targetOffset="-0.10 0.025 -0.005" alignToTarget="true" isDirtyOnLoad="true" positionThreshold="0.001">
+            <node index="0|0|2|0|0|1|0"   minRx="-40" maxRx="40" minRy="55" maxRy="90" minRz="-130" maxRz="40" localLimits="true" />
+            <node index="0|0|2|0|0|1|0|0" minRx="-25" maxRx="25" minRy="0" maxRy="0" minRz="-144" maxRz="-30" localLimits="true" />
+            <node index="0|0|2|0|0|1|0|0|1"  />
+
+            <pose id="narrowFingers" isDefaultPose="true">
+                <rotationNode index="0|0|2|0|0|1|0|0|1|0"       rotation="100 40 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|0|0"     rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|0|0|0"   rotation="0 0 0" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|1"       rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|1|0"     rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|1|0|0"   rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|2"       rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|2|0"     rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|2|0|0"   rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|3"       rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|3|0"     rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|3|0|0"   rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|4"       rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|4|0"     rotation="0 0 70" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|4|0|0"   rotation="0 0 70" />
+            </pose>
+            <pose id="wideFingers">
+                <rotationNode index="0|0|2|0|0|1|0|0|1|0"       rotation="110 30 30" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|0|0"     rotation="0 15 -10" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|0|0|0"   rotation="0 0 0" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|1"       rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|1|0"     rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|1|0|0"   rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|2"       rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|2|0"     rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|2|0|0"   rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|3"       rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|3|0"     rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|3|0|0"   rotation="0 0 40" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|4"       rotation="0 0 10" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|4|0"     rotation="0 0 45" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|4|0|0"   rotation="0 0 45" />
+            </pose>
+            <pose id="flatFingers">
+                <rotationNode index="0|0|2|0|0|1|0|0|1|0"       rotation="110 30 30" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|0|0"     rotation="0 15 -10" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|0|0|0"   rotation="0 0 0" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|1"       rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|1|0"     rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|1|0|0"   rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|2"       rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|2|0"     rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|2|0|0"   rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|3"       rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|3|0"     rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|3|0|0"   rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|4"       rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|4|0"     rotation="0 0 15" />
+                <rotationNode index="0|0|2|0|0|1|0|0|1|4|0|0"   rotation="0 0 15" />
+            </pose>
+        </ikChain>
+        <ikChain id="spine" target="0" isDirtyOnLoad="true" >
+            <node index="0|0|2" />
+            <node index="0|0|2|0" />
+            <node index="0|0|2|0|0" />
+            <node index="0|0|2|0|0|0" />
+        </ikChain>
+    </ikChains>
+
+    <conditionalAnimation>
+        <item id="idle" >
+            <clips>
+                <clip clipName="idle_femaleSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isUsingChainsawVertical" equal="false" />
+                    <condition parameter="isUsingChainsawHorizontal" equal="false" />
+                    <condition parameter="isCrouched" equal="false" />
+                    <condition parameter="onGround" equal="true" />
+                    <condition parameter="inWater" equal="false" />
+                    <condition parameter="yawVelocity" between="-0.1, 0.1" />
+                    <condition parameter="absForwardVelocity" lower="0.1" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="idleTurnLeft" >
+            <clips speedScaleType="angular" speedScaleParameter="90">
+                <clip clipName="turnLt90_LoopSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isCrouched" equal="false" />
+                    <condition parameter="onGround" equal="true" />
+                    <condition parameter="inWater" equal="false" />
+                    <condition parameter="yawVelocity" lower="-0.1" />
+                    <condition parameter="absForwardVelocity" lower="0.1" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="idleTurnRight" >
+            <clips speedScaleType="angular" speedScaleParameter="90">
+                <clip clipName="turnRt90_LoopSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isCrouched" equal="false" />
+                    <condition parameter="onGround" equal="true" />
+                    <condition parameter="inWater" equal="false" />
+                    <condition parameter="yawVelocity" greater="0.1" />
+                    <condition parameter="absForwardVelocity" lower="0.1" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="walkFwd" entryTransitionDuration="0.25" exitTransitionDuration="0.25" >
+            <clips blended="true" blendingParameter="yawVelocity" blendingParameterType="angular" speedScaleType="distance" speedScaleParameter="1.684">
+                <clip id="walkR" clipName="walkFwdLoop_LeanRSource" blendingThreshold="-45.0" />
+                <clip id="walkL" clipName="walkFwdLoop_LeanLSource" blendingThreshold="45.0" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isCrouched" equal="false" />
+                    <condition parameter="inWater" equal="false" />
+                    <condition parameter="onGround" equal="true" />
+                    <condition parameter="forwardVelocity" between="0.1, 7.5"/>
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="walkBwd" entryTransitionDuration="0.25" exitTransitionDuration="0.25" >
+            <clips speedScaleType="distance" speedScaleParameter="1.684">
+                <clip clipName="walkBwdLoopSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isCrouched" equal="false" />
+                    <condition parameter="inWater" equal="false" />
+                    <condition parameter="forwardVelocity" between="-7.5, -0.1" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="runFwd" entryTransitionDuration="0.25" exitTransitionDuration="0.25" >
+            <clips blended="true" blendingParameter="yawVelocity" blendingParameterType="angular" speedScaleType="distance" speedScaleParameter="2.779">
+                <clip id="runL" clipName="runFwdLoop_LeanRSource" blendingThreshold="-45.0" />
+                <clip id="runR" clipName="runFwdLoop_LeanLSource" blendingThreshold="45.0" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isCrouched" equal="false" />
+                    <condition parameter="inWater" equal="false" />
+                    <condition parameter="forwardVelocity" greater="7.5"/>
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="runBwd" entryTransitionDuration="0.25" exitTransitionDuration="0.25" >
+            <clips speedScaleType="distance" speedScaleParameter="2.779">
+                <clip clipName="runBwdLoopSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isCrouched" equal="false" />
+                    <condition parameter="inWater" equal="false" />
+                    <condition parameter="forwardVelocity" lower="-7.5"/>
+                </conditionGroup>
+            </conditions>
+        </item>
+         <item id="jump">
+            <clips>
+                <clip clipName="jumpIdleStartSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="verticalVelocity" greater="0.0" />
+                    <condition parameter="isCloseToGround" equal="true" />
+                    <condition parameter="onGround" equal="false" />
+                    <condition parameter="inWater" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+         <item id="land">
+            <clips>
+                <clip clipName="jumpIdleLandSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="verticalVelocity" lower="0.0" />
+                    <condition parameter="isCloseToGround" equal="true" />
+                    <condition parameter="onGround" equal="false" />
+                    <condition parameter="inWater" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="crouchIdle">
+            <clips>
+                <clip clipName="crouchIdleSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isCrouched" equal="true" />
+                    <condition parameter="absForwardVelocity"  lower="0.1" />
+                    <condition parameter="isUsingChainsawVertical" equal="false" />
+                    <condition parameter="isUsingChainsawHorizontal" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="crouchFwd">
+            <clips speedScaleType="distance" speedScaleParameter="1.741">
+                <clip clipName="crouchWalkFwdLoopSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isCrouched" equal="true" />
+                    <condition parameter="inWater" equal="false" />
+                    <condition parameter="forwardVelocity"  between="0.1, 5.0" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="crouchBwd">
+            <clips speedScaleType="distance" speedScaleParameter="1.532">
+                <clip clipName="crouchWalkBwdLoopSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isCrouched" equal="true" />
+                    <condition parameter="inWater" equal="false" />
+                    <condition parameter="forwardVelocity" between="-5.0, -0.1" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="air">
+            <clips >
+                <clip clipName="jumpLoopSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isCloseToGround" equal="false" />
+                    <condition parameter="onGround" equal="false" />
+                    <condition parameter="inWater" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="swimIdle">
+            <clips >
+                <clip clipName="swimIdleSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="inWater" equal="true" />
+                    <condition parameter="absForwardVelocity"  lower="0.1" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="swimFwd">
+            <clips speedScaleType="distance" speedScaleParameter="8.368">
+                <clip clipName="swimFwdLoopSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="inWater" equal="true" />
+                    <condition parameter="forwardVelocity" greater="0.1" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="swimBwd">
+            <clips >
+                <clip clipName="swimBwdLoopSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="inWater" equal="true" />
+                    <condition parameter="forwardVelocity" lower="-0.1" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="useChainsawHorizontal">
+            <clips >
+                <clip clipName="chainsaw_cutSidewaysSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isUsingChainsawHorizontal" equal="true" />
+                    <condition parameter="isUsingChainsawVertical" equal="false" />
+                </conditionGroup>
+            </conditions>
+        </item>
+        <item id="useChainsawVertical">
+            <clips >
+                <clip clipName="chainsaw_cutVerticalSource" />
+            </clips>
+            <conditions>
+                <conditionGroup>
+                    <condition parameter="isUsingChainsawHorizontal" equal="false" />
+                    <condition parameter="isUsingChainsawVertical" equal="true" />
+                </conditionGroup>
+            </conditions>
+        </item>
+    </conditionalAnimation>
+</player>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<animalHusbandry>
+    <animals>
+        <animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="4000" chewTimeMax="8000" eatTimeMin="45000" eatTimeMax="60000">
+            <assets filename="$dataS2/character/pig/pig.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" moverIndex="3" shaderIndex="1">
+                <texture multi="true" tileU="2" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="pigLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/pig/pig_eat_loop.wav" volume="0.65" range="20" innerRange="3" />
+            </audio>
+        </animal>
+        <animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="4000" chewTimeMax="8000" eatTimeMin="45000" eatTimeMax="60000">
+            <assets filename="$dataS2/character/pig/pig.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" moverIndex="3" shaderIndex="1">
+                <texture multi="true" tileU="2" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="pigLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/pig/pig_eat_loop.wav" volume="0.65" range="20" innerRange="3" />
+            </audio>
+        </animal>
+        <animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="4000" chewTimeMax="8000" eatTimeMin="45000" eatTimeMax="60000">
+            <assets filename="$dataS2/character/pig/pig.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" moverIndex="3" shaderIndex="1">
+                <texture multi="true" tileU="2" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="pigLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/pig/pig_eat_loop.wav" volume="0.65" range="20" innerRange="3" />
+            </audio>
+        </animal>
+        <animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" canFeed="true" canSleep="true" canEatDuringNight="true" sleepTimeMin="120000" sleepTimeMax="180000" chewTimeMin="4000" chewTimeMax="8000" eatTimeMin="45000" eatTimeMax="60000">
+            <assets filename="$dataS2/character/pig/pig.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" moverIndex="3" shaderIndex="1">
+                <texture multi="true" tileU="2" tileV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="pigLocomotion.xml"/>
+            <audio>
+                <eat filename="$data/sounds/animals/pig/pig_eat_loop.wav" volume="0.65" range="20" innerRange="3" />
+            </audio>
+        </animal>
+        <audio>
+            <yells volume="0.7" range="50" innerRange="2" minInterval="4000" maxInterval="8000" animalTypes="0,1,2,3" >
+                <yell filename="$data/sounds/animals/pig/pig_01.wav" />
+                <yell filename="$data/sounds/animals/pig/pig_02.wav" />
+                <yell filename="$data/sounds/animals/pig/pig_03.wav" />
+                <yell filename="$data/sounds/animals/pig/pig_04.wav" />
+                <yell filename="$data/sounds/animals/pig/pig_05.wav" />
+                <yell filename="$data/sounds/animals/pig/pig_06.wav" />
+                <yell filename="$data/sounds/animals/pig/pig_07.wav" />
+                <yell filename="$data/sounds/animals/pig/pig_08.wav" />
+            </yells>
+        </audio>
+    </animals>
+</animalHusbandry>

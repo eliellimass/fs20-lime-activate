@@ -1,0 +1,3863 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n><elements><e k="achievement_descBreedChicken" v="ニワトリを100羽繁殖させる"/>
+<e k="achievement_descBreedCows" v="牛を20頭繁殖させる"/>
+<e k="achievement_descBreedPigs" v="豚を50頭繁殖させる"/>
+<e k="achievement_descBreedSheep" v="羊を30頭繁殖させる"/>
+<e k="achievement_descCultivate1" v="1ヘクタールを耕す"/>
+<e k="achievement_descCultivate10" v="10ヘクタールを耕す"/>
+<e k="achievement_descCultivate100" v="100ヘクタールを耕す"/>
+<e k="achievement_descCutTrees25" v="木を25本伐採する"/>
+<e k="achievement_descFertilize1" v="1ヘクタールに肥料をまく"/>
+<e k="achievement_descFertilize10" v="10ヘクタールに肥料をまく"/>
+<e k="achievement_descFertilize100" v="100ヘクタールに肥料をまく"/>
+<e k="achievement_descFirstCutTree" v="木を1本伐採する"/>
+<e k="achievement_descGotAllAchievements" v="トロフィーをすべて集めた"/>
+<e k="achievement_descMission1" v="ミッションを1個完了する"/>
+<e k="achievement_descMission100" v="ミッションを100個完了する"/>
+<e k="achievement_descMission50" v="ミッションを50個完了する"/>
+<e k="achievement_descMoney10Million" v="ゲームの銀行口座に1000万ドル貯める"/>
+<e k="achievement_descPlayTime10" v="1つのセーブデータでのプレイ時間が10時間を超える"/>
+<e k="achievement_descSow1" v="1ヘクタールに種をまく"/>
+<e k="achievement_descSow10" v="10ヘクタールに種をまく"/>
+<e k="achievement_descSow100" v="100ヘクタールに種をまく"/>
+<e k="achievement_descThreshedHectares1" v="1ヘクタールで収穫する"/>
+<e k="achievement_descThreshedHectares10" v="10ヘクタールで収穫する"/>
+<e k="achievement_descThreshedHectares100" v="100ヘクタールで収穫する"/>
+<e k="achievement_nameBreedChicken" v="卵の王様"/>
+<e k="achievement_nameBreedCows" v="牛乳のドン"/>
+<e k="achievement_nameBreedPigs" v="ピンクの成長"/>
+<e k="achievement_nameBreedSheep" v="ウールの使い手"/>
+<e k="achievement_nameCultivate1" v="裏庭の達人"/>
+<e k="achievement_nameCultivate10" v="熱烈農家 "/>
+<e k="achievement_nameCultivate100" v="耕作の主"/>
+<e k="achievement_nameCutTrees25" v="もっと木を！"/>
+<e k="achievement_nameCutTrees50" v="ハンドメイド湿地"/>
+<e k="achievement_nameFertilize1" v="植物が満足"/>
+<e k="achievement_nameFertilize10" v="植物が感動"/>
+<e k="achievement_nameFertilize100" v="植物が昇天"/>
+<e k="achievement_nameFirstCutTree" v="最初の一振り"/>
+<e k="achievement_nameGotAllAchievements" v="仕上げ職人"/>
+<e k="achievement_nameMission1" v="正しい行動"/>
+<e k="achievement_nameMission100" v="伝説のヘルパー"/>
+<e k="achievement_nameMission50" v="お助けマン"/>
+<e k="achievement_nameMoney10Million" v="儲かる仕事"/>
+<e k="achievement_namePlayTime10" v="長期プレイ"/>
+<e k="achievement_nameSow1" v="小さなことからコツコツと"/>
+<e k="achievement_nameSow10" v="農業の勝算"/>
+<e k="achievement_nameSow100" v="本気の耕作"/>
+<e k="achievement_nameThreshedHectares1" v="耕して大儲け"/>
+<e k="achievement_nameThreshedHectares10" v="がっぽり収穫"/>
+<e k="achievement_nameThreshedHectares100" v="大豊作"/>
+<e k="achievement_stats" v="アンロックした実績: "/>
+<e k="achievement_stats_ps4" v="アンロックしたトロフィー: "/>
+<e k="achievement_stats_xboxone" v="アンロックした実績: "/>
+<e k="action_accelerate" v="車両を加速/減速する"/>
+<e k="action_activateCruiseControl" v="オートクルーズオン"/>
+<e k="action_activateHandTool" v="チェーンソーを操作する"/>
+<e k="action_activateShop" v="ショップメニューを開く"/>
+<e k="action_activateTrigger" v="オブジェクトを使う"/>
+<e k="action_activateVendingMachine" v="自動販売機を使う"/>
+<e k="action_allowCreateFields" v="畑を新規に作成できるようにする"/>
+<e k="action_armIn" v="アームイン"/>
+<e k="action_armOut" v="アームアウト"/>
+<e k="action_attach" v="装着"/>
+<e k="action_baleloaderAbortUnloading" v="荷下ろしを中止する"/>
+<e k="action_baleloaderLowerPlatform" v="積載用プラットフォームをおろす"/>
+<e k="action_baleloaderOperatingPosition" v="作業ポジション"/>
+<e k="action_baleloaderTransportPosition" v="運搬ポジション"/>
+<e k="action_baleloaderUnload" v="ベールをおろす"/>
+<e k="action_baleloaderUnloadHere" v="ベールをここにおろす"/>
+<e k="action_blanketSilo" v="サイロをカバーで覆う"/>
+<e k="action_callHelpLine" v="ヘルプラインに電話する"/>
+<e k="action_cameraZoom" v="カメラズーム"/>
+<e k="action_canter" v="キャンター"/>
+<e k="action_chainsaw" v="チェーンソー"/>
+<e k="action_changeControlGroup" v="コントロールグループを変更 (%s)" tag="format"/>
+<e k="action_changeCruiseControlLevel" v="オートクルーズ速度変更"/>
+<e k="action_changePlacementHeight" v="置く高さを変更する"/>
+<e k="action_changeToolSelection" v="操作するアタッチメントの切り替え"/>
+<e k="action_checkFinances" v="財務状況を確認する"/>
+<e k="action_chooseSeed" v="種を選択"/>
+<e k="action_closeBack" v="後部を閉じる"/>
+<e k="action_closeCover" v="カバーを閉める"/>
+<e k="action_closeDoor" v="ドアを閉じる"/>
+<e k="action_closeGarageDoor" v="ガレージのドアを閉じる"/>
+<e k="action_closeGate" v="ゲートを閉じる"/>
+<e k="action_configSellSpecificVehicle" v="車両オプションを開く"/>
+<e k="action_conveyorBeltChangeAngle" v="角度を変更(%s°)" tag="format"/>
+<e k="action_conveyorIn" v="コンベア イン"/>
+<e k="action_conveyorOut" v="コンベア アウト"/>
+<e k="action_deactivateCruiseControl" v="オートクルーズオフ"/>
+<e k="action_detach" v="分離"/>
+<e k="action_disablePalletSpawning" v="パレット作成を無効にする"/>
+<e k="action_disableStrawSwath" v="わらのウィンドロウをオフにする"/>
+<e k="action_dismissEmployee" v="作業者を解雇する"/>
+<e k="action_doghouseFillbowl" v="ボウルをいっぱいにする"/>
+<e k="action_dropObject" v="放す"/>
+<e k="action_enablePalletSpawning" v="パレット作成を有効にする"/>
+<e k="action_enableStrawSwath" v="わらのウィンドロウをオンにする"/>
+<e k="action_enter" v="乗る"/>
+<e k="action_exitVehicle" v="降りる"/>
+<e k="action_fastenTensionBelt" v="テンションベルトを締める"/>
+<e k="action_fastenTensionBelts" v="テンションベルトを締める"/>
+<e k="action_feedAnimal" v="エサをあげる"/>
+<e k="action_foldOBJECT" v="%sを収納する" tag="format"/>
+<e k="action_foldSupportFeet" v="支持脚を収納する"/>
+<e k="action_gallop" v="ギャロップ"/>
+<e k="action_hireEmployee" v="作業者を雇う"/>
+<e k="action_honk" v="クラクション"/>
+<e k="action_interactAnimal" v="%s" tag="format"/>
+<e k="action_interactAnimalClean" v="%sを洗う" tag="format"/>
+<e k="action_interactAnimalFollow" v="つれていく"/>
+<e k="action_interactAnimalStopFollow" v="つれていくのをやめる"/>
+<e k="action_liftOBJECT" v="%sを持ち上げる" tag="format"/>
+<e k="action_limitToFields" v="既存の畑の中でのみ利用する"/>
+<e k="action_lookPlayer" v="プレイヤーの視点を操作する"/>
+<e k="action_lower" v="(選択した) アタッチメントを下げる/上げる"/>
+<e k="action_lowerOBJECT" v="%sをおろす" tag="format"/>
+<e k="action_movePlayer" v="プレイヤーの動きを操作する"/>
+<e k="action_nextCover" v="次のカバーを開ける"/>
+<e k="action_nextHandTool" v="チェーンソーを出す"/>
+<e k="action_openBlackboard" v="オンライン求人・求職掲示板"/>
+<e k="action_openCover" v="カバーを開ける"/>
+<e k="action_openDoor" v="ドアを開ける"/>
+<e k="action_openGarageDoor" v="ガレージのドアを開ける"/>
+<e k="action_openGate" v="ゲートを開ける"/>
+<e k="action_openSilo" v="サイロを開ける"/>
+<e k="action_petAnimal" v="かわいがる"/>
+<e k="action_pickUpObject" v="拾う"/>
+<e k="action_pipe" v="パイプを開く/閉じる"/>
+<e k="action_pipeIn" v="パイプをしまう"/>
+<e k="action_pipeOut" v="パイプを出す%s" tag="format"/>
+<e k="action_purchaseOrFarmField" v="畑を購入/耕す"/>
+<e k="action_refillOBJECT" v="%sを補給する" tag="format"/>
+<e k="action_refuel" v="給油する"/>
+<e k="action_rideAnimal" v="%sに乗る" tag="format"/>
+<e k="action_rotate" v="回転する"/>
+<e k="action_rotateCamera" v="カメラを回転する"/>
+<e k="action_rotateObjectHorizontally" v="オブジェクトを縦に回転する"/>
+<e k="action_rotateObjectVertically" v="オブジェクトを横に回転する"/>
+<e k="action_rotatePlow" v="プラウを回転する"/>
+<e k="action_selectedControlGroup" v="コントロールグループ: %s (%d)" tag="format"/>
+<e k="action_sellWood" v="木材を売る"/>
+<e k="action_sendOffTrain" v="列車を発車させる"/>
+<e k="action_siloStartFilling" v="補給開始"/>
+<e k="action_siloStopFilling" v="補給停止"/>
+<e k="action_startMotor" v="エンジンスタート"/>
+<e k="action_startOverloading" v="オーバーロードを開始"/>
+<e k="action_startTipToGround" v="ここに荷下ろしする"/>
+<e k="action_steer" v="車両を運転する"/>
+<e k="action_steeringModeAllWheel" v="全輪ステアリング"/>
+<e k="action_steeringModeCrabLeft" v="クラブステアリング (左)"/>
+<e k="action_steeringModeCrabRight" v="クラブステアリング (右)"/>
+<e k="action_steeringModeFrontWheel" v="前輪ステアリング"/>
+<e k="action_steeringModeSelected" v="選択中の運転モード: %s" tag="format"/>
+<e k="action_steeringModeTurnSteering" v="ターンステアリング"/>
+<e k="action_stop" v="止まる"/>
+<e k="action_stopMotor" v="エンジンストップ"/>
+<e k="action_stopOverloading" v="オーバーロードを停止"/>
+<e k="action_stopRefillingOBJECT" v="補給をやめる"/>
+<e k="action_stopRefuel" v="給油をやめる"/>
+<e k="action_stopTipToGround" v="荷下ろしをやめる"/>
+<e k="action_switchImplement" v="アタッチメントを切り替える"/>
+<e k="action_tag" v="マークをつける"/>
+<e k="action_terrainChangeMode" v="造園モードを変更"/>
+<e k="action_terrainChangeRadius" v="半径を変更"/>
+<e k="action_terrainChangeShape" v="形状変形を変更"/>
+<e k="action_terrainChangeStrength" v="強度を変更"/>
+<e k="action_terrainCycleGroundType" v="地面塗装タイプを切替"/>
+<e k="action_terrainFlatten" v="平たくする"/>
+<e k="action_terrainLower" v="低くする"/>
+<e k="action_terrainPaint" v="塗装する"/>
+<e k="action_terrainRaise" v="高くする"/>
+<e k="action_terrainSmooth" v="スムーズにする"/>
+<e k="action_tip" v="荷をおろす"/>
+<e k="action_toggleBriefing" v="チュートリアルメニューを開く/閉じる"/>
+<e k="action_toggleMapView" v="マップをズーム"/>
+<e k="action_toggleRidgeMarker" v="リッジマーカー"/>
+<e k="action_toggleTipSide" v="横に置く (%s)" tag="format"/>
+<e k="action_toggleTipState" v="荷下ろしを始める/やめる"/>
+<e k="action_trot" v="トロット"/>
+<e k="action_turnHandToolLeft" v="チェーンソーを回転させる"/>
+<e k="action_turnOffLight" v="ライトを消す"/>
+<e k="action_turnOffOBJECT" v="%sのスイッチを切る" tag="format"/>
+<e k="action_turnOn" v="(選択した) アタッチメントをオン/オフ"/>
+<e k="action_turnOnLight" v="ライトをつける"/>
+<e k="action_turnOnOBJECT" v="%sのスイッチを入れる" tag="format"/>
+<e k="action_turnPlow" v="プラウを回転させる"/>
+<e k="action_unfastenTensionBelt" v="テンションベルトを外す"/>
+<e k="action_unfastenTensionBelts" v="テンションベルトを外す"/>
+<e k="action_unfold" v="(選択した) アタッチメントを開く/たたむ"/>
+<e k="action_unfoldOBJECT" v="%sを展開する" tag="format"/>
+<e k="action_unfoldSupportFeet" v="支持脚を展開する"/>
+<e k="action_unloadBaler" v="ベールを放出"/>
+<e k="action_unloadRoundBale" v="ロールベールをおろす"/>
+<e k="action_unloadSquareBale" v="四角いベールを積み下ろす"/>
+<e k="action_unloadUnfinishedBale" v="未完成のベールを積み下ろす"/>
+<e k="action_untag" v="場所のマークを外す"/>
+<e k="action_visit" v="移動"/>
+<e k="action_walk" v="歩く"/>
+<e k="action_walkBackwards" v="後ろに歩く"/>
+<e k="action_washVehicles" v="車両を洗う"/>
+<e k="action_woodHarvesterChangeCutLength" v="切る長さを変える (%sm)" tag="format"/>
+<e k="action_woodHarvesterCut" v="切る"/>
+<e k="action_workModeSelected" v="選択中の作業モード: %s" tag="format"/>
+<e k="action_workMode_broad" v="幅広い刈り跡"/>
+<e k="action_workMode_left" v="左"/>
+<e k="action_workMode_leftSwath" v="左の刈り跡"/>
+<e k="action_workMode_middle" v="中央"/>
+<e k="action_workMode_right" v="右"/>
+<e k="action_workMode_rightSwath" v="右の刈り跡"/>
+<e k="action_workMode_swath" v="帯状の刈り跡"/>
+<e k="animalName_001" v="アドミラル"/>
+<e k="animalName_002" v="アメジスト"/>
+<e k="animalName_003" v="アポロ"/>
+<e k="animalName_004" v="アップルジャック"/>
+<e k="animalName_005" v="アンバー"/>
+<e k="animalName_006" v="アナベル"/>
+<e k="animalName_007" v="アップル"/>
+<e k="animalName_008" v="アポロ"/>
+<e k="animalName_009" v="アパッチ"/>
+<e k="animalName_010" v="アテネ"/>
+<e k="animalName_011" v="ブレイズ"/>
+<e k="animalName_012" v="バディ"/>
+<e k="animalName_013" v="ビースト"/>
+<e k="animalName_014" v="バンディット"/>
+<e k="animalName_015" v="ベル"/>
+<e k="animalName_016" v="ボニー"/>
+<e k="animalName_017" v="バド"/>
+<e k="animalName_018" v="ベラ"/>
+<e k="animalName_019" v="ボブ"/>
+<e k="animalName_020" v="バック"/>
+<e k="animalName_021" v="カウボーイ"/>
+<e k="animalName_022" v="ココ"/>
+<e k="animalName_023" v="チョコ"/>
+<e k="animalName_024" v="チャンプ"/>
+<e k="animalName_025" v="チャンス"/>
+<e k="animalName_026" v="チャーリー"/>
+<e k="animalName_027" v="チェスター"/>
+<e k="animalName_028" v="コルトン"/>
+<e k="animalName_029" v="コライゾン"/>
+<e k="animalName_030" v="クリケット"/>
+<e k="animalName_031" v="デイジー"/>
+<e k="animalName_032" v="ダラス"/>
+<e k="animalName_033" v="ドリー"/>
+<e k="animalName_034" v="デューク"/>
+<e k="animalName_035" v="ダニー"/>
+<e k="animalName_036" v="ディキシー"/>
+<e k="animalName_037" v="ダスティ"/>
+<e k="animalName_038" v="ダコタ"/>
+<e k="animalName_039" v="ダルトン"/>
+<e k="animalName_040" v="ディエゴ"/>
+<e k="animalName_041" v="エドワード"/>
+<e k="animalName_042" v="エルビス"/>
+<e k="animalName_043" v="エクリプス"/>
+<e k="animalName_044" v="エドウィン"/>
+<e k="animalName_045" v="エンバー"/>
+<e k="animalName_046" v="エドガー"/>
+<e k="animalName_047" v="エコ"/>
+<e k="animalName_048" v="エクスカリバー"/>
+<e k="animalName_049" v="エポナ"/>
+<e k="animalName_050" v="フレックルス"/>
+<e k="animalName_051" v="ファルコン"/>
+<e k="animalName_052" v="ファビオ"/>
+<e k="animalName_053" v="ファンタジア"/>
+<e k="animalName_054" v="フロスティ"/>
+<e k="animalName_055" v="フレア"/>
+<e k="animalName_056" v="フリッパー"/>
+<e k="animalName_057" v="フェイス"/>
+<e k="animalName_058" v="フェイ"/>
+<e k="animalName_059" v="フラッシュ"/>
+<e k="animalName_060" v="ジプシー"/>
+<e k="animalName_061" v="ギャリス"/>
+<e k="animalName_062" v="ゴースト"/>
+<e k="animalName_063" v="ゴドフリー"/>
+<e k="animalName_064" v="ガリバー"/>
+<e k="animalName_065" v="ギズモ"/>
+<e k="animalName_066" v="ゴールドフィンガー"/>
+<e k="animalName_067" v="グレイシー"/>
+<e k="animalName_068" v="グルーヴィー"/>
+<e k="animalName_069" v="ガスティ"/>
+<e k="animalName_070" v="ハーレー"/>
+<e k="animalName_071" v="ハニー"/>
+<e k="animalName_072" v="ハッカ"/>
+<e k="animalName_073" v="ハンナ"/>
+<e k="animalName_074" v="ハリソン"/>
+<e k="animalName_075" v="ハリー"/>
+<e k="animalName_076" v="ハーヴェイ"/>
+<e k="animalName_077" v="ヘラクレス"/>
+<e k="animalName_078" v="カプスタ"/>
+<e k="animalName_079" v="ヒューストン"/>
+<e k="animalName_080" v="イカロス"/>
+<e k="animalName_081" v="イリュージョン"/>
+<e k="animalName_082" v="インカ"/>
+<e k="animalName_083" v="インディゴ"/>
+<e k="animalName_084" v="インフェルノ"/>
+<e k="animalName_085" v="インケ"/>
+<e k="animalName_086" v="インキー"/>
+<e k="animalName_087" v="イシュタール"/>
+<e k="animalName_088" v="イオランテ"/>
+<e k="animalName_089" v="アイボリー"/>
+<e k="animalName_090" v="ジャック"/>
+<e k="animalName_091" v="ジェイク"/>
+<e k="animalName_092" v="ジャズ"/>
+<e k="animalName_093" v="ジェイコブ"/>
+<e k="animalName_094" v="ジャスミン"/>
+<e k="animalName_095" v="ジュピター"/>
+<e k="animalName_096" v="ジェスター"/>
+<e k="animalName_097" v="ジンボ"/>
+<e k="animalName_098" v="ジョーカー"/>
+<e k="animalName_099" v="ジョディ"/>
+<e k="animalName_100" v="キング"/>
+<e k="animalName_101" v="カリプソ"/>
+<e k="animalName_102" v="ケイトリン"/>
+<e k="animalName_103" v="ケイシャ"/>
+<e k="animalName_104" v="カービー"/>
+<e k="animalName_105" v="ナイト"/>
+<e k="animalName_106" v="クレーマー"/>
+<e k="animalName_107" v="クリスタル"/>
+<e k="animalName_108" v="キスメット"/>
+<e k="animalName_109" v="カーン"/>
+<e k="animalName_110" v="ルナ"/>
+<e k="animalName_111" v="ラッキー"/>
+<e k="animalName_112" v="リリー"/>
+<e k="animalName_113" v="レディー"/>
+<e k="animalName_114" v="ラナ"/>
+<e k="animalName_115" v="レオナルド"/>
+<e k="animalName_116" v="リバティ"/>
+<e k="animalName_117" v="ライト"/>
+<e k="animalName_118" v="リンカーン"/>
+<e k="animalName_119" v="ラッキー"/>
+<e k="animalName_120" v="ミスティ"/>
+<e k="animalName_121" v="マックス"/>
+<e k="animalName_122" v="マギー"/>
+<e k="animalName_123" v="ミッドナイト"/>
+<e k="animalName_124" v="マイロ"/>
+<e k="animalName_125" v="モリー"/>
+<e k="animalName_126" v="マッケンジー"/>
+<e k="animalName_127" v="マルコム"/>
+<e k="animalName_128" v="ミラクル"/>
+<e k="animalName_129" v="ムファサ"/>
+<e k="animalName_130" v="ナポレオン"/>
+<e k="animalName_131" v="ネイト"/>
+<e k="animalName_132" v="ネルソン"/>
+<e k="animalName_133" v="ニモ"/>
+<e k="animalName_134" v="ネプチューン"/>
+<e k="animalName_135" v="ネバダ"/>
+<e k="animalName_136" v="ニンバス"/>
+<e k="animalName_137" v="ニルヴァーナ"/>
+<e k="animalName_138" v="ニトロ"/>
+<e k="animalName_139" v="ニフティ"/>
+<e k="animalName_140" v="オブリビオン"/>
+<e k="animalName_141" v="オーシャン"/>
+<e k="animalName_142" v="オーディン"/>
+<e k="animalName_143" v="オデッセイ"/>
+<e k="animalName_144" v="オリバー"/>
+<e k="animalName_145" v="オーリー"/>
+<e k="animalName_146" v="オリンパス"/>
+<e k="animalName_147" v="オニ"/>
+<e k="animalName_148" v="オパール"/>
+<e k="animalName_149" v="オスカー"/>
+<e k="animalName_150" v="ポンチョ"/>
+<e k="animalName_151" v="プリンス"/>
+<e k="animalName_152" v="パブロ"/>
+<e k="animalName_153" v="パラディン"/>
+<e k="animalName_154" v="パンドラ"/>
+<e k="animalName_155" v="パッチ"/>
+<e k="animalName_156" v="ピーチ"/>
+<e k="animalName_157" v="ファントム"/>
+<e k="animalName_158" v="ピルグリム"/>
+<e k="animalName_159" v="プリックルズ"/>
+<e k="animalName_160" v="クイーン"/>
+<e k="animalName_161" v="クアンタム"/>
+<e k="animalName_162" v="クイン"/>
+<e k="animalName_163" v="クイバー"/>
+<e k="animalName_164" v="レミントン"/>
+<e k="animalName_165" v="リンゴ"/>
+<e k="animalName_166" v="ロビン"/>
+<e k="animalName_167" v="ローグ"/>
+<e k="animalName_168" v="ロイヤル"/>
+<e k="animalName_169" v="ルドルフ"/>
+<e k="animalName_170" v="ロメオ"/>
+<e k="animalName_171" v="ロッキー"/>
+<e k="animalName_172" v="レイン"/>
+<e k="animalName_173" v="レンジャー"/>
+<e k="animalName_174" v="ラスティ"/>
+<e k="animalName_175" v="レーサー"/>
+<e k="animalName_176" v="ランボー"/>
+<e k="animalName_177" v="ラスカル"/>
+<e k="animalName_178" v="ロズウェル"/>
+<e k="animalName_179" v="ルビー"/>
+<e k="animalName_180" v="サリー"/>
+<e k="animalName_181" v="スカウト"/>
+<e k="animalName_182" v="スター"/>
+<e k="animalName_183" v="スピリット"/>
+<e k="animalName_184" v="ストーミー"/>
+<e k="animalName_185" v="サム"/>
+<e k="animalName_186" v="サンタ"/>
+<e k="animalName_187" v="シバー"/>
+<e k="animalName_188" v="シルバー"/>
+<e k="animalName_189" v="シンバ"/>
+<e k="animalName_190" v="スパーキー"/>
+<e k="animalName_191" v="スパルタ"/>
+<e k="animalName_192" v="スピリット"/>
+<e k="animalName_193" v="スタリオン"/>
+<e k="animalName_194" v="ストライダー"/>
+<e k="animalName_195" v="サマー"/>
+<e k="animalName_196" v="サニー"/>
+<e k="animalName_197" v="トビー"/>
+<e k="animalName_198" v="タンゴ"/>
+<e k="animalName_199" v="トワイライト"/>
+<e k="animalName_200" v="テイラー"/>
+<e k="animalName_201" v="テッド"/>
+<e k="animalName_202" v="テンパー"/>
+<e k="animalName_203" v="テンポ"/>
+<e k="animalName_204" v="トルネード"/>
+<e k="animalName_205" v="ソー"/>
+<e k="animalName_206" v="トッド"/>
+<e k="animalName_207" v="ターボ"/>
+<e k="animalName_208" v="ターク"/>
+<e k="animalName_209" v="ツイスター"/>
+<e k="animalName_210" v="トルーパー"/>
+<e k="animalName_211" v="トリガー"/>
+<e k="animalName_212" v="ユリシーズ"/>
+<e k="animalName_213" v="アンブラ"/>
+<e k="animalName_214" v="ウナギ"/>
+<e k="animalName_215" v="ユニティ"/>
+<e k="animalName_216" v="ウルスラ"/>
+<e k="animalName_217" v="ユーサー"/>
+<e k="animalName_218" v="ユートピア"/>
+<e k="animalName_219" v="ユーマ "/>
+<e k="animalName_220" v="ウルコ"/>
+<e k="animalName_221" v="ウタラ"/>
+<e k="animalName_222" v="バガボンド"/>
+<e k="animalName_223" v="バニラ"/>
+<e k="animalName_224" v="バニティ"/>
+<e k="animalName_225" v="ベガ"/>
+<e k="animalName_226" v="ベロシティ"/>
+<e k="animalName_227" v="ベルベット"/>
+<e k="animalName_228" v="ビーナス"/>
+<e k="animalName_229" v="ベローナ"/>
+<e k="animalName_230" v="バイキング"/>
+<e k="animalName_231" v="バーゴ"/>
+<e k="animalName_232" v="ウィスパー"/>
+<e k="animalName_233" v="ウィロー"/>
+<e k="animalName_234" v="ウォルド"/>
+<e k="animalName_235" v="ワトソン"/>
+<e k="animalName_236" v="ワイルドアイ"/>
+<e k="animalName_237" v="ウィル"/>
+<e k="animalName_238" v="ウィングス"/>
+<e k="animalName_239" v="ウィンストン"/>
+<e k="animalName_240" v="ラングラー"/>
+<e k="animalName_241" v="ウィリアム"/>
+<e k="animalName_242" v="クセルクセス"/>
+<e k="animalName_243" v="シャオ"/>
+<e k="animalName_244" v="ザビエル"/>
+<e k="animalName_245" v="ゼナ"/>
+<e k="animalName_246" v="イエスタデイ"/>
+<e k="animalName_247" v="ヤゴ"/>
+<e k="animalName_248" v="ヤンキー"/>
+<e k="animalName_249" v="ヨシコ"/>
+<e k="animalName_250" v="ザック"/>
+<e k="animalName_251" v="ジーク"/>
+<e k="animalName_252" v="ゼン"/>
+<e k="animalName_253" v="ツェッペリン"/>
+<e k="animalName_254" v="ゼウス"/>
+<e k="animalName_255" v="ジップ"/>
+<e k="animalName_256" v="ジア"/>
+<e k="animalPen_chicken" v="鶏小屋"/>
+<e k="animalPen_chicken2" v="鶏小屋 (大）"/>
+<e k="animalPen_cow" v="牛の放牧地"/>
+<e k="animalPen_cow2" v="牛の放牧地 (大)"/>
+<e k="animalPen_horse" v="馬小屋"/>
+<e k="animalPen_horse2" v="馬小屋 (大)"/>
+<e k="animalPen_pig" v="豚舎"/>
+<e k="animalPen_pig2" v="豚舎(大)"/>
+<e k="animalPen_sheep" v="羊の放牧地"/>
+<e k="animalPen_sheep2" v="羊の放牧地 (大)"/>
+<e k="animal_new" v="新"/>
+<e k="animal_stock" v="家畜"/>
+<e k="animals_animalNotSupportedByTrailer" v="この家畜の種類は家畜トレーラーに対応していません!"/>
+<e k="animals_buy" v="家畜 %d 匹を (%s)  %s で購入しますか?" tag="format"/>
+<e k="animals_canNotAddToTrailer" v="トレーラーにはすでに違う種類の家畜が入っています!"/>
+<e k="animals_chickenCoop" v="鶏小屋"/>
+<e k="animals_cowPasture" v="牛の放牧地"/>
+<e k="animals_dealer" v="ラリーの家畜"/>
+<e k="animals_descriptionChicken" v="ニワトリにはきれいなエサ場が必要です。"/>
+<e k="animals_descriptionGeneric" v="家畜に水をあげましょう! 清潔なエサ場とわらも必要です。"/>
+<e k="animals_descriptionHorse" v="馬の価値は体型、健康状態、清潔さで決まります。体型を保つために毎日乗馬してください。
+馬の健康状態を良好に保つためには、清潔な寝床のためのわらと、水とエサが必要です。
+また定期的にブラシをかけ、体を洗うことが大事です。"/>
+<e k="animals_foodMixDescriptionParallel" v="次のエサを混ぜたものをあげましょう (最善の結果を出すために全種類を混ぜてください):"/>
+<e k="animals_foodMixDescriptionSerial" v="次のいずれかのエサをあげましょう (最善の結果を出すために、最も効果の高いエサをあげましょう):"/>
+<e k="animals_foodMixEffectiveness" v="効果"/>
+<e k="animals_foodMixQuantity" v="量"/>
+<e k="animals_horseStable" v="馬小屋"/>
+<e k="animals_husbandryIsFull" v="小屋の収容量がすでにいっぱいです!"/>
+<e k="animals_inUse" v="使用中の動物は移動できません!"/>
+<e k="animals_invalidAnimalType" v="この家畜はここではおろせません!"/>
+<e k="animals_load" v="家畜 %d 頭を車両に載せますか?" tag="format"/>
+<e k="animals_noHusbandryAvailable" v="この家畜の種類に対応する小屋がありません!"/>
+<e k="animals_noTarget" v="家畜商が輸送"/>
+<e k="animals_notEnoughMoney" v="この家畜を買う資金が足りません!"/>
+<e k="animals_notEnoughMoney_buyCoins" v="この家畜を買う資金が足りません! コインを購入しますか？"/>
+<e k="animals_openAnimalScreen" v="家畜メニューを開く"/>
+<e k="animals_pigBlack" v="豚（黒）"/>
+<e k="animals_pigPasture" v="豚の放牧場"/>
+<e k="animals_pigShed" v="豚舎"/>
+<e k="animals_sell" v="家畜 %d 頭を (%s)  %s で売却しますか?" tag="format"/>
+<e k="animals_sheepPasture" v="羊の放牧地"/>
+<e k="animals_trailerIsFull" v="家畜トレーラーがいっぱいです!"/>
+<e k="animals_transportTargetLeftTrigger" v="輸送車両は利用できません!"/>
+<e k="animals_unload" v="家畜 %d 頭を車両からおろしますか?" tag="format"/>
+<e k="bunkerSiloLarge" v="バンカーサイロ (大)"/>
+<e k="bunkerSiloLargeDouble" v="バンカーサイロ (大) 2倍"/>
+<e k="bunkerSiloMedium" v="バンカーサイロ (中)"/>
+<e k="bunkerSiloMediumDouble" v="バンカーサイロ (中) 2倍"/>
+<e k="bunkerSiloSmall" v="バンカーサイロ (小)"/>
+<e k="bunkerSiloSmallDouble" v="バンカーサイロ (小) 2倍"/>
+<e k="button_accept" v="受諾"/>
+<e k="button_acceptContract" v="契約に同意"/>
+<e k="button_achievements" v="実績"/>
+<e k="button_achievements_ps4" v="トロフィー"/>
+<e k="button_achievements_xboxone" v="実績"/>
+<e k="button_addMods" v="MODを追加"/>
+<e k="button_addMods_ps4" v="ダウンロードコンテンツを追加"/>
+<e k="button_addMods_xboxone" v="ダウンロードコンテンツを追加"/>
+<e k="button_adminLogin" v="管理者としてログイン"/>
+<e k="button_apply" v="適用"/>
+<e k="button_back" v="戻る"/>
+<e k="button_ban" v="ブロックする"/>
+<e k="button_borrow5000" v="$CURRENCY_SYMBOL5000借りる"/>
+<e k="button_borrowItems" v="アイテムを借りる"/>
+<e k="button_buy" v="購入"/>
+<e k="button_cancel" v="キャンセル"/>
+<e k="button_cancelGame" v="やめる"/>
+<e k="button_career" v="キャリアモード"/>
+<e k="button_change" v="変更"/>
+<e k="button_changeColor" v="色を変更"/>
+<e k="button_changeName" v="名前の変更"/>
+<e k="button_changeUser" v="ユーザーの変更"/>
+<e k="button_clean" v="洗う"/>
+<e k="button_configurate" v="カスタマイズ"/>
+<e k="button_confirm" v="確認"/>
+<e k="button_continue" v="続ける"/>
+<e k="button_controls" v="操作設定"/>
+<e k="button_createGame" v="ゲームを作成"/>
+<e k="button_credits" v="クレジット"/>
+<e k="button_currentSettings" v="現在の設定"/>
+<e k="button_defaults" v="すべてリセット"/>
+<e k="button_delete" v="削除"/>
+<e k="button_deny" v="拒否"/>
+<e k="button_denyAlways" v="つねに拒否"/>
+<e k="button_deselect" v="選択解除"/>
+<e k="button_deselectAll" v="全選択解除"/>
+<e k="button_detail" v="詳細"/>
+<e k="button_dismiss" v="却下"/>
+<e k="button_dlcStore" v="Xbox Games ストア"/>
+<e k="button_dlcStore_ps4" v="PlayStation™Store"/>
+<e k="button_downloadPatch" v="更新をダウンロード"/>
+<e k="button_easy" v="イージー"/>
+<e k="button_enhanced" v="改良された"/>
+<e k="button_enterPassword" v="パスワードを入力"/>
+<e k="button_enterText" v="テキストを入力"/>
+<e k="button_enterVehicle" v="車両に乗る"/>
+<e k="button_fieldJob_complete" v="集める"/>
+<e k="button_game" v="ゲーム"/>
+<e k="button_garage" v="ガレージ"/>
+<e k="button_getModsDlc" v="MOD/ダウンロードコンテンツをダウンロード"/>
+<e k="button_graphics" v="グラフィック"/>
+<e k="button_hard" v="ハード"/>
+<e k="button_help" v="ヘルプ"/>
+<e k="button_joinGame" v="ゲームに参加"/>
+<e k="button_kick" v="キックする"/>
+<e k="button_lease" v="レンタル"/>
+<e k="button_leaseItems" v="アイテムをリース"/>
+<e k="button_load" v="ロード"/>
+<e k="button_misc" v="その他"/>
+<e k="button_modHub" v="MOD"/>
+<e k="button_modHubBuy" v="購入"/>
+<e k="button_modHubDownload" v="ダウンロード"/>
+<e k="button_modHubInstall" v="インストール"/>
+<e k="button_modHubShowAll" v="全MODを表示"/>
+<e k="button_modHubShowTop" v="トップMODのみ表示"/>
+<e k="button_modHubUninstall" v="アンインストール"/>
+<e k="button_modHubUpdate" v="アップデート"/>
+<e k="button_mods" v="MOD"/>
+<e k="button_move" v="移動"/>
+<e k="button_mp_createFarm" v="農場を作る"/>
+<e k="button_mp_deleteFarm" v="農場を削除"/>
+<e k="button_mp_dimiss" v="農場マネージャーを解雇"/>
+<e k="button_mp_editFarm" v="農場を編集"/>
+<e k="button_mp_grant" v="請負業者を許可"/>
+<e k="button_mp_joinFarm" v="農場に参加"/>
+<e k="button_mp_leaveFarm" v="農場を去る"/>
+<e k="button_mp_promote" v="農場マネージャーに昇格"/>
+<e k="button_mp_removeFromFarm" v="農場から解雇"/>
+<e k="button_mp_transferMoney" v="農場からお金を送金する"/>
+<e k="button_mp_transferMoney_dialogTitle" v="%sへ移動" tag="format"/>
+<e k="button_mp_ungrant" v="請負業者のアクセス権を停止する"/>
+<e k="button_multiplayer" v="マルチプレイ"/>
+<e k="button_no" v="いいえ"/>
+<e k="button_normal" v="ノーマル"/>
+<e k="button_officialSettings" v="公式設定"/>
+<e k="button_ok" v="OK"/>
+<e k="button_players" v="プレイヤー"/>
+<e k="button_purchaseNow" v="ゲームをすぐに購入"/>
+<e k="button_quit" v="終了"/>
+<e k="button_rate" v="レート"/>
+<e k="button_recover" v="回復する"/>
+<e k="button_refresh" v="更新"/>
+<e k="button_rename" v="名前を変更"/>
+<e k="button_rentAServer" v="専用のサーバーを借りてください"/>
+<e k="button_repair" v="修理"/>
+<e k="button_repay5000" v="$CURRENCY_SYMBOL5000返済する"/>
+<e k="button_reset" v="リセット"/>
+<e k="button_restart" v="やり直し"/>
+<e k="button_return" v="返却する"/>
+<e k="button_ride" v="乗る"/>
+<e k="button_save" v="セーブ"/>
+<e k="button_saveControls" v="コントロールをセーブ"/>
+<e k="button_saveGame" v="セーブ"/>
+<e k="button_select" v="選択"/>
+<e k="button_selectAll" v="すべて選択"/>
+<e k="button_selectColor" v="色を選択"/>
+<e k="button_sell" v="売却"/>
+<e k="button_serverSettings" v="サーバー設定"/>
+<e k="button_settings" v="オプション"/>
+<e k="button_shop_brands" v="ブランドごとに表示する"/>
+<e k="button_shop_categories" v="カテゴリーごとに表示する"/>
+<e k="button_showOnMap" v="マップに表示"/>
+<e k="button_showProfile" v="プロフィール表示"/>
+<e k="button_sortTable" v="並べ替え"/>
+<e k="button_start" v="開始"/>
+<e k="button_startLandscaping" v="造園を開始"/>
+<e k="button_transfer" v="送金"/>
+<e k="button_tutorials" v="チュートリアル"/>
+<e k="button_unban" v="バンを解除"/>
+<e k="button_unbanAll" v="すべてのバンを解除"/>
+<e k="button_unload" v="荷をおろす"/>
+<e k="button_visitWebsite" v="ウェブサイトを開く"/>
+<e k="button_yes" v="はい"/>
+<e k="category_animalTransport" v="家畜輸送"/>
+<e k="category_animalpens" v="家畜小屋"/>
+<e k="category_animals" v="家畜関連機材"/>
+<e k="category_augerWagons" v="オーガーワゴン"/>
+<e k="category_bales" v="ベール"/>
+<e k="category_baling" v="ベール技術機"/>
+<e k="category_beetHarvesting" v="ビーツの技術"/>
+<e k="category_belts" v="ベルトシステム"/>
+<e k="category_bigbags" v="大きな袋"/>
+<e k="category_cars" v="車"/>
+<e k="category_chainsaws" v="チェーンソー"/>
+<e k="category_containers" v="容器"/>
+<e k="category_cornHeaders" v="トウモロコシ収穫カッター"/>
+<e k="category_cottonHarvesting" v="綿の技術"/>
+<e k="category_cropProtection" v="作物の保護"/>
+<e k="category_cultivators" v="カルティベーター"/>
+<e k="category_cutterTrailers" v="カッタートレーラー"/>
+<e k="category_cutters" v="カッター"/>
+<e k="category_decoration" v="装飾物"/>
+<e k="category_discHarrows" v="ディスクハロー"/>
+<e k="category_dollys" v="ドリー"/>
+<e k="category_farmhouses" v="農場の母屋"/>
+<e k="category_feeding" v="給餌技術"/>
+<e k="category_fertilisationTechnology" v="肥料の技術"/>
+<e k="category_fertilizerSpreaders" v="肥料散布機"/>
+<e k="category_forageHarvesters" v="飼料コンバイン"/>
+<e k="category_forageHarvestersCutters" v="飼料刈取機"/>
+<e k="category_frontLoaders" v="フロントローダー"/>
+<e k="category_harvesters" v="収穫機"/>
+<e k="category_leveler" v="地ならし機"/>
+<e k="category_loaderWagons" v="ローダーワゴン"/>
+<e k="category_lowloaders" v="ローローダー"/>
+<e k="category_manureSpreaders" v="堆肥散布機"/>
+<e k="category_misc" v="その他"/>
+<e k="category_mowers" v="芝刈り機"/>
+<e k="category_objectMisc" v="その他"/>
+<e k="category_pallets" v="パレット"/>
+<e k="category_placeableMisc" v="その他"/>
+<e k="category_placeables" v="配置用オブジェクト"/>
+<e k="category_planters" v="プランター"/>
+<e k="category_plows" v="プラウ"/>
+<e k="category_potatoHarvesting" v="ジャガイモの技術"/>
+<e k="category_powerHarrows" v="パワーハロー"/>
+<e k="category_sales" v="セール"/>
+<e k="category_sheds" v="畜舎"/>
+<e k="category_silos" v="サイロ"/>
+<e k="category_skidSteers" v="スキッドステアローダー"/>
+<e k="category_slurryTanks" v="スラリータンク"/>
+<e k="category_sowingMachines" v="シーダー"/>
+<e k="category_sprayers" v="散布機"/>
+<e k="category_subsoilers" v="サブソイラー"/>
+<e k="category_sugarCaneHarvesting" v="サトウキビの技術"/>
+<e k="category_tedders" v="テッダー"/>
+<e k="category_teleLoaders" v="テレハンドラー"/>
+<e k="category_tractors" v="トラクター"/>
+<e k="category_tractorsL" v="トラクター (大)"/>
+<e k="category_tractorsM" v="トラクター (中) "/>
+<e k="category_tractorsS" v="トラクター (小)"/>
+<e k="category_trailers" v="トレーラー"/>
+<e k="category_trucks" v="トラック"/>
+<e k="category_weeders" v="草刈り機"/>
+<e k="category_weights" v="ウェイト"/>
+<e k="category_wheelLoaders" v="ホイールローダー"/>
+<e k="category_windrowers" v="ウィンドロウアー"/>
+<e k="category_wood" v="林業機械"/>
+<e k="category_woodHarvesting" v="林業機械"/>
+<e k="character_accessory_sunglasses" v="サングラス"/>
+<e k="character_body_name" v="キャラクター%d" tag="format"/>
+<e k="character_hair_variant_1" v="ヘアスタイル1"/>
+<e k="character_hair_variant_2" v="ヘアスタイル2"/>
+<e k="character_hair_variant_3" v="ヘアスタイル3"/>
+<e k="character_hair_variant_4" v="ヘアスタイル4"/>
+<e k="character_jacket_vest" v="ベスト"/>
+<e k="character_option_accessory" v="アクセサリー"/>
+<e k="character_option_body" v="キャラクター"/>
+<e k="character_option_hairStyle" v="ヘアスタイル"/>
+<e k="character_option_hat" v="帽子"/>
+<e k="character_option_jacket" v="ジャケット"/>
+<e k="character_option_none" v="なし"/>
+<e k="character_option_shirtColor" v="シャツの色"/>
+<e k="configuration_attacherJoint" v="取付具"/>
+<e k="configuration_baseColor" v="メインの色"/>
+<e k="configuration_buyableBaleAmount" v="個数"/>
+<e k="configuration_capacityX" v="容量%s" tag="format"/>
+<e k="configuration_consumer" v="消費者"/>
+<e k="configuration_cover" v="カバー"/>
+<e k="configuration_design" v="カスタマイズ"/>
+<e k="configuration_designColor" v="選べる色"/>
+<e k="configuration_extension" v="拡張"/>
+<e k="configuration_fillUnit" v="容量"/>
+<e k="configuration_fillVolume" v="充填量"/>
+<e k="configuration_folding" v="折り畳みの技術"/>
+<e k="configuration_frontWeightX" v="%skg前部ウェイト" tag="format"/>
+<e k="configuration_frontloaderAttacher" v="フロントローダー取付具"/>
+<e k="configuration_inputAttacher3Point" v="3ポイント"/>
+<e k="configuration_inputAttacherFrontLoader" v="フロントローダー"/>
+<e k="configuration_inputAttacherJoint" v="取付具の種類"/>
+<e k="configuration_inputAttacherSkidSteer" v="スキッドステアローダー"/>
+<e k="configuration_inputAttacherTeleLoaders" v="テレハンドラー"/>
+<e k="configuration_inputAttacherTrailer" v="トレーラー"/>
+<e k="configuration_inputAttacherWheelLoader" v="ホイールローダー"/>
+<e k="configuration_motorSetup" v="エンジンの構成"/>
+<e k="configuration_pipe" v="パイプ"/>
+<e k="configuration_powerTakeOff" v="パワーテイクオフ"/>
+<e k="configuration_rimColor" v="リムの色"/>
+<e k="configuration_spreaderSystem" v="散布システム"/>
+<e k="configuration_tensionBelts" v="テンションベルト"/>
+<e k="configuration_trailer" v="荷下ろしのメカニズム"/>
+<e k="configuration_trailerAttacherBack" v="+後部の取付具"/>
+<e k="configuration_value6mSpreadingUnit" v="6m散布ユニット"/>
+<e k="configuration_valueBaleTrailer" v="ベールの設定"/>
+<e k="configuration_valueBig" v="大"/>
+<e k="configuration_valueColor" v="デザイン"/>
+<e k="configuration_valueCrawler" v="キャタピラトラック"/>
+<e k="configuration_valueDefault" v="スタンダード"/>
+<e k="configuration_valueDesign01" v="デザイン1"/>
+<e k="configuration_valueDesign02" v="デザイン2"/>
+<e k="configuration_valueDesign03" v="デザイン3"/>
+<e k="configuration_valueDesign04" v="デザイン4"/>
+<e k="configuration_valueDesign05" v="デザイン5"/>
+<e k="configuration_valueDesign06" v="デザイン6"/>
+<e k="configuration_valueDesign07" v="デザイン7"/>
+<e k="configuration_valueDesign08" v="デザイン8"/>
+<e k="configuration_valueDesign09" v="デザイン9"/>
+<e k="configuration_valueExtension" v="拡張"/>
+<e k="configuration_valueFingerBodyShares" v="スラットモールドボード"/>
+<e k="configuration_valueForestry" v="林業"/>
+<e k="configuration_valueGT1" v="シングルGTストライプ"/>
+<e k="configuration_valueGT2" v="ツインGTストライプ"/>
+<e k="configuration_valueLeftLoading" v="左に積む"/>
+<e k="configuration_valueLoadingWagon" v="ベールローダーワゴン"/>
+<e k="configuration_valueLongPipe" v="パイプ (長)"/>
+<e k="configuration_valueNewHolland" v="ニューホランド"/>
+<e k="configuration_valueNo" v="いいえ"/>
+<e k="configuration_valueNone" v="なし"/>
+<e k="configuration_valueOlofsforsTracks" v="Olofsfors キャタピラトラック"/>
+<e k="configuration_valueRightLoading" v="右に積む"/>
+<e k="configuration_valueSmall" v="小"/>
+<e k="configuration_valueSpreadingDiscs" v="散布ディスク"/>
+<e k="configuration_valueStealth" v="ステルス"/>
+<e k="configuration_valueTracks" v="キャタピラトラック"/>
+<e k="configuration_valueTrailer0L" v="プラットフォームトレーラー"/>
+<e k="configuration_valueTripleWheelsAll" v="トリプルタイヤ"/>
+<e k="configuration_valueTwinWheelsAll" v="ダブルタイヤ"/>
+<e k="configuration_valueTwinWheelsBack" v="リアダブルタイヤ"/>
+<e k="configuration_valueTwinWheelsBackNarrow" v="リアナロウツインホイール"/>
+<e k="configuration_valueTwinWheelsFront" v="フロントダブルタイヤ"/>
+<e k="configuration_valueTwinWheelsNarrow" v="ナローダブルタイヤ"/>
+<e k="configuration_valueUniversalShares" v="ユニバーサルモールドボード"/>
+<e k="configuration_valueVogelsangSynCut" v="Vogelsang 金属用鋸"/>
+<e k="configuration_valueWheelBroad" v="ワイドタイヤ"/>
+<e k="configuration_valueWheelBroadWeights" v="ワイドタイヤ＋ウェイト"/>
+<e k="configuration_valueWheelCommunal" v="コミューナル"/>
+<e k="configuration_valueWheelNarrow" v="ナロータイヤ"/>
+<e k="configuration_valueWheelWeights" v="ホイールウェイト"/>
+<e k="configuration_valueWhite" v="スタンダード"/>
+<e k="configuration_valueWoodTrailer" v="木の設定"/>
+<e k="configuration_valueYes" v="はい"/>
+<e k="configuration_wheelBrand" v="ホイールブランド"/>
+<e k="configuration_wheelSetup" v="タイヤの構成"/>
+<e k="configuration_wrappingColor" v="ホイルの色"/>
+<e k="controlGroup_crane" v="クレーン"/>
+<e k="controlGroup_feeder" v="フィーダー"/>
+<e k="controlGroup_pipe" v="パイプ"/>
+<e k="controlGroup_supportArm" v="支持アーム"/>
+<e k="defaultFarmName" v="マイ農場"/>
+<e k="defaultSavegameName" v="マイ セーブデータ"/>
+<e k="dialog_dlcsCorruptQuit" v="一部のダウンロードアイテムが破損しています。アイテムを利用できないためゲームを終了する必要があります。
+もう一度ダウンロードしてください。"/>
+<e k="dialog_getFullVersion" v="ここから Farming Simulator の完全版を入手。"/>
+<e k="dialog_keepDisplayProperties" v="ディスプレイ設定を変更しました。この変更を保存しますか?"/>
+<e k="dialog_networkIsDisabled" v="ネットワークの設定が無効になっています。"/>
+<e k="dialog_networkIsDisconnected" v="ネットワークに接続されていません。"/>
+<e k="dialog_networkNoCable" v="ネットワークケーブルが接続されていません。"/>
+<e k="dialog_networkNoWifi" v="Wi-Fiに接続されていません。"/>
+<e k="dialog_reinsertDlcMedia" v="ダウンロードコンテンツを保存した記憶装置を再接続するか、ゲームを終了してください。"/>
+<e k="dialog_savegameOverwrite" v="このまま続けてセーブデータを上書きしますか?"/>
+<e k="dialog_savegameSelectDevice" v="選択された記憶装置が存在しません。記憶装置を選択してセーブを続けますか?"/>
+<e k="dialog_shopOnlyWorksInCareer" v="この農機販売店はキャリアモード中しか入れません。"/>
+<e k="dialog_signinWithUserToAcceptInvite" v="招待されたユーザー (%s) と共にサインインしてください。" tag="format"/>
+<e k="fieldInfo_ownedBy" v="所有者："/>
+<e k="fieldInfo_ownerNobody" v="なし"/>
+<e k="fieldInfo_ownerYou" v="あなた"/>
+<e k="fieldJob_active" v="アクティブ"/>
+<e k="fieldJob_buyPalletFirst" v="この契約のために%sのパレットを購入しましょう" tag="format"/>
+<e k="fieldJob_contract" v="契約"/>
+<e k="fieldJob_desc_action_baling" v="芝刈りとベール作り"/>
+<e k="fieldJob_desc_action_cultivating" v="耕作"/>
+<e k="fieldJob_desc_action_fertilizing" v="肥料まき"/>
+<e k="fieldJob_desc_action_harvesting" v="収穫"/>
+<e k="fieldJob_desc_action_plowing" v="すく"/>
+<e k="fieldJob_desc_action_sowing" v="種まき"/>
+<e k="fieldJob_desc_action_spraying" v="散布"/>
+<e k="fieldJob_desc_action_transporting" v="輸送"/>
+<e k="fieldJob_desc_action_weeding" v="草刈り"/>
+<e k="fieldJob_desc_baling_hay" v="畑%dの草を刈りましょう。刈った草は干し草乾燥機で乾燥させてベールにします。ベールは%sに運びましょう。" tag="format"/>
+<e k="fieldJob_desc_baling_silage" v="畑%dの草を刈りましょう。
+刈った草をベールにして包み、サイレージベールを作ります。
+ベールは%sに運びましょう。" tag="format"/>
+<e k="fieldJob_desc_cultivating" v="畑%dを耕して次の作物に備えましょう。" tag="format"/>
+<e k="fieldJob_desc_fertilizing" v="畑%dに好きな種類の肥料 (液体、固形、スラリー、堆肥)をまきましょう。" tag="format"/>
+<e k="fieldJob_desc_fillTheUnit" v="アタッチメントに&apos;%s&apos;を満タンに入れましょう。" tag="format"/>
+<e k="fieldJob_desc_harvesting" v="&apos;%s&apos;を畑%dで収穫して、 生産品を%sに輸送しましょう。" tag="format"/>
+<e k="fieldJob_desc_offersReward" v="オーナーから次の報酬を贈答:"/>
+<e k="fieldJob_desc_plowing" v="畑%dをすいて土をほぐし、次の作物に備えましょう。" tag="format"/>
+<e k="fieldJob_desc_sowing" v="畑%dに&apos;%s&apos;の種をまきましょう。" tag="format"/>
+<e k="fieldJob_desc_spraying" v="畑%dに除草剤をまいて雑草を処分しましょう。" tag="format"/>
+<e k="fieldJob_desc_transporting_generic" v="アイテムを%sから%sに輸送しましょう。" tag="format"/>
+<e k="fieldJob_desc_useOwnEquipment" v="自分の機械やリースの機械を使って%sで削減される報酬を獲得しましょう。" tag="format"/>
+<e k="fieldJob_desc_weeding" v="草刈り機を使って畑%dの小さな雑草を処分しましょう。" tag="format"/>
+<e k="fieldJob_endContract" v="この契約を破棄して支払いをすべて受けなくてもいいですか?"/>
+<e k="fieldJob_failed" v="失敗"/>
+<e k="fieldJob_failedField" v="%dの畑での契約失敗" tag="format"/>
+<e k="fieldJob_failure" v="契約失敗!"/>
+<e k="fieldJob_finished" v="完了"/>
+<e k="fieldJob_finishedField" v="%dの畑での契約完了" tag="format"/>
+<e k="fieldJob_jobType_baling" v="ベール作り"/>
+<e k="fieldJob_jobType_cultivating" v="耕す"/>
+<e k="fieldJob_jobType_fertilizing" v="肥料やり"/>
+<e k="fieldJob_jobType_harvesting" v="収穫する"/>
+<e k="fieldJob_jobType_plowing" v="土地を耕す"/>
+<e k="fieldJob_jobType_sowing" v="種をまく"/>
+<e k="fieldJob_jobType_spraying" v="散布"/>
+<e k="fieldJob_jobType_transporting" v="輸送"/>
+<e k="fieldJob_jobType_weeding" v="草刈り"/>
+<e k="fieldJob_noJobAvailable" v="ただいま契約はありません…"/>
+<e k="fieldJob_number" v="畑 %s" tag="format"/>
+<e k="fieldJob_progress" v="進行状況"/>
+<e k="fieldJob_progress_harvesting_nextUnloadDesc" v="%sを%sに配達してください" tag="format"/>
+<e k="fieldJob_progress_transporting_forField" v="%d%%が%dの畑に運ばれました" tag="format"/>
+<e k="fieldJob_results" v="結果"/>
+<e k="fieldJob_reward" v="報酬:"/>
+<e k="fieldJob_rotateChainsawFirst" v="先にチェーンソーを回転させてください"/>
+<e k="fieldJob_tally_contract" v="契約報酬"/>
+<e k="fieldJob_tally_reimbursement" v="返済"/>
+<e k="fieldJob_tally_stealing" v="穀物が不足"/>
+<e k="fieldJob_tally_total" v="合計"/>
+<e k="fieldJob_tally_unused" v="未使用"/>
+<e k="fieldJob_tally_vehicleReduction" v="リース料"/>
+<e k="fieldJob_transportFailed" v="輸送失敗"/>
+<e k="fieldJob_transportFinished" v="輸送完了"/>
+<e k="fieldJob_wrongCrop" v="契約とは違う作物を植えています"/>
+<e k="fillTypeGroup_base" v="ベース飼料"/>
+<e k="fillTypeGroup_bulk" v="ベース飼料"/>
+<e k="fillTypeGroup_earth" v="作物"/>
+<e k="fillTypeGroup_forage" v="混合飼料の合計"/>
+<e k="fillTypeGroup_grain" v="穀物"/>
+<e k="fillTypeGroup_grass" v="草"/>
+<e k="fillTypeGroup_protein" v="タンパク質"/>
+<e k="fillTypeGroup_silage" v="サイレージ"/>
+<e k="fillType_air" v="エア"/>
+<e k="fillType_barley" v="大麦"/>
+<e k="fillType_canola" v="キャノーラ"/>
+<e k="fillType_chaff" v="まぐさ"/>
+<e k="fillType_chicken" v="ニワトリ"/>
+<e k="fillType_cotton" v="綿"/>
+<e k="fillType_cow" v="牛"/>
+<e k="fillType_def" v="DEF"/>
+<e k="fillType_def_short" v="DEF"/>
+<e k="fillType_diesel" v="ディーゼル"/>
+<e k="fillType_digestate" v="消化液"/>
+<e k="fillType_dryGrass" v="干し草"/>
+<e k="fillType_egg" v="卵"/>
+<e k="fillType_fertilizer" v="肥料"/>
+<e k="fillType_forage" v="混合飼料の合計"/>
+<e k="fillType_forage_mixing" v="フォレージ"/>
+<e k="fillType_fuel" v="燃料"/>
+<e k="fillType_grass" v="芝"/>
+<e k="fillType_herbicide" v="除草剤"/>
+<e k="fillType_horse" v="馬"/>
+<e k="fillType_lime" v="ライム"/>
+<e k="fillType_liquidFertilizer" v="液体肥料"/>
+<e k="fillType_liquidManure" v="スラリー"/>
+<e k="fillType_maize" v="トウモロコシ"/>
+<e k="fillType_manure" v="堆肥"/>
+<e k="fillType_milk" v="牛乳"/>
+<e k="fillType_oat" v="オーツ麦"/>
+<e k="fillType_oil" v="オイル"/>
+<e k="fillType_oilRadish" v="ハツカダイコン"/>
+<e k="fillType_pig" v="豚"/>
+<e k="fillType_pigFood" v="豚のエサ"/>
+<e k="fillType_pigFoodBase" v="豚のエサ(ベース)"/>
+<e k="fillType_pigFoodEarth" v="豚のエサ(作物)"/>
+<e k="fillType_pigFoodGrain" v="豚のエサ(穀物)"/>
+<e k="fillType_pigFoodProtein" v="豚のエサ(タンパク質)"/>
+<e k="fillType_poplar" v="ポプラ"/>
+<e k="fillType_potato" v="ジャガイモ"/>
+<e k="fillType_roundBale" v="ロールベール"/>
+<e k="fillType_roundBaleBarley" v="ロールベール(大麦わら)"/>
+<e k="fillType_roundBaleDryGrass" v="ロールベール(干し草)"/>
+<e k="fillType_roundBaleGrass" v="ロールベール(草)"/>
+<e k="fillType_roundBaleSilage" v="ロールベール(サイレージ)"/>
+<e k="fillType_roundBaleWheat" v="ロールベール(小麦わら)"/>
+<e k="fillType_seeds" v="種"/>
+<e k="fillType_sheep" v="羊"/>
+<e k="fillType_silage" v="サイレージ"/>
+<e k="fillType_soybean" v="大豆"/>
+<e k="fillType_squareBale" v="スクエアベール"/>
+<e k="fillType_squareBaleBarley" v="スクエアベール(大麦わら)"/>
+<e k="fillType_squareBaleDryGrass" v="スクエアベール(干し草)"/>
+<e k="fillType_squareBaleGrass" v="スクエアベール(草)"/>
+<e k="fillType_squareBaleSilage" v="スクエアベール(サイレージ)"/>
+<e k="fillType_squareBaleWheat" v="スクエアベール(小麦わら)"/>
+<e k="fillType_straw" v="わら"/>
+<e k="fillType_sugarBeet" v="テンサイ"/>
+<e k="fillType_sugarCane" v="サトウキビ"/>
+<e k="fillType_sunflower" v="ヒマワリ"/>
+<e k="fillType_tarp" v="防水シート"/>
+<e k="fillType_treeSaplings" v="苗木"/>
+<e k="fillType_water" v="水"/>
+<e k="fillType_weed" v="雑草"/>
+<e k="fillType_wheat" v="小麦"/>
+<e k="fillType_woodChips" v="ウッドチップ"/>
+<e k="fillType_wool" v="ウール"/>
+<e k="fillUnit_unload_nospace" v="荷下ろしするスペースがありません!"/>
+<e k="finance_animalUpkeep" v="家畜維持費"/>
+<e k="finance_constructionCost" v="建築費"/>
+<e k="finance_fieldPurchase" v="土地の購入"/>
+<e k="finance_fieldSelling" v="土地の売却"/>
+<e k="finance_harvestIncome" v="収穫による収入"/>
+<e k="finance_incomeBga" v="バイオガスプラント収入"/>
+<e k="finance_loanInterest" v="ローン利子"/>
+<e k="finance_missionIncome" v="契約による収入"/>
+<e k="finance_newAnimalsCost" v="新しい家畜"/>
+<e k="finance_newVehiclesCost" v="新しい車両"/>
+<e k="finance_other" v="その他"/>
+<e k="finance_propertyIncome" v="土地・不動産収入"/>
+<e k="finance_propertyMaintenance" v="土地・不動産の維持費"/>
+<e k="finance_purchaseFertilizer" v="肥料代"/>
+<e k="finance_purchaseFuel" v="燃料代"/>
+<e k="finance_purchaseSaplings" v="苗代"/>
+<e k="finance_purchaseSeeds" v="種代"/>
+<e k="finance_purchaseWater" v="水道代"/>
+<e k="finance_soldAnimals" v="売却した家畜"/>
+<e k="finance_soldBales" v="売却したベール (わら束)"/>
+<e k="finance_soldBuildings" v="売却した建物"/>
+<e k="finance_soldMilk" v="売却した牛乳"/>
+<e k="finance_soldVehicles" v="売却した車両"/>
+<e k="finance_soldWood" v="売却した木材"/>
+<e k="finance_soldWool" v="売却したウール"/>
+<e k="finance_transfer" v="移動"/>
+<e k="finance_vehicleLeasingCost" v="車両レンタル費"/>
+<e k="finance_vehicleRunningCost" v="車両の維持費"/>
+<e k="finance_wagePayment" v="賃金"/>
+<e k="function_additionalTank" v="アタッチメントの容量を増やす追加タンク。"/>
+<e k="function_animalPenChicken" v="ニワトリを入れておく場所。"/>
+<e k="function_animalPenCow" v="牛を入れておく場所。"/>
+<e k="function_animalPenHorse" v="馬を入れておく場所。"/>
+<e k="function_animalPenPig" v="豚を入れておく場所。"/>
+<e k="function_animalPenSheep" v="羊を入れておく場所。"/>
+<e k="function_augerWagon" v="オーガーワゴンはスクリューコンベアのついたトレーラーで、作物を保管し、他のトレーラーに直接移すのに使えます。"/>
+<e k="function_baleStacker" v="ベールコレクターはベールの回収を楽にしてくれます。"/>
+<e k="function_baleTrailer" v="ベールトレーラーはベールの運搬に使います。"/>
+<e k="function_baleWrapper" v="ベールラッパーは草のベールを包んで中で乳酸発酵が進むようにして、サイレージを作ります。"/>
+<e k="function_baler" v="ベーラーはバラバラのわらや草、干し草などを扱いやすいベールにまとめます。"/>
+<e k="function_beehive" v="自動で売却されてキャッシュを得られるハチミツを製造します。"/>
+<e k="function_beltSystem" v="コンベアベルトはトレーラーに搬入するもう一つの手段です。"/>
+<e k="function_beltSystemConnection" v="コンベアベルトはトレーラーに搬入するもう一つの手段です。"/>
+<e k="function_beltSystemStart" v="このベルトは材料を地面から次のコンベアベルトへ運びます。"/>
+<e k="function_bigBagFertilizer" v="しっかりした肥料袋（大）は肥料散布機の補充に使います。"/>
+<e k="function_bigBagHorseFood" v="馬用の新鮮なオート麦"/>
+<e k="function_bigBagLime" v="大きな袋は石灰散布機の補充に使います。"/>
+<e k="function_bigBagPigFood" v="栄養バランスが完璧な豚のエサ。"/>
+<e k="function_bigBagSeeds" v="種袋（大）は種まき機の補充に使います。"/>
+<e k="function_car" v="車を運転すると速やかにA地点からB地点に移動できます。"/>
+<e k="function_chainsaw" v="チェーンソーを使うと木を切ることができます。"/>
+<e k="function_coins" v="コインを購入してもっとゲームをプレイしよう。"/>
+<e k="function_combine" v="コンバインは指定された種類の作物を収穫できます。"/>
+<e k="function_combineForage" v="飼料コンバインは指定された種類の作物を処理します。"/>
+<e k="function_combineNeedsCutter" v="コンバインを使うには適切なカッターが必要です。"/>
+<e k="function_combineNeedsForageCutter" v="飼料コンバインを使うには適切なカッターが必要です。"/>
+<e k="function_cultivator" v="カルティベーターは収穫後に再び畑を耕すのに使います。"/>
+<e k="function_cutter" v="カッターはコンバインに取り付けて使用します。"/>
+<e k="function_cutterForage" v="カッターは飼料コンバインに取り付けて使用します。"/>
+<e k="function_cutterTrailer" v="カッタートレーラーはカッターを安全に運搬します。"/>
+<e k="function_decoration" v="装飾品"/>
+<e k="function_dogBall" v="犬と遊ぶ時に使います。"/>
+<e k="function_dogHouse" v="犬を入れておくための、通常は家の形をした小さな小屋。"/>
+<e k="function_dolly" v="ドリーはセミトレーラーとトラクターの連結器として使われます。"/>
+<e k="function_farmHouse" v="農場用の家。"/>
+<e k="function_farmSilo" v="サイロで作物を保管します"/>
+<e k="function_feeder" v="飼料ワゴンはサイレージや干し草、わらを混ぜ合わせて牛の飼料を作ります。"/>
+<e k="function_feederBale" v="小麦わらのベールを使って牛舎の床に小麦わらを広げる機械です。"/>
+<e k="function_fertilizer" v="肥料を散布すると収穫量が上がります。"/>
+<e k="function_fertilizerTank" v="液体肥料は散布機に入れられます。"/>
+<e k="function_fillablePallet" v="ポプラの苗。プランターに植えましょう。"/>
+<e k="function_fillablePalletSugarCane" v="このパレットでサトウキビの種まき機を補充します。"/>
+<e k="function_forageWagon" v="飼料ワゴンは草、干し草、またはわらを集めます。まぐさなども入れることができます。"/>
+<e k="function_forestryCutter" v="木を伐採する機械です。"/>
+<e k="function_forestryPlanter" v="土に木の苗を植える機具の部品です。苗木のパレットを購入するには、ショップで植林機に補充してください。"/>
+<e k="function_forestryTransport" v="材木の運搬に使用します。"/>
+<e k="function_forestryTreeLimit" v="注意: 大きな木は伐採できません。"/>
+<e k="function_forestryWoodCrusher" v="木材をウッドチップに粉砕します。"/>
+<e k="function_frontloader" v="フロントローダーはさまざまな物の積み上げや積載に使われます。"/>
+<e k="function_greenHouse" v="自動で売却されてキャッシュを得られる野菜を生産します。"/>
+<e k="function_harvestingPotato" v="ジャガイモを土から掘り出す収穫機です。"/>
+<e k="function_harvestingPotatoWithoutPreparer" v="この収穫機は地面からジャガイモを掘り出します。"/>
+<e k="function_harvestingSelfPropelledPotato" v="自動的にジャガイモを収穫する自走式の収穫機です。"/>
+<e k="function_harvestingSelfPropelledSugarbeet" v="自動的にテンサイを収穫する自走式の収穫機です。"/>
+<e k="function_harvestingSugarbeet" v="テンサイを土から掘り出す収穫機です。"/>
+<e k="function_haulmTopperPotato" v="リーフチョッパーは、ジャガイモを収穫する前に、茎や葉を刈り取る機械です。"/>
+<e k="function_haulmTopperSugarbeet" v="このリーフチョッパーは、テンサイを収穫する前に、茎や葉を刈り取る機械です。"/>
+<e k="function_hayStorage" v="わらと干し草の貯蔵スペース"/>
+<e k="function_heatingPlant" v="この販売ステーションにウッドチップを入れると熱が発生し、収入を得られます。"/>
+<e k="function_herbicideTank" v="除草剤は散布機に入れて雑草取りに使います。"/>
+<e k="function_highPressureWasher" v="汚れた車両やアタッチメントを洗えます。"/>
+<e k="function_leveler" v="地ならし機は、まぐさとサイレージを動かしてサイロに積んであるものを水平にします。"/>
+<e k="function_liquidFertilizerTank" v="液体肥料タンクは散布機の補充に使います。"/>
+<e k="function_livestockTrailer" v="トレーラーは家畜の運搬に使います。"/>
+<e k="function_loadingVehicle" v="この機械は、畑からテンサイを集めてトレーラーに入れます。"/>
+<e k="function_loadingVehicleVariousGoods" v="この機械は、畑から様々な物を集めてトレーラーに入れます。"/>
+<e k="function_lowLoader" v="他の車両を運べるトレーラーです。"/>
+<e k="function_manureSpreader" v="堆肥を散布すると収穫量が上がります。"/>
+<e k="function_mower" v="芝刈り機は草を刈る時に使います。"/>
+<e k="function_palletPacker" v="この機械を使ってジャガイモやテンサイを搬入すると、パレットにきれいに入ってそのまま販売できます。"/>
+<e k="function_placeableChipper" v="この機械に丸太を入れるとウッドチップが生産され、自動的に製材所に売却されます。"/>
+<e k="function_plow" v="プラウは、収穫後に畑を耕し、次の種まきに備えて畑を新しく作りなおす機械です。"/>
+<e k="function_powerGenerator" v="自動で売却されてキャッシュを得られる電力を作ります。"/>
+<e k="function_reverseDriveControl" v="この車両にはリバース走行機能が備わっています。"/>
+<e k="function_roller" v="この機械で地面を元の状態に戻せます (畑を削除)。"/>
+<e k="function_saplingPallet" v="植林機に補充する苗木のパレットです。"/>
+<e k="function_semiTrailer" v="セミトレーラーはドリーを使って連結します。"/>
+<e k="function_siloExtension" v="サイロの貯蔵量を増加します。牧場のサイロ付近に設置する必要があります。"/>
+<e k="function_skidsteer" v="スキッドステアローダーのショベルはさまざまな物を運ぶのに使えます。"/>
+<e k="function_slurryContainer" v="フィールドコンテナはスラリーの中間貯蔵に使われます。"/>
+<e k="function_slurrySpreader" v="スラリーを散布すると収穫量が上がります。"/>
+<e k="function_slurrySpreaderTool" v="有機資材噴霧器は対応する堆肥バレルに取り付けできます。"/>
+<e k="function_sowingMachine" v="播種機で畑に種をまくことができます。"/>
+<e k="function_sowingMachineDirect" v="さらにこの機械で種をまくことも可能です。
+（事前に畑を耕す必要はありません）"/>
+<e k="function_sprayer" v="肥料を散布すると収穫量が上がります。"/>
+<e k="function_sprayerTank" v="タンクを追加することで散布機の容量が増えます。"/>
+<e k="function_storageSilo" v="サイロで作物を保管します"/>
+<e k="function_stumpCutter" v="木の切り株を切る機械です。"/>
+<e k="function_subsoiler" v="サブソイラーで次の種まきに向け畑を整えます。すき込みの代わりにもなります。"/>
+<e k="function_sugarCaneTrailer" v="サトウキビトレーラーは、大きなトレーラーを直接満杯にするために容器を上に高くつけることができます。"/>
+<e k="function_tank" v="液体を運ぶタンクです。"/>
+<e k="function_tedder" v="刈り取った草が早く乾燥するように反転・撹拌します。"/>
+<e k="function_telehandler" v="テレハンドラーはさまざまな物を積んだり載せたりするのに使います。"/>
+<e k="function_tipper" v="トレーラーは収穫した作物などを運ぶのに使います。"/>
+<e k="function_tractor" v="トレーラーなどの車両を牽引するにはトラクターが必要です。"/>
+<e k="function_tractorFrontloader" v="フロントローダーを装着できるトラクターです。"/>
+<e k="function_trailedLifter" v="トレーラーがないトラクターにつける3点ヒッチのトレーラー"/>
+<e k="function_treeSaw" v="ウッドソーを使うと木を切ることができます。"/>
+<e k="function_truck" v="トラックにはセミトレーラーを連結できます。"/>
+<e k="function_waterTower" v="給水塔は貯水槽に新鮮な水を供給することができます。"/>
+<e k="function_weeder" v="草刈り機は、成長中の小さな作物の間に生えた草を抜き、畑の状態を向上します。 作物の最初の成長段階の時にだけ使えます。"/>
+<e k="function_weight" v="ウェイトはトラクターの車輪が地面にきちんと接地させ、バランスを保つのに使われます。"/>
+<e k="function_wheelLoader" v="ホイールローダーのショベルはさまざまな物を運ぶのに使えます。"/>
+<e k="function_windrower" v="ウィンドロウアーは草、干し草またはわらを列 (ウィンドロウ) に並べます、ウィンドロウはその後フォレージによって集められます。"/>
+<e k="function_workshop" v="この整備場をマップ上に好きな位置に配置すると、有料の整備士なしで農作業機器のカスタマイズをすることができます。"/>
+<e k="helpCategoryMobile_01" v="農業の基礎"/>
+<e k="helpCategory_01" v="農業の基礎"/>
+<e k="helpCategory_02" v="高度な知識"/>
+<e k="helpCategory_03" v="家畜"/>
+<e k="helpCategory_04" v="林業"/>
+<e k="helpCategory_05" v="生産説明"/>
+<e k="helpCategory_06" v="お金を稼ぐ"/>
+<e k="helpCategory_07" v="ショップ"/>
+<e k="helpCategory_08" v="その他"/>
+<e k="helpCategory_SA_01" v="サトウキビ"/>
+<e k="helpIcon_text1" v="大袋で、機械に種や肥料を補充できます。空になったらショップで新しい袋を購入しましょう。パレットのコーナーにあります。"/>
+<e k="helpIcon_text10" v="車両の燃料がなくなったら、ここで給油できます。主な道路沿いにも給油所があります。"/>
+<e k="helpIcon_text11" v="作物を一時的に蓄えておく貯蔵庫です。作物を積載したトレーラーを運んできて、
+中身をおろしましょう。荷下ろしできる場所に停止するとシンボルが現れます。
+
+サイロから作物を出すには、各作物のサイロの下にトレーラーを停止させます。
+作物の積載はトレーラーがいっぱいになった場合、もしくはサイロが空になった場合に終了します。"/>
+<e k="helpIcon_text12" v="羊を購入するとウールを生産できるようになります。時間経過とともに、ウールの入った袋がここに積まれていきます。ウールはフロントローダーで回収して紡績工場に持っていけば売却できます。"/>
+<e k="helpIcon_text13" v="ウールを売るには羊の放牧地からここまでパレットを運搬する必要があります。このマーカー内にパレットを置いてください。"/>
+<e k="helpIcon_text14" v="鶏の卵を持っている場合、ここで売却できます。売却したい場合は回転しているシンボルの上を通過してください。"/>
+<e k="helpIcon_text15" v="ここで丸太を売却できます。長くて真っ直ぐで枝が無い木の方が、短くて曲がっている木よりも高い値段で売却できます。"/>
+<e k="helpIcon_text16" v="ここでウッドチップを荷下ろしして売却できます。"/>
+<e k="helpIcon_text17" v="木を売りたい場合は、水車用貯水池に落とすだけで売却できます。
+
+長くて真っ直ぐな木の方が、短くて曲がっている木よりも高い値段で売却できます。"/>
+<e k="helpIcon_text18" v="サトウキビの種まきにはGessner Single Row Billet Planterのようなビレットプランターが必要です。ジャガイモのように、前回の収穫で得た茎を機械に入れます。茎を直接ビレットプランターに入れるか、テレハンドラーかショベルを装備したホイールローダーで機械に入れることができます。サトウキビの茎がなくても、サトウキビを植えることができます。ショップでサトウキビをパレットで購入し、ビレットプランターに入れるだけです。"/>
+<e k="helpIcon_text19" v="サトウキビは比較的ゆっくり成長しますが、枯れることはありません。サトウキビは収穫後にまた成長する為、しばらくしたら再度収穫することができます。"/>
+<e k="helpIcon_text2" v="ここは、新しい農業機械を購入したり、古い機械を売却できるショップです。 新しく購入した商品は、この建物の隣に出現します。"/>
+<e k="helpIcon_text20" v="サトウキビを収穫するには、サトウキビ収穫機が必要です。表面の葉を取り除き、サトウキビの太い茎を小さくコンパクトなサイズに切り刻みます。資料コンバインのように、サトウキビ収穫機にはタンクが備わっておらず並走するトレーラーが必要です。"/>
+<e k="helpIcon_text21" v="収穫時は、通常素早い運搬の為にサトウキビの茎を直接トラックに積み込めるサトウキビ専用の背の高いトレーラーが使用されます。サトウキビはサイロに保存することはできませんが、単にどこにでも地面に直接置いて保存することができます。駅によりサトウキビの価格が異なりますが、最も利益があげえられる駅はサトウキビ製粉所の駅です。"/>
+<e k="helpIcon_text3" v="ここに荷下ろしすることでジャガイモとテンサイを貯蔵できます。
+裏手には2本のコンベアベルトがあり、そこでトレーラーにジャガイモとテンサイを積載できます。"/>
+<e k="helpIcon_text4" v="わらや干し草のベールが余るようでしたら、ここに置くことで売却してお金を得ることができます。"/>
+<e k="helpIcon_text5" v="タンクがある場所まで行けば、散布機に肥料を入れることができます。肥料を入れている間は口座から料金が引かれていきます。
+
+ガーデンセンターにも同じタンクがあります。"/>
+<e k="helpIcon_text6" v="この施設は近隣の村に熱エネルギーを供給しています。木の伐採を始めて、ウッドチップを作り始めたらここで売却することができます。"/>
+<e k="helpIcon_text7" v="他の車両と同様、列車を操縦することもできます。
+
+ここでは、クレーンを使って丸太を列車から他の車両に移す、もしくは作物を貯蔵庫に積載/荷下ろしすることが出来ます。
+
+建物の反対側にトレーラー用の積載ステーションがあります。"/>
+<e k="helpIcon_text8" v="資金に余裕があるなら、このパレットで播種機をいっぱいにしておきましょう。
+ガーデンセンターにも同じパレットがあります。"/>
+<e k="helpIcon_text9" v="給水所では給水タンクをいっぱいにできます。"/>
+<e k="helpIcon_title1" v="種と肥料"/>
+<e k="helpIcon_title10" v="燃料"/>
+<e k="helpIcon_title11" v="サイロ"/>
+<e k="helpIcon_title12" v="ウールパレット"/>
+<e k="helpIcon_title13" v="ウールの買取所"/>
+<e k="helpIcon_title14" v="卵の買取所"/>
+<e k="helpIcon_title15" v="木の買取所"/>
+<e k="helpIcon_title16" v="ウッドチップの買取所"/>
+<e k="helpIcon_title17" v="水車用貯水池"/>
+<e k="helpIcon_title18" v="サトウキビ"/>
+<e k="helpIcon_title19" v="サトウキビ"/>
+<e k="helpIcon_title2" v="車両ショップ"/>
+<e k="helpIcon_title20" v="サトウキビ"/>
+<e k="helpIcon_title21" v="サトウキビ"/>
+<e k="helpIcon_title3" v="ジャガイモとテンサイ"/>
+<e k="helpIcon_title4" v="わらと干し草の廃棄"/>
+<e k="helpIcon_title5" v="肥料"/>
+<e k="helpIcon_title6" v="バイオマスプラント"/>
+<e k="helpIcon_title7" v="列車システム"/>
+<e k="helpIcon_title8" v="種"/>
+<e k="helpIcon_title9" v="給水所"/>
+<e k="helpTextMobile_01" v="Farming Simulator 20には、小麦、大麦、オーツ麦、綿、キャノーラ、ヒマワリ、
+大豆、トウモロコシ、ジャガイモ、そしてテンサイの全部で10種類の作物があります。
+
+作物を育成するには、耕作、種蒔き、収穫の3 つのステップが必要です。"/>
+<e k="helpTextMobile_02" v="作物の種をまく前には、耕運機を使って土壌を整えましょう。
+
+土を耕すには、耕運機を下げてください。"/>
+<e k="helpTextMobile_03" v="種まき機を使うと、作物の種をまくことができます。
+
+- 農場で種まき機に種を入れます。
+- 種をまく作物を選択します。
+- 種まき機を動かします"/>
+<e k="helpTextMobile_04" v="作物が収穫期をむかえたら、正しいカッターを装着したコンバインハーベスターを使って収穫しましょう。
+
+- 収穫する作物に適したカッターを装着します。
+- ハーベスターを動かします。
+
+収穫した作物は、トレーラーに入れましょう。 収穫した作物は買取所で売却したり、サイロに貯蔵したりできます。"/>
+<e k="helpTextMobile_05" v="ジャガイモとテンサイの耕作には、
+特殊な種蒔き機とコンバインが必要です。"/>
+<e k="helpTextMobile_06" v="綿を収穫するには自走式の綿収穫機を使います。
+
+収穫機のタンクが満タンになったら、綿の大きなベールを荷下ろします。買取所まで運ぶには特殊なトレーラーが必要です。"/>
+<e k="helpTextMobile_07" v="畑の収穫量を50%増やすには、次のいずれかの方法で肥料をまきます。
+
+- 散布機
+- 肥料散布機
+- 堆肥散布機
+- スラリータンク
+
+散布機と肥料散布機は、農場で補充できます。
+堆肥散布機とスラリータンクは、牛の放牧地か豚舎で補充できます。
+"/>
+<e k="helpTextMobile_08" v="飼料は、動物の世話に限定して使用されるものを指します。
+飼料には、草、干し草、わらがあります。"/>
+<e k="helpTextMobile_09" v="草は、トラクターに搭載されている草刈り機を使って刈ります。
+
+刈り取った草を干し草乾燥機を使って適切に乾燥させると干し草に
+なります。干し草は刈り取った草よりもわずかに軽く、
+密度がちいさくなっています。"/>
+<e k="helpTextMobile_10" v="わらは、小麦、大麦、オーツ麦を収穫するときに収穫機から落ちてきます。"/>
+<e k="helpTextMobile_11" v="ウィンドロウアーを使って草をきれいに並べると、草や干し草を簡単に回収できます。
+わらは、収穫機から整列した状態で落ちてきます。
+
+落ちてきたわらは、ローダーワゴンに回収するか、ベーラーを使ってベールにすることができます。"/>
+<e k="helpTextMobile_12" v="牧草は牛や羊のエサになります。
+干し草は牛、羊、馬のエサになります。
+わらは、牛、豚、馬の清潔な寝床になります。
+
+また、牧草や干し草はもみ殻にすることもできます。
+"/>
+<e k="helpTextMobile_13" v="まぐさは飼料コンバインで作物を切り刻んで作ります。
+
+まぐさはトウモロコシ、小麦、大麦、オーツ麦、キャノーラ、大豆、牧草、干し草から作れます。
+
+ただし、飼料刈取機には内臓タンクがないのでダンプカーを接続するのを忘れないようにしましょう。
+まぐさはバイオガスステーションで売ることができます。"/>
+<e k="helpTextMobile_14" v="Farming Simulator 20では、家畜の世話をすることもできます。
+家畜には馬、牛、羊、豚がいます。
+
+家畜は家畜商から購入できます。"/>
+<e k="helpTextMobile_15" v="家畜は家畜運搬車で農場まで運ぶ必要があります。
+
+その際は、家畜運搬車を家畜商の近くに停めてあることを必ず確認しましょう。"/>
+<e k="helpTextMobile_16" v="家畜は、エサや水をやったり、ストローブロワーを使って寝床を整えたりといった世話をしてやらなければいけません。
+
+家畜の満足度が高いと子供を産み、数をふやしていきます。"/>
+<e k="helpTextMobile_17" v="エサ：牧草、干し草
+生産品：牛乳、堆肥、スラリー
+繁殖スピード: 低
+
+牛乳を売却するには、最初に牛乳タンクをインタラクティブゾーンに移動して牛乳を集めます。
+その後、牛乳を買い取ってくれる買取所に行って牛乳を売却します。"/>
+<e k="helpTextMobile_18" v="エサ：牧草、干し草
+生産品：ウール
+繁殖スピード：中
+
+ウールを売却するには、トレーラーをインタラクティブゾーンに移動してウールを集めます。その後、ウールを紡績工場に運びます。"/>
+<e k="helpTextMobile_19" v="エサ：トウモロコシ、小麦、大麦、大豆、キャノーラ、ヒマワリ、ジャガイモ、テンサイ
+生産品：堆肥、スラリー
+繁殖スピード：高
+
+豚は世話をすると繁殖します。売却することもできます。
+豚を売却するには、家畜運搬車を使って家畜商まで運びます。"/>
+<e k="helpTextMobile_20" v="エサ：干し草、オーツ麦
+
+馬は訓練した後に売却して収益を上げられます。
+性能の異なる馬を最大8頭まで所有できます。それぞれに名前があります。
+体型：体型レベルが高いほど価値が上がります。乗馬することで体型レベルを上げられます。
+健康状態：馬の健康状態を良好に保つためには、清潔な寝床のためのわらと、水とエサが必要です。"/>
+<e k="helpTextMobile_21" v="牛や豚は餌をやるとすぐにスラリーを生産します。スラリーはピットに集められます。
+
+スラリータンクをピットの隣に置いてスラリーを集めると、肥料として畑にまくことができます。"/>
+<e k="helpTextMobile_22" v="牛舎や豚舎の寝床にわらを使うと、畑で使える堆肥になります。
+
+堆肥散布機を堆肥の山の隣に置いて堆肥を集めると、肥料として畑にまくことができます。"/>
+<e k="helpTextMobile_23" v="生産品は、通常トレーラーに積み込み、マップ上に表示される買取所へ運んで売却します。 価格確認画面を開くと、生産品が売却可能な買取所と価格が表示されます。
+最も高い価格で買い取ってくれる売買所で売却しましょう。"/>
+<e k="helpTextMobile_24" v="売却可能な生産品の価格は、需要と供給量によって毎日変動します。
+売却品とその量を調整することで、価格をコントロールすることも可能です。
+
+例えば、小麦のみを数週間売却し続けると需要は減り、価格もそれにともなって下落します。 逆のケースでは、あまり売却しない生産品の価格は早く上昇するということです。"/>
+<e k="helpTextMobile_25" v="生産品を売却するステーションは競合しあっているため、特定のステーションで特定の生産の需要が突然発生することがあり、 その場合は一時的な需要ピークが始まります。
+
+需要ピークが発生したステーションは、その間他のステーションよりも高値で生産品を買い取ってくれます。
+需要ピークが発生するとすぐにメッセージが送られてきます。現在の需要の状況は価格画面で確認できます。
+"/>
+<e k="helpTextMobile_26" v="ショップから新しい車両やアタッチメントを購入できます。
+機器はそれぞれカテゴリーやブランドで分けられています。"/>
+<e k="helpTextMobile_27" v="車両メニューでは、現在所有しているすべての機器を確認できます。
+この画面から機器を売却することもできます。
+機器の価格は、年数や使用状態によって変化します。
+"/>
+<e k="helpTextMobile_28" v="車両に関連するアイコンの説明を示します。
+
+(1）エンジンパワー   (2）必須エンジンパワー   (3）燃料タンク   (4）容量   (5）有効幅   (6）最高速度   (7）最大稼働速度   (8）作物の種類   (9）種の種類   (10）互換性   (11）年数   (12）操作時間   (13）所有アイテム
+
+"/>
+<e k="helpTextMobile_28B" v="unused"/>
+<e k="helpTextMobile_29" v="次の作業ではコンピューターが操作するAIヘルパーを雇うことができます。
+耕作、種まき、収穫、肥料やり、草刈り、干し草作り、干し草並べ
+
+雇ったヘルパーは、ミニマップ上で小さい六角形のアイコンと文字で表示されます。
+作業を完了すると、ヘルパーは自動的に止まります。
+ヘルパーが作業している間は、費用が発生します。"/>
+<e k="helpTextMobile_30" v="ヘルパーの作業効率を上げるには次のことに注意しましょう。
+- 畑の角から作業を始める。
+- 作業の邪魔になるものがないこと。
+- 同じ畑にたくさんのヘルパーを配置しないこと。"/>
+<e k="helpTextMobile_31" v="全体マップでは、畑の状態、作付け作物、育成段階、土壌成分を確認できます。
+
+選択したアイコンに応じて、新しい畑を購入したり、動かなくなったアタッチメントや車両をリセットしたり、ビーコンを設置したりできます。"/>
+<e k="helpText_02_part01" v="Farming Simulator 19では、小麦、大麦、キャノーラ、ヒマワリ、大豆、トウモロコシ、オーツ麦、ハツカダイコン、ジャガイモ、
+テンサイ、ポプラ、サトウキビ、綿の全部で13種類の作物が栽培可能です。"/>
+<e k="helpText_02_part02" v="作物の育成には、耕作、種蒔き、収穫の3 つのステップが必要です。"/>
+<e k="helpText_03_part01" v="作物の種をまく前に、プラウやカルティベーターを使って土壌を整えましょう。"/>
+<e k="helpText_03_part02" v="土を耕すには、耕運機を下げてください。"/>
+<e k="helpText_04_part01" v="種まきは種まき機かプランターを使います。
+
+種まきをするために次の作業を行いましょう。
+- シードパレットから機械に種を満タンに補充する
+- 種をまきたい作物を選ぶ
+- 機械をオンにする
+- 地面に下げる"/>
+<e k="helpText_04_part02" v="シードパレットはショップで購入できます。
+耕運と種まきを一度にできる種まき機もあります。ショップの説明をチェックして、どの機械でできるか探してみましょう。"/>
+<e k="helpText_05_part01" v="作物が収穫期を迎えたら、正しいカッターを装着したコンバイン収穫機を使って収穫しましょう。
+
+収穫するために次の作業を行いましょう。
+- 収穫機を開く (必要な場合はカッターも)
+- 機械をオンにする"/>
+<e k="helpText_05_part02" v="収穫した作物は、トレーラーに入れましょう。収穫した作物は関連施設で売却したり、貯蔵したりできます。"/>
+<e k="helpText_06_part01" v="ジャガイモとテンサイの耕作には、特殊な種蒔き機とコンバインが必要です。"/>
+<e k="helpText_06_part02" v="自走式のコンバインを使えば、簡単かつ迅速にジャガイモやテンサイを収穫できます。ただし、このような機械は非常に高価です。
+ゲームの序盤では使用できないこともあります。"/>
+<e k="helpText_07_part01" v="根菜類を収穫する場合、特殊なアタッチメントを装備したトラクターを使いましょう。
+例えば、まず作物が十分に育ったらGrimme KS 75-4のようなリーフチョッパーで
+茎や葉を刈り取ります。"/>
+<e k="helpText_07_part02" v="その後Grimme SE 260のようなコンバインを使って作物を土から掘り出します。"/>
+<e k="helpText_08_01_part01" v="綿の種まきをするにはプランターが必要です。シードパレットで補充します。
+綿を収穫するには自走式綿収穫機を使います。"/>
+<e k="helpText_08_01_part02" v="収穫機のタンクが満タンになったら、綿の大きなベールを荷下ろします。売買所まで運ぶために特殊なトレーラーが必要です。"/>
+<e k="helpText_08_part01" v="ハツカダイコンは他の作物と異なり、収穫目的に栽培するものではありません。
+ハツカダイコンが育ったことを確認したら、カルティベーターで畑にすきこみます。
+これは緑肥と呼ばれるもので、次の収穫量を30%増加させる効果があります。"/>
+<e k="helpText_09_part01" v="畑の手入れをして作物の収穫高を上げる方法はいくつもあります。
+
+65%の収穫高ボーナスを獲得するために次の作業を行いましょう。
+- 肥料を2回まく (1回につき+25%)
+- 収穫3回ごとに石灰を散布する (+15%)"/>
+<e k="helpText_09_part02" v="35%の収穫減を避けるために次の作業を行いましょう。
+- 雑草を取る (取らない場合は-20%)
+- トウモロコシ、ジャガイモ、テンサイ、サトウキビを収穫した後にすき込みをする (すき込みしないと-15%)"/>
+<e k="helpText_10_part01" v="草は、トラクターに搭載されている芝刈り機を使って刈ります。"/>
+<e k="helpText_10_part02" v="刈り取った草は草乾燥機を使って、干し草にしましょう。 干し草は刈り取った草よりも軽く、乾燥しています。"/>
+<e k="helpText_11_part01" v="簡単に草を刈るために、ウィンドロウアーを使って草、干し草またはわらを列に並べると良いでしょう。"/>
+<e k="helpText_11_part02" v="草はローダーワゴンで回収するか、ベーラーで草ベールを作る事ができます。"/>
+<e k="helpText_12_part01" v="草の使い道:
+- 家畜のエサにする
+- 売買所で売る
+- サイレージを作る (切った草を固定サイロに入れるかベールに包むかする)
+
+干し草の使い道:
+- 家畜のエサにする
+- 売買所で売る
+- 完全混合飼料を作る"/>
+<e k="helpText_13_part01" v="小麦、大麦、オーツ麦を収穫する時は、わらスワースを作るように収穫機を設定できます。"/>
+<e k="helpText_13_part02" v="ベーラーを使って麦わらスワースをベールにすることができます。その他にも麦わらは、ローダーワゴンで拾い集めることもできます。
+売却したり、牛の寝わらにしたり、完全混合飼料に使ったり、
+まぐさにしたりと用途は多岐に渡ります。"/>
+<e k="helpText_14_part01" v="まぐさは飼料コンバインで作物を切り刻んで作ります。
+まぐさはトウモロコシ、小麦、大麦、キャノーラから作れます。
+次に気をつけましょう。
+- 切る作物に合ったカッターを使うこと
+- 飼料コンバインには内蔵タンクがないのでダンプカーを接続すること
+
+まぐさからサイレージを作れます。"/>
+<e k="helpText_15_part01" v="まぐさや草からサイレージを作るには次の作業を行いましょう。
+1) バイオガスプラントか自分のサイロにあるバンカーサイロに入れる
+2) サイロの10%以上にまぐさを投入したら、トラクターで踏みならして圧縮する
+3) サイロに蓋をして発酵を開始する
+4) 発酵が終わったらサイロの蓋を取る"/>
+<e k="helpText_15_part02" v="サイロがいっぱいになったら発酵を開始します。 完成したサイレージは、サイレージフォークのついたフロントローダーを使ってミキサーワゴン、または直接飼料桶に移動させます。"/>
+<e k="helpText_15_part03" v="また、ベールラッパーを使って干し草ベールからサイレージを作ることもできます。"/>
+<e k="helpText_16_part01" v="完全混合飼料 (TMR) を牛に与えることで、牛乳の生産を最大化できます。
+ミキサー車に干し草、わら、サイレージを入れてブレンドし、 完全混合飼料を作ります。
+
+次のものをミキサー車に入れるだけで簡単にできます。
+- 干し草ベール2つ
+- わらベール1つ
+- 残りをサイレージでいっぱいにする"/>
+<e k="helpText_17_part01" v="農業に飽きたり、あまり興味がない場合は、農場の家畜の世話をしてみましょう。 家畜は馬、牛、羊、豚、ニワトリがいます。
+
+まずショップで畜舎を購入しましょう。
+それから家畜商から家畜を購入できます。"/>
+<e k="helpText_18_part01" v="自分で家畜を輸送する場合は、家畜運搬車を使います。その際は、家畜運搬車が家畜商の近くに停めてあることを必ず確認しましょう。
+
+家畜商に手数料を払えば、農場まで家畜を運んでくれます。"/>
+<e k="helpText_19_01_part01" v="エサ: 干し草、オーツ麦
+
+馬は訓練した後に売却して収益を上げられます。
+健康状態の違う馬を最大16頭まで所有できます。それぞれに名前があります。
+健康状態がいいほど価値が上がります。乗馬することで健康状態を上げられます。
+
+馬を購入すると自動で名前が付けられます。名前は家畜メニューから変更できます。"/>
+<e k="helpText_19_part01" v="エサや水をやったり、ストローブロワーを使って寝床を整えたりといった、家畜の世話は必須です。
+
+家畜は満足度が高いと子供を産み、数をふやしていきます。"/>
+<e k="helpText_20_part01" v="エサ: トウモロコシ、小麦、大麦、キャノーラ、ヒマワリ、大豆、ジャガイモ、テンサイ
+生産品: 堆肥とスラリー
+繁殖スピード: 速
+
+豚の世話をすると繁殖します。売却して収益を上げられます。"/>
+<e k="helpText_21_part01" v="エサ: 草、干し草、サイレージ、完全混合飼料
+生産品: 牛乳、堆肥、スラリー
+繁殖スピード: 低
+
+牛にあげるエサは完全混合飼料 (TMR) が最適で、牛乳の生産性が最大化します。"/>
+<e k="helpText_22_part01" v="牛がエサを食べるとすぐに、牛乳だけでなくスラリーも生産します。スラリーはスラリータンク、またはピットに集められます。
+豚もエサをやるとスラリーを生産します。"/>
+<e k="helpText_23_part01" v="牛舎や豚舎の寝床にわらを使うと、後に堆肥になります。"/>
+<e k="helpText_24_part01" v="エサ: 草、干し草
+生産品: ウール
+繁殖スピード: 速"/>
+<e k="helpText_24_part02" v="ウールを売却するには、羊の放牧地でパレットフォークを使ってパレットをつかみ、紡績工場へ運搬しなければなりません。"/>
+<e k="helpText_25_part01" v="エサ: 小麦
+生産品: 卵
+
+鶏舎の横に卵のパレットが表示されます。
+パレットは手で動かせます。ピックアップトラックに積んで売買所で売却しましょう。"/>
+<e k="helpText_26_part01" v="木は自然に生えてこないため、専用の植林機を使って植林を行いましょう。"/>
+<e k="helpText_26_part02" v="松かポプラの苗木のパレットをショップで購入し、Damcon PL 75植林機に
+入れましょう。松の木はどこにでも植えられますが、成長するまで時間がかかります。
+畑にポプラを植えて飼料コンバインで収穫しましょう。
+大きく成長した木を伐採する時は、それに合ったカッターを使います。"/>
+<e k="helpText_27_part01" v="十分に育った木は、チェーンソーやウッドハーベスターを使い、
+伐採して切り分けます。
+チェーンソーで木を切る場合は、手動で小枝を取り除きますが、
+ウッドハーベスターは1台でこの2役がこなせます。
+切り出した丸太は製材所へ運び、売却することができます。
+
+木材は、長さと強度で価格が決定されます。
+長くまっすぐなものは、短くまがったものより高値がつきます。"/>
+<e k="helpText_28_part01" v="丸太はウッドチッパーで粉砕してウッドチップを作り、製材所に運びましょう。"/>
+<e k="helpText_28_part02" v="飼料コンバインと特別なカッターを装着したトレーラーでポプラを収穫し、大量のウッドチップを生産できます。"/>
+<e k="helpText_29_part01" v="切り株は切り株除去機を使って取り除きます。"/>
+<e k="helpText_30_part01" v="丸太のような小さいオブジェクトは、手で拾って捨てたり投げたりできます。
+手でつかめるオブジェクトにフォーカスすると、画面中央につかむアイコンが表示されます。"/>
+<e k="helpText_31_part01" v="Farming Simulatorでは様々なものを生産することができます。 ゲームで生産可能なものについて、もう一度簡単におさらいしましょう。"/>
+<e k="helpText_31_part02" v="小麦、大麦、キャノーラ、トウモロコシ、ヒマワリ、大豆は、畑の準備ができてから植え付けを行います。"/>
+<e k="helpText_32_01_part01" v="綿とサトウキビは特殊な収穫機で収穫しましょう。"/>
+<e k="helpText_32_part01" v="畑の準備が整うと、小麦、大麦、キャノーラ、トウモロコシ、ヒマワリ、大豆、オーツ麦を収穫できます。"/>
+<e k="helpText_32_part02" v="草は芝刈り機を使って刈り、ローダーワゴンで集めます。"/>
+<e k="helpText_33_part01" v="干し草は草を干し草乾燥機で乾燥させたもので、ベールにすることが可能です。"/>
+<e k="helpText_33_part02" v="麦わらは、専用のコンバインで小麦や大麦を収穫した際に作ることができます。"/>
+<e k="helpText_34_part01" v="まぐさはチョッパーを使って、小麦、大麦、キャノーラやトウモロコシから作ります。"/>
+<e k="helpText_34_part02" v="サイレージは、固定サイロ内のまぐさを熟成して作ります。また、ベールラッパーで草ベールを梱包して作ることもできます。"/>
+<e k="helpText_35_part01" v="完全混合飼料は、干し草、麦わら、サイレージをそれぞれ25%以上75%以内の混合率で作ります。"/>
+<e k="helpText_35_part02" v="ショップでは、液体肥料や肥料を大型サイズのタンクや袋で取り扱っています。"/>
+<e k="helpText_35_part03" v="消化液はサイレージをバイオガスプラントへ運び入れると生産されます。"/>
+<e k="helpText_36_01_part01" v="石灰はショップにてパレットの形で購入できます。"/>
+<e k="helpText_36_01_part02" v="除草剤はショップにてパレットの形で購入できます。"/>
+<e k="helpText_36_part01" v="牛と豚の寝どこを麦わらにしておけば、堆肥が生産されます。"/>
+<e k="helpText_36_part02" v="牛と豚にエサを与えるとスラリーが生産されます。"/>
+<e k="helpText_37_part01" v="丸太は木を伐採し、チェーンソーで小枝を取り除いて生産します。"/>
+<e k="helpText_37_part02" v="ウッドチップは、ウッドチッパーで丸太を粉砕して生産します。
+さらにフォーレージハーベスターでポプラを伐採することでも生産できます。"/>
+<e k="helpText_38_part01" v="牛乳は家畜の牛から生産されます。 牛の生産性は、家畜の世話の度合によって変わります。"/>
+<e k="helpText_38_part02" v="羊から生産されるウールは袋に蓄えられ、エサを与えた羊のウールは売却することができます。"/>
+<e k="helpText_39_part01" v="ニワトリにエサをやると卵を産みます。鶏舎の横に卵のパレットが表示されます。"/>
+<e k="helpText_39_part02" v="豚が幸せな状態だと繁殖します。 豚を家畜商に売却して収益を上げられます。"/>
+<e k="helpText_40_part01" v="生産品は、通常ダンプカーやトレーラーなどに積み込み、マップ上に表示される売買所へ運んで売却します。 価格確認画面を開くと、生産品が売却可能な売買所と価格が表示されます。
+最も高い価格で買い取ってくれる売買所で売却しましょう。"/>
+<e k="helpText_41_part01" v="売却可能な生産品の価格は、需要と供給量によって毎日変動します。
+
+例えば小麦だけを売却すると、需要の減少によって価格が下落します。
+めったに売却しない作物の価格の上昇は早いです。"/>
+<e k="helpText_42_part01" v="生産品を売却するステーションは競合しあっているため、
+特定のステーションで特定の生産の需要が突然発生することがあり、一時的な需要ピークが始まります。
+
+需要ピークが発生したステーションは、いつもよりも高値で生産品を買い取ってくれます。
+需要ピークが発生するとすぐにメッセージが送られてきます。現在の需要の状況は価格画面で確認できます。"/>
+<e k="helpText_43_part01" v="マップ上には養蜂所やソーラーパネル、風力エネルギー変換器を配置することができます。 これらは一定の収入をもたらしてくれます。"/>
+<e k="helpText_43_part02" v="温室ではトマトやレタスを栽培できます。 収入を稼ぐには、温室の側にある水タンクを給水トレーラーを使って満タンにしましょう。 温室の横にある木製の箱にバケツやマニュアフォークを使って堆肥を入れることでも、収入をアップさせることができます。"/>
+<e k="helpText_44_part01" v="マップ上の自分が所有していない畑は他の農家が管理しています。
+
+畑の手入れは所有する農家が行いますが、常にヘルパーを必要としています。そこで作業をするには契約メニューを開きましょう。
+必要な道具を貸してくれますが、自分の道具を使うこともできます。
+マルチプレイヤーモードでは、作業を完了するために他のプレイヤーと協力できます。"/>
+<e k="helpText_46_part01" v="作業ができるのは自分の土地でだけで、他の人の土地で伐採したり新しい畑を作ったりすることはできません。
+
+新しい区画を購入するには、全体マップメニューから土地画面に切り替えましょう。"/>
+<e k="helpText_47_part01" v="新しい車両やアタッチメントはショップから購入できます。
+ショップへはマップから直接移動するか、通常では「P」のショートカットキーを押して、ショップ画面を開きます。
+機器はそれぞれカテゴリーやブランドで分けられていて、上向きの矢印ボタンで表示を切り替えます。"/>
+<e k="helpText_47_part01_ps4" v="ショップから新しい車両やアタッチメントを購入できます。"/>
+<e k="helpText_47_part01_switch" v="ショップから新しい車両やアタッチメントを購入できます。"/>
+<e k="helpText_47_part01_xboxone" v="ショップから新しい車両やアタッチメントを購入できます。"/>
+<e k="helpText_47_part02" v="購入した車両の中にはカスタマイズできるものがあります。
+カスタマイズは各車両によって異なります。
+
+後から車両をカスタマイズする場合は、ショップ前の印のついている場所に車両を移動したあと、機器の売却アイコンから行えます。"/>
+<e k="helpText_47_part03" v="車両の色とデザイン、エンジンとタイヤの構成をカスタマイズできるほか、
+フロントローダー取付具の有無が選べます。
+車とアタッチメントには、カスタマイズできないものもあります。"/>
+<e k="helpText_48_part01" v="たまに特定の車両がセール価格になることがあります。セールは期間限定なので、こまめにショップをチェックしてお買い得価格で購入してみるのも良いでしょう。
+
+ごくまれに短期間ではあるものの、特定ブランドの製品を一斉に値下げすることがあります。ブランドセールが開始されると、メッセージが送られてきます。"/>
+<e k="helpText_49_part01" v="ショップ画面から自分のガレージに移動して 所有している全車両を確認したり、売却することができます。
+車両価格は、年数と使用度によって決定されます。
+
+売却は、ショップ前の印のついた場所に車両やアタッチメントをとめて行います。 このように何でもショップに行って売却すると、買取価格が20%増加します。"/>
+<e k="helpText_50_part01" v="時間の経過と共に車両は劣化します。
+修理が必要な車両はスピードが遅くなったりエンジンの馬力が低下したりします。
+
+ショップか整備場に車両を持って行き、有料で修理しましょう。"/>
+<e k="helpText_51_part01" v="新しい車両やアタッチメントが欲しい場合は、購入ではなくレンタルという方法もあります。
+
+レンタルはショップで購入ボタンではなく、レンタルボタンを押します。
+レンタルは、まず初期費用を支払い、その後1時間毎に料金が発生します。
+レンタル料金は、選択したカスタマイズにより異なります。
+
+注意: レンタル後にはカスタマイズすることはできません。"/>
+<e k="helpText_52_part01" v="ショップやガレージのアイコンの説明は 以下の通りです。"/>
+<e k="helpText_52_part02" v="1) 時間収入: 1時間あたりに獲得する収入。"/>
+<e k="helpText_52_part03" v="2) エンジンパワー: エンジンの出力。"/>
+<e k="helpText_52_part04" v="3) 必須エンジンパワー: アタッチメントの操作に必要なエンジンの出力。"/>
+<e k="helpText_52_part05" v="4) 燃料タンク: 燃料タンクの最大容量。"/>
+<e k="helpText_52_part06" v="5) 容量: 車両のタンクの容量。"/>
+<e k="helpText_52_part07" v="6) 所有履歴: 現在所有している同タイプの車両やアタッチメントの数。"/>
+<e k="helpText_52_part08" v="7) レンタル履歴: 現在レンタルしている同タイプの車両やアタッチメントの数。"/>
+<e k="helpText_53_part01" v="1) 有効幅: 車両やアタッチメントの有効幅。"/>
+<e k="helpText_53_part02" v="2) 最高速度: 車両の最高速度と、アタッチメントの最高操作速度。"/>
+<e k="helpText_53_part03" v="3) 作物の種類: 処理できる作物の種類と処理方法。"/>
+<e k="helpText_53_part04" v="4) 種の種類: 種蒔き可能な種の種類。"/>
+<e k="helpText_53_part05" v="6) 情報: 車両やアタッチメントの全般、および重要情報。"/>
+<e k="helpText_53_part05_1" v="5) 互換性: 互換性のある車両/アタッチメントを表示。"/>
+<e k="helpText_53_part06" v="以下はガレージのみに表示されるアイコン2種です。"/>
+<e k="helpText_53_part07" v="7) 日数: 車両やアタッチメントの所有日数。"/>
+<e k="helpText_53_part08" v="8) 操作時間: 車両やアタッチメントを操作した実時間。"/>
+<e k="helpText_53_part09" v="9) 最大稼働速度：平地で車両が稼働できる最大速度を表示します。"/>
+<e k="helpText_54_part01" v="次の作業ではコンピューターが操作するAIヘルパーを雇うことができます。
+- 耕作
+- 種まき
+- 収穫
+- 肥料やり
+- 草刈り
+- 干し草作り
+- 干し草並べ"/>
+<e k="helpText_55_part01" v="雇ったヘルパーは、ミニマップ上で小さい六角形のアイコンと文字で表示されます。
+作業を完了すると、ヘルパーは自動的に仕事をやめます。
+ヘルパーが作業している間は、費用が発生します。"/>
+<e k="helpText_55_part02" v="一度に複数のヘルパーを雇用できますが、費用がかさむことに注意してください!"/>
+<e k="helpText_56_part01" v="ヘルパーの作業効率を上げるには次のことに注意しましょう。
+- 畑の角から作業を始める。
+- 作業の邪魔になるものがないこと。
+- 同じ畑にたくさんのヘルパーを配置しないこと。
+- 草に関連する作業は畑で行うこと。"/>
+<e k="helpText_57_part01" v="財務状況画面では当日と4日前までの収支と、銀行からの借り入れが表示されます。
+
+急に資金が必要になった場合は、銀行から$CURRENCY_SYMBOL5000を借り入れることができますが、 1日の終わりに借入金に対する高額な利子を支払わなければなりません。"/>
+<e k="helpText_58_part01" v="天候もゲームに影響します。
+ひょうや雨が降っている間は、止むまで収穫はできません。
+画面右上に表示される天気予報に注意しておきましょう。
+2つの天気アイコンが表示された場合は、右側のアイコンが6時間後の天候です。"/>
+<e k="helpText_59_part01" v="列車は車両同様に利用可能な乗り物で、維持費がかかりません。 車両よりも大量の生産品を積み込み、マップ上を移動できます。"/>
+<e k="helpText_59_part02" v="列車に荷物を積み込んだり、おろしたりするにはクレーンを使いましょう。
+注意: 家畜の運搬は家畜車のみ可能で、列車は使えません。"/>
+<e k="helpText_60_part01" v="畑の状態は全体マップで確認しましょう。
+次のことを確認できます。
+- それぞれの畑の作付け作物
+- 育成段階
+- 土壌成分
+
+畑ごとに表示モードを変更できます。"/>
+<e k="helpText_61_part01" v="全体マップでは売買所と機器の確認ができます。
+アイコンを選択して次の操作を行いましょう。
+- 動かなくなったアタッチメントや車両のリセット
+- 車両の移動や場所への移動
+- 場所にビーコンを設置"/>
+<e k="helpText_61_part02" v="1) トラクターやトラック、車などの車両"/>
+<e k="helpText_61_part03" v="2) コンバイン"/>
+<e k="helpText_61_part04" v="3) ダンプカー、タンク車、トレーラー"/>
+<e k="helpText_61_part05" v="4) プラウや干し草乾燥機などのアタッチメント"/>
+<e k="helpText_61_part06" v="5) 荷下ろし場や売買所"/>
+<e k="helpText_61_part07" v="6) 契約輸送と配達地点"/>
+<e k="helpText_61_part08" v="7) 建物全般、所在地"/>
+<e k="helpText_62_part01" v="各マップアイコン: "/>
+<e k="helpText_62_part02" v="1) ここで作物を売却できます。
+　価格メニューでそれぞれの売買所での価格を確認しましょう"/>
+<e k="helpText_62_part03" v="2) ここで草類を売却できます"/>
+<e k="helpText_62_part04" v="3) ここでは特定の作物の需要が多く、高値をつけています"/>
+<e k="helpText_62_part05" v="4) ここで車両に給油ができます"/>
+<e k="helpText_62_part06" v="5) ここで家畜の売買ができます"/>
+<e k="helpText_62_part07" v="6) ここが牛の放牧地です"/>
+<e k="helpText_62_part08" v="7) ここが羊の放牧地です"/>
+<e k="helpText_62_part09" v="8) ここが豚舎です"/>
+<e k="helpText_62_part10" v="9) ここが鶏舎です"/>
+<e k="helpText_62_part11" v="10) ここで様々な品物が購入できます"/>
+<e k="helpText_66_part01" v="Farming SimulatorはMODを使って自分の好みのスタイルに変更することも
+可能です。
+プレイをより簡単にしたり、複雑にしたり、リアルにしたりできます。
+新しい機器やアタッチメント、配置可能なオブジェクト、マップを追加することも
+可能です。
+MODについて詳しくは、ゲームのメインメニューのMODセクションをご確認ください。"/>
+<e k="helpText_69_part01" v="木材やベールなど大きなアイテムを運ぶときは、荷物を固定することが重要です。
+アイテムを安全に移送するため、テンションベルトが使えるトレーラーもあります。"/>
+<e k="helpText_69_part02" v="荷物を積んだら、車両の操作設定から直接テンションベルトを締められます。荷物を積んだトレーラーの横に立ち、
+手動でテンションベルトを締めることもできます。明るい緑色の線で、テンションベルトが締められるかどうか示します。"/>
+<e k="helpText_SA_01" v="サトウキビは典型的な畑の作物とは異なります。成長には時間がかかりますが、枯れることはありません。
+サトウキビには特殊な種まきと収穫の機材が必要です。"/>
+<e k="helpText_SA_02" v="サトウキビの種まきにはGessner Single Row Billet Planterのような
+ビレットプランターが必要です。
+ジャガイモのように、前回の収穫で得た茎を機械に入れます。
+茎を直接ビレットプランターに入れるか、ショベルを装備したテレハンドラーか
+ホイールローダーで機械に入れることができます。
+サトウキビの茎がなくても、サトウキビを植えることができます。
+ショップでサトウキビをパレットで購入し、ビレットプランターに入れるだけです。"/>
+<e k="helpText_SA_03" v="サトウキビは比較的ゆっくり成長しますが、枯れることはありません。サトウキビは収穫後にまた成長する為、
+しばらくしたら再度収穫することができます。"/>
+<e k="helpText_SA_04" v="サトウキビを収穫するには、サトウキビ収穫機が必要です。表面の葉を取り除き、
+サトウキビの太い茎を小さくコンパクトなサイズに切り刻みます。
+飼料コンバインのように、サトウキビ収穫機にはタンクが備わっておらず
+並走するトレーラーが必要です。"/>
+<e k="helpText_SA_05" v="収穫時は、通常素早い運搬の為にサトウキビの茎を直接トラックに積み込める
+サトウキビ専用の背の高いトレーラーが使用されます。
+サトウキビはサイロに保存することはできませんが、
+単にどこにでも地面に直接置いて保存することができます。
+売買所によりサトウキビの価格が異なりますが、
+最も利益があげられる売買所は砂糖工場です。"/>
+<e k="helpText_SA_06" v="サトウキビは何度も成長する為、耕作は不要です。
+「定期すきこみ」でプレイする場合、3度の収穫後は土を通気して
+次の生産に備える必要があります。
+KUHN DC 401などのサブソイラーを使うと
+最も効果的ですが、プラウだけでも十分です。
+土をすいたら、サトウキビの新しい茎を植えることができます。"/>
+<e k="helpTitleMobile_01" v="耕作農業"/>
+<e k="helpTitleMobile_02" v="耕す"/>
+<e k="helpTitleMobile_03" v="種まき"/>
+<e k="helpTitleMobile_04" v="収穫する"/>
+<e k="helpTitleMobile_05" v="根菜類"/>
+<e k="helpTitleMobile_06" v="綿"/>
+<e k="helpTitleMobile_07" v="収穫高アップ"/>
+<e k="helpTitleMobile_08" v="飼料"/>
+<e k="helpTitleMobile_09" v="牧草と干し草"/>
+<e k="helpTitleMobile_10" v="わら"/>
+<e k="helpTitleMobile_11" v="牧草／干し草／わらを集める"/>
+<e k="helpTitleMobile_12" v="牧草の用途"/>
+<e k="helpTitleMobile_13" v="もみ殻"/>
+<e k="helpTitleMobile_14" v="家畜"/>
+<e k="helpTitleMobile_15" v="輸送"/>
+<e k="helpTitleMobile_16" v="世話"/>
+<e k="helpTitleMobile_17" v="牛"/>
+<e k="helpTitleMobile_18" v="羊"/>
+<e k="helpTitleMobile_19" v="豚"/>
+<e k="helpTitleMobile_20" v="馬"/>
+<e k="helpTitleMobile_21" v="スラリー"/>
+<e k="helpTitleMobile_22" v="堆肥"/>
+<e k="helpTitleMobile_23" v="作物の売却"/>
+<e k="helpTitleMobile_24" v="価格"/>
+<e k="helpTitleMobile_25" v="需要ピーク"/>
+<e k="helpTitleMobile_26" v="機器の購入"/>
+<e k="helpTitleMobile_27" v="機器の売却"/>
+<e k="helpTitleMobile_28" v="ショップアイコン"/>
+<e k="helpTitleMobile_29" v="AIヘルパー"/>
+<e k="helpTitleMobile_30" v="AIヘルパー - 注意点"/>
+<e k="helpTitleMobile_31" v="全体マップ"/>
+<e k="helpTitle_01" v="耕作農業"/>
+<e k="helpTitle_02" v="作物"/>
+<e k="helpTitle_03" v="土地を耕す"/>
+<e k="helpTitle_04" v="種をまく"/>
+<e k="helpTitle_05" v="収穫する"/>
+<e k="helpTitle_06" v="根菜類"/>
+<e k="helpTitle_07" v="根菜類処理"/>
+<e k="helpTitle_08" v="ハツカダイコン"/>
+<e k="helpTitle_08_01" v="綿"/>
+<e k="helpTitle_09" v="収穫量アップ"/>
+<e k="helpTitle_10" v="草と干し草"/>
+<e k="helpTitle_11" v="草を集める"/>
+<e k="helpTitle_12" v="草の用途"/>
+<e k="helpTitle_13" v="わら"/>
+<e k="helpTitle_14" v="まぐさ"/>
+<e k="helpTitle_15" v="サイレージ"/>
+<e k="helpTitle_16" v="完全混合飼料"/>
+<e k="helpTitle_17" v="一般"/>
+<e k="helpTitle_18" v="輸送車両"/>
+<e k="helpTitle_19" v="世話"/>
+<e k="helpTitle_19_01" v="馬"/>
+<e k="helpTitle_20" v="豚"/>
+<e k="helpTitle_21" v="牛"/>
+<e k="helpTitle_22" v="スラリー"/>
+<e k="helpTitle_23" v="堆肥"/>
+<e k="helpTitle_24" v="羊"/>
+<e k="helpTitle_25" v="鶏"/>
+<e k="helpTitle_26" v="植林"/>
+<e k="helpTitle_27" v="切り出し"/>
+<e k="helpTitle_28" v="ウッドチップ"/>
+<e k="helpTitle_29" v="切り株の除去"/>
+<e k="helpTitle_30" v="オブジェクトをつかむ"/>
+<e k="helpTitle_31" v="生産説明"/>
+<e k="helpTitle_32" v="穀物と根菜類"/>
+<e k="helpTitle_32_01" v="綿 &amp; サトウキビ"/>
+<e k="helpTitle_33" v="牧草と干し草"/>
+<e k="helpTitle_34" v="わらとまぐさ"/>
+<e k="helpTitle_35" v="サイレージとTMR"/>
+<e k="helpTitle_36" v="肥料"/>
+<e k="helpTitle_36_01" v="石灰 &amp; 除草剤"/>
+<e k="helpTitle_37" v="丸太とウッドチップ"/>
+<e k="helpTitle_38" v="牛乳と羊毛"/>
+<e k="helpTitle_39" v="豚と鶏"/>
+<e k="helpTitle_40" v="作物の売却"/>
+<e k="helpTitle_41" v="価格"/>
+<e k="helpTitle_42" v="需要ピーク"/>
+<e k="helpTitle_43" v="固定収入"/>
+<e k="helpTitle_44" v="ミッションシステム"/>
+<e k="helpTitle_46" v="畑の購入"/>
+<e k="helpTitle_47" v="機器の購入"/>
+<e k="helpTitle_48" v="セール"/>
+<e k="helpTitle_49" v="機器の売却"/>
+<e k="helpTitle_50" v="機器の寿命"/>
+<e k="helpTitle_51" v="レンタルシステム"/>
+<e k="helpTitle_52" v="アイコン - パート1"/>
+<e k="helpTitle_53" v="アイコン - パート2"/>
+<e k="helpTitle_54" v="AIヘルパー"/>
+<e k="helpTitle_56" v="AI ヘルパー - 成功事例"/>
+<e k="helpTitle_57" v="財務状況"/>
+<e k="helpTitle_58" v="天気予報"/>
+<e k="helpTitle_59" v="列車"/>
+<e k="helpTitle_60" v="全体マップ: 説明"/>
+<e k="helpTitle_61" v="全体マップ: アイコン"/>
+<e k="helpTitle_62" v="マップアイコン"/>
+<e k="helpTitle_66" v="MOD"/>
+<e k="helpTitle_67" v="肥やし&amp;スラリー"/>
+<e k="helpTitle_68" v="カスタマイズ"/>
+<e k="helpTitle_69" v="テンションベルト"/>
+<e k="helpTitle_SA_01" v="一般"/>
+<e k="helpTitle_SA_02" v="種まき"/>
+<e k="helpTitle_SA_03" v="成長度"/>
+<e k="helpTitle_SA_04" v="収穫"/>
+<e k="helpTitle_SA_05" v="運搬と保存"/>
+<e k="helpTitle_SA_06" v="耕作"/>
+<e k="hintMobile_01" v="作物、家畜、畜産品などの生産品を売却して、収益を上げましょう。"/>
+<e k="hintMobile_02" v="雨やひょうが降っている間は、止むまで収穫はできません。天候が回復するまで待ちましょう。"/>
+<e k="hintMobile_03" v="何をすればいいのか分からない時は、ポーズメニューのヘルプセクションを確認しましょう。"/>
+<e k="hintMobile_04" v="種まき後に肥料を散布して収穫高を上げましょう。"/>
+<e k="hintMobile_05" v="家畜にきちんと水とエサをやり、畜舎を清潔にしておけば、
+すぐに子供が生まれます。"/>
+<e k="hintMobile_06" v="豚は、トウモロコシ、小麦、大麦、キャノーラ、ヒマワリ、大豆、ジャガイモ、テンサイなど、ほぼなんでも食べます。"/>
+<e k="hintMobile_07" v="草は、トラクターに搭載されている草刈り機を使って刈ります。その後、刈り取った草を干し草乾燥機で乾燥させると干し草になります。"/>
+<e k="hintMobile_08" v="馬は牧草、水、オーツ麦があると満足します。"/>
+<e k="hintMobile_09" v="馬に乗って調教しましょう。調教すると価値が上がります。"/>
+<e k="hint_01" v="ベールラッパーで草のベールからサイレージベールを作ります。"/>
+<e k="hint_02" v="作物、木材、家畜、畜産品などの生産品を売却して、収益を上げましょう。"/>
+<e k="hint_03" v="ひょうや雨が降っている間は、止むまで収穫はできません。天候が回復するまで待ちましょう。"/>
+<e k="hint_04" v="車両やアタッチメントが動かなくなったら、全体マップのショップの駐車場でリセットできます。"/>
+<e k="hint_05" v="何をすればいいのか分からない時は、ポーズメニューのヘルプセクションを確認しましょう。"/>
+<e k="hint_06" v="色々なことに挑戦してみましょう! 森の木を切り、切り株を取り除いて、土地を耕して畑を作りましょう。"/>
+<e k="hint_07" v="小さく、軽い木片は手で動かすことができます。"/>
+<e k="hint_08" v="フロントローダーを使う場合、全体の重さとバランスをとるために後部にウェイトを装着することができます。"/>
+<e k="hint_09" v="種まき後に肥料を散布して収穫高を上げましょう。"/>
+<e k="hint_10" v="豚は、トウモロコシ、小麦、大麦、キャノーラ、ヒマワリ、大豆、ジャガイモ、テンサイなど、ほぼなんでも食べます。"/>
+<e k="hint_11" v="家畜にきちんと水とエサをやり、畜舎を清潔にしておけば、すぐに子供が生まれます。"/>
+<e k="hint_12" v="車両には、違うホイールや強力なエンジン、色、フロントローダーのアタッチメントなど、いろいろカスタマイズできるものがあります。"/>
+<e k="hint_13" v="ジャガイモとテンサイの収穫前には、必ず上の葉を刈り取りましょう。"/>
+<e k="hint_14" v="畑に散布できるのは堆肥、スラリー、人工肥料 (液体/固形) です。"/>
+<e k="hint_15" v="作物を育てるためにマップメニューから新しい土地を購入できます。必要な場合は土地を売却することもできます。"/>
+<e k="hint_16" v="他の人の土地では作業をしたり、草を刈ったり、伐採したりできません。自分の土地を購入してください。"/>
+<e k="hint_17" v="財務状況画面では当日と4日前までの収支が表示されます。急に資金が必要になった場合は、銀行から$CURRENCY_SYMBOL5000を借り入れることができます。"/>
+<e k="hint_18" v="畑作業に疲れたら、気分を変えて木を伐採して高収入な木材を売るのもアリです。 伐採にはチェーンソーかウッドハーベスターを使用します。伐採した木の小枝を切り、丸太にして売却します。"/>
+<e k="hint_19" v="木材の価格は、長さと曲がりの少ないまっすぐさで価格が決まります。"/>
+<e k="hint_20" v="草は、トラクターに搭載されている草刈り機を使って刈ります。その後刈り取った草は干し草乾燥機で乾燥させて干し草を作ります。"/>
+<e k="hint_21" v="簡単に草を刈るために、ウィンドロウアーを使って草、干し草またはわらを列に並べると良いでしょう。草はローダーワゴンを使って集め、ベーラーでベールにします。"/>
+<e k="hint_22" v="馬は草、水、オーツ麦があると満足します。"/>
+<e k="hint_23" v="馬に乗って調教しましょう。調教すると価値が上がります。"/>
+<e k="hint_24" v="マップ上の自分が所有していない畑は他の農家が管理しています。畑の手入れは所有する農家が行いますが、常にヘルパーを必要としているので、請負業者として働くことができます。契約メニューの求人・求職掲示板を開きましょう。"/>
+<e k="hint_25" v="プラウで自分の新しい畑の土壌を整えましょう。"/>
+<e k="hint_26" v="種まき機とプランターに種を入れましょう。ショップで種の袋を購入できます。"/>
+<e k="hint_27" v="小麦、大麦、オーツ麦を収穫したら、収穫機を使ってわらスワースを作ります。"/>
+<e k="hint_28" v="ベーラーを使ってわらスワースをベールにできます。その他にもわらは、ローダーワゴンで拾い集めることもできます。家畜の寝わらにしたり、完全混合飼料 (TMR) に使ったり、用途は多岐に渡ります。"/>
+<e k="hint_29" v="牛乳の生産性を上げるために、牛にしっかりエサをあげましょう。牛に一番いいエサは完全混合飼料 (TMR) で、干し草、わら、サイレージをミキサー車で混ぜて作ります。"/>
+<e k="hint_30" v="木は自然に生えてこないため、専用の植林機を使って木を植えましょう。シードパレットはショップで扱っています。"/>
+<e k="hint_31" v="丸太はウッドチッパーで粉砕し、ウッドチップとして売却することもできます。"/>
+<e k="hint_32" v="ショップか整備場に車両を持って行き、修理しましょう。"/>
+<e k="hint_33" v="車両が汚れたら、高圧洗浄機で洗いましょう。"/>
+<e k="hint_34" v="綿を収穫するには自走式の綿収穫機を使います。収穫機のタンクが満タンになったら、綿の大きな
+ベールを荷下ろします。売買所まで運ぶために特殊なトレーラーが必要です。"/>
+<e k="info_attach_not_allowed" v="アタッチメント接続不可"/>
+<e k="info_baleloaderLoweringTable" v="台を下げています。お待ちください..."/>
+<e k="info_baleloaderTiltingTable" v="台を傾けています。お待ちください..."/>
+<e k="info_balestackerLoweringTable" v="フレームを上げています。お待ちください..."/>
+<e k="info_balestackerTiltingTable" v="フレームを下げています。お待ちください..."/>
+<e k="info_chinaAgeRating" v="China Age Rating
+"/>
+<e k="info_compacting" v="圧縮中"/>
+<e k="info_cutting" v="伐採中..."/>
+<e k="info_emptyTankToContinueThreshing" v="穀物タンクを空にして脱穀を続ける"/>
+<e k="info_fermenting" v="発酵中"/>
+<e k="info_fillLevel" v="充填レベル"/>
+<e k="info_firstFillTheTool" v="アタッチメントの中身を補充してください!"/>
+<e k="info_manureFillLevel" v="堆肥充填レベル"/>
+<e k="info_mixingRatio" v="混合率"/>
+<e k="info_movePipeOverTrailer" v="パイプをトレーラーの上にセットしてください"/>
+<e k="info_siloExtensionNotEmpty" v="拡張サイロは空ではありません。次の作物も売却されます: "/>
+<e k="info_tipSideBack" v="戻る"/>
+<e k="info_tipSideBackGrainDoor" v="穀物排出口"/>
+<e k="info_tipSideFront" v="前部"/>
+<e k="info_tipSideLeft" v="左"/>
+<e k="info_tipSideRight" v="右"/>
+<e k="info_tipSideUnload" v="荷をおろす"/>
+<e k="info_waterFillLevel" v="水位レベル"/>
+<e k="ingameNotification_aiVehicleReasonBlockedByObject" v="ヘルパー %s がオブジェクトに邪魔されています!" tag="format"/>
+<e k="ingameNotification_aiVehicleReasonFieldNotOwned" v="ヘルパー%sが作業をやめました。 この畑は自分のものではありません！" tag="format"/>
+<e k="ingameNotification_aiVehicleReasonGrainTankIsFull" v="ヘルパー%sの穀物タンクが満タンです!" tag="format"/>
+<e k="ingameNotification_aiVehicleReasonGrainTankIsNearlyFull" v="ヘルパー%sの穀物タンクが満タンです!" tag="format"/>
+<e k="ingameNotification_aiVehicleReasonImplementWrongWay" v="ヘルパー%sを起動できません。アタッチメントの取り付けに問題があります。" tag="format"/>
+<e k="ingameNotification_aiVehicleReasonOutOfFill" v="ヘルパー %s が作業を中断しました - タンクが空です!" tag="format"/>
+<e k="ingameNotification_aiVehicleReasonOutOfFuel" v="ヘルパー %s が作業を中断しました - 燃料切れです!" tag="format"/>
+<e k="ingameNotification_aiVehicleReasonOutOfMoney" v="ヘルパー %s が急に作業を中断しました - 理由は収入が十分でないためです！" tag="format"/>
+<e k="ingameNotification_aiVehicleReasonRegular" v="ヘルパー %s が仕事を完了しました!" tag="format"/>
+<e k="ingameNotification_aiVehicleReasonUnkown" v="ヘルパー %s が作業を中断しました - 理由は不明です!" tag="format"/>
+<e k="ingameNotification_aiVehicleReasonUser" v="ヘルパー %s が仕事を完了しました!" tag="format"/>
+<e k="ingameNotification_bunkerSiloCovered" v="バンカーサイロが密封されました。"/>
+<e k="ingameNotification_bunkerSiloDoneFermenting" v="バンカーサイロでの発酵が終わりました。"/>
+<e k="ingameNotification_bunkerSiloIsEmpty" v="バンカーサイロが空です。"/>
+<e k="ingameNotification_bunkerSiloOpened" v="バンカーサイロが開けられました。"/>
+<e k="ingameNotification_dogInDogHouse" v="犬が犬小屋に戻りました。"/>
+<e k="ingameNotification_horseInStable" v="馬の「%s」が馬小屋に戻りました。" tag="format"/>
+<e k="ingameNotification_palletSpawnerBlocked" v="%sに新しいパレット(%s)を置くスペースがありません!" tag="format"/>
+<e k="input_ACTIVATE_HANDTOOL" v="ハンドツールを起動"/>
+<e k="input_ACTIVATE_OBJECT" v="オブジェクトを使う"/>
+<e k="input_ANIMAL_INTERACT" v="動物とふれ合う"/>
+<e k="input_ATTACH" v="アタッチメントを装着する"/>
+<e k="input_AXIS_ACCELERATE_VEHICLE" v="アクセル"/>
+<e k="input_AXIS_BRAKE_VEHICLE" v="ブレーキ"/>
+<e k="input_AXIS_CRANE_ARM2_1" v="クレーンのアームを上げる"/>
+<e k="input_AXIS_CRANE_ARM2_2" v="クレーンのアームを下げる"/>
+<e k="input_AXIS_CRANE_ARM3_1" v="クレーンのアーム2を上げる"/>
+<e k="input_AXIS_CRANE_ARM3_2" v="クレーンのアーム2を下げる"/>
+<e k="input_AXIS_CRANE_ARM4_1" v="クレーンのアームを伸ばす"/>
+<e k="input_AXIS_CRANE_ARM4_2" v="クレーンのアームを縮める"/>
+<e k="input_AXIS_CRANE_ARM_1" v="クレーンを右へ回す"/>
+<e k="input_AXIS_CRANE_ARM_2" v="クレーンを左へ回す"/>
+<e k="input_AXIS_CRANE_SUPPORT_1" v="クレーンの支持アーム"/>
+<e k="input_AXIS_CRANE_SUPPORT_2" v="クレーンの支持アーム2"/>
+<e k="input_AXIS_CRANE_TOOL2_1" v="クレーンアタッチメントを右へ回す"/>
+<e k="input_AXIS_CRANE_TOOL2_2" v="クレーンアタッチメントを左へ回す"/>
+<e k="input_AXIS_CRANE_TOOL3_1" v="クレーンアタッチメント軸3を上げる"/>
+<e k="input_AXIS_CRANE_TOOL3_2" v="クレーンアタッチメント軸3を下げる"/>
+<e k="input_AXIS_CRANE_TOOL_1" v="クレーンアタッチメントを開く"/>
+<e k="input_AXIS_CRANE_TOOL_2" v="クレーンアタッチメントを閉じる"/>
+<e k="input_AXIS_CRUISE_CONTROL" v="オートクルーズ切替"/>
+<e k="input_AXIS_CRUISE_CONTROL_1" v="オートクルーズ速度を上げる"/>
+<e k="input_AXIS_CRUISE_CONTROL_2" v="オートクルーズ速度を下げる"/>
+<e k="input_AXIS_CUTTER_REEL2_1" v="カッターリールを上げる"/>
+<e k="input_AXIS_CUTTER_REEL2_2" v="カッターリールを下げる"/>
+<e k="input_AXIS_CUTTER_REEL_1" v="カッターリールを伸ばす"/>
+<e k="input_AXIS_CUTTER_REEL_2" v="カッターリールを縮める"/>
+<e k="input_AXIS_DOOR_1" v="フラップを開ける"/>
+<e k="input_AXIS_DOOR_2" v="フラップを閉じる"/>
+<e k="input_AXIS_DOOR_2_1" v="フラップ2を開ける"/>
+<e k="input_AXIS_DOOR_2_2" v="フラップ2を閉じる"/>
+<e k="input_AXIS_DOOR_3_1" v="フラップ3を開ける"/>
+<e k="input_AXIS_DOOR_3_2" v="フラップ3を閉じる"/>
+<e k="input_AXIS_DRAWBAR2_1" v="牽引棒を右に曲げる"/>
+<e k="input_AXIS_DRAWBAR2_2" v="牽引棒を左に曲げる"/>
+<e k="input_AXIS_DRAWBAR_1" v="牽引棒を上げる"/>
+<e k="input_AXIS_DRAWBAR_2" v="牽引棒を下げる"/>
+<e k="input_AXIS_FRONTLOADER_ARM2_1" v="フロントローダーのアームを伸ばす"/>
+<e k="input_AXIS_FRONTLOADER_ARM2_2" v="フロントローダーのアームを縮める"/>
+<e k="input_AXIS_FRONTLOADER_ARM_1" v="フロンドローダーのアームを上げる"/>
+<e k="input_AXIS_FRONTLOADER_ARM_2" v="フロントローダーのアームを下げる"/>
+<e k="input_AXIS_FRONTLOADER_TOOL2_1" v="フロントローダーのアタッチメントを開く"/>
+<e k="input_AXIS_FRONTLOADER_TOOL2_2" v="フロントローダーのアタッチメントを閉じる"/>
+<e k="input_AXIS_FRONTLOADER_TOOL3" v="アタッチメント軸3"/>
+<e k="input_AXIS_FRONTLOADER_TOOL3_1" v="アタッチメント軸3を上げる"/>
+<e k="input_AXIS_FRONTLOADER_TOOL3_2" v="アタッチメント軸3を下げる"/>
+<e k="input_AXIS_FRONTLOADER_TOOL4" v="アタッチメント軸4"/>
+<e k="input_AXIS_FRONTLOADER_TOOL4_1" v="アタッチメント軸4を上げる"/>
+<e k="input_AXIS_FRONTLOADER_TOOL4_2" v="アタッチメント軸4を下げる"/>
+<e k="input_AXIS_FRONTLOADER_TOOL5" v="アタッチメント軸5"/>
+<e k="input_AXIS_FRONTLOADER_TOOL5_1" v="アタッチメント軸5を上げる"/>
+<e k="input_AXIS_FRONTLOADER_TOOL5_2" v="アタッチメント軸5を下げる"/>
+<e k="input_AXIS_FRONTLOADER_TOOL_1" v="フロントローダーのアタッチメントを上げる"/>
+<e k="input_AXIS_FRONTLOADER_TOOL_2" v="フロントローダーのアタッチメントを下げる"/>
+<e k="input_AXIS_HYDRAULICATTACHER1_1" v="油圧ヒッチを上げる"/>
+<e k="input_AXIS_HYDRAULICATTACHER1_2" v="油圧ヒッチを下げる"/>
+<e k="input_AXIS_HYDRAULICATTACHER2_1" v="油圧ヒッチ2を上げる"/>
+<e k="input_AXIS_HYDRAULICATTACHER2_2" v="油圧ヒッチ2を下げる"/>
+<e k="input_AXIS_LOOK_LEFTRIGHT_PLAYER_1" v="右を見る"/>
+<e k="input_AXIS_LOOK_LEFTRIGHT_PLAYER_2" v="左を見る"/>
+<e k="input_AXIS_LOOK_LEFTRIGHT_VEHICLE_1" v="右を見る (車両)"/>
+<e k="input_AXIS_LOOK_LEFTRIGHT_VEHICLE_2" v="左を見る (車両)"/>
+<e k="input_AXIS_LOOK_UPDOWN_PLAYER_1" v="下を見る"/>
+<e k="input_AXIS_LOOK_UPDOWN_PLAYER_2" v="上を見る"/>
+<e k="input_AXIS_LOOK_UPDOWN_VEHICLE_1" v="下を見る (車両)"/>
+<e k="input_AXIS_LOOK_UPDOWN_VEHICLE_2" v="上を見る (車両)"/>
+<e k="input_AXIS_MOVE_FORWARD_PLAYER_1" v="後退"/>
+<e k="input_AXIS_MOVE_FORWARD_PLAYER_2" v="前進"/>
+<e k="input_AXIS_MOVE_SIDE_PLAYER_1" v="右に歩く"/>
+<e k="input_AXIS_MOVE_SIDE_PLAYER_2" v="左に歩く"/>
+<e k="input_AXIS_MOVE_SIDE_VEHICLE_1" v="右に曲がる"/>
+<e k="input_AXIS_MOVE_SIDE_VEHICLE_2" v="左に曲がる"/>
+<e k="input_AXIS_PIPE2_1" v="パイプを上に2回回す"/>
+<e k="input_AXIS_PIPE2_2" v="パイプを下に2回回す"/>
+<e k="input_AXIS_PIPE_1" v="パイプを上へ回す"/>
+<e k="input_AXIS_PIPE_2" v="パイプを下へ回す"/>
+<e k="input_AXIS_PLACEMENT_CHANGE_HEIGHT_1" v="配置可能なオブジェクトを下げる"/>
+<e k="input_AXIS_PLACEMENT_CHANGE_HEIGHT_2" v="配置可能なオブジェクトを上げる"/>
+<e k="input_AXIS_PLACEMENT_ROTATE_CAMERA_1" v="カメラを左へ回す"/>
+<e k="input_AXIS_PLACEMENT_ROTATE_CAMERA_2" v="カメラを右へ回す"/>
+<e k="input_AXIS_PLACEMENT_ROTATE_OBJECT_1" v="配置可能なオブジェクトを左に回転する"/>
+<e k="input_AXIS_PLACEMENT_ROTATE_OBJECT_2" v="配置可能なオブジェクトを右に回転する"/>
+<e k="input_AXIS_ROTATE_HANDTOOL_1" v="ハンドツールを右へ回す"/>
+<e k="input_AXIS_ROTATE_HANDTOOL_2" v="ハンドツールを左へ回す"/>
+<e k="input_AXIS_RUN" v="走る"/>
+<e k="input_AXIS_RUN_1" v="走る"/>
+<e k="input_AXIS_SPRAYER_ARM_1" v="散布機のアームを上げる"/>
+<e k="input_AXIS_SPRAYER_ARM_2" v="散布機のアームを下げる"/>
+<e k="input_AXIS_WHEEL_BASE_1" v="軸距を伸ばす"/>
+<e k="input_AXIS_WHEEL_BASE_2" v="軸距を縮める"/>
+<e k="input_BANK" v="送金する (マルチプレイ)"/>
+<e k="input_CAMERA_SWITCH" v="カメラを選択
+"/>
+<e k="input_CAMERA_ZOOM_IN" v="カメラのズームイン"/>
+<e k="input_CAMERA_ZOOM_OUT" v="カメラのズームアウト"/>
+<e k="input_CHANGE_DRIVING_DIRECTION" v="運転方向を変更"/>
+<e k="input_CHAT" v="チャット (マルチプレイ)"/>
+<e k="input_CRABSTEERING_ALLWHEEL" v="クラブステアリング (全方向)"/>
+<e k="input_CRABSTEERING_CRABLEFT" v="クラブステアリング (左)"/>
+<e k="input_CRABSTEERING_CRABRIGHT" v="クラブステアリング (右)"/>
+<e k="input_CROUCH" v="かがむ"/>
+<e k="input_DECREASE_TIMESCALE" v="タイムスケールを小さくする"/>
+<e k="input_ENTER" v="車両に乗る"/>
+<e k="input_HONK" v="クラクション"/>
+<e k="input_IMPLEMENT_EXTRA" v="アタッチメント機能1"/>
+<e k="input_IMPLEMENT_EXTRA2" v="アタッチメント機能2"/>
+<e k="input_IMPLEMENT_EXTRA3" v="アタッチメント機能3"/>
+<e k="input_IMPLEMENT_EXTRA4" v="アタッチメント機能4"/>
+<e k="input_INCREASE_TIMESCALE" v="タイムスケールを大きくする"/>
+<e k="input_INGAMEMAP_ACCEPT" v="選択"/>
+<e k="input_INTERACT" v="ふれ合う"/>
+<e k="input_JUMP" v="ジャンプ"/>
+<e k="input_LOWER_ALL_IMPLEMENTS" v="アタッチメントをすべて下げる/上げる"/>
+<e k="input_LOWER_IMPLEMENT" v="アタッチメントを下げる"/>
+<e k="input_MENU" v="メニューを開く"/>
+<e k="input_MENU_ACCEPT" v="メニューの項目を承認"/>
+<e k="input_MENU_ACTIVATE" v="メニューアイテムを起動する"/>
+<e k="input_MENU_AXIS_LEFT_RIGHT" v="メニュー 左/右"/>
+<e k="input_MENU_AXIS_LEFT_RIGHT_1" v="メニューを右へ"/>
+<e k="input_MENU_AXIS_LEFT_RIGHT_2" v="メニューを左へ"/>
+<e k="input_MENU_AXIS_UP_DOWN" v="メニュー 上/下"/>
+<e k="input_MENU_AXIS_UP_DOWN_1" v="メニューを上へ"/>
+<e k="input_MENU_AXIS_UP_DOWN_2" v="メニューを下へ"/>
+<e k="input_MENU_BACK" v="メニューを戻る"/>
+<e k="input_MENU_CANCEL" v="メニューの項目をキャンセル"/>
+<e k="input_MENU_DOWN" v="メニューを下へ"/>
+<e k="input_MENU_LEFT" v="メニューを左へ"/>
+<e k="input_MENU_PAGE_NEXT" v="メニューの次ページ"/>
+<e k="input_MENU_PAGE_PREV" v="メニューの前ページ"/>
+<e k="input_MENU_RIGHT" v="メニューを右へ"/>
+<e k="input_MENU_UP" v="メニューを上へ"/>
+<e k="input_NEXT_HANDTOOL" v="次のハンドツール"/>
+<e k="input_PAUSE" v="一時停止"/>
+<e k="input_PICKUP_DROP_OBJECT" v="オブジェクトを回収する"/>
+<e k="input_PREVIOUS_HANDTOOL" v="前のハンドツール"/>
+<e k="input_RADIO_NEXT_CHANNEL" v="次のラジオ局"/>
+<e k="input_RADIO_NEXT_ITEM" v="次の曲"/>
+<e k="input_RADIO_PREVIOUS_CHANNEL" v="前のラジオ局"/>
+<e k="input_RADIO_PREVIOUS_ITEM" v="前の曲"/>
+<e k="input_RADIO_TOGGLE" v="ラジオのオン/オフ"/>
+<e k="input_RESET_HEAD_TRACKING" v="ヘッドトラッキングをリセット"/>
+<e k="input_ROTATE_OBJECT_LEFT_RIGHT_1" v="オブジェクトを左に回転する"/>
+<e k="input_ROTATE_OBJECT_LEFT_RIGHT_2" v="オブジェクトを右に回転する"/>
+<e k="input_ROTATE_OBJECT_UP_DOWN_1" v="オブジェクトを上に回転する"/>
+<e k="input_ROTATE_OBJECT_UP_DOWN_2" v="オブジェクトを下に回転する"/>
+<e k="input_SHOPLIST_DOWN" v="ショップのリストを下へスクロール"/>
+<e k="input_SHOPLIST_END" v="ショップリストの末尾へジャンプ"/>
+<e k="input_SHOPLIST_HOME" v="ショップリストの先頭へジャンプ"/>
+<e k="input_SHOPLIST_UP" v="ショップのリストを上へスクロール"/>
+<e k="input_SKIP_MESSAGE_BOX" v="メッセージボックスをスキップ"/>
+<e k="input_SNAP_PLACEABLE" v="グリッドスナップ"/>
+<e k="input_SWITCH_IMPLEMENT" v="アタッチメントを選択する"/>
+<e k="input_SWITCH_VEHICLE" v="次の車両"/>
+<e k="input_SWITCH_VEHICLE_BACK" v="前の車両"/>
+<e k="input_TAKE_SCREENSHOT" v="スクリーンショットを撮る"/>
+<e k="input_THROW_OBJECT" v="オブジェクトを投げる"/>
+<e k="input_TOGGLE_ADMIN" v="管理画面 (マルチプレイ)"/>
+<e k="input_TOGGLE_AI" v="作業者の切り替え"/>
+<e k="input_TOGGLE_BEACON_LIGHTS" v="誘導灯のオン / オフ"/>
+<e k="input_TOGGLE_CHOPPER" v="わらのウィンドロウのオンオフを切り替える"/>
+<e k="input_TOGGLE_CONTROLGROUP" v="コントロールグループ切り替え"/>
+<e k="input_TOGGLE_COVER" v="カバー開閉"/>
+<e k="input_TOGGLE_CRABSTEERING" v="運転モード切り替え"/>
+<e k="input_TOGGLE_CRUISE_CONTROL" v="オートクルーズ切替"/>
+<e k="input_TOGGLE_FINANCES" v="財務状況を確認する"/>
+<e k="input_TOGGLE_HELP_TEXT" v="ヘルプテキストのオン / オフ"/>
+<e k="input_TOGGLE_HIGH_BEAM_LIGHT" v="ハイビーム"/>
+<e k="input_TOGGLE_LIGHTS" v="ライトのオン / オフ"/>
+<e k="input_TOGGLE_LIGHTS_FPS" v="懐中電灯切り替え"/>
+<e k="input_TOGGLE_LIGHT_FRONT" v="前方を照らす"/>
+<e k="input_TOGGLE_MAP" v="マップ"/>
+<e k="input_TOGGLE_MAP_SIZE" v="マップをズーム"/>
+<e k="input_TOGGLE_MOTOR_STATE" v="エンジンスタート/ストップ"/>
+<e k="input_TOGGLE_PIPE" v="パイプの切り替え"/>
+<e k="input_TOGGLE_SEEDS" v="種の変更"/>
+<e k="input_TOGGLE_STORE" v="ストア"/>
+<e k="input_TOGGLE_TENSION_BELTS" v="テンションベルトを締める/外す"/>
+<e k="input_TOGGLE_TIPSIDE" v="置き場所の切り替え"/>
+<e k="input_TOGGLE_TIPSTATE" v="下ろす"/>
+<e k="input_TOGGLE_TIPSTATE_GROUND" v="地面に下ろす"/>
+<e k="input_TOGGLE_TURNLIGHT_HAZARD" v="ハザードランプ"/>
+<e k="input_TOGGLE_TURNLIGHT_LEFT" v="方向指示器 左"/>
+<e k="input_TOGGLE_TURNLIGHT_RIGHT" v="方向指示器 右"/>
+<e k="input_TOGGLE_WORKMODE" v="作業モードを切り替える"/>
+<e k="input_TOGGLE_WORK_LIGHT_BACK" v="リアの作業灯"/>
+<e k="input_TOGGLE_WORK_LIGHT_FRONT" v="フロントの作業灯"/>
+<e k="input_UNLOAD" v="荷下ろし"/>
+<e k="input_VEHICLE_ACTION_CONTROL" v="アタッチメントのオン／オフ"/>
+<e k="input_WORKMODE_LEFT" v="作業モード左"/>
+<e k="input_WORKMODE_MIDDLE" v="作業モード中"/>
+<e k="input_WORKMODE_RIGHT" v="作業モード右"/>
+<e k="keyGlyph_alt" v="Alt"/>
+<e k="keyGlyph_backspace" v="⌫"/>
+<e k="keyGlyph_ctrl" v="Ctrl"/>
+<e k="keyGlyph_down" v="↓"/>
+<e k="keyGlyph_enter" v="⏎"/>
+<e k="keyGlyph_escape" v="Esc"/>
+<e k="keyGlyph_left" v="←"/>
+<e k="keyGlyph_return" v="⏎"/>
+<e k="keyGlyph_right" v="→"/>
+<e k="keyGlyph_shift" v="Shift"/>
+<e k="keyGlyph_space" v="Space"/>
+<e k="keyGlyph_up" v="↑"/>
+<e k="label_arm" v="アーム"/>
+<e k="label_conveyor" v="コンベアベルト"/>
+<e k="label_pipe" v="パイプ"/>
+<e k="label_support" v="サポート"/>
+<e k="mapBase_description" v="Unit testing inside... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem metus, aliquet eu sodales nec, accumsan pellentesque massa. Mauris et ullamcorper eros, ut pellentesque eros. Praesent bibendum neque justo, a fringilla sapien hendrerit mattis. Pellentesque ultricies mauris a felis pulvinar consectetur. Ut lacinia arcu sit amet eros mattis, sed tempus tortor tincidunt. Nulla turpis mauris, elementum nec arcu nec, vehicula faucibus ligula. Cras risus erat, placerat vitae aliquet porta, convallis at velit. Aenean sed efficitur ligula. Vestibulum ac auctor orci. Mauris vitae gravida odio. Vestibulum eu tempor dui. "/>
+<e k="mapBase_title" v="Test map"/>
+<e k="mapDE_description" v="フェルスブランへようこそ!"/>
+<e k="mapDE_title" v="フェルスブラン"/>
+<e k="mapSA_description" v="エスタンシアラパチョへようこそ。"/>
+<e k="mapSA_title" v="エスタンシアラパチョ"/>
+<e k="mapUS_description" v="ラベンポートへようこそ!"/>
+<e k="mapUS_title" v="ラベンポート"/>
+<e k="map_shop" v="ショップ"/>
+<e k="message_achievementUnlocked" v="アンロックした実績: "/>
+<e k="message_achievementUnlocked_ps4" v="アンロックしたトロフィー: "/>
+<e k="message_achievementUnlocked_xboxone" v="アンロックした実績: "/>
+<e k="message_greatDemandStartText" v="%sがしばらくの間、%sを通常より高い値段で買い取ると言っています。終了まであと%d時間" tag="format"/>
+<e k="message_greatDemandStartTitle" v="%sで%sの需要が高まっています" tag="format"/>
+<e k="message_newDlcsRestartText" v="新しくインストールしたダウンロードコンテンツを使うには、メインメニューから現在のゲームデータをリロードしてください。"/>
+<e k="message_newDlcsRestartTitle" v="ダウンロードコンテンツをインストール済み"/>
+<e k="message_selectedSiloIsEmpty" v="選択したサイロは空です"/>
+<e k="modHub_abuse" v="ModHub上にあるユーザーが作成したコンテンツの著作権は、作成したユーザーに帰属します。弊社はこれらのユーザー作成コンテンツの使用に際して、
+プレイヤーのゲームに生じた損失・損害に対する一切の責任を負いません。自分が作成したコンテンツ、もしくはその一部が無断でModHub上にある場合は、弊社までご連絡ください。"/>
+<e k="modHub_addedToDownloads" v="Mod &apos;%s&apos; がダウンロードリストに追加されました!" tag="format"/>
+<e k="modHub_authorDisclaimer_ps4" v="表示された作者はPlayStation™Networkのアカウントに対応していません。"/>
+<e k="modHub_authorDisclaimer_xboxone" v="Displayed authors do not correspond to Xbox Live Gamertags."/>
+<e k="modHub_best" v="ベスト"/>
+<e k="modHub_beta" v="ベータ"/>
+<e k="modHub_contest" v="Mod コンテスト"/>
+<e k="modHub_conversions" v="改装"/>
+<e k="modHub_dependenciesText" v="次のディペンデントMODが必要なため自動的にダウンロードされます:
+%s" tag="format"/>
+<e k="modHub_dependenciesTitle" v="ディペンデントMOD"/>
+<e k="modHub_dlc" v="ダウンロードコンテンツ"/>
+<e k="modHub_dlc_ps4" v="ダウンロード
+コンテンツ"/>
+<e k="modHub_dlc_xboxone" v="ダウンロードコンテンツ"/>
+<e k="modHub_download" v="ダウンロード"/>
+<e k="modHub_downloaded" v="ダウンロード"/>
+<e k="modHub_error" v="エラー"/>
+<e k="modHub_failed" v="失敗"/>
+<e k="modHub_farmBuilding" v="農場の建物"/>
+<e k="modHub_flag_highEnd" v="Top"/>
+<e k="modHub_gameplay" v="ゲームプレイ"/>
+<e k="modHub_harvester" v="コンバイン"/>
+<e k="modHub_installDependenciesFailed" v="次のディペンデントMODをインストールできませんでした:
+%s" tag="format"/>
+<e k="modHub_installFailed" v="インストール失敗 もう一度お試しください"/>
+<e k="modHub_installNoFreeSpace" v="MODのインストールに必要な空き容量がありません。
+必要な容量: %u KB
+利用できる容量:  %u KB
+続けるために、他のMODをいくつかアンインストールしてください。" tag="format"/>
+<e k="modHub_installSuccessful" v="MOD&apos;%&apos; をインストールしました!"/>
+<e k="modHub_installationState" v="インストール状況"/>
+<e k="modHub_installed" v="インストール済み"/>
+<e k="modHub_latest" v="最新"/>
+<e k="modHub_loading" v="MODHubをロード中..."/>
+<e k="modHub_map" v="マップ"/>
+<e k="modHub_most_downloaded" v="最もダウンロード
+されている"/>
+<e k="modHub_noMods" v="使用可能なMODがありません"/>
+<e k="modHub_object" v="オブジェクト"/>
+<e k="modHub_other" v="その他"/>
+<e k="modHub_package" v="パッケージ"/>
+<e k="modHub_pending" v="保留中..."/>
+<e k="modHub_rateFailed" v="MODを評価できませんでした。"/>
+<e k="modHub_rateSuccess" v="MODが評価されました。"/>
+<e k="modHub_scripts" v="スクリプト"/>
+<e k="modHub_search" v="検索"/>
+<e k="modHub_skins" v="スキン"/>
+<e k="modHub_title" v="MODHub"/>
+<e k="modHub_tool" v="アタッチメント"/>
+<e k="modHub_tractor" v="トラクター"/>
+<e k="modHub_trailer" v="トレーラー"/>
+<e k="modHub_uninstallModFailed" v="MODはアンインストールできません。 もう一度お試しください"/>
+<e k="modHub_uninstallModSuccess" v="MODをアンインストールしました!"/>
+<e k="modHub_uninstallModText" v="MOD &apos;%s&apos;をアンインストールしてよろしいですか?" tag="format"/>
+<e k="modHub_uninstallModTitle" v="MODをアンインストール"/>
+<e k="modHub_update" v="アップデート"/>
+<e k="notification_greatDemand" v="高い需要 %s" tag="format"/>
+<e k="notification_nowAvailable" v="新着!"/>
+<e k="object_farmhouse" v="農家"/>
+<e k="player_female" v="女性"/>
+<e k="player_male" v="男性"/>
+<e k="poi_animalFood" v="動物の飼料桶。ここに食べ物を降ろすと家畜に餌をやれます"/>
+<e k="poi_animalLiquidManure" v="液体肥料ポイント。ここで生産された液体肥料を積み込みましょう"/>
+<e k="poi_animalLoad" v="動物ポイント。ここで動物の積み込みと積み卸しができます"/>
+<e k="poi_animalManure" v="堆肥ポイント。ここで生産された堆肥を積み込みましょう"/>
+<e k="poi_animalMilk" v="ミルク貯蔵庫。ここで生産されたミルクを積み込みましょう"/>
+<e k="poi_animalStraw" v="ここでわらを降ろして、家畜の健康を増進させましょう"/>
+<e k="poi_animalWater" v="動物の水桶。ここに水を放出すると家畜に餌をやれます"/>
+<e k="poi_animalWool" v="ウールの布団製品の場所"/>
+<e k="poi_baleSellingStation" v="ここでべーラーを売却できます"/>
+<e k="poi_baleStorage" v="べーラー貯蔵庫"/>
+<e k="poi_bgaBunkerSilo" v="バイオガスプラント、まぐさ買取所"/>
+<e k="poi_bgaLoading" v="バイオガス、液体肥料積み込み所"/>
+<e k="poi_farmSilo" v="農場のサイロ。ここで穀物を貯蔵して積み込みましょう"/>
+<e k="poi_fertilizerStation" v="固形肥料を積み込む場所"/>
+<e k="poi_gasStation" v="ガソリンスタンドでは車両を給油できます"/>
+<e k="poi_genericSellingStation" v="ここで製品を売却できます"/>
+<e k="poi_liquidFertilizerStation" v="液体肥料を積み込む場所"/>
+<e k="poi_seedStation" v="種を積み込む場所"/>
+<e k="poi_spinnery" v="ウール買取所"/>
+<e k="poi_washingStation" v="洗車場では車両を洗えます"/>
+<e k="poi_waterTank" v="水タンクでトレーラーを満たすことができます"/>
+<e k="savegame_state_conflicted" v="不一致"/>
+<e k="savegame_state_not_uploaded" v="アップロードされていません"/>
+<e k="savegame_state_uploaded" v="アップロード済み"/>
+<e k="savegame_state_uploading" v="アップロード中"/>
+<e k="setting_LODDistance" v="LOD距離"/>
+<e k="setting_MSAA" v="マルチサンプリング アンチエイリアス"/>
+<e k="setting_adaptiveVSync" v="適応垂直同期"/>
+<e k="setting_advanced" v="グラフィックの詳細設定"/>
+<e k="setting_anisotropicFiltering" v="アンアイソトロピック フィルタリング"/>
+<e k="setting_areaUnit" v="エリアユニット"/>
+<e k="setting_autoSaveInterval" v="オートセーブのインターバル"/>
+<e k="setting_automaticMotorStart" v="オートエンジンスタート"/>
+<e k="setting_brightness" v="明るさ"/>
+<e k="setting_cameraSensitivity" v="カメラの感度"/>
+<e k="setting_cameraTilt" v="水平傾き"/>
+<e k="setting_colorBlindMode" v="色覚特性モード"/>
+<e k="setting_controllerSettings" v="コントローラー"/>
+<e k="setting_dirt" v="泥"/>
+<e k="setting_easyArmControl" v="アームの簡単操作"/>
+<e k="setting_economicDifficulty" v="経済難易度"/>
+<e k="setting_fertilizerStates" v="肥料ステータス"/>
+<e k="setting_foliageDrawDistance" v="フォリッジドロー距離"/>
+<e k="setting_fovy" v="視覚野"/>
+<e k="setting_fovyDegree" v="%d°" tag="format"/>
+<e k="setting_fruitDestruction" v="作物の破滅"/>
+<e k="setting_fuelUsage" v="燃料使用量"/>
+<e k="setting_fuelUsageDefault" v="標準"/>
+<e k="setting_fuelUsageLow" v="低燃費"/>
+<e k="setting_gamepadAxis" v="軸 %d" tag="format"/>
+<e k="setting_gamepadDeadzone" v="デッドゾーン"/>
+<e k="setting_gamepadSensitivity" v="感度"/>
+<e k="setting_graphics" v="グラフィック"/>
+<e k="setting_gyroscopeSteering" v="ジャイロスコープを使用（ハンドル操作）"/>
+<e k="setting_gyroscopeSteering_switch" v="加速度計ステアリング"/>
+<e k="setting_hardwareProfile" v="ハードウェア プロファイル"/>
+<e k="setting_headTracking" v="ヘッドトラッキング"/>
+<e k="setting_helpIconsOnMap" v="ゲーム中のヘルプアイコン"/>
+<e k="setting_helpWindow" v="ヘルプウィンドウ"/>
+<e k="setting_helperRefill" v="ヘルパーリフィル"/>
+<e k="setting_helperRefillFertilizer" v="ヘルパーリフィル - 肥料"/>
+<e k="setting_helperRefillFuel" v="ヘルパーリフィル - 燃料"/>
+<e k="setting_helperRefillManure" v="ヘルパーリフィル - 堆肥"/>
+<e k="setting_helperRefillSeed" v="ヘルパーリフィル - 種"/>
+<e k="setting_helperRefillSlurry" v="ヘルパーリフィル - スラリー"/>
+<e k="setting_high" v="高"/>
+<e k="setting_hints" v="ヒント"/>
+<e k="setting_iconsOnIngameMap" v="マップ上のアイコン"/>
+<e k="setting_inputHelpMode" v="入力支援モード"/>
+<e k="setting_invertYLook" v="カメラのY軸を反転させる"/>
+<e k="setting_isTrainTabbable" v="列車に切り替える"/>
+<e k="setting_language" v="言語"/>
+<e k="setting_lightQuality" v="明るさのクオリティー"/>
+<e k="setting_limeRequired" v="ライムが必要"/>
+<e k="setting_low" v="低"/>
+<e k="setting_maxNumMirrors" v="バックミラー"/>
+<e k="setting_maxNumTireTracks" v="タイヤトラック"/>
+<e k="setting_measuringUnit" v="測定単位"/>
+<e k="setting_medium" v="中"/>
+<e k="setting_moneyUnit" v="通貨単位"/>
+<e k="setting_mouseSettings" v="マウス"/>
+<e k="setting_multiplayerLanguage" v="マルチプレイ用言語"/>
+<e k="setting_musicVolume" v="BGM音量"/>
+<e k="setting_objectDrawDistance" v="オブジェクトドロー距離"/>
+<e k="setting_off" v="オフ"/>
+<e k="setting_plantGrowthRate" v="作物の成長度"/>
+<e k="setting_plantGrowthRateState1" v="遅い"/>
+<e k="setting_plantGrowthRateState2" v="普通"/>
+<e k="setting_plantGrowthRateState3" v="速い"/>
+<e k="setting_plantWithering" v="作物枯れ"/>
+<e k="setting_plowingRequired" v="定期すきこみ"/>
+<e k="setting_radio" v="ラジオ"/>
+<e k="setting_radioAlways" v="常に"/>
+<e k="setting_radioChannel" v="ラジオ局"/>
+<e k="setting_radioRange" v="ラジオ受信可能地域"/>
+<e k="setting_radioVehicleOnly" v="車両のみ"/>
+<e k="setting_realBeaconLights" v="リアルな誘導灯"/>
+<e k="setting_renderQuality" v="レンダリングクオリティ"/>
+<e k="setting_resetCamera" v="車両カメラをリセット"/>
+<e k="setting_resetUICamera" v="カメラリセット"/>
+<e k="setting_resolution" v="画面解像度"/>
+<e k="setting_resolutionDownsampled" v="スーパーサンプリング解像度"/>
+<e k="setting_resolutionScaling" v="解像度のスケール"/>
+<e k="setting_sfxVolume" v="SFX音量"/>
+<e k="setting_shaderQuality" v="シェーダークオリティ"/>
+<e k="setting_shadowMapFiltering" v="シャドウマップフィルタリング"/>
+<e k="setting_shadowMaxNumLights" v="最大シャドウライト数"/>
+<e k="setting_shadowQuality" v="シャドウ クオリティー"/>
+<e k="setting_steeringBackSpeed" v="バックでの運転スピード"/>
+<e k="setting_steeringSensitivity" v="ステアリング感度"/>
+<e k="setting_stopAndGoBraking" v="ブレーキとバック"/>
+<e k="setting_temperatureUnit" v="気温ユニット"/>
+<e k="setting_terrainLODDistance" v="地形LOD距離"/>
+<e k="setting_terrainQuality" v="地形クオリティー"/>
+<e k="setting_textureFiltering" v="地形フィルタリング"/>
+<e k="setting_textureResolution" v="地形解像度"/>
+<e k="setting_timeScale" v="タイムスケール"/>
+<e k="setting_traffic" v="トラフィック"/>
+<e k="setting_trailerLoss" v="アクシデンダルトレイラーコンテンツロス"/>
+<e k="setting_triggerMarker" v="インタラクティブゾーンマーカー"/>
+<e k="setting_uiScale" v="ゲーム内HUDサイズ"/>
+<e k="setting_useWorldCamera" v="ダイナミック車両カメラ"/>
+<e k="setting_vSync" v="垂直同期"/>
+<e k="setting_vehicleArmSensitivity" v="機材アーム感度"/>
+<e k="setting_veryHigh" v="最高"/>
+<e k="setting_volumeEnvironment" v="環境音量"/>
+<e k="setting_volumeGUI" v="GUIボリューム"/>
+<e k="setting_volumeMaster" v="音量"/>
+<e k="setting_volumeMeshTessellation" v="メッシュテッセレーション音量"/>
+<e k="setting_volumeMusic" v="BGM音量"/>
+<e k="setting_volumeRadio" v="ラジオ音量"/>
+<e k="setting_volumeVehicles" v="車両音量"/>
+<e k="setting_weedsEnabled" v="雑草"/>
+<e k="setting_wheelGamepad" v="ゲームパッド/ハンドル"/>
+<e k="setting_windowMode" v="ウィンドウ モード"/>
+<e k="shopItem_animalPenChicken" v="ニワトリの畜舎"/>
+<e k="shopItem_animalPenCow" v="牛の畜舎"/>
+<e k="shopItem_animalPenHorse" v="馬の畜舎"/>
+<e k="shopItem_animalPenPig" v="豚の畜舎"/>
+<e k="shopItem_animalPenSheep" v="羊の畜舎"/>
+<e k="shopItem_ashTree" v="トネリコ"/>
+<e k="shopItem_beehive" v="養蜂所"/>
+<e k="shopItem_bigBagChickenFood" v="小麦"/>
+<e k="shopItem_bigBagFertilizer" v="しっかりした肥料袋 (大)"/>
+<e k="shopItem_bigBagHorseFood" v="オート麦(大袋)"/>
+<e k="shopItem_bigBagLime" v="石灰の大きな袋"/>
+<e k="shopItem_bigBagPigFood" v="豚のエサ(大袋)"/>
+<e k="shopItem_bigBagSeeds" v="種袋 (大)"/>
+<e k="shopItem_birchTree" v="カバノキ"/>
+<e k="shopItem_chicken" v="鶏"/>
+<e k="shopItem_chickenBlack" v="ニワトリ（黒）"/>
+<e k="shopItem_chickenBrown" v="ニワトリ（茶）"/>
+<e k="shopItem_chickenRooster" v="オンドリ"/>
+<e k="shopItem_chickenWhite" v="ニワトリ（白）"/>
+<e k="shopItem_cow" v="牛"/>
+<e k="shopItem_cowBlack" v="牛（黒）"/>
+<e k="shopItem_cowBlackWhite" v="牛（白黒）"/>
+<e k="shopItem_cowBrahmanBrown" v="ブラーマン（茶）"/>
+<e k="shopItem_cowBrahmanGrey" v="ブラーマン（グレー）"/>
+<e k="shopItem_cowBrahmanLightBrown" v="ブラーマン（薄茶）"/>
+<e k="shopItem_cowBrahmanWhite" v="ブラーマン（白）"/>
+<e k="shopItem_cowBrown" v="牛（茶）"/>
+<e k="shopItem_cowBrownWhite" v="牛（白茶）"/>
+<e k="shopItem_dogBall" v="ボール"/>
+<e k="shopItem_doghouse" v="犬小屋"/>
+<e k="shopItem_farmBarn" v="農場の納屋"/>
+<e k="shopItem_farmGarage" v="農場のガレージ"/>
+<e k="shopItem_farmHut" v="農場の小屋"/>
+<e k="shopItem_farmOldBarn" v="農場の古い納屋"/>
+<e k="shopItem_farmShack" v="農場の掘っ立て小屋"/>
+<e k="shopItem_farmShed" v="農場の物置"/>
+<e k="shopItem_farmSilo" v="サイロ"/>
+<e k="shopItem_farmSiloLarge" v="穀物サイロ（大）"/>
+<e k="shopItem_farmSiloSmall" v="穀物サイロ"/>
+<e k="shopItem_farmStable" v="農場の畜舎"/>
+<e k="shopItem_farmStorage" v="農場の倉庫"/>
+<e k="shopItem_farmStorageBarn" v="農場の保管小屋"/>
+<e k="shopItem_farmTrailer" v="農場のトレーラー"/>
+<e k="shopItem_fertilizerTank" v="肥料タンク"/>
+<e k="shopItem_firTree" v="モミ"/>
+<e k="shopItem_flieglSemitrailer" v="ローローダー"/>
+<e k="shopItem_flieglTimberRunner" v="ウッドトランスポーター"/>
+<e k="shopItem_frontloaderBaleFork" v="ベールスパイク"/>
+<e k="shopItem_frontloaderBaleGrab" v="ロールベールハンドラー"/>
+<e k="shopItem_frontloaderHighDumpBucket" v="ハイダンプバケット"/>
+<e k="shopItem_frontloaderLogFork" v="ログフォーク"/>
+<e k="shopItem_frontloaderManureFork" v="マニュアフォーク"/>
+<e k="shopItem_frontloaderManureGrabFork" v="フォークグラップル"/>
+<e k="shopItem_frontloaderPalletFork" v="パレットフォーク"/>
+<e k="shopItem_frontloaderRoundBaleFork" v="ロールフォーク"/>
+<e k="shopItem_frontloaderShovel" v="ユニバーサルバケット"/>
+<e k="shopItem_frontloaderSilageCutter" v="サイレージカッター"/>
+<e k="shopItem_garantFieldContainer" v="フィールドコンテナ"/>
+<e k="shopItem_garantTSA" v="TSAスラリートランスポーター"/>
+<e k="shopItem_gasStation" v="ガソリンスタンド"/>
+<e k="shopItem_grainContainer" v="穀物容器"/>
+<e k="shopItem_greenhouseLettuce" v="温室 (レタス)"/>
+<e k="shopItem_greenhouseTomatoes" v="温室 (トマト)"/>
+<e k="shopItem_hayLoft" v="干し草置き場"/>
+<e k="shopItem_heatingPlant" v="発電所"/>
+<e k="shopItem_herbicideTank" v="除草剤タンク"/>
+<e k="shopItem_highPressureWasher" v="高圧洗浄機"/>
+<e k="shopItem_horse" v="馬"/>
+<e k="shopItem_horseBeige" v="馬（ベージュ）"/>
+<e k="shopItem_horseBlack" v="馬（黒）"/>
+<e k="shopItem_horseBrown" v="馬（茶）"/>
+<e k="shopItem_horseBrownWhite" v="馬（白茶）"/>
+<e k="shopItem_horseDarkBrown" v="馬（濃茶）"/>
+<e k="shopItem_horseGrey" v="馬（グレー）"/>
+<e k="shopItem_horseLightBrown" v="馬（薄茶）"/>
+<e k="shopItem_horseRedBrown" v="馬（赤茶）"/>
+<e k="shopItem_kroneCutterTrailer" v="カッタートレーラー"/>
+<e k="shopItem_limeStation" v="ライムステーション"/>
+<e k="shopItem_liquidFertilizerTank" v="液体肥料タンク"/>
+<e k="shopItem_mapleTree" v="カエデ"/>
+<e k="shopItem_mobileFuelTank" v="移動式燃料タンク"/>
+<e k="shopItem_oakTree" v="オーク"/>
+<e k="shopItem_palletSaplings" v="パレット苗"/>
+<e k="shopItem_palletSaplingsPoplar" v="ポプラ苗パレット"/>
+<e k="shopItem_palletSaplingsSugarCane" v="サトウキビパレット"/>
+<e k="shopItem_picnicShelter01" v="休憩所（長方形）"/>
+<e k="shopItem_picnicShelter02" v="休憩所（円形）"/>
+<e k="shopItem_pig" v="豚"/>
+<e k="shopItem_pigBlack" v="豚（黒）"/>
+<e k="shopItem_pigBlackWhite" v="豚（白黒）"/>
+<e k="shopItem_pigRed" v="豚（ピンク）"/>
+<e k="shopItem_pigWhite" v="豚（白）"/>
+<e k="shopItem_poplarTree" v="ポプラ"/>
+<e k="shopItem_railroadCrane" v="操重車"/>
+<e k="shopItem_sampoRosenlewC6Cutter" v="C6ヘッダー"/>
+<e k="shopItem_sandcastle" v="砂の城"/>
+<e k="shopItem_sellStation" v="売買所1"/>
+<e k="shopItem_sellingStation" v="売買所2"/>
+<e k="shopItem_sellingStationBales" v="売買所3"/>
+<e k="shopItem_sellingStationTrain" v="売買所4"/>
+<e k="shopItem_shack01" v="小さい小屋"/>
+<e k="shopItem_shack02" v="高床式の小屋"/>
+<e k="shopItem_shack03" v="納屋"/>
+<e k="shopItem_shack04" v="設備倉庫"/>
+<e k="shopItem_sheep" v="羊"/>
+<e k="shopItem_sheepBlack" v="羊（黒）"/>
+<e k="shopItem_sheepBlackWhite" v="羊（白黒）"/>
+<e k="shopItem_sheepBrown" v="羊（茶）"/>
+<e k="shopItem_sheepWhite" v="羊（白）"/>
+<e k="shopItem_siloExtensionLarge" v="拡張サイロ(大)"/>
+<e k="shopItem_siloExtensionSmall" v="拡張サイロ(小)"/>
+<e k="shopItem_skidSteerBaleFork" v="ベールスパイク"/>
+<e k="shopItem_skidSteerHighDumpBucket" v="ハイダンプバケット"/>
+<e k="shopItem_skidSteerLogFork" v="ログフォーク"/>
+<e k="shopItem_skidSteerManureFork" v="マニュアフォーク"/>
+<e k="shopItem_skidSteerPalletFork" v="パレットフォーク"/>
+<e k="shopItem_skidSteerShovel" v="ユニバーサルバケット"/>
+<e k="shopItem_skidSteerStumpCutter" v="切り株除去機"/>
+<e k="shopItem_solarCollector" v="太陽熱集熱器"/>
+<e k="shopItem_storageShelter01" v="大型倉庫"/>
+<e k="shopItem_storageShelter02" v="小型倉庫"/>
+<e k="shopItem_sugarcaneSemitrailer" v="サトウキビセミトレーラー"/>
+<e k="shopItem_sugarcaneTrailer" v="サトウキビトレーラー"/>
+<e k="shopItem_telehandlerBaleFork" v="ベールフォーク"/>
+<e k="shopItem_telehandlerBaleGrab" v="ロールベールハンドラー"/>
+<e k="shopItem_telehandlerFork" v="パレットフォーク"/>
+<e k="shopItem_telehandlerHighDumpBucket" v="ハイダンプバケット"/>
+<e k="shopItem_telehandlerLogFork" v="ログフォーク"/>
+<e k="shopItem_telehandlerManureFork" v="マニュアフォーク"/>
+<e k="shopItem_telehandlerShovel" v="ショベル"/>
+<e k="shopItem_vehicleShelter" v="車両用日よけ"/>
+<e k="shopItem_vehicleShelterLarge" v="大型車両用日よけ"/>
+<e k="shopItem_vehicleShelterSmall" v="小型車両用日よけ"/>
+<e k="shopItem_washingStation" v="車両の洗浄"/>
+<e k="shopItem_waterTower" v="給水塔"/>
+<e k="shopItem_waterTrailer" v="移動式水タンク"/>
+<e k="shopItem_wheelLoaderFork" v="フォーク"/>
+<e k="shopItem_wheelLoaderHighDumpBucket" v="ハイダンプバケット"/>
+<e k="shopItem_wheelLoaderLogFork" v="ログフォーク"/>
+<e k="shopItem_wheelLoaderShovel" v="ショベル"/>
+<e k="shopItem_wheelLoaderSilageFork" v="サイレージフォーク"/>
+<e k="shopItem_windTurbine" v="風力エネルギー変換器"/>
+<e k="shopItem_woodSellingStation" v="製材所"/>
+<e k="shopItem_woolTrailer" v="LT-6 (ウール)"/>
+<e k="shopItem_workshop" v="車両整備場"/>
+<e k="shop_age" v="%s / 日" tag="format"/>
+<e k="shop_capacity" v="容量: "/>
+<e k="shop_capacityValue" v="%s %s" tag="format"/>
+<e k="shop_category" v="カテゴリー"/>
+<e k="shop_combinations" v="適した用途: "/>
+<e k="shop_configuration" v="カスタマイズ"/>
+<e k="shop_configurationPriceBase" v="基本価格"/>
+<e k="shop_configurationPriceOptions" v="オプション"/>
+<e k="shop_configurationPriceTotal" v="総額"/>
+<e k="shop_configurationTitle" v="オプションとアップグレード"/>
+<e k="shop_costsBase" v="基本費用"/>
+<e k="shop_costsPerDay" v="1日当たり"/>
+<e k="shop_costsPerOperatingHour" v="1作業時間当たり"/>
+<e k="shop_doYouWantToBuy" v="%sで購入しますか?" tag="format"/>
+<e k="shop_doYouWantToLease" v="%sで借りますか?" tag="format"/>
+<e k="shop_fee" v="運賃"/>
+<e k="shop_fruitTypes" v="作物の種類"/>
+<e k="shop_fuelDefValue" v="%d %s / %d %s %s" tag="format"/>
+<e k="shop_fuelValue" v="%d %s" tag="format"/>
+<e k="shop_income" v="収入: "/>
+<e k="shop_incomeValue" v="%s / 時間" tag="format"/>
+<e k="shop_initialCosts" v="当初のリース料"/>
+<e k="shop_leasedItems" v="レンタル品"/>
+<e k="shop_maintenance" v="メンテナンス: "/>
+<e k="shop_maintenanceValue" v="%s / 日" tag="format"/>
+<e k="shop_maxPower" v="最大パワー: "/>
+<e k="shop_maxPowerValue" v="%s kW / %s hp" tag="format"/>
+<e k="shop_maxSpeed" v="%s %s" tag="format"/>
+<e k="shop_messageAlreadyOwned" v="すでに所有しているアイテムです。"/>
+<e k="shop_messageBoughtAnimal" v="家畜を購入しました"/>
+<e k="shop_messageBoughtChainsaw" v="チェーンソーを切り替えるにはマウスホイールをスクロールするか、キーボードの1または2を押してください。"/>
+<e k="shop_messageBuyFarmlandText" v="%sでこの土地を購入しますか?" tag="format"/>
+<e k="shop_messageBuyFarmlandTitle" v="土地の購入"/>
+<e k="shop_messageBuyFieldTitle" v="畑の購入"/>
+<e k="shop_messageBuyingAnimal" v="家畜を購入しています..."/>
+<e k="shop_messageBuyingVehicle" v="購入しています..."/>
+<e k="shop_messageCannotSellAnimal" v="しばらくの間、この家畜を売却できません"/>
+<e k="shop_messageCannotSellFarmlandWithPlaceables" v="配置可能なオブジェクトが置いてあるので、この土地を売却できません。先にオブジェクトを売却してください。"/>
+<e k="shop_messageConfigurationChangeFailed" v="このカスタマイズは変更できません!"/>
+<e k="shop_messageConfigurationChanged" v="カスタマイズが変更されました。"/>
+<e k="shop_messageFailedToLoadObject" v="購入できませんでした。もう一度お試しください。"/>
+<e k="shop_messageFailedToLoadVehicle" v="車両 / アタッチメントを購入できませんでした。もう一度お試しください。"/>
+<e k="shop_messageFailedToReturnLastVehicleText" v="最後の車両を返却することはできません。"/>
+<e k="shop_messageFailedToReturnVehicle" v="車両に戻れません! 後でもう一度お試しください。"/>
+<e k="shop_messageFailedToSellLastVehicleText" v="最後の車両を売却することはできません。"/>
+<e k="shop_messageFailedToSellVehicle" v="売却に失敗しました。後ほどお試しください"/>
+<e k="shop_messageGardenCenterPurchaseReady" v="購入品はショップで受け取ることができます。"/>
+<e k="shop_messageIsInUse" v="車両 / アタッチメントは現在使用中です。"/>
+<e k="shop_messageLeasingReady" v="ショップでレンタルした車両をピックアップできます。"/>
+<e k="shop_messageLeasingVehicle" v="選択した車両をレンタル中です…"/>
+<e k="shop_messageNoPermissionGeneral" v="このアクションをする許可を与えられていません。"/>
+<e k="shop_messageNoPermissionToBuyVehicleText" v="車両やアタッチメントを購入/リースする許可がありません。"/>
+<e k="shop_messageNoPermissionToReturnVehicleText" v="車両やアタッチメントを返却する許可を与えられていません。"/>
+<e k="shop_messageNoPermissionToSellVehicleText" v="車両やアタッチメントを売却する許可を与えられていません。"/>
+<e k="shop_messageNoPermissionToSellVehicleTitle" v="不可"/>
+<e k="shop_messageNoPermissionToTradeAnimals" v="動物をトレードする許可を与えられていません。"/>
+<e k="shop_messageNoSpace" v="ショップにこのアイテムを置くスペースがありません。移動や売却等でアイテムを置くスペースを空けてください。"/>
+<e k="shop_messageNotEnoughMoneyToBuy" v="お金が不足しています!"/>
+<e k="shop_messageNotEnoughMoneyToBuyFarmland" v="この土地を買う資金が足りません!"/>
+<e k="shop_messageNotEnoughMoneyToBuy_buyCoins" v="お金が不足しています! コインを購入しますか？"/>
+<e k="shop_messageNotEnoughMoneyToLease" v="お金が不足しています!"/>
+<e k="shop_messageNotEnoughSlotsToBuy" v="アイテムスロットがいっぱいです。車両やアタッチメント、配置用オブジェクトなどを売却してスロットを空けてください。"/>
+<e k="shop_messagePurchaseReady" v="購入した製品はショップに出現します"/>
+<e k="shop_messageReturnVehicleInUse" v="車両やアタッチメントが使用中のため、移動できませんでした。"/>
+<e k="shop_messageReturnedVehicle" v="車両 / アタッチメントが返却されました"/>
+<e k="shop_messageReturningVehicle" v="車両 / アタッチメントが返却中..."/>
+<e k="shop_messageSellFarmlandText" v="%sでこの土地を売却しますか?" tag="format"/>
+<e k="shop_messageSellFarmlandTitle" v="土地の売却"/>
+<e k="shop_messageSellVehicleInUse" v="車両やアタッチメントが使用中のため、売却できませんでした。"/>
+<e k="shop_messageSellingAnimal" v="家畜を売却しています..."/>
+<e k="shop_messageSellingVehicle" v="車両 / アタッチメントを売却しています..."/>
+<e k="shop_messageSoldAnimal" v="家畜を売却しました"/>
+<e k="shop_messageSoldObject" v="アイテムを売却しました"/>
+<e k="shop_messageSoldVehicle" v="車両 / アタッチメントを売却しました"/>
+<e k="shop_messageThanksForBuying" v="お買い上げありがとうございました。"/>
+<e k="shop_messageTourItemsCannotBeSold" v="ガイド付きツアー中は
+車両やアタッチメントの売却はできません。
+まずガイド付きツアーを終わらせてください。"/>
+<e k="shop_neededPower" v="必要パワー: "/>
+<e k="shop_neededPowerValue" v="%s kW / %s hp" tag="format"/>
+<e k="shop_noConfigsAvailable" v="アップグレードはありません!"/>
+<e k="shop_noVehicles" v="車両がありません!"/>
+<e k="shop_operatingTime" v="%02d.%d 時" tag="format"/>
+<e k="shop_ownedItems" v="所有しているアイテム"/>
+<e k="shop_saleRemaingHours" v="セール終了まで: "/>
+<e k="shop_saleRemaingHoursValue" v="%d 時間" tag="format"/>
+<e k="shop_transportationFee" v="自分の家畜車以外で家畜を移送する場合には料金がかかります!"/>
+<e k="shop_usage" v="用途: "/>
+<e k="shop_workingWidth" v="有効幅: "/>
+<e k="shop_workingWidthValue" v="%s m" tag="format"/>
+<e k="shop_youLease" v="レンタル: "/>
+<e k="shop_youOwn" v="所有: "/>
+<e k="station_agriLB" v="穀物エレベーター（東）"/>
+<e k="station_bakery" v="パン屋"/>
+<e k="station_barn" v="干し草置き場"/>
+<e k="station_bgaBunker" v="バイオガスユニオン"/>
+<e k="station_biomassHeatingPlant" v="バイオマスプラント"/>
+<e k="station_carpentry" v="木工所"/>
+<e k="station_castleHotel" v="キャッスルホテル"/>
+<e k="station_cementFactory" v="セメント工場"/>
+<e k="station_cerealFactory" v="ドレイクのバイオフレーク"/>
+<e k="station_coffeehouse" v="コーヒーショップ"/>
+<e k="station_constructionSite" v="建設現場"/>
+<e k="station_dairy" v="酪農ステーション"/>
+<e k="station_dam" v="ダム"/>
+<e k="station_farmSilo" v="農場サイロ"/>
+<e k="station_farmerHans" v="農家のハンス"/>
+<e k="station_farmersMarket" v="ビッグジョーのファーマーズマーケット"/>
+<e k="station_freightYard" v="貨物置き場"/>
+<e k="station_gardenCenter" v="ガーデンセンター"/>
+<e k="station_gasStation" v="ガソリンスタンド"/>
+<e k="station_grainElevator" v="揚穀機"/>
+<e k="station_grainMill" v="ウエストヒル・グレインミル"/>
+<e k="station_grainSiloCentral" v="穀物エレベーター（中央）"/>
+<e k="station_grainSiloPort" v="穀物エレベーター（港）"/>
+<e k="station_grainSiloRailroad01" v="線路脇のサイロ（東）"/>
+<e k="station_grainSiloRailroad02" v="線路脇のサイロ（西）"/>
+<e k="station_grainStorage" v="穀物倉庫"/>
+<e k="station_guesthouse" v="ゲストハウス"/>
+<e k="station_harbor" v="港"/>
+<e k="station_lime" v="ライムステーション"/>
+<e k="station_lumberyard" v="貯木場"/>
+<e k="station_mill01" v="駅の売買所"/>
+<e k="station_mill02" v="穀物工場"/>
+<e k="station_millPlant" v="製粉機"/>
+<e k="station_port01" v="港（南東）"/>
+<e k="station_port02" v="港（北西）"/>
+<e k="station_railroadSilo01" v="線路脇のサイロ1"/>
+<e k="station_railroadSilo02" v="線路脇のサイロ2"/>
+<e k="station_ranch" v="大牧場"/>
+<e k="station_restaurant" v="レストラン"/>
+<e k="station_sawmill" v="製材所"/>
+<e k="station_sellingStationBales" v="売買所6"/>
+<e k="station_sellingStationTrain" v="売買所7"/>
+<e k="station_spanishMission" v="スパニッシュ ミッション"/>
+<e k="station_spinnery" v="レイクサイドヒル・ウール&amp;ヤーン"/>
+<e k="station_sugarmill" v="砂糖工場"/>
+<e k="station_supermarket" v="スーパーマーケット"/>
+<e k="station_transportCompany" v="運送会社"/>
+<e k="station_vegetableBase" v="野菜倉庫"/>
+<e k="station_villageGrainElevator" v="村の揚穀機"/>
+<e k="station_villageSawmill" v="村の製材所"/>
+<e k="station_waterTower" v="給水塔"/>
+<e k="statistic_animalRequirementsFood" v="%d%% %s (%s)" tag="format"/>
+<e k="statistic_animalRequirementsHorse" v="馬の健康状態を良好に保つためには、清潔な寝床のためのわらと、水とエサ（草50%、オーツ麦50%）が必要です。体型を保つために毎日乗馬してください。また定期的にブラシをかけ、体を洗うことが大事です。馬の価値は体型、健康状態、清潔さで決まります。"/>
+<e k="statistic_animalRequirementsMain" v="家畜にはいつも水をあげましょう! エサ場を清潔にし、寝床に麦わらを敷いてあげましょう。
+混合飼料: "/>
+<e k="statistic_baleCount" v="ベール数"/>
+<e k="statistic_chickenOwned" v="保有している鶏の数"/>
+<e k="statistic_cleanliness" v="清潔さ"/>
+<e k="statistic_completedFieldJobMissions" v="フィールドミッションクリア"/>
+<e k="statistic_cowOwned" v="保有している牛の数"/>
+<e k="statistic_cultivatedHectares" v="畑を耕作する"/>
+<e k="statistic_cultivatedTime" v="耕作時間"/>
+<e k="statistic_cutTreeCount" v="伐採した木"/>
+<e k="statistic_eggsAvailable" v="鶏舎にある卵"/>
+<e k="statistic_eggsCarrying" v="卵の数"/>
+<e k="statistic_feedingTroughForageStorage" v="飼料桶 (混合飼料)"/>
+<e k="statistic_feedingTroughGrassStorage" v="飼料桶 (まぐさ)"/>
+<e k="statistic_feedingTroughMiscStorage" v="飼料桶"/>
+<e k="statistic_feedingTroughSilageStorage" v="飼料桶 (サイレージ)"/>
+<e k="statistic_fertilizedHectares" v="畑に肥料を散布する"/>
+<e k="statistic_fertilizedTime" v="散布時間"/>
+<e k="statistic_fieldJobMissionCount" v="ミッションクリア"/>
+<e k="statistic_fillType" v="作物の種類"/>
+<e k="statistic_fuelUsage" v="燃料使用量"/>
+<e k="statistic_hectaresSeeded" v="播種面積"/>
+<e k="statistic_hectaresThreshed" v="脱穀面積"/>
+<e k="statistic_hectaresWorked" v="作業面積"/>
+<e k="statistic_liquidManureStorage" v="液体肥料"/>
+<e k="statistic_manureStorage" v="堆肥"/>
+<e k="statistic_milkStorage" v="牛乳タンク"/>
+<e k="statistic_numOwned" v="所有"/>
+<e k="statistic_other" v="その他"/>
+<e k="statistic_pigOwned" v="保有している豚の数"/>
+<e k="statistic_plantedTreeCount" v="植林した木"/>
+<e k="statistic_playTime" v="プレイ時間"/>
+<e k="statistic_plowedHectares" v="土地を耕作する"/>
+<e k="statistic_plowedTime" v="耕作時間"/>
+<e k="statistic_productivity" v="生産量"/>
+<e k="statistic_reproductionRate" v="繁殖率"/>
+<e k="statistic_seedUsage" v="種使用量"/>
+<e k="statistic_seedingDuration" v="播種時間"/>
+<e k="statistic_sheepOwned" v="保有している羊の数"/>
+<e k="statistic_sownHectares" v="畑に種をまく"/>
+<e k="statistic_sownTime" v="種まき時間"/>
+<e k="statistic_sprayUsage" v="肥料使用量"/>
+<e k="statistic_storage" v="貯蔵庫"/>
+<e k="statistic_storageCapacity" v="貯蔵庫容量"/>
+<e k="statistic_storedBales" v="ベール"/>
+<e k="statistic_strawStorage" v="わら"/>
+<e k="statistic_threshedHectares" v="畑から収穫する"/>
+<e k="statistic_threshedTime" v="収穫時間"/>
+<e k="statistic_threshingDuration" v="脱穀時間"/>
+<e k="statistic_timeTillNextAnimal" v="次の家畜が生まれるまで: "/>
+<e k="statistic_transportMissionCount" v="輸送ミッションを完了する"/>
+<e k="statistic_traveledDistance" v="走行距離"/>
+<e k="statistic_water" v="水"/>
+<e k="statistic_workedHectares" v="畑で作業する"/>
+<e k="statistic_workedTime" v="作業時間"/>
+<e k="statistic_workersHired" v="雇用中の作業者"/>
+<e k="statistic_workingDuration" v="作業時間"/>
+<e k="storageSilo" v="保管サイロ"/>
+<e k="storeItem_roundBaleDryGrass" v="ロールベール(干し草)"/>
+<e k="storeItem_roundBaleSilage" v="ロールベール(サイレージ)"/>
+<e k="storeItem_roundBaleWheat" v="ロールベール(小麦わら)"/>
+<e k="storeItem_squareBaleDryGrass" v="スクエアベール(干し草)"/>
+<e k="storeItem_squareBaleWheat" v="スクエアベール(小麦わら)"/>
+<e k="toolTip_autoHelp" v="画面左上のボックスに操作方法が表示されます。"/>
+<e k="toolTip_autoSaveInterval" v="オートセーブ機能の間隔を設定します。"/>
+<e k="toolTip_automaticMotorStart" v="車両に乗ると自動的にエンジンがかかり、降りるとエンジンが止まります。"/>
+<e k="toolTip_cameraSensitivity" v="カメラの回転速度を調整します。"/>
+<e k="toolTip_colorBlindMode" v="赤緑色盲の方は、マップで表示される作物や畑の色を変更すると見やすくなります。"/>
+<e k="toolTip_dirt" v="機械が汚れる速さを設定します。"/>
+<e k="toolTip_easyArmControl" v="クレーンの簡易操作を有効にします。"/>
+<e k="toolTip_economicDifficulty" v="経済難易度は購入と売却価格に影響します。また、ミッションからの収入も調整されます。"/>
+<e k="toolTip_fertilizerStates" v="収穫量を最大にするために畑に肥料をまく必要回数を設定します。"/>
+<e k="toolTip_fruitDestruction" v="車両で作物の上を走った時に作物をつぶしたかどうか。"/>
+<e k="toolTip_fuelUsage" v="機械の燃費を設定します。"/>
+<e k="toolTip_helpIcons" v="特有の情報がある場所を光るアイコンで表示します。"/>
+<e k="toolTip_helperRefillFertilizer" v="ヘルパーがまく肥料を自動的に補充します。ヘルパーにかかる費用がアップします。"/>
+<e k="toolTip_helperRefillFuel" v="ヘルパーが使う燃料を自動的に補充します。ヘルパーにかかる費用がアップします。"/>
+<e k="toolTip_helperRefillManure" v="ヘルパーがまく堆肥を自動的に補充します。購入するとヘルパーにかかる費用がアップします。"/>
+<e k="toolTip_helperRefillSeed" v="ヘルパーがまく種を自動的に補充します。ヘルパーにかかる費用がアップします。"/>
+<e k="toolTip_helperRefillSlurry" v="ヘルパーがまくスラリーを自動的に補充します。購入するとヘルパーにかかる費用がアップします。"/>
+<e k="toolTip_inputHelpMode" v="どちらの入力操作を表示するか設定します。"/>
+<e k="toolTip_invertYLook" v="カメラのY軸を反転します。"/>
+<e k="toolTip_isTrainTabbable" v="車両を切り替える際に、列車も選択できます。"/>
+<e k="toolTip_limeRequired" v="収穫高を上げるために畑に定期的にライムを散布したかどうか。"/>
+<e k="toolTip_moneyUnit" v="ゲームで使う通貨を設定します。"/>
+<e k="toolTip_plantGrowthRate" v="作物の時間経過での成長度を設定します。"/>
+<e k="toolTip_plantWithering" v="作物を畑に長く放っておくと枯れてしまいます。"/>
+<e k="toolTip_plowingRequired" v="高い収穫量を維持するために、定期的に畑を耕します。"/>
+<e k="toolTip_radioIsActive" v="ラジオをオン/オフにします。"/>
+<e k="toolTip_radioState" v="ラジオをどこでオンにするか設定します。"/>
+<e k="toolTip_resetCamera" v="車両ごとに保存されるカメラの位置を、乗車時にリセットします。"/>
+<e k="toolTip_savegameName" v="セーブデータの名前を入力してください。"/>
+<e k="toolTip_showFieldInfo" v="畑の情報を表示します。"/>
+<e k="toolTip_showTriggerMarker" v="インタラクティブゾーンのまわりにイエローとブラックのマーカーを表示します。"/>
+<e k="toolTip_steeringBackSpeed" v="タイヤが初期設定の位置に戻る際のスピードを調整。"/>
+<e k="toolTip_steeringSensitivity" v="ステアリング速度を調整します。"/>
+<e k="toolTip_stopAndGoBraking" v="ブレーキボタンを長押しすると、停止後に自動的にバックします。"/>
+<e k="toolTip_timeScale" v="ゲーム内で経過する時間の速さを設定します。"/>
+<e k="toolTip_traffic" v="一般車両の路上通行を許可します。"/>
+<e k="toolTip_useAcre" v="ゲームで使うエリアユニットを設定します。"/>
+<e k="toolTip_useFahrenheit" v="ゲームで使う気温ユニットを設定します。"/>
+<e k="toolTip_useMiles" v="ゲームで使う測定単位を設定します。"/>
+<e k="toolTip_useWorldCamera" v="車両カメラは水平に保とうとします。"/>
+<e k="toolTip_vehicleArmSensitivity" v="機材アームの旋回速度を調整します。"/>
+<e k="toolTip_volumeEnvironment" v="環境サウンドエフェクトの音量を調節します。"/>
+<e k="toolTip_volumeGUI" v="メニューサウンドのボリュームを調整します。"/>
+<e k="toolTip_volumeMaster" v="全体の音量で、全種のサウンドに影響します。"/>
+<e k="toolTip_volumeRadio" v="ラジオでかかる音楽の音量を調節します。"/>
+<e k="toolTip_volumeVehicle" v="車のエンジンや機械の音量を調節します。"/>
+<e k="toolTip_weedsEnabled" v="畑に雑草が伸びたかどうか。"/>
+<e k="tour_mobile_abort" v="ガイドツアーを後で始める場合は、新しいキャリアを始めるとガイドツアー開始の再確認があります。"/>
+<e k="tour_mobile_end" v="素晴らしい！これでツアーは終了です。農業の基本について、これでお分かりになったことでしょう。
+作物を栽培して、それを売却し、さらによい農機具を買いましょう…では幸運を祈ります！楽しい農業ライフを！"/>
+<e k="tour_mobile_end_switch" v="素晴らしい！これでツアーは終了です。農業の基本について、これでお分かりになったことでしょう。
+作物を栽培し、それを売って、さらによい農機具を買いましょう…では幸運を祈ります！楽しい農業ライフを！
+
+他のアクティビティについて知るには、+ボタンを押し、ヘルプセクションをご覧ください。"/>
+<e k="tour_mobile_part01_activate" v="ゲームの初めで所有している畑の1つです。 小麦がいい具合に育って、収穫の準備ができています。
+コンバインに乗って収穫しましょう！
+
+起動させると、ヘッダーが回転します。"/>
+<e k="tour_mobile_part01_activate_switch" v="ゲームの初めで所有している畑の1つです。 小麦がいい具合に育って、収穫の準備ができています。
+コンバインに乗って収穫しましょう！
+
+Aボタンを押して、コンバインを起動させましょう。"/>
+<e k="tour_mobile_part01_drive" v="順調ですね！畑に向かって運転し、小麦の収穫を始めましょう。
+
+右下のアクセルと左のハンドルを使うか、またはジャイロスコープがアクティブになっている場合はデバイスを傾けて操作してください。"/>
+<e k="tour_mobile_part01_drive_switch" v="順調ですね！畑に向かって運転し、小麦の収穫を始めましょう。
+
+Lスティックでハンドル操作、ZRボタンで加速ができます。"/>
+<e k="tour_mobile_part01_finished" v="ヘルパーは、作業完了、またはコンバインの穀物タンクがいっぱいになるまで作業します。その間に他の作業に取り掛かりましょう。
+
+左下の車両交換スイッチを使って、カルティベーター付きトラクターに変えましょう。"/>
+<e k="tour_mobile_part01_finished_switch" v="ヘルパーは、作業完了、またはコンバインの穀物タンクがいっぱいになるまで作業します。 その間に他の作業に取り掛かりましょう。
+
+Rボタンを押して、次のトラクターに乗り換えましょう。"/>
+<e k="tour_mobile_part01_helper" v="いい調子ですね！畑の仕事はやるべきことが多いので、より効率よく仕事を進めるにはヘルパーを雇うべきです。
+
+ヘルパーに任せられる仕事は下のパネルに表示されます。
+
+ヘルパーを雇って畑の残りは任せましょう。"/>
+<e k="tour_mobile_part01_helper_switch" v="いい調子ですね！畑の仕事はやるべきことが多いので、より効率よく仕事を進めるにはヘルパーを雇うべきです。
+
+ヘルパーに任せられる仕事は下のパネルに表示されます。
+
+ヘルパーを雇って畑の残りは任せましょう。"/>
+<e k="tour_mobile_part02_activate" v="収穫後の畑は、再び種をまく前に耕しておく必要があります。この畑は最近収穫が終わったため、耕さなくてはなりません。
+
+起動ボタンを使って、カルティベーターを下げましょう。"/>
+<e k="tour_mobile_part02_activate_switch" v="収穫後の畑は、再び種をまく前に耕しておく必要があります。この畑は最近収穫が終わったため、耕さなくてはなりません。
+
+Aボタンを押して、カルティベーターを下げましょう。"/>
+<e k="tour_mobile_part02_drive" v="ではカルティベーターを下げ、畑へ行って土を耕しましょう。"/>
+<e k="tour_mobile_part02_drive_switch" v="ではカルティベーターを下げ、畑へ行って土を耕しましょう。"/>
+<e k="tour_mobile_part02_finished" v="上出来です！今のところはこれぐらい耕しておけば十分でしょう。さらに耕したければまた後ですることができます。
+
+では、2機目のトラクターに乗り換えましょう。"/>
+<e k="tour_mobile_part02_finished_switch" v="上出来です！今のところはこれぐらい耕しておけば十分でしょう。さらに耕したければまた後ですることができます。
+
+では、Rボタンを押して2機目のトラクターに乗り換えましょう。"/>
+<e k="tour_mobile_part03_activateDrive" v="良くできました！では、車両を起動し、種まき機を発動させて、土壌に種をまきましょう。
+
+種アイコンをタップすれば、栽培したい植物のタイプを選択することができます。"/>
+<e k="tour_mobile_part03_activateDrive_switch" v="良くできました！では、車両を起動し、種まき機を発動させて、土壌に種をまきましょう。"/>
+<e k="tour_mobile_part03_attach" v="耕された畑には種をまくことができます。この作業には種まき機が必要です。
+
+種まき機に向けて、バックしましょう。自動的に車に固定されます。"/>
+<e k="tour_mobile_part03_attach_switch" v="耕された畑には種をまくことができます。この作業には種まき機が必要です。
+
+ZLボタンを長押しして、種まき機に向けて、バックしましょう。自動的に車に固定されます。"/>
+<e k="tour_mobile_part03_finished" v="お見事！コツを掴んできたようですね！この先はヘルパーにお願いしましょう。
+
+コンバインがいっぱいになってきたようです。収穫物を売りましょう。
+
+カルティベーターの付いたトラクターに乗り換えましょう。"/>
+<e k="tour_mobile_part03_finished_switch" v="お見事！コツを掴んできたようですね！この先はヘルパーにお願いしましょう。
+
+コンバインがいっぱいになってきたようです。収穫物を売りましょう。
+
+カルティベーターの付いたトラクターに乗り換えましょう。"/>
+<e k="tour_mobile_part04_Unload" v="格子ふるいへ行き、小麦を降ろして、現金を手に入れましょう。"/>
+<e k="tour_mobile_part04_Unload_switch" v="格子ふるいへ行き、小麦を降ろして、現金を手に入れましょう。"/>
+<e k="tour_mobile_part04_attachTrailer" v="良いですね。
+
+ではトレーラーに向かってバックし、固定させましょう。"/>
+<e k="tour_mobile_part04_attachTrailer_switch" v="良いですね。
+
+ではトレーラーに向かってバックし、固定させましょう。"/>
+<e k="tour_mobile_part04_detach" v="作物を運ぶにはトレーラーが必要です。
+
+取り外しボタンをタップして、カルティベーターを外しましょう。"/>
+<e k="tour_mobile_part04_detach_switch" v="作物を運ぶにはトレーラーが必要です。
+
+Bボタンを押して、カルティベーターを外しましょう。"/>
+<e k="tour_mobile_part04_driveToHarvester" v="コンバインに向かって運転しましょう。
+
+パイプは自動的に開くので、その下を通ることができます。
+
+その後、小麦はトレーラーへと移されます。"/>
+<e k="tour_mobile_part04_driveToHarvester_switch" v="コンバインに向かって運転しましょう。
+
+パイプは自動的に開くので、その下を通ることができます。
+
+その後、小麦はトレーラーへと移されます。"/>
+<e k="tour_mobile_part04_driveToSellpoint" v="地図に表示されている買取所へ行きましょう。"/>
+<e k="tour_mobile_part04_driveToSellpoint_switch" v="地図に表示されている買取所へ行きましょう。"/>
+<e k="tour_mobile_part04_driveToYard" v="見つけました。
+
+必要に応じて、カルティベーターの電源を切り、地図に表示されている置き場へ行きましょう。"/>
+<e k="tour_mobile_part04_driveToYard_switch" v="見つけました。
+
+必要に応じて、Aボタンを押してカルティベーターの電源を切り、地図に表示されている置き場へ行きましょう。"/>
+<e k="tour_mobile_start" v="Farming Simulatorへようこそ！
+
+ガイドツアーを始めますか？
+
+ツアーではゲームの基本的な遊び方を説明します。"/>
+<e k="tour_text_abort" v="ガイドツアーを後で始める場合は、ラベンポートで新しいキャリアを始めるとガイドツアー開始の再確認があります。"/>
+<e k="tour_text_end" v="ガイドツアーはここまでです! クエスチョンマークをチェックすると、ゲームのさまざまな情報を見ることができます。もっと詳しい内容はメインメニューのチュートリアルから確認しましょう。楽しい農業ライフを!"/>
+<e k="tour_text_noTour" v="ゲームのプレイのしかたにまだ慣れていない場合は、最初の2つのチュートリアルを行うか、ラベンポートでガイドツアーを受けることをおすすめします。"/>
+<e k="tour_text_noTourA" v="夢の農業を始められる資金があります。
+何を専門にしますか? 耕作農業、家畜の繁殖、林業、それとも全部少しずつかじりますか? 自分の好きなものを選びましょう!
+
+まずは土地や建物、必要な道具を購入しましょう。
+
+生産品を売って農場を拡大しましょう!"/>
+<e k="tour_text_noTourB" v="小さな農場を始められる資金があります。
+
+まずは土地や建物、必要な道具を購入しましょう。
+
+生産品を売って農場を拡大しましょう!"/>
+<e k="tour_text_part01_attachHeader" v="OK! 目の前に置いてある収穫機のカッターを取り付けましょう。
+
+左上にあるヘルプパネルには現在利用可能な機能が表示されています。"/>
+<e k="tour_text_part01_enterCombine" v="最初から所有している畑の1つです。小麦がいい具合に育って、収穫の準備ができています。コンバインに乗って収穫しましょう!"/>
+<e k="tour_text_part01_finished" v="ヘルパーは、作業完了、またはコンバインの穀物タンクがいっぱいになるまで作業します。その間に他の作業に取り掛かりましょう。コンバインから降りて、マップにある次のクエスチョンマークまで歩いて行きましょう。"/>
+<e k="tour_text_part01_lookAndWalk" v="畑の角にある大きな黄色い収穫機への道をたどって隣のクエスチョンマークのアイコンをタッチしましょう。
+
+左下にマップがあります。点滅する緑の輪のところにクエスチョンマークがあります。"/>
+<e k="tour_text_part01_startHarvesting" v="これで収穫の準備ができました! 小麦まで車両を進めましょう。車両のスピードは手動で調整するか、自動制御 (オートクルーズ) で一定のスピードを維持することができます。
+
+車両の最高速度は機械の種類と装着したアタッチメントで決まります。"/>
+<e k="tour_text_part01_startHelperHarvesting" v="いい調子ですね! やることがいっぱいあるので、ヘルパーを雇うのは理にかなっています。
+
+ヘルパーに依頼できる仕事は左上のパネルに表示されます。ヘルパーを雇って後は任せましょう。"/>
+<e k="tour_text_part01_turnOnCombine" v="これでよし! ではコンバインを開いて起動し、カッターを回転させましょう。"/>
+<e k="tour_text_part02_enoughCultivating" v="上出来です! 今のところはこれぐらい耕しておけば十分でしょう。やりたければまた後で耕すことができます。または、もう1人ヘルパーを雇って完了することもできます。"/>
+<e k="tour_text_part02_enterTractor01" v="収穫後の畑は、再び種をまく前に耕しておく必要があります。 この畑は最近収穫が終わったため、耕さなくてはなりません。 トラクターに乗り込み、後ろにあるカルティベーターを取りつけます。"/>
+<e k="tour_text_part02_finished" v="別のトラクターに切り替えてみましょう。 切り替え機能で所有している車両を素早く切り替えることができます。
+
+クエスチョンマークが横に表示された次のトラクターにたどり着くまで切り替えを続けて、タッチしてください。"/>
+<e k="tour_text_part02_startCultivating" v="ではカルティベーターを下げ、畑へ行って土を耕しましょう。"/>
+<e k="tour_text_part03_enterTractor01" v="耕された畑には種をまくことができます。 この作業には種まき機が必要です。 トラクターに戻って、後ろにある種まき機を取りつけます。"/>
+<e k="tour_text_part03_finished" v="そうです! わかってきましたね。この作業はまた後でもできます。または、もう1人ヘルパーを雇って完了することもできます。クエスチョンマークが横に表示された次のトラクターに切り替えましょう。"/>
+<e k="tour_text_part03_startSowing" v="装着した種まき機には、種がいっぱい入っています。種が切れたら、種袋から補充します。
+最初は農場に2袋あります。全部使ったらショップで購入しましょう。
+
+種まきの時間です! 使いたい種を選び、種まき機を下げて畑の上を進みましょう。"/>
+<e k="tour_text_part04_alignToHarvester" v="左のコンバインの隣にトレーラーを横付けしましょう。 パイプが伸び始めて、正しい場所にトレーラーを横付けできたら自動的に小麦が出てきます。"/>
+<e k="tour_text_part04_doneSelling" v="上出来です! 農家としてお金を稼ぐ主な方法は作物を売ることです。
+
+最後のクエスチョンマークがあるショップまで行きましょう。
+マップで緑の輪が点滅している場所です。"/>
+<e k="tour_text_part04_enterTractor01" v="収穫機のタンクが満杯になったら (その前でも可能)、中身をトレーラーに移すことができます。 トラクターに乗ってトレーラーに接続しましょう。"/>
+<e k="tour_text_part04_pricesInfo" v="このステーションは、作物を売却できる場所の1つです。 各種作物の現在の価格は、メニューの価格画面から確認できます。"/>
+<e k="tour_text_part04_sellWheat" v="トラクターを動かし、トレーラーがピットの真上にくるようにしましょう。画面下に荷下ろしのシンボルが表示されたら、小麦を荷下ろしして売却できます。"/>
+<e k="tour_text_part04_unloadWheat" v="そうです! トレーラーから小麦を出しています。終わるまで待ち、トレーラーをつけたトラクターをマップで指示された場所へ移動し、そこのクエスチョンマークをタッチします。"/>
+<e k="tour_text_part05_visitShop" v="ここで車両やアタッチメントを売却したり、新しい機器を購入したりできます。
+ショップへは、下のボタンを押すか、ショップ前のシンボルから移動できます。"/>
+<e k="tour_text_start" v="Farming Simulatorへようこそ! ガイドツアーを始めますか? ツアーではゲームの遊び方を説明します。"/>
+<e k="tutorial_animals_buyingFinished" v="次は家畜を満足させることが大事です。
+
+エサをあげましょう。"/>
+<e k="tutorial_animals_cleaningFinished" v="いいですよ!
+きれいなエサ場、寝床のわら、十分な水とエサを与えて、豚が幸せでいられる環境が整いました! これで生産性が上がります!
+
+家畜は繁殖もするので、時々新しい家畜が誕生します。
+
+次のレッスンでは完全混合飼料の作り方と、牛にあげる最適なエサについて学びます。"/>
+<e k="tutorial_animals_cleaningWelcome" v="エサ場まわりを清潔にしておくといいでしょう。
+
+家畜は食べる時にエサをあちこちにまき散らすので、時々そうじしてきれいにしておかないと家畜の生産性に影響が出ます。"/>
+<e k="tutorial_animals_descriptionMain" v="豚の購入のしかたと正しいエサのあげかたを学びましょう。"/>
+<e k="tutorial_animals_driveToPen" v="豚をトレーラーに積み込んだので、小屋に運びましょう
+
+マップで点滅するアイコンが小屋の場所です。エリアで黄色と黒のストライプで示されている場所がトレーラーを停める場所です。"/>
+<e k="tutorial_animals_enterTelehandler" v="テレハンドラーに乗り、前部にベールフォークを取り付けましょう。
+
+目の前のわらベールを突き刺して持ち上げ、ストローブロワーに入れましょう。"/>
+<e k="tutorial_animals_enterTractor01" v="家畜は家畜商から購入します。マップごとに1人ずついます。
+
+最初に豚を購入し、放牧場まで輸送します。
+
+トラクターに乗り込み、ウェイトと家畜運搬車を装着しましょう。"/>
+<e k="tutorial_animals_enterTractor02" v="テレハンドラーに乗り込み、ショベルを取り付けましょう。
+
+豚にテレハンドラー前部の4つのパイルをエサとしてあげましょう。パイルをひとつずつつかみ、エサ入れに落とします。"/>
+<e k="tutorial_animals_enterTractor03" v="トラクターに乗り、ウェイトとストローブロワーを装着します。
+
+マップに記されている寝床に向かい、わらをまきます。
+
+ストローブロワーの向きに注意しましょう。"/>
+<e k="tutorial_animals_enterTractor04" v="テレハンドラーに乗り、ショベルを装着します。
+食べこぼしをすべて集めて、エサ入れに戻しましょう。"/>
+<e k="tutorial_animals_feedingFinished" v="いいですよ! きちんとエサを与えていると家畜の生産性が上がります。
+
+生産性が高いほど、獲得できる生産品が多くなります。
+羊から取れるウールや牛から取れる牛乳などです。
+
+では家畜に水をあげましょう。"/>
+<e k="tutorial_animals_feedingWelcome" v="家畜によってエサが違います。
+
+豚はほとんど何でも食べますが、バランスの取れたエサをあげるようにしましょう。
+
+豚のエサは4種類あります。
+1) 基本のエサとなるトウモロコシ
+2) 大麦/小麦などの穀物
+3) タンパク質を取るためのキャノーラ/大豆
+4) ジャガイモ/テンサイなどの根菜"/>
+<e k="tutorial_animals_fillWaterTrailer" v="給水塔まで行って給水トレーラーをいっぱいにしましょう。場所はマップに印がついています。
+
+水は無料なので、どんどんタンクをいっぱいにしましょう。"/>
+<e k="tutorial_animals_fillWaterTrough" v="タンクがいっぱいになったので、豚舎に戻って水入れに移しましょう。"/>
+<e k="tutorial_animals_openAnimalDealer" v="家畜商と話すには、地面の印がついたエリアにトレーラーを停めましょう。
+
+それから家畜商メニューを開きます。ここで家畜の売買ができます。
+
+トレーラーに入るだけ豚を買いましょう。"/>
+<e k="tutorial_animals_strawFinished" v="いいですよ!
+
+最後に畜舎回りを掃除しましょう。"/>
+<e k="tutorial_animals_strawWelcome" v="豚、牛、馬にはわらの寝床を用意しましょう。
+
+家畜の生産性が上がります。
+また、わらは時間が経つと堆肥として使えます。"/>
+<e k="tutorial_animals_titleMain" v="家畜"/>
+<e k="tutorial_animals_unloadPigs" v="豚舎メニューを開いてトレーラーから豚を下ろし、新しい家に迎えましょう。"/>
+<e k="tutorial_animals_waterFinished" v="やりました! 家畜の生産性にエサと水は必須です。
+どちらも十分に足りているか、定期的に確認しましょう。
+
+家畜によっては寝床にわらが必要です。"/>
+<e k="tutorial_animals_waterWelcome" v="水は家畜に必須です。水がないと家畜が生産を止めます。
+
+トラクターに乗ってウェイトと水タンクを装着しましょう。"/>
+<e k="tutorial_animals_welcome" v="今日は家畜のお世話のしかたを覚えましょう。
+
+家畜に必要なものはこちら。
+1) エサ
+2) 水
+3)わらの寝床 (豚、牛、馬)
+4) 清潔なエサ場
+
+このレッスンでは豚のお世話のしかたを覚えましょう。"/>
+<e k="tutorial_arableFarmingDone" v="いいですね! これで土地を活気ある農場にする準備ができました!"/>
+<e k="tutorial_arableFarming_descriptionMain" v="ゲームの基本的な遊び方と、農場での作業を効率化する方法を覚えましょう。"/>
+<e k="tutorial_arableFarming_text_attachCultivator" v="ウェイトと耕運機を装着しましょう。
+
+まず前にある黒いウェイトにゆっくり近づき、トラクターに装着します。
+
+それから耕運機のほうにバックして、トラクター後部に装着します。
+
+追加装着したウェイトが、後部の重量とのバランスを取ります。"/>
+<e k="tutorial_arableFarming_text_cultivating" v="作物の種をまく前に、耕運機で土壌に空気を含ませて整えましょう。
+
+この作業をするには、トラクターと耕運機が必要です。"/>
+<e k="tutorial_arableFarming_text_driveToTipTrigger" v="マップで点滅しているアイコンは、ダンプカーの荷下ろしをする場所を示しています。
+そこまで乗りつけてサイロに穀物を入れましょう。 "/>
+<e k="tutorial_arableFarming_text_enterCombine" v="コンバイン収穫機に乗り、前部にカッターを装着しましょう。"/>
+<e k="tutorial_arableFarming_text_enterTractor01" v="こちらがあなたのトラクターです!
+トラクターでダンプカーやアタッチメントを牽引します。
+さあ乗りましょう!"/>
+<e k="tutorial_arableFarming_text_enterTractor02" v="トラクターに乗り、前にやったようにアタッチメントを装着しましょう。"/>
+<e k="tutorial_arableFarming_text_enterTractor03" v="いいですね! コンバインから降りて、ダンプカーの前にあるトラクターに乗りましょう。"/>
+<e k="tutorial_arableFarming_text_enterTractor04" v="そうです! トラクター。プラウ。ウェイト。始めましょう!"/>
+<e k="tutorial_arableFarming_text_finishedCultivating" v="いいですね、耕し方がわかってきたようですね! では種をまきましょうか?"/>
+<e k="tutorial_arableFarming_text_finishedHarvesting" v="いいですよ! 穀物はサイロに保管します。保管量には限度がありますが、後々拡張できます。
+
+収穫した作物を売却する準備ができたら、サイロから穀物を出し、いくつかある売買所に運んで売りましょう!"/>
+<e k="tutorial_arableFarming_text_finishedSowing" v="そうです! 種をまいたら、成長するまで時間がかかります。キャノーラ畑が育つまで待って収穫しましょう。"/>
+<e k="tutorial_arableFarming_text_openPipe" v="コンバインの穀物タンクがもうすぐ満杯です。
+パイプを開き、畑の角にあるダンプカーの横に乗りつけて穀物タンクを空けましょう。"/>
+<e k="tutorial_arableFarming_text_playerControls" v="まずエリアをよく見てから、トラクターに近づきましょう。"/>
+<e k="tutorial_arableFarming_text_sowing" v="耕作は、土をやわらかく整えて種まきに適した土壌にする役割があります。
+
+この作業をするには、トラクターと種まき機が必要です。
+種まき機には種をいっぱいに入れておきましょう。"/>
+<e k="tutorial_arableFarming_text_startCultivating" v="アタッチメントを2つ装着している場合、操作するアタッチメントを切り替えることができます。 どちらのアタッチメントが選択されているかは画面左上の図で確認できます。
+
+後部の耕運機を選び、土の中へ下げて、畑をできるだけまっすぐ縦横に運転しましょう。"/>
+<e k="tutorial_arableFarming_text_startRadio" v="おっと、忘れるところでした!
+作業中にラジオを聴くことができます。また、視点の切り替えもでき、
+違った気分で運転を楽しめるかもしれません…"/>
+<e k="tutorial_arableFarming_text_unfoldAndLowerSowingMachine" v="まず、横にあるシードパレットを種まき機に入れます。
+種まき機を起動して種まきの準備をします。
+土の中に下げます。
+
+準備が整ったら畑を縦横に走ってキャノーラの種をまきましょう!"/>
+<e k="tutorial_arableFarming_text_unfoldCombine" v="まずコンバインを開きましょう。
+それから起動します。
+するとカッターが自動的に下がります。手動で上げ下げできますが、収穫の場合は下げておきましょう。"/>
+<e k="tutorial_arableFarming_text_vehicleControls" v="これがアクセルで、隣がブレーキ。ハンドルは見たことありますよね? 運転は簡単です!"/>
+<e k="tutorial_arableFarming_text_welcome" v="今日の授業では耕作農業について学びます。
+
+作物を作るために必要な3つの段階があります。
+1) 耕作
+2) 種まき
+3) 収穫
+
+では耕作から始めましょう。"/>
+<e k="tutorial_arableFarming_text_welcomePlowing" v="収穫したら、次のサイクルに向け畑を準備しましょう。
+前にやったようにカルティベーターを使えば、あっという間に準備できますが、
+時々畑をすきこんで、土の養分をできるだけ保つようにしましょう。"/>
+<e k="tutorial_arableFarming_text_welcomeThreshing" v="時間が経つと畑が収穫期を迎えます。
+キャリアでは、マップメニューを確認して収穫ができる畑があるか見てみましょう。
+
+この作業にはコンバイン収穫機とカッターが必要です。
+コンバイン収穫機は穀物を収穫して茎を取り除きます。
+これで穀物が販売できる状態になります。"/>
+<e k="tutorial_arableFarming_titleMain" v="耕作農業"/>
+<e k="tutorial_baling_descriptionMain" v="ベールの作り方と運び方を覚えましょう。"/>
+<e k="tutorial_baling_text_attachTools02" v="トラクターに乗ってウェイトとベールコレクターを装着しましょう。
+搭載用プラットフォームを下げてベールに近づき、拾い上げます。"/>
+<e k="tutorial_baling_text_enterTractor01" v="干し草は芝刈りをして草を乾かして作ります。牛や羊のエサになります。
+
+わらは、小麦か大麦を収穫すると手に入ります。
+豚と牛の寝床に使います。
+
+では四角いわらベールを作りましょう。
+トラクターに乗ってベーラーを装着します。"/>
+<e k="tutorial_baling_text_finishedAutostacking" v="いいですね! ベールとその作り方について学ぶことができました。"/>
+<e k="tutorial_baling_text_finishedBaling" v="よくできました!
+家畜をまだ飼っていなかったら、ベールを売って資金を作れます。"/>
+<e k="tutorial_baling_text_startWorkBaler" v="さあ、作業しましょう! 干し草の列まで運転して行って、わらを集めましょう。"/>
+<e k="tutorial_baling_text_unfoldBaler" v="アタッチメントを開いてピックアップを下げましょう。
+起動したら干し草の列まで移動し、わらを集めてベールを作りましょう。"/>
+<e k="tutorial_baling_text_unloadAutostacker" v="今のところはこれでいいでしょう。
+マップの印のところまで移動して、わらを売りましょう。
+
+荷下ろしボタンを2回押してください。
+- 1回押すと荷下ろしモードになります
+- もう1回押すとわらを荷下ろしします
+"/>
+<e k="tutorial_baling_text_welcome" v="このレッスンではベールについて詳しく覚えましょう。
+
+ベールは輸送しやすくするためにわらや干し草を圧縮した束です。
+
+お持ちのベーラーによって四角や丸型のベールを作れます。"/>
+<e k="tutorial_baling_text_welcomeAutostacker" v="ではベールを持ち上げて運びましょう。
+
+多くの農家はフロントローダー、ベールスパイク、ベールトレイラーを使います。
+しかしこのレッスンでは、簡単に使えて作業がはかどるベールコレクターの使い方を覚えましょう。"/>
+<e k="tutorial_baling_titleMain" v="ベール作り"/>
+<e k="tutorial_cropProtection_descriptionMain" v="草刈り機と散布機の使い方を覚えて、伸び続ける雑草から作物を守りましょう。"/>
+<e k="tutorial_cropProtection_text_attachTools01" v="トラクターに乗り、ウェイトと草刈り機を装着しましょう。"/>
+<e k="tutorial_cropProtection_text_finishedSpraying" v="そうです!
+雑草は枯れて腐敗するので、作物が早く育つようになります。"/>
+<e k="tutorial_cropProtection_text_finishedWeeder" v="いいですね!
+これで作物が育つスペースができて、養分を雑草と取り合う必要がなくなりました。"/>
+<e k="tutorial_cropProtection_text_sprayerInfo" v="作業が遅くなって雑草が高く伸びすぎてしまった場合もあるかもしれません。そんな時は草刈り機では刈れないので、散布機を使って作物を保護しましょう。"/>
+<e k="tutorial_cropProtection_text_unfoldTools02" v="散布機は除草剤を入れてから開きましょう。
+それから起動して畑を走り、雑草に薬剤をまきます。"/>
+<e k="tutorial_cropProtection_text_unfoldWeeder" v="草刈り機を開いて地面に下げます。それから畑を走り、雑草を除去しましょう。"/>
+<e k="tutorial_cropProtection_text_wedderInfo" v="雑草がまだ短い時点では、草刈り機で雑草を刈り取ります。新しい作物が芽を出す前、雑草が高く伸びすぎる前のタイミングです。"/>
+<e k="tutorial_cropProtection_text_welcome" v="種まきをしたら、作物と同じペースで雑草が伸びます。
+そのままにしておくと雑草が作物の成長するスペースを奪います。
+
+雑草駆除に使う道具が2つあります。
+1) 草刈り機
+2) 散布機"/>
+<e k="tutorial_cropProtection_titleMain" v="作物の保護"/>
+<e k="tutorial_fertilizing_descriptionMain" v="収穫量を最大化するために、畑に肥料をまく方法を覚えましょう。"/>
+<e k="tutorial_fertilizing_text_attachTools02" v="トラクターに乗って、やってみましょう!
+
+ウェイトと耕運機を装着して、いつも通り畑を耕します。"/>
+<e k="tutorial_fertilizing_text_finishedFertilizing" v="いいですね! 肥料を使って収穫高を上げました。
+次は収穫高を上げる別の方法を見てみましょう。間作物です。"/>
+<e k="tutorial_fertilizing_text_finishedRadish" v="やりました! 土に有機的な方法で肥料を与える方法です。"/>
+<e k="tutorial_fertilizing_text_finishedTutorial" v="よくできました! 有機肥料や製品として販売されている (合成) 肥料を使って
+収穫高を上げる方法と、間作物について学びました。
+
+次のレッスンでは、畑の手入れのしかたを覚えましょう。"/>
+<e k="tutorial_fertilizing_text_startFertilizing" v="必要がある場合は、アタッチメントを開いておきましょう。
+それから起動し、畑を走って肥料をまきます。"/>
+<e k="tutorial_fertilizing_text_welcome" v="作物の収穫高を上げる最も基本的な方法は肥料をまくことです。
+
+さまざまな方法で肥料をまくことができますが、次のアタッチメントを使うと便利です。
+
+1) 堆肥散布機
+2) スラリータンク
+3) 肥料散布機
+
+堆肥とスラリーは牛と豚から取れます。
+固体や液体の市販肥料はショップで購入できます。"/>
+<e k="tutorial_fertilizing_text_welcomeFertilizer" v="このレッスンでは、各種のアタッチメントを使ってみましょう。
+トラクターに乗り、ウェイトと使いたいアタッチメントを装着しましょう。"/>
+<e k="tutorial_fertilizing_text_welcomeRadish" v="ハツカダイコンは間作物で成長が早く、収穫したい作物より先に植えます。
+
+ハツカダイコンが成長し始めたら、耕運機で折って土に埋めます。
+ハツカダイコンをだめにしてしまいますが、土にたっぷり有機物と養分が入ります。"/>
+<e k="tutorial_fertilizing_titleMain" v="肥料をまく"/>
+<e k="tutorial_forestry_descriptionMain" v="木の伐採のしかた、チェーンソーとウッドハーベスターでの切り方、丸太として販売する方法を学びましょう。"/>
+<e k="tutorial_forestry_text_chainsaw" v="木を伐採するには2つのやり方があります。
+- チェーンソー
+- ウッドハーベスター
+
+まずチェーンソーを使ってみましょう。"/>
+<e k="tutorial_forestry_text_chainsawCutTree" v="青でハイライトされた木に近づきましょう。
+
+木の側面にチェーンソーを合わせます。
+ハイライトした緑の丸が表示されたらチェーンソーを起動し、木の幹を完全に切るまで待ちましょう。
+"/>
+<e k="tutorial_forestry_text_chainsawCutTrunk" v="いいですね!
+チェーンソーを縦にして、幹から一部分 (1mぐらい) を切り取りましょう。
+
+枝もチェーンソーで切ることができます。"/>
+<e k="tutorial_forestry_text_finished" v="そうです!
+
+木材は、長さとまっすぐさで価格が決定します。
+長くまっすぐなものは、短く曲がったものより高値がつきます。"/>
+<e k="tutorial_forestry_text_finishedChainsaw" v="いいですね!
+チェーンソーで木を切るのは簡単ですが、小さな木材は価値が下がります。
+
+ウッドハーベスターを使ってみましょう。"/>
+<e k="tutorial_forestry_text_finishedHarvesting" v="完璧です!
+では丸太を運んで売却する方法を覚えましょう。"/>
+<e k="tutorial_forestry_text_finishedPlanting" v="よくできました! では木が育つまで少し待ちましょう。"/>
+<e k="tutorial_forestry_text_getChainsaw" v="チェーンソーで小さな丸太を作ったら、手で運べます。
+
+チェーンソーを出して水平に構えましょう。"/>
+<e k="tutorial_forestry_text_grabTrunk" v="アームで丸太をつかみ、トレーラーに載せます。
+
+全部載せたら、マップに印がついている木材売買所まで運びます。"/>
+<e k="tutorial_forestry_text_harvester" v="ウッドハーベスターは高価で、まっすぐな幹の木しか切れません。
+でも価値の高い長い丸太を作ることができます。
+
+ハーベスターに乗りましょう。"/>
+<e k="tutorial_forestry_text_harvesterCutTree" v="木に近づきハーベスターを起動しましょう。
+
+爪を木の前に設置して木を切ります。"/>
+<e k="tutorial_forestry_text_harvesterCutTrunk" v="爪の中に木が入っている状態なら、小さい丸太を作ることもできます。
+
+やってみましょう。"/>
+<e k="tutorial_forestry_text_logInTruck" v="軽い木材は手で運べます。
+拾い上げたら回転させることもできます。
+
+丸太をつかんでトラックに載せましょう。"/>
+<e k="tutorial_forestry_text_planter" v="木を植えるには植林機が必要です。
+
+トラクターに乗り、ウェイトと植林機を装着しましょう。"/>
+<e k="tutorial_forestry_text_sell" v="指定エリアでレバーを動かし、丸太を下ろしましょう。"/>
+<e k="tutorial_forestry_text_startPlanting" v="アタッチメントをいっぱいにしてください。
+地面に下げてから植林機を起動します。
+畑を走って木を植えましょう。"/>
+<e k="tutorial_forestry_text_toSellpoint" v="いいですね!
+テンションベルトを締めて丸太を製材所に運びましょう。
+
+テンションベルトは、輸送中に動かないよう貨物を固定します。"/>
+<e k="tutorial_forestry_text_transporting" v="フォワーダーは、丸太を輸送するのに最適なアタッチメントです。
+丸太をつかみトレーラーに載せるクレーンがあります。
+
+これを使って丸太を売却しましょう。
+
+ではフォワーダーに乗りましょう。"/>
+<e k="tutorial_forestry_text_unfoldStabilizers" v="重い木材を持ち上げた時にフォワーダーがひっくり返らないように、先に安定装置を開いておきます。"/>
+<e k="tutorial_forestry_text_welcome" v="このレッスンでは林業について触れます。
+
+次の3つについて学びましょう。
+1) 木を植える
+2) 伐採する
+3) 木材を輸送して売却する"/>
+<e k="tutorial_forestry_titleMain" v="林業"/>
+<e k="tutorial_messageTutorialFailed" v="チュートリアル失敗!"/>
+<e k="tutorial_soilCare_descriptionMain" v="作物を育てるために畑を最善の土壌にする方法を学びましょう。"/>
+<e k="tutorial_soilCare_text_attachTools01" v="いつも通り、トラクターに乗ってウェイトと散布機を装着します
+
+起動し、畑に向かいましょう。"/>
+<e k="tutorial_soilCare_text_attachTools02" v="そうです! トラクター。プラウ。ウェイト。やりましょう!"/>
+<e k="tutorial_soilCare_text_finishedLime" v="いいですね!
+
+作物によっては、収穫後にすき込みが必要な場合があります。
+見てみましょう。"/>
+<e k="tutorial_soilCare_text_finishedPlow" v="いいですね!
+30%の収穫減を避けるために次の作業を行いましょう。
+- 収穫3回ごとにライムを散布する（ライムで15%）
+- トウモロコシ、ジャガイモ、テンサイ、サトウキビを
+収穫した後にすき込みをする（すき込みで15%）"/>
+<e k="tutorial_soilCare_text_welcome" v="土壌作りのレッスンへようこそ! このレッスンでは土壌の最善なお手入れのしかたと作物収穫高を上げる方法を学びます。"/>
+<e k="tutorial_soilCare_text_welcomeLime" v="収穫サイクルを3回終えた後、畑に石灰をまきます。
+
+石灰はショップにてパレットの形で扱っています。散布機で畑にまきます。"/>
+<e k="tutorial_soilCare_text_welcomePlow" v="トウモロコシ、ジャガイモ、テンサイ、サトウキビを収穫した後は、畑をすきこみましょう。"/>
+<e k="tutorial_soilCare_titleMain" v="土壌のケア"/>
+<e k="tutorial_tmrSilage_coverSilo" v="サイロから収穫機をどかし、サイロにカバーをかけましょう。"/>
+<e k="tutorial_tmrSilage_descriptionMain" v="牛乳の生産量を上げる方法を学びましょう。"/>
+<e k="tutorial_tmrSilage_enterForager" v="飼料コンバインに乗り、カッターとダンプカーを装着しましょう。
+
+飼料コンバインには内蔵タンクがないのでダンプカーが重要になります。"/>
+<e k="tutorial_tmrSilage_goToSilo" v="OK! ダンプカーがいっぱいになりました。
+
+マップに印がある固定サイロに行きましょう。
+中には少しまぐさが入っています。"/>
+<e k="tutorial_tmrSilage_openSilo" v="よくできました!
+サイレージのためにベールフォークからショベルに変更してください。
+
+テレハンドラーから降りてサイロを開き、サイレージを集めましょう。"/>
+<e k="tutorial_tmrSilage_putBales" v="ベールを突き刺してミキサーに入れましょう。"/>
+<e k="tutorial_tmrSilage_putSilage" v="ではテレハンドラーに戻り、ミキサー車をサイレージで満杯にしましょう。"/>
+<e k="tutorial_tmrSilage_silageFinished" v="いいですね!
+
+まぐさが発酵して数日でサイレージになります。
+それを使って完全混合飼料を作ります。"/>
+<e k="tutorial_tmrSilage_silageWelcome" v="サイレージは固定サイロでまぐさを発酵させて作ります。
+
+まぐさは飼料コンバインで切ったもののくずです。
+
+大麦、小麦、キャノーラからまぐさを作れます。"/>
+<e k="tutorial_tmrSilage_titleMain" v="サイレージと完全混合飼料 (TMR)"/>
+<e k="tutorial_tmrSilage_tmrFinished" v="いいですね!
+
+TMRは牛に最適なエサです。
+
+牛を飼っていない場合は、サイレージをいい値段でバイオガスプラントに売却できます。"/>
+<e k="tutorial_tmrSilage_tmrWelcome" v="サイレージができたのでTMRを作れます。
+
+干し草、わら、サイレージを混ぜ合わせます
+
+テレハンドラーに乗ってベールフォークを装置しましょう。"/>
+<e k="tutorial_tmrSilage_turnOnMixer" v="いいですね! 材料がすべてミキサー車に入りました。
+
+乗り込んで起動し、エサを混ぜ合わせましょう。"/>
+<e k="tutorial_tmrSilage_unfoldForager" v="カッターとパイプを開いておきましょう。
+飼料コンバインを起動して畑を走り、まぐさを作りましょう。"/>
+<e k="tutorial_tmrSilage_unloadChaff" v="固定サイロにまぐさを入れましょう。
+
+サイロが10%以上いっぱいになると、その上で何度も車両を走らせることで、かさを小さくできます。"/>
+<e k="tutorial_tmrSilage_unloadTMR" v="TMRができました。
+エサ入れに入れましょう。"/>
+<e k="tutorial_tmrSilage_welcome" v="このレッスンでは、完全混合飼料 (TMR) の作り方を学びます。
+
+TMRは牛のエサに最適で、牛乳の生産量を最大まで上げる効果があります。"/>
+<e k="tutorial_tmrSilage_welcome2" v="TMRは干し草、わら、サイレージをミキサー車で混ぜて作ります。
+
+干し草ベールとわらベールの作り方はすでに学びました。
+ではサイレージについて学びましょう。"/>
+<e k="tutorials_stats" v="完了したチュートリアル:"/>
+<e k="typeDesc_augerWagon" v="オーガーワゴン"/>
+<e k="typeDesc_baleLoader" v="ベールローダー"/>
+<e k="typeDesc_baleTrailer" v="ベールトレーラー"/>
+<e k="typeDesc_baleWrapper" v="ベールラッパー"/>
+<e k="typeDesc_baler" v="ベーラー"/>
+<e k="typeDesc_belt" v="ベルト"/>
+<e k="typeDesc_car" v="車"/>
+<e k="typeDesc_combine" v="コンバイン"/>
+<e k="typeDesc_container" v="容器"/>
+<e k="typeDesc_cornCutter" v="コーンヘッダー"/>
+<e k="typeDesc_cultivator" v="カルティベーター"/>
+<e k="typeDesc_cutter" v="カッター"/>
+<e k="typeDesc_cutterTrailer" v="カッタートレーラー"/>
+<e k="typeDesc_defoliator" v="切葉処理機"/>
+<e k="typeDesc_fertilizerSpreader" v="肥料散布機"/>
+<e k="typeDesc_forageWagon" v="飼料ワゴン"/>
+<e k="typeDesc_forwarder" v="フォワーダー"/>
+<e k="typeDesc_frontloader" v="フロントローダー"/>
+<e k="typeDesc_frontloaderTool" v="フロントローダーアタッチメント"/>
+<e k="typeDesc_greenhouse" v="グリーンハウス"/>
+<e k="typeDesc_harvester" v="収穫機"/>
+<e k="typeDesc_harvestingHeader" v="収穫用カッター"/>
+<e k="typeDesc_haulmTopper" v="茎葉処理機"/>
+<e k="typeDesc_highPressureWasher" v="高圧洗浄機"/>
+<e k="typeDesc_hookLiftTrailer" v="フックリフトトレーラー"/>
+<e k="typeDesc_leveler" v="地ならし機"/>
+<e k="typeDesc_livestockTrailer" v="家畜車"/>
+<e k="typeDesc_loaderVehicle" v="載荷車両"/>
+<e k="typeDesc_locomotive" v="列車"/>
+<e k="typeDesc_lowLoader" v="ローローダー"/>
+<e k="typeDesc_manureBarrel" v="スラリータンカー"/>
+<e k="typeDesc_manureDistributor" v="スラリー配布車"/>
+<e k="typeDesc_manureSpreader" v="堆肥散布機"/>
+<e k="typeDesc_merger" v="マージャー"/>
+<e k="typeDesc_mixerWagon" v="ミキサーワゴン"/>
+<e k="typeDesc_mower" v="芝刈り機"/>
+<e k="typeDesc_pickup" v="ピックアップ"/>
+<e k="typeDesc_planter" v="プランター"/>
+<e k="typeDesc_plow" v="プラウ"/>
+<e k="typeDesc_roller" v="ローラー"/>
+<e k="typeDesc_seederTank" v="追加タンク"/>
+<e k="typeDesc_silageRoller" v="サイレージパッキング"/>
+<e k="typeDesc_skidSteerTool" v="スキッドステアローダーアタッチメント"/>
+<e k="typeDesc_sowingMachine" v="播種機"/>
+<e k="typeDesc_sprayer" v="散布機"/>
+<e k="typeDesc_sprayerTank" v="追加タンク"/>
+<e k="typeDesc_strawBlower" v="ストローブロワー"/>
+<e k="typeDesc_stumpCutter" v="切り株カッター"/>
+<e k="typeDesc_tedder" v="テッダー"/>
+<e k="typeDesc_telehandler" v="テレハンドラー"/>
+<e k="typeDesc_telehandlerTool" v="テレハンドラーアタッチメント"/>
+<e k="typeDesc_timberTrailer" v="ウッドフォワーダー"/>
+<e k="typeDesc_tipper" v="トレーラー"/>
+<e k="typeDesc_tractor" v="トラクター"/>
+<e k="typeDesc_trailer" v="トレーラー"/>
+<e k="typeDesc_treePlanter" v="植林機"/>
+<e k="typeDesc_treeSaw" v="ウッドソー"/>
+<e k="typeDesc_truck" v="トラック"/>
+<e k="typeDesc_waterTrailer" v="給水トレーラー"/>
+<e k="typeDesc_weeder" v="草刈り機"/>
+<e k="typeDesc_weight" v="ウェイト"/>
+<e k="typeDesc_wheelLoader" v="ホイールローダー"/>
+<e k="typeDesc_wheelLoaderTool" v="ホイールローダーアタッチメント"/>
+<e k="typeDesc_windrower" v="ウィンドロウアー"/>
+<e k="typeDesc_woodCrusher" v="ウッドクラッシャー"/>
+<e k="typeDesc_woodHarvester" v="ウッドハーベスター"/>
+<e k="ui_accountManagement" v="農場管理"/>
+<e k="ui_achievementStatsValue" v=" %d/%d" tag="format"/>
+<e k="ui_achievementsSynchronizing" v="実績の同期中。お待ちください…"/>
+<e k="ui_action" v="アクション"/>
+<e k="ui_actionRemapped" v="%s&apos;は%sに割り当てられました" tag="format"/>
+<e k="ui_activateClientAccounts" v="まず管理メニューで、ほかのプレイヤー用の個別口座を有効にしてください"/>
+<e k="ui_activateGamepads" v="ゲームパッド/ハンドルを起動しますか?"/>
+<e k="ui_activateGamepadsTitle" v="ゲームパッド/ハンドルがみつかりました"/>
+<e k="ui_activateHeadTracking" v="ゲーム内のヘッドトラッキングを起動しますか?"/>
+<e k="ui_activateHeadTrackingTitle" v="ヘッドトラッキングデバイスが見つかりました"/>
+<e k="ui_admin" v="管理者"/>
+<e k="ui_adminLoginGranted" v="管理者としてログインしました"/>
+<e k="ui_adminLoginNotSupported" v="このサーバーは管理者のログインをサポートしていません"/>
+<e k="ui_adminScreen" v="管理メニュー"/>
+<e k="ui_age" v="年代"/>
+<e k="ui_allLanguages" v="全言語"/>
+<e k="ui_allModsDLCsInstalled" v="すべてのMOD/ダウンロードコンテンツをインストールしました"/>
+<e k="ui_allowOnlyFriends" v="フレンドのみ参加を許可する"/>
+<e k="ui_amount" v="量"/>
+<e k="ui_animal" v="家畜"/>
+<e k="ui_animalConditions" v="状態"/>
+<e k="ui_animalFood" v="エサ"/>
+<e k="ui_animalInformation" v="家畜の情報"/>
+<e k="ui_animal_breedColor" v="繁殖／色"/>
+<e k="ui_anyMap" v="全マップ"/>
+<e k="ui_authenticationFailed_ps4" v="PlayStation™Networkのサーバーでユーザーを認証できませんでした。"/>
+<e k="ui_authenticationFailed_xboxone" v="Xbox Liveサーバーでユーザーを認証できませんでした。"/>
+<e k="ui_auto" v="オート"/>
+<e k="ui_autoAccept" v="参加を自動で許可する"/>
+<e k="ui_autoSave" v="オートセーブ"/>
+<e k="ui_availableFunds" v="利用できる資金"/>
+<e k="ui_axis" v="軸"/>
+<e k="ui_axisAlreadyMapped" v="注意: この操作には複数のアクションが割り当てられています"/>
+<e k="ui_balance" v="口座残高"/>
+<e k="ui_banConfirm" v="%sをバンしますか? あなたが禁止措置を解除するまでプレイヤーはサーバーに接続できなくなります。" tag="format"/>
+<e k="ui_banTitle" v="プレイヤーをバンする"/>
+<e k="ui_bankMaxLoan" v="銀行から最大で%sの融資を受けることができます" tag="format"/>
+<e k="ui_banned" v="このサーバーからバンされています。"/>
+<e k="ui_bannedUserDate" v="バンした日"/>
+<e k="ui_bannedUserLastNickname" v="プレイヤーのニックネーム"/>
+<e k="ui_bgaLiquidManureSilo" v="指定タンク BGA"/>
+<e k="ui_blackboard" v="求人・求職掲示板"/>
+<e k="ui_brands" v="ブランド"/>
+<e k="ui_button" v="ボタン"/>
+<e k="ui_buttonAlreadyMapped" v="注意: このボタンには複数のアクションが割り当てられています"/>
+<e k="ui_button_ps4" v="ボタン"/>
+<e k="ui_button_switch" v="ボタン"/>
+<e k="ui_button_xboxone" v="ボタン"/>
+<e k="ui_buttons" v="ボタン"/>
+<e k="ui_buy" v="購入"/>
+<e k="ui_cannotAffordField" v="この土地を購入できるだけの資金がありません"/>
+<e k="ui_cannotMapGamepadHere" v="ゲームパッドにこのアクションを割り当てることはできません"/>
+<e k="ui_cannotMapKeyHere" v="キーにこのアクションを割り当てることはできません"/>
+<e k="ui_cannotMapMouseHere" v="マウスボタンにこのアクションを割り当てることはできません"/>
+<e k="ui_categories" v="カテゴリー"/>
+<e k="ui_changeVehicleFilter" v="車両フィルターを変更"/>
+<e k="ui_characterName" v="キャラクター名"/>
+<e k="ui_characterSelection" v="キャラクターの作成"/>
+<e k="ui_chat" v="チャット"/>
+<e k="ui_chooseColor" v="色を選択"/>
+<e k="ui_chooseDifferentNickname" v="別のニックネームを選んでください"/>
+<e k="ui_chooseDifficulty" v="難易度を選択してください。"/>
+<e k="ui_clientPermissions" v="ほかのプレイヤーへの許可"/>
+<e k="ui_cloudSavegame" v="リモートセーブデータ"/>
+<e k="ui_coins" v="コイン"/>
+<e k="ui_condition" v="状態"/>
+<e k="ui_connectingPleaseWait" v="接続中..."/>
+<e k="ui_connectingToMasterServer" v="サーバーに接続中..."/>
+<e k="ui_connectionFailed" v="サーバーへの接続を確立できませんでした。"/>
+<e k="ui_connectionLost" v="接続が切断しました。"/>
+<e k="ui_connectionLostBanned" v="ホストがあなたをサーバーからブロックしました。"/>
+<e k="ui_connectionLostKeyInUse" v="このアクティベーションキー / プロダクトキーは既に使用されています。後ほどお試しください"/>
+<e k="ui_connectionLostKicked" v="ホストがあなたをサーバーからキックしました。"/>
+<e k="ui_consolePressStart" v="スタートを押してください"/>
+<e k="ui_consoleSelectMapView" v="マップビューを選択"/>
+<e k="ui_continueGame_ps4" v="○ボタンを押して続ける"/>
+<e k="ui_continueGame_switch" v="Aを押して続ける"/>
+<e k="ui_continueGame_xboxone" v="Aを押して続ける"/>
+<e k="ui_continueQuestion" v="続ける?"/>
+<e k="ui_contractorGrantConfirm" v="%sを農場に雇いますか?" tag="format"/>
+<e k="ui_contractorStateChangeTitle" v="請負業者のアクセス権を変更する"/>
+<e k="ui_contractorUngrantConfirm" v="%sを農場から解雇しますか?" tag="format"/>
+<e k="ui_contracts" v="契約"/>
+<e k="ui_controls" v="コントロール"/>
+<e k="ui_copyrightSymbol" v="©"/>
+<e k="ui_cowLiquidManureSilo" v="牛の堆肥タンク"/>
+<e k="ui_cowManureHeap" v="牛の肥やしの山"/>
+<e k="ui_createFields" v="新しい畑の作成"/>
+<e k="ui_createNewFarm" v="新しい農場を作る"/>
+<e k="ui_creatingGame" v="ゲームを作成中..."/>
+<e k="ui_credits" v="クレジット"/>
+<e k="ui_cruiseControlSpeed" v="%d" tag="format"/>
+<e k="ui_dayShort1" v="月"/>
+<e k="ui_dayShort2" v="火"/>
+<e k="ui_dayShort3" v="水"/>
+<e k="ui_dayShort4" v="木"/>
+<e k="ui_dayShort5" v="金"/>
+<e k="ui_dayShort6" v="土"/>
+<e k="ui_dayShort7" v="日"/>
+<e k="ui_defaultFarmName" v="マイ農場"/>
+<e k="ui_deleteThisMod" v="このMODを消去します。よろしいですか?"/>
+<e k="ui_deletingSavegame" v="セーブデータを消去しています..."/>
+<e k="ui_details" v="詳細"/>
+<e k="ui_deviceConfiguration" v="デバイス"/>
+<e k="ui_difficulty" v="キャリアモード"/>
+<e k="ui_difficulty1" v="新しい農家"/>
+<e k="ui_difficulty2" v="農場マネージャー"/>
+<e k="ui_difficulty3" v="最初の一歩"/>
+<e k="ui_difficulty_easy_description" v="土地と機器をいくつか持った状態から
+スタートします。
+ラベンポートで『Farming Simulator』の
+プレイのしかたを解説します。"/>
+<e k="ui_difficulty_hard_description" v="スタート時の資金はかなり限られていて、まだ土地も機器も持っていません。経済は厳しい状況で売却価格も高くありません。ゲームの世界は最もリアルに設定してあります。"/>
+<e k="ui_difficulty_normal_description" v="スタート時に十分な資金を持っていますが土地、建物、機器はありません。自分の農場をどういう感じにするか、すべて決められます。"/>
+<e k="ui_dlcStoreNotConnected_ps4" v="この機能を利用するにはPlayStation™Networkにアクセスする必要があります。"/>
+<e k="ui_dlcStoreNotConnected_xboxone" v="この機能を利用するにはXbox Liveにアクセスする必要があります。"/>
+<e k="ui_dlcsCorruptRedownload" v="一部のダウンロードアイテムが破損しているため利用できません。もう一度ダウンロードしてください。"/>
+<e k="ui_duration" v="プレイ時間"/>
+<e k="ui_editFarm" v="農場%sを編集" tag="format"/>
+<e k="ui_endTutorial" v="チュートリアルを終了します。よろしいですか?"/>
+<e k="ui_endWithoutSaving" v="セーブせずにこのゲームを終了します。よろしいですか?"/>
+<e k="ui_ensureAxisToMapInNeutral" v=" "/>
+<e k="ui_enterAdminPassword" v="管理者のパスワードを入力してください: "/>
+<e k="ui_enterHorseName" v="この馬の新しい名前を入力:"/>
+<e k="ui_enterPassword" v="パスワード入力"/>
+<e k="ui_failedToConnectToGame" v="マルチプレイゲームへの接続を確立できませんでした。"/>
+<e k="ui_farm" v="農場"/>
+<e k="ui_farmAlreadyHasActiveMission" v="農場にはすでに有効な契約があります!"/>
+<e k="ui_farmBalance" v="農場残高"/>
+<e k="ui_farmColor" v="農場の色"/>
+<e k="ui_farmDeleteConfirmation" v="この農場を削除しますか? すべての車両、アタッチメント、そして土地が売却され、所持金も失われます。"/>
+<e k="ui_farmDeleteHasPlayers" v="アクティブなプレイヤーがいる場合は農場を削除できません。"/>
+<e k="ui_farmLeaveConfirmation" v="%sから退出します。よろしいですか?現時点での許可をすべて失うことになります。" tag="format"/>
+<e k="ui_farmManager" v="農場マネージャー"/>
+<e k="ui_farmName" v="農場の名前"/>
+<e k="ui_farmNew" v="新"/>
+<e k="ui_farmedMergedSP" v="こちらのマルチプレイヤーゲームの農場は
+ひとつの農場に統合されました。
+セーブ後は永久にキャリアモードでのプレイになります。"/>
+<e k="ui_fieldArea" v="面積"/>
+<e k="ui_fieldBuy" v="購入"/>
+<e k="ui_fieldInfo" v="畑の情報"/>
+<e k="ui_fieldNo" v="土地番号"/>
+<e k="ui_fieldOwnerOf" v="所有者"/>
+<e k="ui_fields" v="畑"/>
+<e k="ui_filters" v="フィルター"/>
+<e k="ui_finances" v="財務状況"/>
+<e k="ui_financesDay1" v="月曜日"/>
+<e k="ui_financesDay2" v="火曜日"/>
+<e k="ui_financesDay3" v="水曜日"/>
+<e k="ui_financesDay4" v="木曜日"/>
+<e k="ui_financesDay5" v="金曜日"/>
+<e k="ui_financesDay6" v="土曜日"/>
+<e k="ui_financesDay7" v="日曜日"/>
+<e k="ui_freeSlots" v="空きスロット"/>
+<e k="ui_fullhd_desc" v="フルHD (2K/1080p)"/>
+<e k="ui_gameFull" v="このゲームは満員です"/>
+<e k="ui_gameIsLoadingPleaseWait" v="ロード中"/>
+<e k="ui_gamePaused" v="ポーズ中"/>
+<e k="ui_gamepad" v="ゲームパッド"/>
+<e k="ui_games" v="ゲーム"/>
+<e k="ui_garageLeased" v="リースしたアイテム"/>
+<e k="ui_garageOverview" v="車両概要"/>
+<e k="ui_garageOwned" v="所有アイテム"/>
+<e k="ui_gardenCenter" v="ガーデンセンター"/>
+<e k="ui_greatDemandTimeRemaining" v="残り%d時間" tag="format"/>
+<e k="ui_growthMapCultivated" v="耕作済み"/>
+<e k="ui_growthMapCutted" v="収穫済み"/>
+<e k="ui_growthMapFertilized" v="肥料散布済み"/>
+<e k="ui_growthMapGrowing" v="成長中"/>
+<e k="ui_growthMapNeedsLime" v="石灰が必要"/>
+<e k="ui_growthMapNeedsPlowing" v="すきこみが必要です"/>
+<e k="ui_growthMapPlowed" v="すきこみ済み"/>
+<e k="ui_growthMapReadyToHarvest" v="収穫可能"/>
+<e k="ui_growthMapReadyToPrepareForHarvest" v="収穫可能 (切葉処理が必要)"/>
+<e k="ui_growthMapSown" v="種蒔き済み"/>
+<e k="ui_growthMapWithered" v="枯れ"/>
+<e k="ui_helpLine" v="ヘルプ"/>
+<e k="ui_helper" v="ヘルパー"/>
+<e k="ui_hireAI" v="ヘルパーの雇用"/>
+<e k="ui_horseDailyRiding" v="毎日の乗馬"/>
+<e k="ui_horseFitness" v="体型"/>
+<e k="ui_horseHealth" v="健康状態"/>
+<e k="ui_horseName" v="馬の名前"/>
+<e k="ui_hours" v="%02d:%02d時間" tag="format"/>
+<e k="ui_hours_none" v="--:--時間"/>
+<e k="ui_howDoYouLikeTheGame" v="ゲームを評価してください。"/>
+<e k="ui_husbandryInformation" v="小屋の情報"/>
+<e k="ui_iap_errorCancelled" v="購入をキャンセルしました。"/>
+<e k="ui_iap_errorFailed" v="購入できませんでした。"/>
+<e k="ui_iap_errorNetworkUnavailable" v="ネットワークを利用できません。"/>
+<e k="ui_iap_notAvailable" v="アプリ内購入は現在利用できません。"/>
+<e k="ui_iap_pendingPayment" v="コインは決済後に追加されます。"/>
+<e k="ui_iap_purchaseComplete" v="購入が完了しました！"/>
+<e k="ui_iap_purchaseInProgress" v="すでに別の購入を処理しています。"/>
+<e k="ui_iap_recoverable" v="保留中"/>
+<e k="ui_inGameMenuBriefing" v="ブリーフィング"/>
+<e k="ui_inGameMenuControls" v="コントロール"/>
+<e k="ui_inGameMenuControlsController" v="ゲームパッド操作"/>
+<e k="ui_inGameMenuControlsKeyboard" v="キーボード操作"/>
+<e k="ui_inGameMenuModeMultiplayer" v="マルチプレイ"/>
+<e k="ui_inGameMenuModeSettings" v="設定"/>
+<e k="ui_inGameSleep" v="寝る"/>
+<e k="ui_inGameSleepRequest" v="プレイヤー「%s」が寝たがっています。申請を受理しますか?" tag="format"/>
+<e k="ui_inGameSleepRequestDenied" v="プレイヤー「%s」が、あなたの就寝申請を却下しました!" tag="format"/>
+<e k="ui_inGameSleepSelectDuration" v="睡眠時間を選択:"/>
+<e k="ui_inGameSleepTrigger" v="こちらがあなたの家です。夜8時以降は家に帰ってきて朝まで眠ることができます。
+
+ヘルパーもこの時間に休息を取り作業はストップしますが、翌朝には再開します。
+
+寝ている間も作物は成長を続け、夜に成長の最終段階を迎える場合は枯れてしまうことがあるので、寝る前にすべての作業を終わらせておくのがいいでしょう。"/>
+<e k="ui_inGameSleepWrongTime" v="今はまだ疲れていません。"/>
+<e k="ui_incomeExpenditure" v="収入 / 支出"/>
+<e k="ui_ingameMenuAnimals" v="家畜"/>
+<e k="ui_ingameMenuContracts" v="契約"/>
+<e k="ui_ingameMenuController" v="コントローラーマッピング"/>
+<e k="ui_ingameMenuFinances" v="財務状況"/>
+<e k="ui_ingameMenuGameSettingsDisplay" v="ディスプレイの設定"/>
+<e k="ui_ingameMenuGameSettingsGame" v="ゲーム設定"/>
+<e k="ui_ingameMenuGameSettingsGeneral" v="一般設定"/>
+<e k="ui_ingameMenuGameStats" v="統計"/>
+<e k="ui_ingameMenuHelpLine" v="ヘルプ"/>
+<e k="ui_ingameMenuMapFarmlands" v="土地"/>
+<e k="ui_ingameMenuMapMoveCursor" v="カーソルを移動する"/>
+<e k="ui_ingameMenuMapOverview" v="全体マップ"/>
+<e k="ui_ingameMenuMapPan" v="マップをパンする"/>
+<e k="ui_ingameMenuMapZoom" v="マップをズームする"/>
+<e k="ui_ingameMenuMultiplayerFarmActions" v="農場の出来事"/>
+<e k="ui_ingameMenuMultiplayerFarms" v="農場"/>
+<e k="ui_ingameMenuMultiplayerLogin" v="マルチプレイヤー管理"/>
+<e k="ui_ingameMenuMultiplayerSettings" v="マルチプレイヤー設定"/>
+<e k="ui_ingameMenuMultiplayerUsers" v="マルチプレイヤー概要"/>
+<e k="ui_ingameMenuPrices" v="価格 / 1000 L"/>
+<e k="ui_ingameMenuTutorial" v="チュートリアル"/>
+<e k="ui_ingameMenuWeather" v="天気"/>
+<e k="ui_ingameMissionMoney" v="報酬"/>
+<e k="ui_ingameMissionSpecs" v="アタッチメント"/>
+<e k="ui_ingameMissionSpecsDemand" v="トレーラー付きトラクター"/>
+<e k="ui_ingameMissionSpecsFrontloader" v="パレットフォーク付きフロントローダー"/>
+<e k="ui_ingameMissionSpecsMower" v="芝刈り機付きトラクター"/>
+<e k="ui_ingameMissionTimeLimit" v="タイムリミット"/>
+<e k="ui_ingameNews" v="お知らせ"/>
+<e k="ui_internetConnection" v="インターネット接続"/>
+<e k="ui_invalidKey" v="キーが無効です"/>
+<e k="ui_inviteScreen" v="友達を招待"/>
+<e k="ui_itemDetails" v="アイテム詳細"/>
+<e k="ui_items" v="アイテム
+"/>
+<e k="ui_joinMultiplayerGame" v="マルチプレイヤーのゲームに参加"/>
+<e k="ui_key" v="キー"/>
+<e k="ui_key1" v="キー1"/>
+<e k="ui_key2" v="キー2"/>
+<e k="ui_keyAlreadyMapped" v="注意: このキーには複数のアクションが割り当てられています"/>
+<e k="ui_keyboard" v="キーボード"/>
+<e k="ui_keys" v="キー"/>
+<e k="ui_kickConfirm" v="%sをサーバーから追放しますか?" tag="format"/>
+<e k="ui_kickTitle" v="プレイヤーを追放"/>
+<e k="ui_landscaping" v="造園"/>
+<e k="ui_landscaping_brushSize" v="ブラシのサイズ"/>
+<e k="ui_landscaping_brushStrength" v="ブラシの強度"/>
+<e k="ui_landscaping_cannotModifyHere" v="この地形は変形できません"/>
+<e k="ui_landscaping_doNotOwnLand" v="この土地は所有していません"/>
+<e k="ui_landscaping_groundMaterial" v="地面の種類"/>
+<e k="ui_landscaping_notEnoughMoney" v="この変形をするにはお金が不足しています"/>
+<e k="ui_landscaping_objectObstructed" v="オブジェクトが妨害しているため、地形変形ができません"/>
+<e k="ui_landscaping_paintingMode" v="塗装"/>
+<e k="ui_landscaping_sculptingMode" v="彫刻"/>
+<e k="ui_landscaping_tooSteep" v="この地形は変形できません（勾配が急過ぎ）"/>
+<e k="ui_language" v="言語"/>
+<e k="ui_loadDefaultSettings" v="デフォルト設定に戻しますか?"/>
+<e k="ui_loadedDefaultSettings" v="デフォルト設定のロード完了!"/>
+<e k="ui_loading" v="ロード中…"/>
+<e k="ui_loadingFruitMap" v="マップを読み込んでいます..."/>
+<e k="ui_loadingSavegame" v="セーブデータをロードしています…"/>
+<e k="ui_loadingSavegames" v="セーブデータをロードしています..."/>
+<e k="ui_loan" v="ローン"/>
+<e k="ui_localSavegame" v="ローカルセーブデータ"/>
+<e k="ui_manageMissions" v="契約の管理"/>
+<e k="ui_map" v="マップ"/>
+<e k="ui_mapOverviewFruitTypes" v="作物の種類%s" tag="format"/>
+<e k="ui_mapOverviewGrowth" v="成長度"/>
+<e k="ui_mapOverviewSoil" v="土壌成分"/>
+<e k="ui_mapOverviewSoil2" v="土壌構造"/>
+<e k="ui_mapViewMode1" v="成長度"/>
+<e k="ui_mapViewMode2" v="作物の種類"/>
+<e k="ui_map_crops" v="作物"/>
+<e k="ui_map_growth" v="成長度"/>
+<e k="ui_map_soil" v="土壌"/>
+<e k="ui_masterServerConnectionLost" v="サーバーへの接続が失われました。インターネット接続を確認し、ゲームを再起動してください。"/>
+<e k="ui_maxNumPlayers" v="最大プレイヤー数"/>
+<e k="ui_missingGoldForMultiplayer_xboxone" v="Xbox Live ゴールド メンバーシップが必要です。"/>
+<e k="ui_missingPrivilegeMultiplayerSession_xboxone" v="セッションに参加する権利がありません。"/>
+<e k="ui_missingUGCdownloadPrivilege" v="お使いのプロフィール設定で、ユーザー生成コンテンツがブロックされています。"/>
+<e k="ui_missionFrequency" v="ミッション出現頻度"/>
+<e k="ui_missionStatusTitle" v="ステータス"/>
+<e k="ui_missionVehiclesAtShop" v="ショップにリースした機械があります。必要な場合はアタッチメントを装着しましょう。"/>
+<e k="ui_mobile_buyFieldDialogText" v="口座には%sあります。この畑を%sで購入しますか？" tag="format"/>
+<e k="ui_mobile_buyFieldDialogText_buyCoins" v="口座には%sありますが、畑の価格は%sです。コインを購入しますか？" tag="format"/>
+<e k="ui_modAuthor" v="制作者: %s" tag="format"/>
+<e k="ui_modFileHash" v="ハッシュ"/>
+<e k="ui_modHubCategories" v="カテゴリー"/>
+<e k="ui_modHubDetails" v="詳細
+"/>
+<e k="ui_modHubItems" v="アイテム
+"/>
+<e k="ui_modTitleVersion" v="%s (V%s)" tag="format"/>
+<e k="ui_modVersion" v="バージョン"/>
+<e k="ui_modsChangedRestartQuestion" v="やり直し?"/>
+<e k="ui_modsChangedText" v="MODをダウンロードしました。ゲームを再起動してインストールしてください。"/>
+<e k="ui_modsChangedTitle" v="MODをダウンロードしました"/>
+<e k="ui_modsDLCs" v="MOD / ダウンロードコンテンツ"/>
+<e k="ui_modsDLCs_ps4" v="ダウンロード コンテンツ"/>
+<e k="ui_modsDLCs_xboxone" v="ダウンロード コンテンツ"/>
+<e k="ui_modsZipOnly" v="マルチプレイヤーに対応しているのはZIP MODのみです。 MOD &apos;%s&apos; をマルチプレイヤーで使用するにはZIPしてください。" tag="format"/>
+<e k="ui_money" v="キャッシュ"/>
+<e k="ui_moneyScreen" v="資金管理"/>
+<e k="ui_mouse" v="マウス"/>
+<e k="ui_mouseAlreadyMapped" v="%s&apos;は%sに割り当てられました" tag="format"/>
+<e k="ui_mousewheel" v="マウスホイール"/>
+<e k="ui_movePlaceable" v="移動"/>
+<e k="ui_mpPlayers" v="プレイヤー"/>
+<e k="ui_mpPlaytime" v="プレイ時間"/>
+<e k="ui_newGame" v="ニューゲーム"/>
+<e k="ui_no" v="なし"/>
+<e k="ui_noFarm" v="農場がありません"/>
+<e k="ui_noFarmsCreated" v="サーバー管理者が作った農場はまだありません。"/>
+<e k="ui_noFullGames" v="満員のゲームを除外"/>
+<e k="ui_noHusbandriesPlaced" v="まだ畜舎や家畜を持っていません。"/>
+<e k="ui_noHusbandriesPlaced_mobile" v="まだ家畜を持っていません。"/>
+<e k="ui_noMissions" v="ミッションはありません!"/>
+<e k="ui_noModsDLCsAvailable" v="インストールされたMOD / ダウンロードコンテンツがありません!"/>
+<e k="ui_noModsDLCsAvailable_ps4" v="インストールされたダウンロードコンテンツがありません!"/>
+<e k="ui_noModsDLCsAvailable_xboxone" v="インストールされたダウンロードコンテンツがありません!"/>
+<e k="ui_noModsDLCsUsed" v="MOD / ダウンロードコンテンツは利用されていません!"/>
+<e k="ui_noModsDLCsUsed_ps4" v="ダウンロードコンテンツは利用されていません!"/>
+<e k="ui_noModsDLCsUsed_xboxone" v="ダウンロードコンテンツは利用されていません!"/>
+<e k="ui_noPassword" v="パスワードなし"/>
+<e k="ui_noPendingMissions" v="未解決のミッションはありません"/>
+<e k="ui_noRightsToEditMissions" v="契約の管理にアクセスする権限がありません!"/>
+<e k="ui_noRunningMissions" v="進行中のミッションはありません"/>
+<e k="ui_nominalValue" v="価格"/>
+<e k="ui_none" v="なし"/>
+<e k="ui_notAllModsAvailable" v="必要なMOD / ダウンロードコンテンツがインストールされていません"/>
+<e k="ui_notAllModsAvailable_ps4" v="ダウンロード コンテンツがすべて揃っていません。"/>
+<e k="ui_notAllModsAvailable_xboxone" v="ダウンロード コンテンツがすべて揃っていません。"/>
+<e k="ui_notEnoughSpaceForNewSavegame" v="この記憶装置には新しいセーブデータを作成するための容量が不足しているため、ゲームを保存できません。"/>
+<e k="ui_notPossibleInDemo" v="デモ版では実行できません"/>
+<e k="ui_nothingAttached" v="何も取り付けられていません"/>
+<e k="ui_notificationCount" v="%s (%d/%d)" tag="format"/>
+<e k="ui_numPlayers" v="プレイヤー数"/>
+<e k="ui_objects" v="オブジェクト"/>
+<e k="ui_off" v="オフ"/>
+<e k="ui_on" v="オン"/>
+<e k="ui_onlyAvailableMods" v="インストールしてあるMOD/ダウンロードコンテンツのみ"/>
+<e k="ui_onlyAvailableMods_ps4" v="ダウンロードコンテンツのみ"/>
+<e k="ui_onlyAvailableMods_xboxone" v="ダウンロードコンテンツのみ"/>
+<e k="ui_onlyForZipFiles" v="ZIPファイルのみ"/>
+<e k="ui_operatingHours" v="営業時間"/>
+<e k="ui_other" v="その他"/>
+<e k="ui_outdatedGameVersion" v="ゲームバージョンが最新ではありません。アップデートしてください"/>
+<e k="ui_ownMoney" v="個別の口座"/>
+<e k="ui_password" v="パスワード"/>
+<e k="ui_pendingMissionTimeLeft" v="あと%d分" tag="format"/>
+<e k="ui_pendingMissionTimeLeftTitle" v="残り時間"/>
+<e k="ui_pendingMissions" v="未解決のミッション"/>
+<e k="ui_permanentBan" v="アクティベーションキー/プロダクトキーがブロックされています"/>
+<e k="ui_permission_buyVehicles" v="車両を購入"/>
+<e k="ui_permission_sellVehicles" v="車両を売却"/>
+<e k="ui_permissions" v="許可"/>
+<e k="ui_permissions_buyPlaceable" v="配置可能なオブジェクトを購入"/>
+<e k="ui_permissions_createFields" v="畑の作成"/>
+<e k="ui_permissions_hireAssistent" v="アシスタントの雇用"/>
+<e k="ui_permissions_landscaping" v="造園"/>
+<e k="ui_permissions_lostLandscaping" v="地形を変形する権利を失いました。"/>
+<e k="ui_permissions_manageMissions" v="契約の管理"/>
+<e k="ui_permissions_resetVehicles" v="車両をリセット"/>
+<e k="ui_permissions_sellPlaceable" v="配置可能なオブジェクトを売却"/>
+<e k="ui_permissions_tradeAnimals" v="家畜をトレード"/>
+<e k="ui_persistentMoney" v="永続アカウント"/>
+<e k="ui_pigLiquidManureSilo" v="豚の堆肥タンク"/>
+<e k="ui_pigManureHeap" v="豚の肥やしの山"/>
+<e k="ui_placeables" v="配置可能なオブジェクト"/>
+<e k="ui_playerCharacter" v="プレイヤー"/>
+<e k="ui_playerName" v="プレイヤー名"/>
+<e k="ui_playerWantsToJoinGame" v="がゲームに参加希望です"/>
+<e k="ui_players" v="プレイヤー"/>
+<e k="ui_pleaseReconnectController_ps4" v="ワイヤレスコントローラーを再接続してください"/>
+<e k="ui_pleaseReconnectController_switch" v="ワイヤレスコントローラーを再接続してください"/>
+<e k="ui_pleaseReconnectController_xboxone" v="Aを押して続ける"/>
+<e k="ui_pointsOfInterest" v="重要地点"/>
+<e k="ui_port" v="港"/>
+<e k="ui_pressESCToCancel" v="ESCでキャンセル、もしくはBackspaceで現在のキー割り当てを削除します"/>
+<e k="ui_pressGamepadButtonToMap" v="%s&apos;に使うスティック操作もしくはボタンを入力してください" tag="format"/>
+<e k="ui_pressKeyToMap" v="%s&apos;に使うキーを押してください" tag="format"/>
+<e k="ui_pressMouseButtonToMap" v="%s&apos;に使うマウスボタンを押してください" tag="format"/>
+<e k="ui_prices" v="価格"/>
+<e k="ui_promoteToFarmManagerConfirm" v="%sを農場マネージャーに昇格しますか?" tag="format"/>
+<e k="ui_promoteToFarmManagerTitle" v="農場マネージャーに昇格"/>
+<e k="ui_quadhd_desc" v="クアッドHD (3K/1440p)"/>
+<e k="ui_radioRating" v="オンラインでのストリームはPEGI/USK/ESRBの審査を受けたものではありません。"/>
+<e k="ui_rating" v="評価"/>
+<e k="ui_realTime" v="実時間"/>
+<e k="ui_removeFromFarmConfirm" v="%sを農場から解雇しますか?" tag="format"/>
+<e k="ui_removeFromFarmTitle" v="プレイヤーを農場から解雇"/>
+<e k="ui_repairDialog" v="$%dで、この車両を修理しますか?" tag="format"/>
+<e k="ui_resetVehicles" v="車両をリセット"/>
+<e k="ui_resolveConflict" v="セーブデータの不一致を解決する"/>
+<e k="ui_returnThis" v="戻る"/>
+<e k="ui_runningMissions" v="進行中のミッション"/>
+<e k="ui_saldo" v="口座残高"/>
+<e k="ui_saveChanges" v="変更をセーブしますか?"/>
+<e k="ui_saveDate" v="セーブした日"/>
+<e k="ui_saveSettings" v="設定を保存"/>
+<e k="ui_savegame" v="セーブデータ"/>
+<e k="ui_savegameBelongsToAnotherUser" v="他のユーザーのセーブデータです。"/>
+<e k="ui_savegameConflictKeepBoth" v="両方を保持"/>
+<e k="ui_savegameConflictKeepLocal" v="ローカルを保持"/>
+<e k="ui_savegameConflictKeepRemote" v="リモートを保持"/>
+<e k="ui_savegameConflictKeepRemoteYesNo" v="本当にローカルセーブデータをクラウドのセーブデータファイルと置き換えますか？"/>
+<e k="ui_savegameConflictResolveFailed" v="セーブデータの不一致を解決できませんでした。"/>
+<e k="ui_savegameConflictResolveKeepBothFailed" v="セーブデータの不一致を解決できません。セーブデータの上限に達しています。別の解決方法を選択してください。"/>
+<e k="ui_savegameCorrupt" v="ロードしたセーブデータは破損しています。このまま続けて新しいセーブデータで上書きしますか?"/>
+<e k="ui_savegameHasMissingDlcs" v="このセーブデータにはインストールされていないダウンロードコンテンツが必要です。以下のコンテンツをダウンロードしてください: "/>
+<e k="ui_savegameHasMissingDlcsOptional" v="このセーブデータに必要なダウンロードコンテンツがインストールされていません。このまま続けると一部の車両が使えなくなります。使えるようにするには次のコンテンツをダウンロードしてください: "/>
+<e k="ui_savegameHasMissingDlcsOptional_ps4" v="このセーブデータに必要なダウンロードコンテンツがインストールされていません。このまま続けると一部の車両が使えなくなります。使えるようにするには次のコンテンツをダウンロードしてください: "/>
+<e k="ui_savegameHasMissingDlcsOptional_xboxone" v="このセーブデータに必要なダウンロードコンテンツがインストールされていません。このまま続けると一部の車両が使えなくなります。使えるようにするには次のコンテンツをダウンロードしてください: "/>
+<e k="ui_savegameHasMissingDlcs_ps4" v="このセーブデータに必要なダウンロードコンテンツがインストールされていません。次のコンテンツをダウンロードしてください: "/>
+<e k="ui_savegameHasMissingDlcs_xboxone" v="このセーブデータに必要なダウンロードコンテンツがインストールされていません。次のコンテンツをダウンロードしてください: "/>
+<e k="ui_savegameInvalidUser" v="他のユーザーのセーブデータはロードできません。このまま続けて新しいセーブデータで上書きしますか?"/>
+<e k="ui_savegameIsCorrupted" v="このセーブデータは破損しています"/>
+<e k="ui_savegameIsCurrentlyUnused" v="新規作成"/>
+<e k="ui_savegameLoadCloudConflict" v="クラウドのセーブデータが一致しないため、ロードできませんでした。"/>
+<e k="ui_savegameLoadFailed" v="セーブデータをロードできませんでした。もう一度お試しいただくか、別の記憶装置をお使いください。"/>
+<e k="ui_savegameName" v="データ名"/>
+<e k="ui_savegameNotSaved" v="ゲームはセーブされませんでした。"/>
+<e k="ui_savegameSaveDeviceUnavailable" v="選択された記憶装置が存在しません。ゲームはセーブされませんでした。"/>
+<e k="ui_savegameSaveInProgress" v="保存中..."/>
+<e k="ui_savegameSaveNoDevice" v="記憶装置が選択されていません。ゲームはセーブされませんでした。"/>
+<e k="ui_savegameSaveNoSpace" v="記憶装置の空き容量が不足しています。別の記憶装置を選択してセーブを続けますか?"/>
+<e k="ui_savegames" v="セーブデータ"/>
+<e k="ui_savegamesScanFailed" v="セーブデータをロードできませんでした。もう一度お試しいただくか、別の記憶装置をお使いください。"/>
+<e k="ui_savegamesScanNoDevice" v="記憶装置が選択されていません。このゲームモードには記憶装置が必要です。"/>
+<e k="ui_savegamesScanSelectDevice" v="記憶装置が認識できなくなりました。記憶装置を選択しますか?"/>
+<e k="ui_savingContent" v="セーブしています。コンピューターの電源を切らないでください。"/>
+<e k="ui_savingContent_mobile" v="コンテンツをセーブしています。デバイスの電源を切らないでください。"/>
+<e k="ui_savingContent_ps4" v="セーブしています。
+PlayStation®4の電源を切らないでください。"/>
+<e k="ui_savingContent_switch" v="セーブしています。NintendoSwitch™ 本体の電源を切らないでください。"/>
+<e k="ui_savingContent_xboxone" v="セーブしています。ゲーム機本体の電源を切らないでください。"/>
+<e k="ui_savingFinished" v="セーブ完了！"/>
+<e k="ui_selectAMap" v="マップの選択"/>
+<e k="ui_selectActionToRemap" v="再割り当てするアクションを選択してください"/>
+<e k="ui_selectCharacter" v="キャラクターを選択"/>
+<e k="ui_sellItem" v="売却"/>
+<e k="ui_sellOrCustomizeVehicleText" v="ここで車両のカスタマイズや修理ができます。"/>
+<e k="ui_sellOrCustomizeVehicleTitle" v="整備場"/>
+<e k="ui_sellValue" v="価格"/>
+<e k="ui_sellVehicles" v="車両の売却"/>
+<e k="ui_sellingPoints" v="売買所"/>
+<e k="ui_serverCannotBeBanned" v="AIはバンできません!"/>
+<e k="ui_serverCannotBeKicked" v="AIは追放できません!"/>
+<e k="ui_serverDeniedAccess" v="拒否されました"/>
+<e k="ui_serverMaintenance" v="現在、サーバーのメンテナンス中です。後ほどお試しください。"/>
+<e k="ui_serverName" v="ゲーム名"/>
+<e k="ui_serverNameGame" v="ゲーム"/>
+<e k="ui_serverSettings" v="サーバーの設定"/>
+<e k="ui_serverUserJoin" v="サーバーに接続中..."/>
+<e k="ui_serverUserLeave" v="サーバーから退出中..."/>
+<e k="ui_serverWasShutdown" v="サーバーへの接続が切断されました"/>
+<e k="ui_session" v="セッション"/>
+<e k="ui_settingsAdvanced" v="高度な設定"/>
+<e k="ui_settingsConsole" v="コンソールの設定"/>
+<e k="ui_settingsControls" v="操作"/>
+<e k="ui_settingsControls2" v="操作 2"/>
+<e k="ui_settingsDevice" v="デバイスの設定"/>
+<e k="ui_settingsGeneral" v="一般"/>
+<e k="ui_settingsMods" v="MOD/ダウンロードコンテンツ"/>
+<e k="ui_shop" v="ショップ"/>
+<e k="ui_shopCategories" v="ショップのカテゴリー"/>
+<e k="ui_shopItems" v="リースしたアイテム"/>
+<e k="ui_signinWithUserToAcceptInviteRetry" v="招待されたユーザー (%s) が招待を受けるにはサインインしている必要があります。再試行しますか?" tag="format"/>
+<e k="ui_siloFillingDescription" v="車両に中身を移したいサイロを選択してください"/>
+<e k="ui_silos_extern" v="サイロ (その他)"/>
+<e k="ui_silos_owned" v="サイロ (所有)"/>
+<e k="ui_silos_totalCapacity" v="合計容量"/>
+<e k="ui_someSavegamesCorrupt" v="セーブデータの一部が破損しています。このまま続けると、新しいセーブデータで上書きされます。"/>
+<e k="ui_statistic" v="統計"/>
+<e k="ui_statisticViewAnimals" v="動物"/>
+<e k="ui_statisticViewMapViews" v="マップビュー"/>
+<e k="ui_statisticViewOverview" v="概要"/>
+<e k="ui_statisticViewPrices" v="倉庫 - 価格"/>
+<e k="ui_statisticViewStatistics" v="統計"/>
+<e k="ui_statisticViewVehicleSelection" v="車両選択"/>
+<e k="ui_statisticView_chicken" v="鶏"/>
+<e k="ui_statisticView_cow" v="牛"/>
+<e k="ui_statisticView_horse" v="馬"/>
+<e k="ui_statisticView_pig" v="豚"/>
+<e k="ui_statisticView_sheep" v="羊"/>
+<e k="ui_statistics" v="統計"/>
+<e k="ui_storageDeviceWithDlcsRemoved" v="ダウンロードコンテンツを保存した記憶装置が取り外されました。ゲームを終了します。"/>
+<e k="ui_strictNatWarning" v="インターネット回線の遅さ、またはNATネットワーク構成により、マルチプレイを充分にお楽しみ頂けない
+可能性があります。詳細についてはインターグローカスタマーサポートまでお問い合わせください。"/>
+<e k="ui_strictNatWarning_ps4" v="インターネット回線の遅さ、またはNATタイプ3ネットワーク構成により、マルチプレイを充分にお楽しみ頂けない
+可能性があります。詳細についてはインターグローカスタマーサポートまでお問い合わせください。"/>
+<e k="ui_switchDevice" v="デバイスの切り替え"/>
+<e k="ui_synchronizingWithOtherPlayers" v="ほかのプレイヤーとデータを同期中..."/>
+<e k="ui_temporaryBan" v="このアクティベーションキー/プロダクトキーは一時的にブロックされています。後ほどお試しください"/>
+<e k="ui_testingPort" v="選択したポートはテスト中です..."/>
+<e k="ui_today" v="今日"/>
+<e k="ui_tools" v="アタッチメント"/>
+<e k="ui_total" v="合計"/>
+<e k="ui_tour" v="ガイド付きツアー"/>
+<e k="ui_tradeAnimals" v="動物をトレードする"/>
+<e k="ui_treeFir" v="モミの木"/>
+<e k="ui_tutorial" v="チュートリアル"/>
+<e k="ui_tutorialIsNotSaved" v="チュートリアルをやり直しますか?"/>
+<e k="ui_tutorials" v="チュートリアル"/>
+<e k="ui_tutorialsStatsValue" v=" %d/%d" tag="format"/>
+<e k="ui_ultrahd_desc" v="ウルトラHD (4K/2160p)"/>
+<e k="ui_unbanPlayers" v="プレイヤーのバンを解除する"/>
+<e k="ui_unpause" v="続ける"/>
+<e k="ui_useUPnP" v="UPnPを使う"/>
+<e k="ui_usedDiscSpace" v="使用しているディスク容量"/>
+<e k="ui_usedDiscSpace_ps4" v="使用しているシステムストレージ"/>
+<e k="ui_vehicle" v="車両"/>
+<e k="ui_vehicleResetDone" v="車両/アタッチメントがリセットされました!"/>
+<e k="ui_vehicleResetFailed" v="車両/アタッチメントをリセットできませんでした。ショップのスペースが不足しています!"/>
+<e k="ui_vehicles" v="車両"/>
+<e k="ui_waitingForAccept" v="ホストの承認待ち..."/>
+<e k="ui_wantToResetVehicleText" v="本当に車両/アタッチメントをリセットしますか?"/>
+<e k="ui_weatherForecast" v="天気予報"/>
+<e k="ui_wrongPassword" v="パスワードが違います"/>
+<e k="ui_yes" v="あり"/>
+<e k="ui_youWantToDeleteSavegame" v="このセーブデータを消去します。よろしいですか?"/>
+<e k="ui_youWantToDeleteSavegameMobile" v="本当にこのセーブデータファイルを削除しますか？この操作により、クラウドデータも影響を受けます。"/>
+<e k="ui_youWantToQuitGame" v="終了しますか？"/>
+<e k="ui_youWantToSellVehicle" v="この車両を売却しますか?"/>
+<e k="unit_acre" v="エーカー"/>
+<e k="unit_acreShort" v="ac"/>
+<e k="unit_bale" v="ベール"/>
+<e k="unit_bushels" v="ブッシェル"/>
+<e k="unit_bushelsShort" v="bu"/>
+<e k="unit_celsius" v="摂氏"/>
+<e k="unit_celsiusShort" v="°C"/>
+<e k="unit_coins" v="コイン"/>
+<e k="unit_coinsShort" v="¤"/>
+<e k="unit_cubic" v="立方メートル"/>
+<e k="unit_cubicShort" v="m³"/>
+<e k="unit_decimalSymbol" v="."/>
+<e k="unit_digitGroupingSymbol" v=","/>
+<e k="unit_dollar" v="ドル"/>
+<e k="unit_dollarShort" v="$"/>
+<e k="unit_euro" v="ユーロ"/>
+<e k="unit_euroShort" v="€"/>
+<e k="unit_fahrenheit" v="華氏"/>
+<e k="unit_fahrenheitShort" v="°F"/>
+<e k="unit_ha" v="ヘクタール"/>
+<e k="unit_haShort" v="ha"/>
+<e k="unit_kg" v="kg"/>
+<e k="unit_km" v="キロメートル"/>
+<e k="unit_kmShort" v="km"/>
+<e k="unit_kmh" v="km/h"/>
+<e k="unit_kw" v="kW/h"/>
+<e k="unit_liter" v="リットル"/>
+<e k="unit_literShort" v="l"/>
+<e k="unit_miles" v="マイル"/>
+<e k="unit_minutesShort" v="分"/>
+<e k="unit_mph" v="mph"/>
+<e k="unit_pieces" v="ピース"/>
+<e k="unit_pound" v="ポンド"/>
+<e k="unit_poundShort" v="£"/>
+<e k="unit_timeShort" v="hh:mm"/>
+<e k="warning_actionNotAllowedHere" v="ここでこのアクションは行えません。"/>
+<e k="warning_actionNotAllowedNow" v="現在ここでこのアクションは行えません。"/>
+<e k="warning_baleNotSupported" v="未対応のベールです"/>
+<e k="warning_cantUseMissionVehiclesOnOtherLand" v="この車両/アタッチメントは、契約作業のために保留中です!"/>
+<e k="warning_couldNotFastenTensionBelt" v="テンションベルトを締められません"/>
+<e k="warning_couldNotToggleChopper" v="わらは現在の作物の種類に含まれません!"/>
+<e k="warning_detachNotAllowed" v="この状態でアタッチメントを外すことはできません!"/>
+<e k="warning_doNotThreshDuringRainOrHail" v="雨などが降っているときには脱穀しないでください!"/>
+<e k="warning_dontDriveIntoWater" v="水の中には入れません!"/>
+<e k="warning_fillTypeNotAllowed" v="fillTypeは許可されていません (unloadTrigger)"/>
+<e k="warning_firstFoldUpTheTool" v="まずアタッチメント(%s)を収納する必要があります!" tag="format"/>
+<e k="warning_firstSetPipeState" v="まずパイプを開いてください"/>
+<e k="warning_firstUnfoldTheTool" v="まずアタッチメント(%s)を展開する必要があります!" tag="format"/>
+<e k="warning_hpwRangeRestriction" v="高圧洗浄機のホースがあるため、これ以上は動けません。"/>
+<e k="warning_inAdvanceFeedingLimitReached" v="飼料桶をいっぱいにすると%d日分の飼料になります。" tag="format"/>
+<e k="warning_insufficientPowerOutput" v="装着したアタッチメントを使うのに必要なパワーがありません。"/>
+<e k="warning_lowerImplementFirst" v="先にアタッチメント「%s」を下げてください!" tag="format"/>
+<e k="warning_motorFuelEmpty" v="車両に給油を!"/>
+<e k="warning_motorNotStarted" v="エンジンをかけてください!"/>
+<e k="warning_noCuttersAttached" v="カッターがついていません!"/>
+<e k="warning_noFreeMissionSpace" v="契約車両を入れる場所がありません。機器を移動してください。"/>
+<e k="warning_noFreeSpaceHere" v="空きスペースがありません"/>
+<e k="warning_noMoreFreeCapacity" v="%s は一杯です" tag="format"/>
+<e k="warning_notAcceptedHere" v="%s はここでは荷おろしできません!" tag="format"/>
+<e k="warning_notAcceptedTool" v="%s はこのアタッチメントでは扱えません!" tag="format"/>
+<e k="warning_numSplitShapesMaxed" v="今は伐採できません。先に材木を売却してください。"/>
+<e k="warning_objectTooHeavy" v="重すぎです!"/>
+<e k="warning_onlyOneOfThisItemAllowedPerFarm" v="農場1カ所につきアイテム1点限定です!"/>
+<e k="warning_placeable_error_blockedTerrain" v="この地形は変形できません!"/>
+<e k="warning_placeable_error_cannotBeBought" v="このオブジェクトは購入できません!"/>
+<e k="warning_placeable_error_cannotBePlacedAtPosition" v="このオブジェクトはここに配置できません!"/>
+<e k="warning_placeable_error_collisionWithObject" v="このオブジェクトは他のオブジェクトと接触しています!"/>
+<e k="warning_placeable_error_collisionWithPlayer" v="このオブジェクトはプレイヤーと接触しています!"/>
+<e k="warning_placeable_error_deformationFailed" v="地形の変更ができませんでした!"/>
+<e k="warning_placeable_error_restrictedArea" v="この制限されたエリアにオブジェクトは配置できません!"/>
+<e k="warning_placeable_error_spawnPlace" v="積載エリアにオブジェクトは配置できません!"/>
+<e k="warning_placeable_error_storePlace" v="保管エリアにオブジェクトは配置できません!"/>
+<e k="warning_placeable_error_unkown" v="ここには配置できません"/>
+<e k="warning_theSelectedFruitTypeIsNotAvailableOnThisMap" v="選択した果物の種類はこのマップにありません!"/>
+<e k="warning_theSelectedFruitTypeIsWrongForTheMission" v="契約とは違う種類の果物です!"/>
+<e k="warning_tooManyBales" v="ベールの数が多すぎます。先にいくつか売却してください。"/>
+<e k="warning_tooManyHusbandries" v="家畜小屋にいる動物が多過ぎます。先に何頭か売却しましょう。"/>
+<e k="warning_tooManyPallets" v="パレットの数が多すぎます。先にいくつか売却してください。"/>
+<e k="warning_tooManyPlaceables" v="このタイプのオブジェクトが多すぎます。先にいくつか売却しましょう。"/>
+<e k="warning_tooManyTrees" v="木が多すぎます。何本か切ってください。"/>
+<e k="warning_tooManyWorkersActive" v="アクティブなヘルパーが多すぎます！"/>
+<e k="warning_toolTypeNotAllowed" v="toolTypeは許可されていません (unloadTrigger)"/>
+<e k="warning_treeTooThick" v="この木はこの機械には太すぎます。"/>
+<e k="warning_treeTypeNotSupported" v="この種類の木には対応していません。"/>
+<e k="warning_troughIsFull" v="飼い葉おけがいっぱいです!"/>
+<e k="warning_youDontHaveAccessToThis" v="アクセスできません!"/>
+<e k="warning_youDontHaveAccessToThisLand" v="この土地では作業できません!"/>
+<e k="warning_youDontOwnThisField" v="この畑を所有していません！"/>
+<e k="warning_youDontOwnThisItem" v="このアイテムは所有していません!"/>
+<e k="warning_youDontOwnThisLand" v="この土地は所有していません!"/>
+<e k="z_locaFont" v="TYPESET:.,-õñÕÑìďťňâçğıİîöşüûáéíñóúü¿¡äåéöёъяшертыуиопющэасдфгчйкльжзхцвбнмăâîşșţțąćęłńóśźżåæâéèêøóòôáéíöóőüúűäöüßùûüÿ€àâæçéèêëïîôœäåöĉĝĥĵŝŭéëïóöüåæéøúůýžáčďéěíňóřšť$€£¥₩↵⌫⏎↑ ↓ ← →
+CAPSET:.,-ÌĎŤŇÂÇĞıİÎÖŞÜÛÁÉÍÑÓÚÜ¿¡ÄÅÉÖЁЪЯШЕРТЫУИОПЮЩЭАСДФГЧЙКЛЬЖЗХЦВБНМĂÂÎŞȘŢȚĄĆĘŁŃÓŚŹŻÅÆÂÉÈÊØÓÒÔÁÉÍÖÓŐÜÚŰÄÖÜßÙÛÜŸ€ÀÂÆÇÉÈÊËÏÎÔŒÄÅÖĈĜĤĴŜŬÉËÏÓÖÜÅÆÉØÚŮÝŽÁČĎÉĚÍŇÓŘŠŤ$€£¥₩↵⌫⏎↑ ↓ ← →°"/>
+</elements>
+</l10n>

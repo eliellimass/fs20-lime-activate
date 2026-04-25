@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.825" width="0.75" mass="0.262" tireType="mud" frictionScale="1.60" maxLongStiffness="11" maxLatStiffness="130" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/trelleborg/T404/R30_5_T404.i3d" nodeLeft="3|0" nodeRight="3|0" maxDeformation="0.088" isCareWheel="false" tireTrackAtlasIndex="3" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="0|0" widthAndDiam="24 30.5" />
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="24 30.5" />
+    </default>
+</wheel>

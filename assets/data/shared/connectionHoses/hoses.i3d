@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hoses" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="5" filename="$data/shared/connectionHoses/hoses1_specular.png" />
+    <File fileId="1" filename="$data/shared/connectionHoses/hoses_normal.png" />
+    <File fileId="2" filename="$data/shared/connectionHoses/hoses_specular.png" />
+    <File fileId="4" filename="$data/shared/default_normal.png" />
+  </Files>
+
+  <Materials>
+    <Material name="hoses_mat1" materialId="1" diffuseColor="1 1 1 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="LOCAL_CATMULL_ROM_colorMask">
+      <CustomParameter name="colorMat2" value="1 1 1 1"/>
+      <CustomParameter name="RDT" value="1.0 1.0 2.5 10.0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 1"/>
+      <CustomParameter name="colorMat1" value="1 1 1 1"/>
+      <CustomParameter name="lengthInvLength" value="2 0.5 0 0"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="hoses1_mat1" materialId="2" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="LOCAL_CATMULL_ROM_colorMask">
+      <CustomParameter name="colorMat2" value="1 1 1 5"/>
+      <CustomParameter name="RDT" value="1.0 1.0 2.5 2.5"/>
+      <CustomParameter name="colorMat0" value="1 1 1 5"/>
+      <CustomParameter name="colorMat1" value="1 1 1 5"/>
+      <CustomParameter name="lengthInvLength" value="2 0.5 0 0"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hoses.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="_8mm" visibility="false" nodeId="1">
+      <Shape name="_8mm_1m" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="200" nodeId="2"/>
+      <Shape name="_8mm_2m" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="200" nodeId="3"/>
+      <Shape name="_8mm_3m" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="200" nodeId="4"/>
+    </TransformGroup>
+    <TransformGroup name="_20mm" visibility="false" nodeId="5">
+      <Shape name="_20mm_1m" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="200" nodeId="6"/>
+      <Shape name="_20mm_2m" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="200" nodeId="7"/>
+      <Shape name="_20mm_3m" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="200" nodeId="8"/>
+    </TransformGroup>
+    <TransformGroup name="_66mm" visibility="false" nodeId="9">
+      <Shape name="_66mm_1m" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="200" nodeId="10"/>
+      <Shape name="_66mm_2m" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="200" nodeId="11"/>
+      <Shape name="_66mm_3m" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="200" nodeId="12"/>
+    </TransformGroup>
+    <TransformGroup name="_140mm" nodeId="13">
+      <Shape name="_140mm_1m" translation="0 2.61032e-51 5.79607e-67" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="200" nodeId="14"/>
+      <Shape name="_140mm_2m" translation="0 -5.43214e-50 -1.20618e-65" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="200" nodeId="15"/>
+      <Shape name="_140mm_3m" translation="0 -5.43214e-50 -1.20618e-65" shapeId="12" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="200" nodeId="16"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

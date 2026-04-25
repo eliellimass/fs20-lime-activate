@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicles>
+
+    <vehicle id="5" tourId="tourCombine" filename="data/vehicles/newHolland/TX32/TX32.xml"                  farmId="1" propertyState="1" xPosition="-70" yOffset="0.5" zPosition="-120" yRotation="0" defaultFarmProperty="true" />
+    <vehicle tourId="tourCutter" id="6" filename="data/vehicles/newHolland/TX32Header/TX32Header.xml"      farmId="1" propertyState="1" xPosition="-70" yOffset="0.5" zPosition="-115" yRotation="0" defaultFarmProperty="true" />
+
+
+	<vehicle id="1" tourId="tourTractor1" filename="data/vehicles/caseIH/magnum7240Pro/magnum7240Pro.xml"    farmId="1" propertyState="1" xPosition="26" yOffset="0.5" zPosition="28" yRotation="-90" defaultFarmProperty="true" />
+    <vehicle id="2" tourId="tourCultivator" filename="data/vehicles/rabe/MKE300/mke300.xml"                    farmId="1" propertyState="1" xPosition="30" yOffset="0.5" zPosition="28" yRotation="-90" defaultFarmProperty="true" />
+
+    <vehicle id="3" tourId="tourTractor2" filename="data/vehicles/fendt/favorit500/favorit500.xml"           farmId="1" propertyState="1" xPosition="-132"  yOffset="0.5" zPosition="-115" yRotation="0" defaultFarmProperty="true" />
+    <vehicle id="4" tourId="tourSowingMachine" filename="data/vehicles/alpego/jetM/jetM.xml"                   farmId="1" propertyState="1" xPosition="-132" yOffset="0.5" zPosition="-120" yRotation="0" defaultFarmProperty="true">
+        <fillUnit>
+            <unit index="1" fillType="SEEDS" fillLevel="1000.000000"/>
+        </fillUnit>
+    </vehicle>
+
+    <vehicle tourId="tourTrailer" id="7" filename="data/vehicles/strautmann/SEK802/SEK802.xml"              farmId="1" propertyState="1" xPosition="-1" yOffset="0.5" zPosition="-2" yRotation="180" defaultFarmProperty="true" />
+
+	<attachments rootVehicleId="1">
+        <attachment attachmentId="2" inputJointDescIndex="1" jointIndex="1" moveDown="false"/>
+    </attachments>
+    <attachments rootVehicleId="5">
+        <attachment attachmentId="6" inputJointDescIndex="1" jointIndex="1" moveDown="false"/>
+    </attachments>
+</vehicles>

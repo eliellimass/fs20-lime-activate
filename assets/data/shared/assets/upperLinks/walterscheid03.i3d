@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="walterscheid03" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="4" filename="$data/shared/assets/upperLinks/walterscheidUpperLinksDecals_diffuse.png" />
+    <File fileId="6" filename="$data/shared/assets/upperLinks/walterscheidUpperLinksScaleDecal_diffuse.png" />
+    <File fileId="1" filename="$data/shared/assets/upperLinks/walterscheidUpperLinks_normal.png" />
+    <File fileId="2" filename="$data/shared/assets/upperLinks/walterscheidUpperLinks_specular.png" />
+    <File fileId="5" filename="$data/shared/default_normal.png" />
+  </Files>
+
+  <Materials>
+    <Material name="walterscheidUpperLinks_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.0564 0.0564 0.0564 0"/>
+      <CustomParameter name="colorMat1" value="1.0000 1.0000 1.0000 8"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="walterscheidUpperLinksDecals_mat" materialId="2" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="walterscheidUpperLinksDecals_mat1" materialId="3" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="Decal_colorMask">
+      <CustomParameter name="colorMat2" value="1 1 1 1"/>
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="phong1" materialId="4" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="Decal">
+      <Texture fileId="6"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="walterscheid03.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="upperLink" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="75" nodeId="1">
+      <Shape name="upperLinkHead" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="75" nodeId="2">
+        <TransformGroup name="referencePoint" translation="0 0 0.601016" nodeId="3"/>
+      </Shape>
+      <Shape name="scalePart" translation="-1.984e-05 -4.3565e-05 0.164807" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="75" nodeId="4">
+        <TransformGroup name="scalePartRef" translation="0 0 0.288601" nodeId="5"/>
+      </Shape>
+      <Shape name="decals" translation="4.76837e-09 -1.77636e-17 0.0630869" shapeId="4" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="2" clipDistance="30" nodeId="6"/>
+      <Shape name="decals1" translation="4.76837e-09 -1.77636e-17 0.0630869" shapeId="5" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="7"/>
+      <Shape name="scaleDecal" translation="0.0372238 0.0152377 0.299608" shapeId="6" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="4" clipDistance="30" nodeId="8"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

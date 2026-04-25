@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="moduleCrawlers" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="7" filename="$data/shared/assets/assetLibraryDecals_diffuse.png" />
+    <File fileId="8" filename="$data/shared/assets/assetLibraryDecals_normal.png" />
+    <File fileId="9" filename="$data/vehicles/lizard/moduleX/moduleXDecals_specular.png" />
+    <File fileId="4" filename="$data/vehicles/lizard/moduleX/moduleXTracks_diffuse.png" />
+    <File fileId="5" filename="$data/vehicles/lizard/moduleX/moduleXTracks_normal.png" />
+    <File fileId="6" filename="$data/vehicles/lizard/moduleX/moduleXTracks_specular.png" />
+    <File fileId="1" filename="$data/vehicles/lizard/moduleX/moduleX_normal.png" />
+    <File fileId="2" filename="$data/vehicles/lizard/moduleX/moduleX_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="moduleX_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat2" value="0.7818 0.0090 0.0461 1"/>
+      <CustomParameter name="colorMat0" value="0.8456 0.8456 0.8456 0"/>
+      <CustomParameter name="colorMat1" value="0.0161 0.0134 0.0120 0"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="moduleXTracks_mat" materialId="2" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="uvScroll_colorMask">
+      <CustomParameter name="colorMat0" value="0.0161 0.0134 0.0120 5"/>
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="assetLibraryDecals_mat" materialId="3" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="Decal_colorMask">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="moduleCrawlers.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="_01" nodeId="1">
+      <Shape name="leftTrack" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="2">
+        <Shape name="track" translation="0.000158846 -0.0725271 -0.0649483" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="100" nodeId="3"/>
+        <Shape name="frontWheel" translation="0.0538712 -0.0727178 0.618326" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="4">
+          <Shape name="screwDecals2" translation="0.058148 -0.000693083 -0.000302582" shapeId="4" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="5"/>
+        </Shape>
+        <Shape name="backWheel" translation="0.000827142 0.0401923 -0.86613" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="6"/>
+      </Shape>
+      <Shape name="rightTrack" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="7">
+        <Shape name="track" translation="-0.00012726 -0.0725271 -0.0649483" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="100" nodeId="8"/>
+        <Shape name="frontWheel" translation="-0.0538396 -0.072718 0.618326" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="9">
+          <Shape name="screwDecals1" translation="-0.0591486 -0.00069294 -0.000302582" shapeId="9" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="10"/>
+        </Shape>
+        <Shape name="backWheel" translation="-0.000795557 0.0401921 -0.86613" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="11"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

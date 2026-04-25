@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="backdropBuildings_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/maps/textures/mobile/materialCollection01_diffuse.png" />
+    <File fileId="2" filename="$data/maps/textures/mobile/materialCollection01_normal.png" />
+    <File fileId="3" filename="$data/maps/textures/mobile/materialCollection01_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="materialCollection01_mat" materialId="1" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="backdropBuildings_SET.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="backgroundbuildings_SET" collision="false" density="0" nodeId="1">
+      <Shape name="stableLow01" translation="0 0 -80" shapeId="1" castsShadows="true" receiveShadows="false" materialIds="1" nodeId="2"/>
+      <Shape name="cowStabelLow01" translation="0 0 -130" shapeId="2" castsShadows="true" receiveShadows="false" materialIds="1" nodeId="3"/>
+      <Shape name="shedLow01" shapeId="3" castsShadows="true" receiveShadows="false" materialIds="1" nodeId="4"/>
+      <Shape name="houseLow01" translation="0 0 30" shapeId="4" castsShadows="true" receiveShadows="false" materialIds="1" nodeId="5"/>
+      <Shape name="houseLow02" translation="0 0 70" shapeId="5" castsShadows="true" receiveShadows="false" materialIds="1" nodeId="6"/>
+      <Shape name="houseLow03" translation="0 0 110" shapeId="6" castsShadows="true" receiveShadows="false" materialIds="1" nodeId="7"/>
+      <Shape name="wasserTowerLow01" translation="0 0 -40" shapeId="7" castsShadows="true" receiveShadows="false" materialIds="1" nodeId="8"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

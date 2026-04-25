@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="powerLinesLW" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/maps/textures/mobile/utilityPoles_diffuse.png" />
+    <File fileId="2" filename="$data/maps/textures/mobile/utilityPoles_normal.png" />
+    <File fileId="3" filename="$data/maps/textures/mobile/utilityPoles_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="utilityPoles_mat" materialId="1" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="powerLinesLW.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="powerLinesLW" collision="false" clipDistance="1000" nodeId="1">
+      <Shape name="mainLine" translation="-58.6589 77.0719 -25.4894" shapeId="1" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="2"/>
+      <Shape name="farmConnetion" translation="11.2396 67.5889 -74.2004" shapeId="2" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="3"/>
+      <Shape name="branch01" translation="-317.48 40.5575 106.353" shapeId="3" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="4"/>
+      <Shape name="animalTraderConnection" translation="-273.811 39.974 198.258" shapeId="4" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="5"/>
+      <Shape name="branch02" translation="-393.634 40.4634 -9.57729" shapeId="5" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="6"/>
+      <Shape name="carGarageConnetion" translation="69.7528 67.6315 -154.246" shapeId="6" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="7"/>
+      <Shape name="carWashConnetion" translation="-22.9079 66.8394 -155.702" shapeId="7" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="8"/>
+      <Shape name="branch03" translation="24.5434 64.8029 -316.66" shapeId="8" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="9"/>
+      <Shape name="grainSiloConnetion" translation="-11.7459 58.6707 -460.92" shapeId="9" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="10"/>
+      <Shape name="branch04" translation="-170.738 49.8754 -439.768" shapeId="10" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="11"/>
+      <Shape name="brachn05" translation="271.819 67.6987 81.5432" shapeId="11" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="12"/>
+      <Shape name="bgaConnection" translation="366.497 63.6434 76.7631" shapeId="12" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="13"/>
+      <Shape name="branch06" translation="175.36 54.4097 197.164" shapeId="13" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="14"/>
+      <Shape name="farmMarketConnetion" translation="62.7741 40.226 267.799" shapeId="14" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="15"/>
+      <Shape name="roadMillConnetion" translation="379.072 80.7374 -227.239" shapeId="15" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="16"/>
+      <Shape name="branch07" translation="377.968 77.898 -291.047" shapeId="16" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="17"/>
+      <Shape name="sheepFarmConnection" translation="398.959 70.4655 -411.247" shapeId="17" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="18"/>
+      <Shape name="horseRanchConnections" translation="212.821 76.3238 -75.8653" shapeId="18" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="19"/>
+      <Shape name="factoryConnection" translation="-372.73 34.9575 329.91" shapeId="19" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="20"/>
+      <Shape name="spinneryConnection" translation="-343.759 36.0398 -459.939" shapeId="20" castsShadows="false" receiveShadows="false" materialIds="1" clipDistance="1000" nodeId="21"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

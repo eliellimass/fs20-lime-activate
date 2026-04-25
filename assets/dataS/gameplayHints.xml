@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<gameplayHints>
+    <gameplayHint>$l10n_hintMobile_01</gameplayHint>
+    <gameplayHint>$l10n_hintMobile_02</gameplayHint>
+    <gameplayHint>$l10n_hintMobile_03</gameplayHint>
+    <gameplayHint>$l10n_hintMobile_04</gameplayHint>
+    <gameplayHint>$l10n_hintMobile_05</gameplayHint>
+    <gameplayHint>$l10n_hintMobile_06</gameplayHint>
+    <gameplayHint>$l10n_hintMobile_07</gameplayHint>
+    <gameplayHint>$l10n_hintMobile_08</gameplayHint>
+    <gameplayHint>$l10n_hintMobile_09</gameplayHint>
+</gameplayHints>

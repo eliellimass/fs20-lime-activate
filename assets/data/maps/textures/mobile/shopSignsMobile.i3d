@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="shopSignsMobile" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="materialCollection01_diffuse.png"/>
+    <File fileId="5" filename="materialCollection01_normal.png"/>
+    <File fileId="6" filename="materialCollection01_specular.png"/>
+    <File fileId="7" filename="materialCollection02_diffuse.png"/>
+    <File fileId="8" filename="materialCollection02_normal.png"/>
+    <File fileId="9" filename="materialCollection02_specular.png"/>
+    <File fileId="1" filename="shopSignsMobile_diffuse.png"/>
+    <File fileId="2" filename="shopSignsMobile_normal.png"/>
+    <File fileId="3" filename="shopSignsMobile_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="materialCollection02_mat" materialId="4">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="materialCollection01_mat" materialId="5">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="shopSignsMobile_mat" materialId="6">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="shopSignsMobile.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="signs" lockedgroup="true" nodeId="42">
+      <TransformGroup name="roadSigns" nodeId="43">
+        <Shape shapeId="1" name="signStop01" translation="-4 0 10" clipDistance="250" nodeId="44" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="roadBlock01" translation="4 0 11" nodeId="45">
+          <Shape shapeId="2" name="signRoadClosed01" clipDistance="250" nodeId="46" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="post" translation="0 0 -1" clipDistance="250" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="bar" translation="0 0.905563 0.0460034" clipDistance="250" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="roadBlock02" translation="1 0 9" nodeId="49">
+          <Shape shapeId="5" name="post" translation="0 0 1" clipDistance="250" nodeId="50" materialIds="5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="6" name="bar" translation="-7.45058e-11 0.753163 0.0454028" clipDistance="250" nodeId="51" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <Shape shapeId="7" name="roadPylon01" translation="-3 0 10" clipDistance="250" nodeId="52" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="concreteBarrier01" translation="-1 0 10" clipDistance="250" nodeId="53" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="shopSigns" nodeId="54">
+        <Shape shapeId="9" name="signFactory" translation="0 0 8" clipDistance="250" nodeId="55" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="signHotel" translation="0 0 4" clipDistance="250" nodeId="56" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="signAnimalTrader" translation="7.95808e-15 0 7" nodeId="57">
+          <Shape shapeId="11" name="border" translation="-7.95808e-15 0 0" clipDistance="250" nodeId="58" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="sign" translation="-7.95808e-15 0 0" clipDistance="250" nodeId="59" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <Shape shapeId="13" name="logoAnimalTrader" translation="0 0 6" clipDistance="250" nodeId="60" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="14" name="signGrainStorage" translation="0 0 5" clipDistance="250" nodeId="61" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="15" name="logoGrainStorage" translation="0 0 4.5" clipDistance="250" nodeId="62" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="signBGA" translation="0 0 2" nodeId="63">
+          <Shape shapeId="16" name="sign" translation="0 1.78429 0.0940038" clipDistance="250" nodeId="64" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="17" name="posts" translation="0 -1.78429 -0.0940038" clipDistance="250" nodeId="65" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="signSpinnery" translation="0 0 1" nodeId="66">
+          <Shape shapeId="18" name="posts" clipDistance="250" nodeId="67" materialIds="5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="19" name="sign" translation="2.44141e-06 1.03382 0.0883642" clipDistance="250" nodeId="68" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="signGrainMill" translation="0 0 -3" nodeId="69">
+          <Shape shapeId="20" name="border" clipDistance="250" nodeId="70" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="21" name="sign" clipDistance="250" nodeId="71" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <Shape shapeId="22" name="signFarmersMarket" translation="0 0 -1" clipDistance="250" nodeId="72" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="signPigFarm" translation="0 0 -4" nodeId="73">
+          <Shape shapeId="23" name="posts" clipDistance="250" nodeId="74" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="24" name="shape" clipDistance="250" nodeId="75" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="signHillsideRanch" translation="0 0 -5" nodeId="76">
+          <Shape shapeId="25" name="post" clipDistance="250" nodeId="77" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="26" name="shape" translation="0.000258789 5.16002 -0.0233813" clipDistance="250" nodeId="78" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="27" name="sign" translation="-0.000320435 2.70369 1.7053e-15" clipDistance="250" nodeId="79" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="signSheepFarm" translation="0 0 -6" nodeId="80">
+          <Shape shapeId="28" name="posts" clipDistance="250" nodeId="81" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="29" name="sign" translation="-5.76658e-07 1.68589 -1.34407e-07" clipDistance="250" nodeId="82" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <Shape shapeId="30" name="signCarService_sign" translation="0 0 -9" clipDistance="250" nodeId="83" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="31" name="signFarmMachinesSmall" translation="0 0 -7" clipDistance="250" nodeId="84" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="32" name="signFarmMachine" translation="0 0 -8" clipDistance="250" nodeId="85" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="33" name="signCarWash" translation="0 -2.84217e-16 -11" clipDistance="250" nodeId="86" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="34" name="signCarWashFront" translation="0 1.52588e-07 -13" static="true" nodeId="87" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

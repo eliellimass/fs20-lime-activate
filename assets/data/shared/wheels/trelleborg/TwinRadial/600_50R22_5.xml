@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.585" width="0.6" mass="0.147" tireType="mud" frictionScale="1.60" maxLongStiffness="10" maxLatStiffness="120" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/trelleborg/TwinRadial/R22_5_TwinRadial.i3d" nodeLeft="3|0" nodeRight="3|1" maxDeformation="0.06" isCareWheel="false" tireTrackAtlasIndex="2" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="1|0" widthAndDiam="20 22.5" />
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="20 22.5" />
+    </default>
+</wheel>

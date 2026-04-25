@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <npcs>
+        <npc name="NPC_US_01" title="Mason Newton"      category="young"  imageFilename="$dataS2/character/humans/npc/npc16_diffuse.png" />
+        <npc name="NPC_US_02" title="Aaron Buckley"     category="young"  imageFilename="$dataS2/character/humans/npc/npc14_diffuse.png" />
+        <npc name="NPC_US_03" title="Tyler Fleming"     category="young"  imageFilename="$dataS2/character/humans/npc/npc21_diffuse.png" />
+        <npc name="NPC_US_04" title="Brian Townsend"    category="young"  imageFilename="$dataS2/character/humans/npc/npc42_diffuse.png" />
+
+        <npc name="NPC_US_05" title="Blake C. Colvin"   category="middle" imageFilename="$dataS2/character/humans/npc/npc27_diffuse.png" />
+        <npc name="NPC_US_06" title="Anthony Morgan"    category="middle" imageFilename="$dataS2/character/humans/npc/npc37_diffuse.png" />
+        <npc name="NPC_US_07" title="Scott Nix"         category="middle" imageFilename="$dataS2/character/humans/npc/npc29_diffuse.png" />
+        <npc name="NPC_US_08" title="Toby Law"          category="middle" imageFilename="$dataS2/character/humans/npc/npc23_diffuse.png" />
+        <npc name="NPC_US_09" title="Paul Carrier"      category="middle" imageFilename="$dataS2/character/humans/npc/npc06_diffuse.png" />
+
+        <npc name="NPC_US_10" title="Philip Elder"      category="old"    imageFilename="$dataS2/character/humans/npc/npc04_diffuse.png" />
+        <npc name="NPC_US_11" title="Emerson Ramirez"   category="old"    imageFilename="$dataS2/character/humans/npc/npc25_diffuse.png" />
+        <npc name="NPC_US_12" title="Robert Rudolph"    category="old"    imageFilename="$dataS2/character/humans/npc/npc01_diffuse.png" />
+        <npc name="NPC_US_13" title="Leo Thompson"      category="old"    imageFilename="$dataS2/character/humans/npc/npc03_diffuse.png" />
+        <npc name="NPC_US_14" title="Maurice Vargas"    category="old"    imageFilename="$dataS2/character/humans/npc/npc24_diffuse.png" />
+        <npc name="NPC_US_15" title="Kenneth Fletcher"  category="old"    imageFilename="$dataS2/character/humans/npc/npc41_diffuse.png" />
+
+        <npc name="NPC_US_16" title="Rebecca O'Connor"  category="female" imageFilename="$dataS2/character/humans/npc/npc11_diffuse.png" />
+        <npc name="NPC_US_17" title="Karen Diaz"        category="female" imageFilename="$dataS2/character/humans/npc/npc20_diffuse.png" />
+        <npc name="NPC_US_18" title="Justine Coggins"   category="female" imageFilename="$dataS2/character/humans/npc/npc15_diffuse.png" />
+        <npc name="NPC_US_19" title="Debra Joseph"      category="female" imageFilename="$dataS2/character/humans/npc/npc13_diffuse.png" />
+        <npc name="NPC_US_20" title="Elizabeth Frazier" category="female" imageFilename="$dataS2/character/humans/npc/npc34_diffuse.png" />
+    </npcs>
+</map>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="R30_5_radial" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="1" filename="radial_normal.png" />
+    <File fileId="2" filename="radial_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="radial_mat5" materialId="1" diffuseColor="0.5 0.5 0.5 1" cosPower="50" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+      <CustomParameter name="morphPosition" value="-0.421 -0.814 0.5 0.05"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="R30_5_radial.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="_850_50_R30_5_" nodeId="1">
+      <Shape name="shape2" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="2"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

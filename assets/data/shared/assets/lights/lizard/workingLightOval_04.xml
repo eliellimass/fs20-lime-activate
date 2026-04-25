@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<light>
+    <filename>$data/shared/assets/lights/lizard/workingLightOval_04.i3d</filename>
+    <rootNode node="0" />
+    <defaultLight node="0|0|1" lightTypes="2" />
+    <rotationNode1 node="0|0" />
+</light>

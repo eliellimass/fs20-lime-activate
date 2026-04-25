@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="windWheel_SET" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../textures/mobile/materialCollection02_diffuse.png"/>
+    <File fileId="2" filename="../textures/mobile/materialCollection02_normal.png"/>
+    <File fileId="3" filename="../textures/mobile/materialCollection02_specular.png"/>
+    <File fileId="5" filename="../textures/mobile/waterTowerWindWheel_specular.png"/>
+    <File fileId="4" filename="../../shaders/buildingShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.235294 0.117647 0.117647 1">
+    </Material>
+    <Material name="windWheel_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="windWheel_SET.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="windWheel_SET" lockedgroup="true" nodeId="10">
+      <Shape shapeId="1" name="windWheelTower" translation="0.0526953 5.18588 -0.872505" clipDistance="500" nodeId="11" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="windWheelBlade_ROTATION" translation="8.54492e-06 9.75 0.5" clipDistance="500" nodeId="12" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="col" translation="-2.84217e-16 8.88178e-16 -2.84217e-16" visibility="false" static="true" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="12">
+      <Attribute name="onCreate" type="scriptCallback" value="Rotator.onCreate"/>
+      <Attribute name="speed" type="float" value="0.0005"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

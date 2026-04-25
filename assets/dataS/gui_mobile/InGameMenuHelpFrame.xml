@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="ingameMenuHelpLine">
+    <GuiElement type="bitmap" profile="uiInGameMenuPageHeader" id="pageHeader">
+        <GuiElement type="empty" profile="uiInGameMenuHeaderSubPagingSelector"  id="subPageSelector">
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonLeft" id="subPagingButtonLeft" onClick="onClickSubPageSelection" />
+            <GuiElement type="button" profile="uiInGameMenuSubPagingButtonRight" id="subPagingButtonRight" onClick="onClickSubPageSelection" />
+        </GuiElement>
+        <GuiElement type="text" profile="uiInGameMenuPagingTitle" id="pagingTitle" text="$l10n_ui_ingameMenuHelpLine" />
+    </GuiElement>
+
+    <GuiElement type="empty" profile="uiInGameMenuFrame">
+        <GuiElement type="empty" profile="ingameMenuHelpBox" id="helpContainer">
+            <!-- Navigation Box -->
+            <GuiElement type="empty" profile="ingameMenuHelpNavigationBox" position="0px 0px">
+                <GuiElement type="list" profile="ingameMenuHelpList" onSelectionChanged="onHelpLineListSelectionChanged" onDoubleClick="onHelpLineDoubleClick" id="helpLineList" focusInit="onOpen">
+                    <GuiElement type="listItem" profile="ingameMenuHelpListItem" id="helpLineListItemTemplate">
+                        <GuiElement type="text" profile="helpLineListItemText" text="Help Line Title" name="listItemText"/>
+                    </GuiElement>
+                    <GuiElement type="listItem" profile="ingameMenuHelpListCategory" id="helpLineListCategoryTemplate">
+                        <GuiElement type="text" profile="ingameMenuHelpListCategoryTitle" text="Help Line Title" name="listItemText"/>
+                    </GuiElement>
+                </GuiElement>
+
+                <GuiElement type="slider" profile="sliderInvisible" id="listSlider" dataElementId="helpLineList" handleFocus="false">
+                    <GuiElement type="button" profile="ingameMenuHelpListScrollButtonDown" handleFocus="false" />
+                    <GuiElement type="button" profile="ingameMenuHelpListScrollButtonUp" handleFocus="false" />
+                </GuiElement>
+            </GuiElement>
+
+            <!-- Content Box -->
+            <GuiElement type="empty" profile="ingameMenuHelpContentBox">
+                <GuiElement type="text" profile="helpLineTitle" id="helpLineTitleElement" />
+
+                <GuiElement type="boxLayout" profile="helpLineContentBox" position="40px 40px" id="helpLineContentBox">
+                    <GuiElement type="text"   profile="helpLineText"  id="helpLineTextElement" />
+                    <GuiElement type="bitmap" profile="helpLineImage" id="helpLineImageElement" />
+                </GuiElement>
+            </GuiElement>
+
+            <GuiElement type="indexState" profile="selectionStateBoxDocked" id="pagingIndexState" stateElementTemplateId="circleTemplate">
+                <GuiElement type="bitmap" profile="selectionStateDocked" id="circleTemplate"/>
+            </GuiElement>
+
+        </GuiElement>
+    </GuiElement>
+</GUI>

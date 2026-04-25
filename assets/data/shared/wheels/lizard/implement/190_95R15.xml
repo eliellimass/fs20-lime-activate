@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.37" width="0.13" mass="0.036" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire maxDeformation="0" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="$data/shared/wheels/lizard/implement/R15.i3d" node="0|1" />
+        <innerRim />
+    </default>
+    <configurations>
+        <configuration id="frontDual" >
+            <outerRim node="0|0" />
+        </configuration>
+        <configuration id="frontTriple" >
+            <outerRim node="0|2" />
+        </configuration>
+        <configuration id="sideTriple" >
+            <outerRim node="0|3" />
+        </configuration>
+        <configuration id="main" >
+            <outerRim node="0|4" />
+        </configuration>
+    </configurations>
+</wheel>
