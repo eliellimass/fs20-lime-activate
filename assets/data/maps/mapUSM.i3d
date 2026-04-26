@@ -1062,7 +1062,7 @@
         </LayerCombiner>
         <InfoLayer name="tipCol" fileId="64" numChannels="1" runtime="true"/>
         <InfoLayer name="farmland" fileId="65" numChannels="4"/>
-        <DetailLayer name="terrainDetail" densityMapId="66" numDensityMapChannels="12" cellSize="8" objectMask="16711935" decalLayer="1" distanceMapIds="67;68;;;69;;;;70;71;;;72;;;;70;71;;;72" distanceMapFirstChannel="0" distanceMapNumChannels="4" materialId="49" viewDistance="150" blendOutDistance="20" densityMapShaderNames="blendMap;blendMap2" combinedValuesChannels="0 3 0;6 2 0;3 3 1" useInterpolatedDensityMap="false;false"/>
+        <DetailLayer name="terrainDetail" densityMapId="66" numDensityMapChannels="12" cellSize="8" objectMask="16711935" decalLayer="1" distanceMapIds="67;68;;;69;;;" distanceMapFirstChannel="0" distanceMapNumChannels="3" materialId="49" viewDistance="150" blendOutDistance="20" densityMapShaderNames="blendMap;blendMap2" combinedValuesChannels="0 3 0;6 2 0;3 3 1" useInterpolatedDensityMap="false;false"/>
         <DetailLayer name="terrainDetailHeight" densityMapId="76" numDensityMapChannels="9" cellSize="8" objectMask="16711935" decalLayer="2" materialId="101" viewDistance="50" blendOutDistance="5" densityMapShaderNames="blendMap" combinedValuesChannels="0 5 0;5 4 0" useInterpolatedDensityMap="false" heightFirstChannel="5" heightNumChannels="4" maxHeight="2"/>
         <FoliageMultiLayer densityMapId="79" numChannels="10" numTypeIndexChannels="5" compressionChannels="5">
           <FoliageType name="wheat" foliageXmlId="87"/>
