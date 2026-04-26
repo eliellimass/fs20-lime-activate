@@ -34,7 +34,7 @@
 // Channel 2: Angle
 // Channel 3: Spray
 
-//#define USE_GROUND_LAYER_COLOR // if defined diffuse maps are used for ground layers, if not it will be only a bit darker. If not defined also texture rotation is deactivated
+#define USE_GROUND_LAYER_COLOR // if defined diffuse maps are used for ground layers, if not it will be only a bit darker. If not defined also texture rotation is deactivated
 
 #if defined(DIFFUSE) && defined(TERRAIN_DETAIL_CHANNEL_1) // if diffuse is defined, we are in color output mode
 #define USE_GROUND_SHADER_COLOR
