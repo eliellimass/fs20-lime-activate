@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name="scrollPosition"  target="scrollPosition"  type="float4" defaultValue="0 1.0 -10 10"  minValue = "-10.0 0.0 -10.0 -10.0"   maxValue = "10.0 1.0 10.0 10.0"/>
+        <Parameter name="lengthAndRadius" target="lengthAndRadius" type="float4" defaultValue="2.0 0.5 0 0" minValue = "-10.0 -10.0 -10.0 -10.0"   maxValue = "10.0 10.0 10.0 10.0"/>
+    </Parameters>
+    <Variations>
+        <Variation name = "MESH_SCROLLING">
+<![CDATA[
+    #define MESH_SCROLLING
+]]>
+        </Variation>
+        <Variation name = "MESH_ROTATION">
+<![CDATA[
+    #define MESH_ROTATION
+]]>
+        </Variation>
+        <Variation name = "MESH_SCALING">
+<![CDATA[
+    #define MESH_SCALING
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+    uniform float4 scrollPosition;
+    /*
+    scrollPosition.x - interpolated parameter by script
+    scrollPosition.y - global transparency
+    scrollPosition.z - startBlend position for MESH_ROTATION, MESH_SCALING, MESH_SCROLLING
+    scrollPosition.w - endBlend   position for MESH_ROTATION, MESH_SCALING
+    */
+    uniform float4 lengthAndRadius;
+    /*
+    MESH_ROTATION
+    
+    lengthAndRadius.xy - not used
+    lengthAndRadius.z  - blendIN  transparency 
+    lengthAndRadius.w  - blendOUT transparency
+    
+    MESH_SCROLLING
+    
+    lengthAndRadius.x - length before rotation
+    lengthAndRadius.y - radius
+    lengthAndRadius.z - length after rotation, and blendOUT transparency
+    lengthAndRadius.w - start offset before lengthAndRadius.x, and blendIN  transparency 
+    
+    MESH_SCALING
+    
+    lengthAndRadius.x - length before scaling
+    lengthAndRadius.y - length while scaling
+    lengthAndRadius.z - blendIN  transparency 
+    lengthAndRadius.w - blendOUT transparency
+    */
+float2 m_getRotationSinCos( float mTime )
+{
+    float2 mSinCos; 
+    // compute sin and cos for this angle 
+    sincos( mTime, mSinCos.x, mSinCos.y ); 
+    return mSinCos;
+}
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_OUTPUT">
+<![CDATA[
+float mVisibility : TEXCOORDn;
+]]>
+            </CodeInjection>
+            <CodeInjection position="START_POS_VS">
+<![CDATA[
+#if defined( MESH_SCALING )
+    float posStartScaling = lengthAndRadius.x;
+    float scalingLength   = lengthAndRadius.y;
+    float posFull         = posStartScaling + scalingLength;
+    
+    float offsetZRaw = scrollPosition.x;
+    #if defined( DEBUG_SHOW_PARALLAX )
+        offsetZRaw = cTime_s;
+    #endif
+    position.z = fmod( position.z + offsetZRaw, posFull );
+    if ( position.z > posStartScaling ) {
+        position.y *= 1 - ( position.z - posStartScaling ) /  scalingLength;    
+    }
+    // waving effect
+    // vertices for the plant should be in range [ 0.0 .. 3.0 ], pivot should be at 0.0 
+    position.xz += 0.1 * lerp( 0.0, sin( 6 *( offsetZRaw + position.z - position.x ) ), clamp( 0.5 * ( position.y - 0.25 ), 0.0, 1.0 ) );
+    //===============================
+    float blendIn  = lengthAndRadius.z;
+    float blendOut = lengthAndRadius.w;
+    Out.mVisibility  = ( ( position.z > blendIn && position.z < blendOut )  ? 1.0 : 0.0 );
+    Out.mVisibility *= ( ( position.x > scrollPosition.z && position.x < scrollPosition.w )  ? 1.0 : 0.0 );
+    //===============================
+#endif
+#if defined( MESH_ROTATION )
+    float mSpeed = scrollPosition.x;
+    #if defined( DEBUG_SHOW_PARALLAX )
+        mSpeed = cTime_s;
+    #endif
+    float3 mDeformedPositionZ = position.xyz;
+    float2 mSinCos = m_getRotationSinCos( mSpeed );
+
+    mDeformedPositionZ.x = dot( position.xy, float2( mSinCos.y, -mSinCos.x ) );
+    mDeformedPositionZ.y = dot( position.xy, float2( mSinCos.x,  mSinCos.y ) );
+    position.xyz = mDeformedPositionZ.xyz;
+    //===============================
+    // 15 degrees ~ 0.25 radians
+    float blendIn  = lengthAndRadius.z; // -0.5 
+    float blendOut = lengthAndRadius.w; // 0.25
+    Out.mVisibility  = ( ( position.y > position.x * tan( blendIn)  ? 1.0 : 0.0  ));
+    Out.mVisibility *= ( ( position.x < position.y * tan( blendOut )  ? 1.0 : 0.0  ));
+    Out.mVisibility *= ( ( position.z > scrollPosition.z && position.z < scrollPosition.w )  ? 1.0 : 0.0 );
+    //===============================
+#endif
+#if defined( MESH_SCROLLING )
+    float crawlerLength   = lengthAndRadius.x;
+    float crawlerRadius   = lengthAndRadius.y;
+    float crawlerRadiusPi = 3.1415926 * crawlerRadius;
+    float crawlerLength2  = lengthAndRadius.z;
+    float crawlerOffset   = lengthAndRadius.w;
+
+    float posFirstRot  = crawlerOffset + crawlerLength;
+    float posAfterRot  = posFirstRot + crawlerRadiusPi * 0.5;
+    float posAfterLast = posAfterRot + crawlerLength2;
+
+    float offsetZRaw = scrollPosition.x;
+    #if defined( DEBUG_SHOW_PARALLAX )
+        offsetZRaw = cTime_s;
+    #endif
+    position.z = fmod( position.z + offsetZRaw, posAfterLast );
+    //===============================
+    float blendIn    = crawlerOffset;
+    float blendOut   = posAfterLast - crawlerLength2;
+    Out.mVisibility  = ( ( position.z > blendIn && position.z < blendOut )  ? 1.0 : 0.0 );
+    Out.mVisibility *= ( ( position.z > scrollPosition.z )  ? 1.0 : 0.0 );
+    //===============================
+    if (position.z > posAfterRot) {
+        float curZ = position.z;
+        position.z = posFirstRot + position.y;
+        position.y = - (curZ - posAfterRot);
+    } else if (position.z > posFirstRot) {
+        // crawlerRadius = position.y ( based on 3d mesh data )
+        float angle = (position.z - posFirstRot) / crawlerRadius;
+
+        position.z = posFirstRot + sin(angle) *  position.y;
+        position.y = cos(angle) * position.y;
+    }
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_NORMAL_VS">
+<![CDATA[
+#if defined( MESH_SCALING )
+    float3 normal = In.normal.xyz;
+    
+    float posStartScaling = lengthAndRadius.x;
+    float scalingLength   = lengthAndRadius.y;
+    float posFull         = posStartScaling + scalingLength;
+    
+    float offsetZRaw = scrollPosition.x;
+    #if defined( DEBUG_SHOW_PARALLAX )
+        offsetZRaw = cTime_s;
+    #endif
+    float posZ = fmod( getPosition(In).z + offsetZRaw, posFull );
+    if ( posZ > posStartScaling ) {
+        normal.y *= 1 - ( posZ - posStartScaling ) /  scalingLength;    
+    }
+    return normal;
+#endif
+#if defined( MESH_ROTATION )
+    float mSpeed = scrollPosition.x;
+    #if defined( DEBUG_SHOW_PARALLAX )
+        mSpeed = cTime_s;
+    #endif
+    float3 mDeformedNormalZ = In.normal.xyz;
+    float2 mSinCos = m_getRotationSinCos( mSpeed );
+
+    mDeformedNormalZ.x = dot( In.normal.xy, float2( mSinCos.y, -mSinCos.x ) );
+    mDeformedNormalZ.y = dot( In.normal.xy, float2( mSinCos.x,  mSinCos.y ) );
+    return mDeformedNormalZ;
+#endif
+#if defined( MESH_SCROLLING )
+    float3 normal = In.normal.xyz;
+
+    float crawlerOffset   = lengthAndRadius.w;
+    float crawlerRadius   = lengthAndRadius.y;
+    float crawlerRadiusPi = 3.1415926 * crawlerRadius;
+    float crawlerLength   = lengthAndRadius.x;
+    float crawlerLength2  = lengthAndRadius.z;
+
+    float posFirstRot  = crawlerOffset + crawlerLength;
+    float posAfterRot  = posFirstRot + crawlerRadiusPi * 0.5;
+    float posAfterLast = posAfterRot + crawlerLength2;
+
+    float offsetZRaw = scrollPosition.x;
+    #if defined( DEBUG_SHOW_PARALLAX )
+        offsetZRaw = cTime_s;
+    #endif
+    float posZ = fmod( getPosition(In).z + offsetZRaw, posAfterLast );
+
+    if (posZ > posAfterRot) {
+        normal.yz = float2(-normal.z, normal.y);
+    } else if (posZ > posFirstRot) {
+        // z=0 -> 0
+        // z=pi*r -> pi
+        float angle = (posZ - posFirstRot) / crawlerRadius;
+
+        float cosAngle = cos(angle);
+        float sinAngle = sin(angle);
+
+        normal.y = cosAngle * In.normal.y - sinAngle * In.normal.z;
+        normal.z = sinAngle * In.normal.y + cosAngle * In.normal.z;
+    }
+    return normal;
+#endif    
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_TANGENT_VS">
+<![CDATA[
+#if defined( MESH_SCALING )
+    float3 tangent = In.tangent.xyz;
+    
+    float posStartScaling = lengthAndRadius.x;
+    float scalingLength   = lengthAndRadius.y;
+    float posFull         = posStartScaling + scalingLength;
+    
+    float offsetZRaw = scrollPosition.x;
+    #if defined( DEBUG_SHOW_PARALLAX )
+        offsetZRaw = cTime_s;
+    #endif
+    float posZ = fmod( getPosition(In).z + offsetZRaw, posFull );
+    if ( posZ > posStartScaling ) {
+        tangent.y *= 1 - ( posZ - posStartScaling ) /  scalingLength;    
+    }
+    return tangent;
+#endif
+#if defined( MESH_ROTATION )
+    float mSpeed = scrollPosition.x;
+    #if defined( DEBUG_SHOW_PARALLAX )
+        mSpeed = cTime_s;
+    #endif
+    float3 mDeformedTangetZ = In.tangent.xyz;
+    float2 mSinCos = m_getRotationSinCos( mSpeed );
+
+    mDeformedTangetZ.x = dot( In.tangent.xy, float2( mSinCos.y, -mSinCos.x ) );
+    mDeformedTangetZ.y = dot( In.tangent.xy, float2( mSinCos.x,  mSinCos.y ) );
+    return mDeformedTangetZ;
+#endif
+#if defined( MESH_SCROLLING )
+    float3 tangent = In.tangent.xyz;
+
+    float crawlerOffset   = lengthAndRadius.w;
+    float crawlerRadius   = lengthAndRadius.y;
+    float crawlerRadiusPi = 3.1415926 * crawlerRadius;
+    float crawlerLength   = lengthAndRadius.x;
+    float crawlerLength2  = lengthAndRadius.z;
+
+    float posFirstRot  = crawlerOffset+crawlerLength;
+    float posAfterRot  = posFirstRot + crawlerRadiusPi * 0.5;
+    float posAfterLast = posAfterRot + crawlerLength2;
+
+    float offsetZRaw = scrollPosition.x;
+    #if defined( DEBUG_SHOW_PARALLAX )
+        offsetZRaw = cTime_s;
+    #endif
+    float posZ = fmod( getPosition(In).z + offsetZRaw, posAfterLast );
+    
+    if (posZ > posAfterRot) {
+        tangent.yz = float2(-tangent.z, tangent.y);
+    } else if (posZ > posFirstRot) {
+        // z=0 -> 0
+        // z=pi*r -> pi
+        float angle = (posZ - posFirstRot) / crawlerRadius;
+
+        float cosAngle = cos(angle);
+        float sinAngle = sin(angle);
+
+        tangent.y = cosAngle * In.tangent.y - sinAngle * In.tangent.z;
+        tangent.z = sinAngle * In.tangent.y + cosAngle * In.tangent.z;
+    }
+    return tangent;
+#endif  
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_BITANGENT_VS">
+<![CDATA[
+    return cross( getNormal(In), getTangent(In) ) * In.tangent.w;
+]]>
+            </CodeInjection>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+    alpha *= In.vs.mVisibility * scrollPosition.y;
+]]>
+            </CodeInjection>
+          </CodeInjections>
+    </LodLevel>
+</CustomShader>

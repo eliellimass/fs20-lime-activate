@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name="psPlayScale"             target="psPlayScale"              type="float4" defaultValue = "1.0 2.0 0.0 1.0"/>
+        <Parameter name="psColor"                 target="psColor"                  type="float4" defaultValue = "1.0 1.0 1.0 1.0"/>
+    </Parameters>
+    <VertexAttributes>
+        <VertexAttribute name="uv1" group="uv1"/>
+    </VertexAttributes>
+    <Variations>
+        <Variation name = "SUBUV_MOVIE" groups="base uv1">
+<![CDATA[
+    /*
+    SUBUV_MOVIE - plays atlas animation with speed set in range [ psPlayScale.x, psPlayScale.y ],
+                  random selected start position,
+                  plays over whole atlas.
+    */
+    #define SUBUV_MOVIE
+]]>
+        </Variation>
+        <Variation name = "SUBUV_MOVIE_HORIZONTAL" groups="base uv1">
+<![CDATA[
+    /*
+    SUBUV_MOVIE_HORIZONTAL - plays atlas animation with speed set in range [ psPlayScale.x, psPlayScale.y ],
+                             random selected start position,
+                             plays over random selected horizontal line.
+    */
+    #define SUBUV_MOVIE_HORIZONTAL
+]]>
+        </Variation>
+        <Variation name = "SUBUV_BY_LIFE">
+<![CDATA[
+    /*
+    SUBUV_BY_LIFE - plays atlas animation during lifetime of the particle,
+                    start position at top left corner, end position at bottom right corner.
+                    plays over whole atlas.
+    */
+    #define SUBUV_BY_LIFE
+    #define SUBUV_MOVIE
+]]>
+        </Variation>
+        <Variation name = "SUBUV_BY_LIFE_VELOCITY_ALIGNED">
+<![CDATA[
+    #define SUBUV_BY_LIFE
+    #define SUBUV_MOVIE
+    #define VELOCITY_ALIGNED
+]]>
+        </Variation>
+        <Variation name = "SUBUV_MOVIE_HORIZONTAL_BY_LIFE">
+<![CDATA[
+    #define SUBUV_BY_LIFE
+    #define SUBUV_MOVIE_HORIZONTAL
+]]>
+        </Variation>
+        <Variation name = "SUBUV_MOVIE_HORIZONTAL_VELOCITY_ALIGNED">
+<![CDATA[
+    #define VELOCITY_ALIGNED
+    #define SUBUV_MOVIE_HORIZONTAL
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="LIB_FUNCTION_FS">
+<![CDATA[
+float getDepthFade(FS_INPUT In, FS_GLOBALS globals, float fadeDistance)
+{
+    float screenDepth = In.vs.screenPosZ / In.vs.screenPosW * 0.5 + 0.5;
+    float screenDepthLinear = convertDepthToEyeZ(screenDepth);
+    float sceneDepthLinear = convertDepthToEyeZ(getSceneDepth(In, globals));
+    return saturate((sceneDepthLinear - screenDepthLinear)/fadeDistance);
+}
+]]>
+            </CodeInjection>       
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+#if defined( SUBUV_MOVIE_HORIZONTAL ) || defined( SUBUV_MOVIE )
+    /*
+    [ psPlayScale.x, psPlayScale.y ] - animation playSpeed Range
+    psPlayScale.z                    - enables UV_FLIPPING
+                    1 - use flipping, 0 - without flipping.
+    */
+    uniform float4 psPlayScale;
+#endif
+    uniform float4 psColor;
+]]>
+            </CodeInjection>
+            <CodeInjection position = "CONFIG_DEFINES">
+<![CDATA[
+#if defined( VELOCITY_ALIGNED )
+    #define PARTICLE_SYSTEM_VELOCITY_ALIGNED
+#endif
+#if defined( DISABLE_BILLBOARD )
+    #undef PARTICLE_SYSTEM_BILLBOARD
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_DEFAULT_TEXCOORDS_VS">
+<![CDATA[
+#if defined( SUBUV_MOVIE_HORIZONTAL ) || defined( SUBUV_MOVIE )
+    // In.color.w;   blendFactor="1" blendInFactor="0" blendOutFactor="0" => 0 .. 1
+    float  mAlphaOverLife   = In.texCoords1.x;  // iterated value by lifetime of the particle from 0 .. 1
+    float  mRandomValue     = In.texCoords1.y;  // random per particle value from 0 .. 1
+    float  mXsize           = 1 / particleInvTextureAtlasSize.x;
+    float  mYsize           = 1 / particleInvTextureAtlasSize.y;
+    float  mXYsize          = mXsize * mYsize;
+    
+    float  mTime            = cTime_s * lerp( psPlayScale.x, psPlayScale.y, mRandomValue );
+    #if defined( SUBUV_BY_LIFE )
+        mTime = mAlphaOverLife * mXYsize;
+    #endif
+    float2 mIncomingUV      = convertDefaultTexCoords( In, In.texCoords0.xy );
+    float2 mOutgoingUV      = mIncomingUV;
+
+    // UV_FLIPPING
+    float mUVflipping       = psPlayScale.z; 
+    float mRandomSwitch1    = mUVflipping * ceil( mRandomValue - 0.5 );  //  0 or 1
+    float mRandomSwitch2    = 2 * mRandomSwitch1 - 1;                    // -1 or 1
+    mIncomingUV.x = mRandomSwitch1 - mRandomSwitch2*mIncomingUV.x;
+    //  end
+    
+
+    #if defined( SUBUV_MOVIE_HORIZONTAL )
+        float mSUBuvHorTime = mTime + mRandomValue * mXsize;
+        float mFrame        = floor ( fmod( mSUBuvHorTime,  mXsize ) );
+        float mYpos         = floor ( mRandomValue * mYsize );
+        float2 mSlotPos     = float2( mFrame, mYpos );
+        mOutgoingUV         = ( mSlotPos + mIncomingUV ) / float2( mXsize, mYsize );
+    #endif
+    #if defined( SUBUV_MOVIE )
+        float mSUBuvTime    = mTime + mRandomValue * mXYsize;
+        float mFrame        = floor ( fmod( mSUBuvTime, mXYsize ) );
+        #if defined( SUBUV_BY_LIFE )
+            mSUBuvTime      = mTime;
+            mFrame = floor(mSUBuvTime);
+        #endif
+        float mYpos         = floor ( mFrame / mXsize );
+        float2 mSlotPos     = float2( mFrame - mYpos * mXsize, - mYpos - 1 );
+        mOutgoingUV         = ( mSlotPos + mIncomingUV ) * particleInvTextureAtlasSize.xy;
+    #endif
+
+    return mOutgoingUV;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_GET_LIGHTING_FS">
+<![CDATA[
+{
+    float NdotL = clamp(dot(lightDir, normal), 0.25, 1.0);
+    float3 lighting = atten*NdotL * (diffuseShading + specularShading) * lightColor;
+    return lighting;
+}
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_DIFFUSE_COLOR_FS">
+<![CDATA[
+    diffuseColor *= psColor.rgb;
+]]>
+            </CodeInjection>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+#if defined(PARTICLE_SYSTEM_BILLBOARD) && defined(ALPHA_BLENDED)
+    #if GPU_PROFILE >= GPU_PROFILE_HIGH
+        alpha *= getDepthFade(In, globals, 0.5);
+    #endif
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

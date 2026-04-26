@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name = "anisotropic"    target = "anisotropic"    type = "float4" defaultValue = "0.16 0.43 -10.0 0.0"/>
+    </Parameters>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position = "MATERIALINFO">
+<![CDATA[
+    uniform float4 anisotropic;
+]]>
+            </CodeInjection>
+            <CodeInjection position="LIB_FUNCTION_FS">
+<![CDATA[
+float3 getTangent(FS_INPUT In, FS_GLOBALS globals)
+{
+    return normalize(In.vs.worldTangent);
+}
+float3 getBitangent(FS_INPUT In, FS_GLOBALS globals)
+{
+    float3 tangentSpaceNormal = In.vs.worldNormal.xyz;
+    float3 tangentSpaceTangent = In.vs.worldTangent.xyz;
+    float3 tangentSpaceBitangent = cross(tangentSpaceNormal, tangentSpaceTangent)*In.vs.worldTangent.w;    
+    return normalize(tangentSpaceBitangent);
+}
+float getWardAnisotropicNormalDistribution(float roughness, float anis, float NdotL, float NdotV, float NdotH, float HdotX, float HdotY)
+{
+    float aspect = sqrt(1.0h-anis * 0.9h);
+    float X = max(.001, (roughness*roughness)/aspect) * 5;
+    float Y = max(.001, (roughness*roughness)*aspect) * 5;
+    float exponent = -((HdotX/X)*(HdotX/X) + (HdotY/Y)*(HdotY/Y)) / (NdotH*NdotH);
+    float Distribution = 1.0 / (4.0 * 3.14159265 * X * Y * sqrt(NdotL * NdotV));
+    Distribution *= exp(exponent);
+    return Distribution;
+}
+float getTrowbridgeReitzAnisotropicNormalDistribution(float roughness,float anis, float NdotH, float HdotX, float HdotY)
+{
+    float aspect = sqrt(1.0h-anis * 0.9h);
+    float X = max(.001, (roughness*roughness)/aspect) * 5;
+    float Y = max(.001, (roughness*roughness)*aspect) * 5;
+    float tmp = ((HdotX/X)*(HdotX/X) + (HdotY/Y)*(HdotY/Y) + NdotH*NdotH);
+    return 1.0 / (  3.1415926535 * X*Y * tmp * tmp  );
+}
+// Anisotropic GGX
+// [Burley 2012, "Physically-Based Shading at Disney"]
+float getGGXaniso( float roughness,float RoughnessX, float RoughnessY, float NdotH, float HdotX, float HdotY )
+{
+    float ax = RoughnessX * RoughnessX;
+    float ay = RoughnessY * RoughnessY;
+    float d = HdotX * HdotX / (ax * ax) + HdotY * HdotY / (ay * ay) + NdotH * NdotH;
+    return 1 / ( 3.1415926535 * ax * ay * d * d );
+}
+
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_SPECULAR_SHADING_FS">
+<![CDATA[
+{
+    float3 halfDir = normalize(lightDir + viewDir);
+    float NdotL = saturate(dot(normal, lightDir));
+    float NdotH = saturate(dot(normal, halfDir));
+    float NdotV = max(dot(normal, viewDir), 0.00001); // constant to prevent NaN
+    float VdotH = saturate(dot(viewDir, halfDir));
+    float3 tangent   = getTangent(In,globals);
+    float3 bitangent = getBitangent(In,globals);
+    float HdotX = (dot(halfDir,tangent));
+    float HdotY = (dot(halfDir,bitangent));
+    
+    //float D = getWardAnisotropicNormalDistribution(roughness, anisotropic.z,NdotL,NdotV,NdotH,HdotY,HdotX);
+    float D = getTrowbridgeReitzAnisotropicNormalDistribution(roughness,anisotropic.z, NdotH, HdotY,HdotX );
+    //float D = getGGXaniso(roughness,anisotropic.x,anisotropic.y, NdotH, HdotY,HdotX );
+    float V = getVis_SmithJointApprox(roughness, NdotL, NdotV);
+    float3 F = getFresnel_Schlick(specularColor, VdotH, fresnelStrength);
+    return D * V * F;
+}
+]]>
+            </CodeInjection>
+            <CodeInjection position="FINAL_POS_FS">
+<![CDATA[
+#if defined( DEBUG_SHOW_PARALLAX )
+    oColor.rgb  = lighting ;
+#endif    
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

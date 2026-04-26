@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name = "iconColor" target = "iconColor" type = "float3" defaultValue = "0.0 0.0 0.0 1.0"   minValue = "0.0 0.0 0.0 0.0"          maxValue = "1.0 1.0 1.0 1.0"/>
+    </Parameters> 
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float3 iconColor;
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_DIFFUSE_COLOR_FS">
+<![CDATA[
+diffuseColor = iconColor;
+]]>
+	        </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

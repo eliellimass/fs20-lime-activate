@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name="fadeStartEnd" target="fadeStartEnd" type="float2" />
+        <Parameter name="cellSizeTerrainSizeScaleXZScaleY" target="cellSizeTerrainSizeScaleXZScaleY" type="float4"/>
+    </Parameters>
+    <VertexAttributes>
+        <VertexAttribute name="uv1" group="base"/>
+        <VertexAttribute name="uv2" group="base"/>
+        <VertexAttribute name="color" group="base"/>
+        <VertexAttribute name="blendweights" group="base"/>
+        <IgnoredVertexAttribute name="normal" group="base"/>
+    </VertexAttributes>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="GET_POSITION_VS">
+<![CDATA[
+float3 position1 = In.position.xyz * float3(16.0, 16.0, 16.0); // get mesh XYZ
+position1 *= In.color.xyx * 8;	// scale by widthScale & heightScale
+float3 position = rotateVectorToTerrainNormal(In, rotateFoliageVector(In, position1, In.blendWeights.w*3.1415926), In.texCoords1.xyz - 0.5);
+
+float3 blockPos = In.blendWeights.xyz;
+blockPos.xz = blockPos.xz*cellSizeTerrainSizeScaleXZScaleY.x;
+blockPos.y = (blockPos.y+0.5) * cellSizeTerrainSizeScaleXZScaleY.w;
+
+position += blockPos; // add blockPositionX,Y,Z
+return position;
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_NORMAL_VS">
+<![CDATA[
+    float3 normal = float3(In.position.w, In.texCoords0.zw); // get mesh normal
+    return rotateVectorToTerrainNormal(In, rotateFoliageVector(In, normal, In.blendWeights.w*3.1415926), In.texCoords1.xyz - 0.5);
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_DEFAULT_TEXCOORDS_VS">
+<![CDATA[
+return getFoliageTexCoords(In);
+]]>
+            </CodeInjection>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float4 fadeStartEnd;
+uniform float4 cellSizeTerrainSizeScaleXZScaleY;
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_OUTPUT">
+<![CDATA[
+float alphaOffset : TEXCOORDn;
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_END">
+<![CDATA[
+Out.alphaOffset = 0.49-saturate((length(viewDir)-fadeStartEnd.x)/(fadeStartEnd.y-fadeStartEnd.x));
+]]>
+            </CodeInjection>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+alpha += In.vs.alphaOffset;
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

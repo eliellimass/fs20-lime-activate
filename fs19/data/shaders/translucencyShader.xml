@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name = "translucencyAmount"    target = "translucencyAmount"    type = "float" defaultValue = "0.35" minValue = "0" maxValue = "1"/>
+    </Parameters>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position = "MATERIALINFO">
+<![CDATA[
+    uniform float translucencyAmount;
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_GET_LIGHTING_FS">
+<![CDATA[
+{
+    float NdotLNegative = dot(normal, lightDir); 
+    if (NdotLNegative < 0) {
+        NdotLNegative = -NdotLNegative*translucencyAmount;
+    }
+    NdotLNegative = min(NdotLNegative, 1);
+    NdotL = saturate(dot(normal, lightDir));
+    float3 lighting = ((atten*NdotLNegative) * diffuseShading + (atten*NdotL)* specularShading )* lightColor;
+    return lighting;
+}
+]]>
+            </CodeInjection>
+            <CodeInjection position="FINAL_POS_FS">
+<![CDATA[
+#if defined( DEBUG_SHOW_PARALLAX )
+    oColor.rgb  = lighting ;
+#endif    
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+#if defined(DEPTH_VIS)
+    if (In.vs.ALBEDOMAP_TEXCOORD.x > 0.93 ) {
+        alpha = 0;
+    }
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

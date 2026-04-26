@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name = "scaleParameters" target = "scaleParameters" type = "float4" defaultValue = "0.75 1.0 2.0 1.0" />
+        <Parameter name = "colorScale"      target = "colorScale"      type = "float3" defaultValue = "0.0 0.25 1.0 1.0"  minValue = "0.0 0.0 0.0 0.0"  maxValue = "1.0 1.0 1.0 1.0"/>
+    </Parameters>
+    <VertexAttributes>
+        <VertexAttribute name="color" group="base"/>
+    </VertexAttributes>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="CONFIG_DEFINES">
+<![CDATA[
+#if defined(ALPHA_BLENDED)
+// In additive blending mode, we only apply the fog extinction
+#undef FOG_INSCATTERING
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "MATERIALINFO">
+<![CDATA[
+    /*
+    scaleParameters.x - 0 or 1 animation speed multiplier
+    scaleParameters.y - lerpA scale value
+    scaleParameters.z - lerpB scale value
+    */
+    uniform float4 scaleParameters;
+    uniform float3 colorScale;
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_OUTPUT">
+<![CDATA[
+float mAttuniation : TEXCOORDn;
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_END">
+<![CDATA[
+    float    mSpeed     = scaleParameters.x * cTime_s;
+    float    mAlpha     = mSpeed - floor( mSpeed ); // 0..1
+    Out.mAttuniation    = 1 - abs( 2 * mAlpha - 1 );
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_POSITION_VS">
+<![CDATA[
+    float3   mPosition = In.position.xyz;
+
+    float    mSpeed         = scaleParameters.x * cTime_s;
+    float    mAlpha         = mSpeed - floor( mSpeed ); // 0..1
+    mPosition *= lerp( scaleParameters.y, scaleParameters.z, mAlpha );
+
+    return   mPosition.xyz;
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_GLOSS_COLOR_FS">
+<![CDATA[
+#if defined( SPECULAR ) && defined( ALPHA_BLENDED )
+    #undef SPECULAR // Disable specular color for alphaBlended billboards
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="EMISSIVE_FS">
+<![CDATA[
+        emissiveColor.rgb = colorScale.rgb * In.vs.vertexColor.rgb;
+        emissiveColor.rgb *= In.vs.mAttuniation;
+]]>
+            </CodeInjection>
+            <CodeInjection position="FINAL_POS_FS">
+<![CDATA[
+#if defined(ALPHA_BLENDED)
+    oColor.a = 0.0; // additive blending
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

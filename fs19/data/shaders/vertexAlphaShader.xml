@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name = "alphaRemap"  target = "alphaRemap" type = "float4" defaultValue = "0.0 1.0 0.0 1.0" />
+    </Parameters>
+    <VertexAttributes>
+        <VertexAttribute name="color" group="base"/>
+    </VertexAttributes>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="NUM_TEXCOORDS">
+<![CDATA[
+#ifdef ALPHA_TESTED
+    #undef ALPHA_TESTED
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+    uniform float4 alphaRemap;
+]]>
+            </CodeInjection>
+            <CodeInjection position="START_FS">
+<![CDATA[
+    float mVertexAlpha = In.vs.vertexColor.a;
+]]>
+            </CodeInjection>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+    float mAlpha = tex2D(baseMap, In.vs.ALBEDOMAP_TEXCOORD).a;
+    mAlpha *= mVertexAlpha;
+    mAlpha = lerp( alphaRemap.z, alphaRemap.w, mAlpha );
+    mAlpha = saturate(lerp( mAlpha, 1.0 , mVertexAlpha) );
+    mAlpha = lerp( alphaRemap.x, alphaRemap.y, mAlpha );
+    clip(mAlpha - 0.03);
+#if defined(ALPHA_BLENDED)
+    alpha = mVertexAlpha;
+#endif
+]]>
+            </CodeInjection>
+          </CodeInjections>
+    </LodLevel>
+</CustomShader>
