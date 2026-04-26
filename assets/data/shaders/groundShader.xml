@@ -284,6 +284,10 @@ globals.groundType = 0;
                     usedRoughness = lerp(0.5, 1, 1 - factor);
                 }
 
+                if (arrayIndex == 4.0) {
+                    factor *= 0.35;
+                }
+
                 diffuseColor = lerp(diffuseColor, groundLayerColor.xyz, factor);
 
             } else {
