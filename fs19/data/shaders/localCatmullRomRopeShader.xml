@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name="cv0" target="cv0" type="float4" defaultValue="0 0 -1 0"/>
+        <Parameter name="cv1" target="cv1" type="float4" defaultValue="0 0 0 0"/>
+        <Parameter name="cv2" target="cv2" type="float4" defaultValue="1 0 1 0"/>
+        <Parameter name="cv3" target="cv3" type="float4" defaultValue="0 0 2 0"/>
+        <Parameter name="cv4" target="cv4" type="float4" defaultValue="0 0 3 0"/>
+        <Parameter name="lengthInvLength" target="lengthInvLength" type="float4" defaultValue="10 0.1 0 0"/>
+    </Parameters>
+    <Variations>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="MATERIALINFO">
+                <![CDATA[
+                uniform float4 cv0;
+                uniform float4 cv1;
+                uniform float4 cv2;
+                uniform float4 cv3;
+                uniform float4 cv4;
+                uniform float4 lengthInvLength;
+                ]]>
+            </CodeInjection>
+            <CodeInjection position="START_POS_VS">
+                <![CDATA[
+
+                float3 v = float3( position.x, position.y, 0 );
+
+                //
+                //	q(t) = 0.5f *((2 * P1) + (-P0 + P2) * t + (2*P0 - 5*P1 + 4*P2 - P3) * t^2 + (-P0 + 3*P1 - 3*P2 + P3) * t^3)
+                //float3 splinePos = 0.5f *((2.0f* cv1.xyz) + (- cv0.xyz+ cv2.xyz)*sT + (2.0f* cv0.xyz - 5.0f* cv1.xyz + 4.0f* cv2.xyz -  cv3.xyz) * (sT*sT) + (- cv0.xyz + 3.0f* cv1.xyz - 3.0f* cv2.xyz +  cv3.xyz) * (sT*sT*sT));
+
+                float3 P0 = cv0.xyz;
+                float3 P1 = cv1.xyz;
+                float3 P2 = cv2.xyz;
+                float3 P3 = cv3.xyz;
+
+                float sT = position.z/lengthInvLength.x;
+                float sT2 = (position.z+0.01f)/lengthInvLength.x;
+                
+                if(sT <= 0.5) {
+                    sT = 2.0 * sT;
+                    sT2 = 2.0 * sT2;
+                }
+                else {
+                    sT = 2*(sT - 0.5);
+                    sT2 = 2*(sT2 - 0.5);
+                    P0 = cv1.xyz;
+                    P1 = cv2.xyz;
+                    P2 = cv3.xyz;
+                    P3 = cv4.xyz;
+                }
+
+                float3 splinePos = 0.5f *((2.0f*P1) + (-P0 + P2) * sT + (2.0f*P0 - 5.0f*P1 + 4.0f*P2 - P3) * (sT*sT) + (-P0 + 3.0f*P1 - 3.0f*P2 + P3) * (sT*sT*sT));
+                float3 splinePos2 = 0.5f *((2.0f*P1) + (-P0 + P2) * sT2 + (2.0f*P0 - 5.0f*P1 + 4.0f*P2 - P3) * (sT2*sT2) + (-P0 + 3.0f*P1 - 3.0f*P2 + P3) * (sT2*sT2*sT2));
+
+                 // calculate rotation matrix
+                float3 z1 = float3(0.0f, 0.0f, 1.0f);
+                float3 z2 = normalize( splinePos2.xyz - splinePos.xyz );
+
+                float3 ra = normalize( cross(z2, z1) );             // rot. axis
+                float a = acos( dot(z2, z1) );                      // rot. angle
+
+                float sa = sin(a);
+                float ca = cos(a);
+                float cam = 1.0f - ca;
+
+                float3x3 rotMat = float3x3(
+                    ra.x*ra.x * cam + ca,       ra.y*ra.x * cam + ra.z*sa,  ra.z*ra.x * cam - ra.y*sa,
+                    ra.x*ra.y * cam - ra.z*sa,  ra.y*ra.y * cam + ca,       ra.z*ra.y * cam + ra.x*sa,
+                    ra.x*ra.z * cam + ra.y*sa,  ra.y*ra.z * cam - ra.x*sa,  ra.z*ra.z * cam + ca
+                    );
+
+                position.xyz = splinePos.xyz + mul( rotMat, v );
+
+                ]]>
+            </CodeInjection>
+            <CodeInjection position="POST_SET_TEXCOORDS_VS">
+                <![CDATA[
+                /*                                                                      ToDo
+                #if defined(ALBEDO_MAP) || defined(EMISSIVE_MAP)
+                    float2 uv = getTexCoords(In, ALBEDOMAP_TEXCOORD);
+                    uv.x *= ropeLength*lengthInvLength.y;
+                    setTexCoords(Out.texCoords[ALBEDOMAP_TEXCOORD/2], ALBEDOMAP_TEXCOORD, uv);
+                #endif
+                */
+                ]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

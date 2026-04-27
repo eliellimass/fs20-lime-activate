@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name = "morphPosition"  target = "morphPosition" type = "float4" defaultValue = "0.0 1.0 1.0 0.0"  minValue = "0.0 0.0 0.01 0.0"        maxValue = "1.0 1.0 10.0 10.0"/>
+        <Parameter name = "offsetUV"       target = "offsetUV"      type = "float4" defaultValue = "0.0 0.0 -100.0 100.0" />
+        <Parameter name = "alphaRemap"     target = "alphaRemap"    type = "float4" defaultValue = "0.0 1.0 0.0 0.0" />
+        <Parameter name = "uvScale"        target = "uvScale"       type = "float4" defaultValue = "1.0 1.0 1.0 1.0" />
+        <Parameter name = "vertexAnim"     target = "vertexAnim"    type = "float4" defaultValue = "20.0 20.0 0.05 1.0" />
+    </Parameters>
+    <VertexAttributes>
+        <VertexAttribute name="uv1" group="base"/>
+        <VertexAttribute name="uv2" group="uv2"/>
+        <VertexAttribute name="color" group="base"/>
+    </VertexAttributes>
+    <Variations>
+        <Variation name = "ALPHA_DISABLE" groups="base">
+<![CDATA[
+    #define ALPHA_DISABLE
+]]>
+        </Variation>
+        <Variation name = "VERTEX_ANIMATION" groups="base uv2">
+<![CDATA[
+    #define VERTEX_ANIMATION
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+/*
+    morphPosition.x - fadeIN  morph position [0..1]
+    morphPosition.y - fadeOUT morph position [0..1]
+    morphPosition.z - morph compression (calculated in maya)
+    morphPosition.w - not used yet
+*/
+    uniform float4 morphPosition;
+/*
+    offsetUV.xy - translate
+    offsetUV.zw - startBlend, endBlend position.x
+*/
+    uniform float4 offsetUV;
+    uniform float4 alphaRemap;
+    uniform float4 uvScale;
+#if defined( VERTEX_ANIMATION )
+/*
+    vertexAnim.x - mSpeed multiplier
+    vertexAnim.y - mFrequency multiplier
+    vertexAnim.z - mAmplitude multiplier
+    vertexAnim.w - not used yet
+*/
+    uniform float4 vertexAnim;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_OUTPUT">
+<![CDATA[
+float  mVisibility        : TEXCOORDn;
+float3 mPositionOrig      : TEXCOORDn;
+float2 albedoMapTexCoord2 : TEXCOORDn;
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_SET_TEXCOORDS_VS">
+<![CDATA[
+    Out.defaultTexCoords = uvScale.xy * ( convertDefaultTexCoords( In, In.texCoords0.xy ) + offsetUV.xy );
+    Out.albedoMapTexCoord2 = convertDefaultTexCoords( In, In.texCoords1.xy );
+]]>
+            </CodeInjection>
+            <CodeInjection position="START_POS_VS">
+<![CDATA[
+Out.mPositionOrig = In.position.xyz;
+Out.mVisibility   = 1.0;
+//Out.mVisibility   = ( ( In.position.x > offsetUV.z  && In.position.x < offsetUV.w )  ? 1.0 : 0.0 );
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_POSITION_VS">
+<![CDATA[
+    float  mCompressFactor = morphPosition.z;
+    float  mPosition;
+    float4 mVertexColor = In.color.rgba;
+    float3 mDeformedPosition = In.position.xyz;
+
+    mVertexColor.rgb = 2 * mVertexColor.rgb - 1;
+    mVertexColor.rgb *= mCompressFactor;
+
+    float refX = convertDefaultTexCoords(In, In.texCoords1).x;
+    float scale1 = refX >= morphPosition.x && refX <= morphPosition.y;
+    mDeformedPosition += mVertexColor.rgb*(1-scale1);
+    #if defined( VERTEX_ANIMATION )
+        float2 mUV2         = convertDefaultTexCoords( In, In.texCoords1.xy );
+        float2 mUV3         = convertDefaultTexCoords( In, In.texCoords2.xy );
+        float mSpeed        = vertexAnim.x * offsetUV.x;
+        float mFrequency    = mSpeed - mUV2.x * mUV2.y * vertexAnim.y;
+        float mAmplitude    = vertexAnim.z * mUV3.x * mUV3.y;
+        float mOffset       = ( 0.5 * sin( mFrequency ) + 0.4 ) * mAmplitude;
+        mDeformedPosition  += mOffset * In.normal.xyz;
+    #endif
+    float scale2 = ( ( In.position.x > offsetUV.z && In.position.x < offsetUV.w )  ? 1.0 : 0.0 );
+    mDeformedPosition = lerp(In.position.xyz+mVertexColor.rgb,mDeformedPosition,scale2);
+    #if defined(SKINNING)
+        return skinPoint( mDeformedPosition.xyz, In) - float3(invViewMatrix[0][3], invViewMatrix[1][3], invViewMatrix[2][3]);
+    #else
+        return mDeformedPosition.xyz;
+    #endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="START_FS">
+<![CDATA[
+    float mVertexAlpha = In.vs.vertexColor.a;
+]]>
+            </CodeInjection>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+#if defined(ALPHA_BLENDED) || defined(ALPHA_TESTED)
+    float mAlpha = 1.0;
+    float mVisibility = 1.0;
+    float refX = In.vs.albedoMapTexCoord2.x;
+    mVisibility = refX >= morphPosition.x && refX <= morphPosition.y;
+    //mVisibility *= In.vs.mVisibility.x;
+    mVisibility *= ( ( In.vs.mPositionOrig.x > offsetUV.z && In.vs.mPositionOrig.x < offsetUV.w )  ? 1.0 : 0.0 );
+#if defined( ALPHA_DISABLE )
+    mAlpha = 1.0;
+#else
+    mAlpha = alpha * mVertexAlpha;
+#endif
+    alpha = lerp( saturate( alpha*mVisibility ), mAlpha , mVisibility );
+    alpha = lerp( alphaRemap.x, alphaRemap.y, alpha );
+#endif
+]]>
+            </CodeInjection>
+          </CodeInjections>
+    </LodLevel>
+</CustomShader>

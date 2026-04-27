@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name="tailAmpSpeed"                   target="tailAmpSpeed"                   type="float4" defaultValue = "-1.5 0.15 5.0 0.0"/>
+        <Parameter name="rotAmpRotSpeedWindSpeedWindAmp" target="rotAmpRotSpeedWindSpeedWindAmp" type="float4" defaultValue = "0.1 0.5 5.0 0.004"/>
+        <Parameter name="animOffset"                     target="animOffset"                     type="float4" defaultValue = "0.0 0.0 0.0 0.0"/>
+        <Parameter name="blend"                          target="blend"                          type="float4" defaultValue = "0.0 0.0 0.0 0.0"/>
+    </Parameters>
+    <VertexAttributes>
+        <VertexAttribute name="uv1" group="base"/>
+        <VertexAttribute name="uv2" group="base"/>
+        <VertexAttribute name="uv3" group="base"/>
+    </VertexAttributes>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float4 tailAmpSpeed;
+uniform float4 rotAmpRotSpeedWindSpeedWindAmp;
+uniform float4 animOffset;
+uniform float4 blend;
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_POSITION_VS">
+<![CDATA[
+    float pIndex = convertDefaultTexCoords( In, In.texCoords1.xy ).x;
+    float mFlap  = convertDefaultTexCoords( In, In.texCoords2.xy ).x;
+    float mGlide = convertDefaultTexCoords( In, In.texCoords3.xy ).x;
+    float mAnimOffset = animOffset.x;
+
+    float3 mDeformFlap  = In.position.xyz;
+    float3 mDeformGlide = In.position.xyz;
+    float3 mDeformLanding = In.position.xyz;
+    float3 mResult = In.position.xyz;
+    // -- Flap animation
+    mDeformFlap.y += mFlap * sin( tailAmpSpeed.z*cTime_s + mFlap*tailAmpSpeed.x + mAnimOffset)*tailAmpSpeed.y;
+    // -- Glide animation
+    float mSpeed = rotAmpRotSpeedWindSpeedWindAmp.x * sin( animOffset + cTime_s * rotAmpRotSpeedWindSpeedWindAmp.y );
+    float mSin = sin(mSpeed);
+    float mCos = cos(mSpeed);
+    float3 v1 = float3(mCos,-mSin,0);
+    float3 v2 = float3(mSin,mCos,0);
+    mDeformGlide.x = dot(In.position.xyz,v1);
+    mDeformGlide.y = dot(In.position.xyz,v2);
+    mSpeed = In.position.x + rotAmpRotSpeedWindSpeedWindAmp.z * cTime_s;
+    mDeformGlide.y += mGlide * rotAmpRotSpeedWindSpeedWindAmp.w * (sin(5*mSpeed + animOffset)+sin(2*mSpeed +2*animOffset));
+    // -- Landing animation
+
+    // -- blending animations
+    mResult = lerp(mDeformFlap,mDeformGlide,blend.x);
+    mResult = lerp(mResult,mDeformLanding,blend.y);
+    return mResult;
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name = "fillLevel" target = "fillLevel" type = "float4" defaultValue = "0.0 0.0 0.0 0.0" />
+    </Parameters>
+    <VertexAttributes>
+        <VertexAttribute name="uv1" group="base"/>
+    </VertexAttributes>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position = "MATERIALINFO">
+<![CDATA[
+    /*
+    fillLevel.x - [ 0 .. 1 ] slurry level inside of cylinder
+    fillLevel.y - 0 or 1 indicates if tool is working or not.
+    */
+    uniform float4 fillLevel;
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_POSITION_VS">
+<![CDATA[
+    float mOffset = fillLevel.x;
+    float3 mDeformedPosition = float3( 1, mOffset, 1 ) * In.position.xyz ;
+    mDeformedPosition += lerp( float3( 0.0, 0.0, 0.0 ), float3( 0, 0.05 * In.texCoords1.x, 0 ) * cos( 50 * (In.position.x + In.position.z) + 10 * cTime_s ), fillLevel.y );
+#if defined( DEBUG_SHOW_PARALLAX )
+    mOffset = 0.5 * sin( cTime_s ) + 0.5;
+    mDeformedPosition = float3( 1, mOffset, 1 ) * In.position.xyz + float3( 0, 0.05 * In.texCoords1.x, 0 ) * cos( 50 * (In.position.x + In.position.z) + 15 * cTime_s );
+#endif 
+    return mDeformedPosition;
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_SET_TEXCOORDS_VS">
+<![CDATA[
+#if defined( ALBEDO_MAP ) || defined( EMISSIVE_MAP )
+    float mOffset = fillLevel.x;
+#if defined( DEBUG_SHOW_PARALLAX )
+    mOffset = 0.5 * sin( cTime_s ) + 0.5;
+#endif 
+    float2 mUV = getDefaultTexCoords(In);
+    if ( mUV.y < 0.75 )  // do not touch top UVs
+    {
+        mUV.x *= mOffset; // scale UV based on scaled mesh
+        mUV.x -= 2*mOffset; // move UV in direction of scaling ( secondary motion )
+    }
+    Out.defaultTexCoords = mUV;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_DIFFUSE_COLOR_FS">
+<![CDATA[
+#if defined( ALBEDO_MAP )
+    float2 mUV = In.vs.ALBEDOMAP_TEXCOORD;
+    float mText1 = ( tex2D( baseMap, mUV ) ).r;
+    float mText2 = ( tex2D( baseMap, float2( 0.25, 0.25 ) * mUV ) ).g;
+    float mResult = mText1 + mText2;
+    // ================= Diffuse Color =========================
+    float3 colorB = float3( 0.080, 0.050, 0.011 );
+    float3 colorA = float3( 0.027, 0.016, 0.004 );
+    // =========================================================
+    float3 mResultColor = lerp( colorA, colorB, mResult );
+    diffuseColor = mResultColor;
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

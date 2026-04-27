@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name = "colorScaleR" target = "colorScaleR" type = "float4" defaultValue = "0.5000 0.5000 0.5000 1.0" minValue = "0.0 0.0 0.0 0.0" maxValue = "1.0 1.0 1.0 1.0"/>
+        <Parameter name = "colorScaleG" target = "colorScaleG" type = "float4" defaultValue = "0.2200 0.2500 0.4400 1.0" minValue = "0.0 0.0 0.0 0.0" maxValue = "1.0 1.0 1.0 1.0"/>
+        <Parameter name = "colorScaleB" target = "colorScaleB" type = "float4" defaultValue = "0.1000 0.1000 0.1000 1.0" minValue = "0.0 0.0 0.0 0.0" maxValue = "1.0 1.0 1.0 1.0"/>
+    </Parameters>
+    <Textures>
+        <Texture name = "mMaskMap"       defaultColorProfile = "linearRGB"  defaultFilename = "../shared/default_specular.png"/>
+    </Textures>
+    <Variations>
+        <Variation name = "RGB_MASK">
+<![CDATA[
+ /*
+Enables:
+ mMaskMap.b - color mask instead of subsurface scattering
+ */
+    #define RGB_MASK 
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance = "0">
+        <CodeInjections>
+            <CodeInjection position = "SHARED_START">
+<![CDATA[
+#if !defined(RGB_MASK)
+    #define SUBSURFACE_SCATTERING
+#endif 
+]]>
+            </CodeInjection>
+            <CodeInjection position = "MATERIALINFO">
+<![CDATA[
+    uniform float4 colorScaleR;
+    uniform float4 colorScaleG;
+#if defined( RGB_MASK )
+    uniform float4 colorScaleB;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "SAMPLERS">
+<![CDATA[
+ /*
+ mMaskMap.r - color mask
+ mMaskMap.g - color mask
+ mMaskMap.b - subsurface scattering mask
+ */
+sampler2D mMaskMap;
+]]>
+            </CodeInjection>
+            <CodeInjection position = "FS_GLOBALS">
+<![CDATA[
+    float3 gMask;
+    float gThickness;
+]]>
+            </CodeInjection>
+            <CodeInjection position = "START_FS">
+<![CDATA[
+    globals.gMask = tex2D( mMaskMap, In.vs.ALBEDOMAP_TEXCOORD ).rgb;
+    globals.gThickness = globals.gMask.b;
+]]>
+            </CodeInjection>
+            <CodeInjection position = "POST_DIFFUSE_COLOR_FS">
+<![CDATA[
+    diffuseColor = lerp( diffuseColor, diffuseColor * colorScaleR.rgb, globals.gMask.r );
+    diffuseColor = lerp( diffuseColor, diffuseColor * colorScaleG.rgb, globals.gMask.g );
+#if defined( RGB_MASK )
+    diffuseColor = lerp( diffuseColor, diffuseColor * colorScaleB.rgb, globals.gMask.b );
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_GET_LIGHTING_FS">
+ <![CDATA[
+ #if defined( SUBSURFACE_SCATTERING )
+    float fLTAmbient =      0.15;
+    float fLTPower =        2.0;
+    float fLTDistortion =   1.0;
+    float fLTScale =        2.0;
+
+    float fLightAttenuation = saturate(dot(normal, lightDir)) + saturate(dot(viewDir, -lightDir));
+
+    float3 vLTLight = lightDir + normal * fLTDistortion;
+    float fLTDot = pow(saturate(dot(viewDir, -vLTLight)), fLTPower) * fLTScale;
+    float fLT = fLightAttenuation * (fLTDot + fLTAmbient) * globals.gThickness;
+    float3 cLT = diffuseColor * lightColor * fLT * float3( 0.938, 0.567, 0.567 );
+
+    lighting.xyz += cLT * lightAtten;
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

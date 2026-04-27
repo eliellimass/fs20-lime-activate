@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name="displacementSpeedFrequencyAndTexOff" target="displacementSpeedFrequencyAndTexOff" type="float4" />
+    </Parameters>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+
+          <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float4 displacementSpeedFrequencyAndTexOff;
+]]>
+          </CodeInjection>
+
+            <CodeInjection position="GET_POSITION_VS">
+<![CDATA[
+float4 mDispSpeedFreq = displacementSpeedFrequencyAndTexOff;
+float amount;
+float offset, offset1, offset2;
+float3 mOffset;
+
+float3 flagPos = float3(modelMatrix[0][3] + invViewMatrix[0][3],
+                        modelMatrix[1][3] + invViewMatrix[1][3],
+                        modelMatrix[2][3] + invViewMatrix[2][3]);
+float flagVarSeed = flagPos.x + flagPos.y + flagPos.z;
+
+amount   = max(0.0, getDefaultTexCoords(In).x-mDispSpeedFreq.w);
+float mSpeed1 = mDispSpeedFreq.y;
+float mSpeed2 = 2.0*mSpeed1;
+offset1 = sin( (cTime_s+flagVarSeed)*mSpeed1 + In.position.x*In.position.y*mDispSpeedFreq.z)*amount;
+offset2 = sin( (cTime_s+flagVarSeed)*mSpeed2 + In.position.x*In.position.y*mDispSpeedFreq.z)*amount;
+offset  = lerp(offset1,offset2,cShared0);
+mOffset = float3(0.0, 0.0*mDispSpeedFreq.x*offset * 0.35, 1.0*mDispSpeedFreq.x*offset);
+return In.position.xyz + mOffset;
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

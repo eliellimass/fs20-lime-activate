@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name="colorScale" target="colorScale" type="float3" defaultValue="1 1 1"/>
+    </Parameters>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float3 colorScale;
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_DIFFUSE_COLOR_FS">
+<![CDATA[
+diffuseColor.xyz *= colorScale.xyz;
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

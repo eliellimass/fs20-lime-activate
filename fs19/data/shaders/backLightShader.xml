@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name="backLightScale" target="backLightScale" type="float"  group="base"  defaultValue="0.35" minValue="0.0" maxValue="1.0"/>
+        <Parameter name="colorScale"     target="colorScale"     type="float4" group="color" defaultValue="0.6662 0.3839 0.5481 1.0"  minValue = "0.0 0.0 0.0 0.0"   maxValue = "1.0 1.0 1.0 1.0"/>
+    </Parameters>
+    <Variations>
+        <Variation name="colorMask" groups="base color">
+<![CDATA[
+    #define COLOR_MASK
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float backLightScale;
+#if defined( COLOR_MASK )
+    uniform float4 colorScale;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_GET_LIGHTING_FS">
+<![CDATA[
+{
+    float NdotLNegative = dot(normal, lightDir);
+    if (NdotLNegative < 0) {
+        NdotLNegative = -NdotLNegative*backLightScale;
+    }
+    NdotLNegative = min(NdotLNegative, 1);
+    NdotL = saturate(dot(normal, lightDir));
+    float3 lighting = ((atten*NdotLNegative) * diffuseShading + (atten*NdotL)* specularShading )* lightColor;
+    return lighting;
+}
+]]>
+            </CodeInjection>
+            <CodeInjection position = "POST_DIFFUSE_COLOR_FS">
+<![CDATA[
+#if defined( COLOR_MASK )
+    diffuseColor *= colorScale.rgb;
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

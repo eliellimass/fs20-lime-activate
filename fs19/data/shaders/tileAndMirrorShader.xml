@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name = "mirrorScaleAndOffsetUV"  target = "mirrorScaleAndOffsetUV"   type = "float4" group="base" defaultValue = "1 1 0 0.5"/>
+        <Parameter name = "atlasInvSizeAndOffsetUV" target = "atlasInvSizeAndOffsetUV"  type = "float4" group="base" defaultValue = "0.5 0.5 0 0"/>
+        <Parameter name = "RDT"                     target = "RDT"                      type = "float4" group="dirt" defaultValue = "1.0 1.0 20.0 20.0" minValue = "0.0 0.0 0.0 0.0" maxValue = "1.0 1.0 50.0 50.0"/>
+        <Parameter name = "dirtColor"               target = "dirtColor"                type = "float4" group="dirt" defaultValue="0.20 0.14 0.08 0.0"  minValue = "0.0 0.0 0.0 0.0" maxValue = "1.0 1.0 1.0 1.0"/>
+    </Parameters>
+    <Textures>
+        <Texture name = "DirtNmap" group="dirt" defaultColorProfile = "linearRGB" defaultFilename = "../shared/default_normal.png"/>
+    </Textures>
+    <Variations>
+        <Variation name = "DIRT_ENABLED" groups="base dirt">
+<![CDATA[
+    #define DIRT_ENABLED 
+]]>
+        </Variation>
+        <Variation name = "ALPHA_FROM_SPECULAR" groups="base">
+<![CDATA[
+    #define ALPHA_FROM_SPECULAR 
+]]>
+        </Variation>
+        <Variation name = "ALPHA_FROM_SPECULAR_DIRT" groups="base dirt">
+<![CDATA[
+    #define ALPHA_FROM_SPECULAR
+    #define DIRT_ENABLED
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="NUM_TEXCOORDS">
+<![CDATA[
+
+#if defined(ALPHA_FROM_SPECULAR)
+    #define ALPHA_TESTED
+#endif
+
+#if defined(NORMAL_MAP)
+    // we need different normal map coordinates than albedo map coords
+    #define NORMALMAP_TEXCOORD normalTexCoords
+#endif
+#if defined(GLOSS_MAP)
+    #define GLOSSMAP_TEXCOORD glossmapTexCoords
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_OUTPUT">
+<![CDATA[
+    float2 normalTexCoords : TEXCOORDn;
+    float2 glossmapTexCoords : TEXCOORDn;
+]]>
+            </CodeInjection>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float4 mirrorScaleAndOffsetUV;
+uniform float4 atlasInvSizeAndOffsetUV;
+#if defined( DIRT_ENABLED )
+    uniform float4 RDT;
+    uniform float4 dirtColor;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "SAMPLERS">
+<![CDATA[
+#if defined( DIRT_ENABLED )
+    sampler2D DirtNmap;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "FS_GLOBALS">
+<![CDATA[
+#if defined( DIRT_ENABLED )
+    float4 gGloss;
+    float  gDirt;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_SET_TEXCOORDS_VS">
+<![CDATA[
+    float2 newUV = getDefaultTexCoords(In);
+    Out.normalTexCoords     = newUV;
+    Out.glossmapTexCoords   = newUV;
+    // mirror
+    newUV = ((newUV-mirrorScaleAndOffsetUV.zw)*mirrorScaleAndOffsetUV.xy)+mirrorScaleAndOffsetUV.zw;
+    // atlas
+    newUV = newUV*atlasInvSizeAndOffsetUV.xy + atlasInvSizeAndOffsetUV.zw;
+    Out.defaultTexCoords = newUV.xy;
+]]>
+            </CodeInjection>
+            <CodeInjection position = "START_FS">
+<![CDATA[
+#if defined( DIRT_ENABLED )
+    #if defined( GLOSS_MAP )
+    /*
+    glossMap.r - roughness
+    glossMap.g - ambient occlusion
+    glossMap.b - dirt mask
+    glossMap.a - color mask ( if enabled )
+    */
+        globals.gGloss = tex2D( glossMap, In.vs.glossmapTexCoords).rgba;
+        float texDirt  = 1 - globals.gGloss.b;
+        globals.gDirt  = saturate( (texDirt*1.05 - (RDT.g - 0.5)) * 2 );
+    #else
+        globals.gGloss = 0;
+        globals.gDirt = 0;
+    #endif
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "GET_UNNORMALIZED_TANGENT_SPACE_NORMAL_FS">
+<![CDATA[
+#if defined( DIRT_ENABLED )
+    #if defined( NORMAL_MAP )
+        float3 mNormal;
+        #ifdef NORMAL_MAP_SIGNED_2CHANNEL
+            // use BC5 signed format for the normal map
+            mNormal.xy = tex2D(normalMap, In.vs.NORMALMAP_TEXCOORD).xy;
+            mNormal.z = sqrt(1.0 - dot(mNormal.xy, mNormal.xy));
+        #else
+            mNormal = tex2D(normalMap, In.vs.NORMALMAP_TEXCOORD).xyz - 0.5;
+        #endif
+        float3 mDirtNmap = tex2D( DirtNmap, float2( RDT.z, RDT.w ) * In.vs.NORMALMAP_TEXCOORD ).xyz - 0.5;
+        return mNormal + float3(mDirtNmap.xy, 0.0) * (1 - globals.gDirt);
+    #endif
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "GET_TANGENT_SPACE_NORMAL_FS">
+<![CDATA[
+#if defined( DIRT_ENABLED )
+    #if defined( NORMAL_MAP )
+        return normalize(getUnnormalizedTangentSpaceNormal(In, globals));
+    #endif
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "POST_DIFFUSE_COLOR_FS">
+<![CDATA[
+#if defined( DIRT_ENABLED )
+    #if defined( SPECULAR ) && defined( GLOSS_MAP )
+        //float3 mDirtColor = float3( 0.20, 0.14, 0.08 ); // HardCoded Dirt Color
+        diffuseColor = lerp( dirtColor, diffuseColor, globals.gDirt); // DirtColor lerp
+    #endif
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+#if defined(ALPHA_FROM_SPECULAR)
+    #if defined(GLOSS_MAP)
+        alpha = tex2D( glossMap, In.vs.glossmapTexCoords).a;
+    #endif
+#endif
+#if defined(ALPHA_BLENDED)
+    reflectingLightingScale = alpha;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "POST_GLOSS_COLOR_FS">
+<![CDATA[
+#if defined( DIRT_ENABLED )
+    #if defined( SPECULAR ) && defined( GLOSS_MAP )
+        float dirtRoughness = 0.8;
+        roughness = lerp(dirtRoughness, 1-globals.gGloss.r, globals.gDirt);
+        metalness = 0; // No metalness, since the blue channel stores the dirt mask
+        bakedAO = globals.gGloss.g;
+    #endif
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="FINAL_POS_FS">
+<![CDATA[
+#if defined( DEBUG_SHOW_PARALLAX )
+    oColor.rgb  = mAlpha ;
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

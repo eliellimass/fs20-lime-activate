@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="4">
+    <Parameters>
+        <Parameter name="dirtAndTextureUVScale" target="dirtAndTextureUVScale"  type="float4" defaultValue="0.04 0.04 1.6 0"/>
+        <Parameter name="alphaBlendStartEnd"    target="alphaBlendStartEnd"     type="float4" defaultValue="75 80 0.029 0.036"/>
+    </Parameters>
+    <VertexAttributes>
+        <VertexAttribute name="color" group="base"/>
+    </VertexAttributes>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="SHARED_START">
+<![CDATA[
+// We do our own alpha testing
+#undef ALPHA_TESTED
+]]>
+            </CodeInjection>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float4 dirtAndTextureUVScale;
+uniform float4 alphaBlendStartEnd;
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_SET_TEXCOORDS_VS">
+<![CDATA[
+    Out.defaultTexCoords = position.xz*dirtAndTextureUVScale.z;
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_OUTPUT">
+<![CDATA[
+    float alphaScale : TEXCOORDn;
+    float deltaHeight: TEXCOORDn;    
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_END">
+<![CDATA[
+    Out.alphaScale = saturate((length(viewDir)-(alphaBlendStartEnd.x))/(alphaBlendStartEnd.x-alphaBlendStartEnd.y));
+]]>
+            </CodeInjection>
+            <CodeInjection position="FS_GLOBALS">
+<![CDATA[
+    float4 gVertexColor;
+]]>
+            </CodeInjection>
+            <CodeInjection position="START_FS">
+<![CDATA[
+    globals.gVertexColor = In.vs.vertexColor.rgba;
+]]>
+            </CodeInjection>
+            <CodeInjection position="FINAL_POS_FS">
+<![CDATA[
+    float  mBlend = lerp( alphaBlendStartEnd.z, alphaBlendStartEnd.w, globals.gVertexColor.a);
+    float sum = alpha *In.vs.alphaScale * mBlend;
+    clip(sum - 0.03);
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>
