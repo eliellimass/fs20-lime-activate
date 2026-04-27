@@ -228,7 +228,7 @@ function MapOverlayGenerator:buildSoilStateMapOverlay(soilStateFilter)
 			setDensityMapVisualizationOverlayStateColor(self.foliageStateOverlay, g_currentMission.terrainDetailId, fieldMask, g_currentMission.plowCounterFirstChannel, g_currentMission.plowCounterNumChannels, 0, color[1], color[2], color[3])
 		end
 
-		if not GS_IS_MOBILE_VERSION and soilStateFilter[MapOverlayGenerator.SOIL_STATE_INDEX.NEEDS_LIME] then
+		if soilStateFilter[MapOverlayGenerator.SOIL_STATE_INDEX.NEEDS_LIME] then
 			local color = self.displaySoilStates[MapOverlayGenerator.SOIL_STATE_INDEX.NEEDS_LIME].colors[self.isColorBlindMode][1]
 
 			setDensityMapVisualizationOverlayStateColor(self.foliageStateOverlay, g_currentMission.terrainDetailId, fieldMask, g_currentMission.limeCounterFirstChannel, g_currentMission.limeCounterNumChannels, 0, color[1], color[2], color[3])
@@ -449,19 +449,17 @@ function MapOverlayGenerator:getDisplaySoilStates()
 		}
 	}
 
-	if not GS_IS_MOBILE_VERSION then
-		res[MapOverlayGenerator.SOIL_STATE_INDEX.NEEDS_LIME] = {
-			colors = {
-				[true] = {
-					MapOverlayGenerator.FRUIT_COLOR_NEEDS_LIME[true]
-				},
-				[false] = {
-					MapOverlayGenerator.FRUIT_COLOR_NEEDS_LIME[false]
-				}
+	res[MapOverlayGenerator.SOIL_STATE_INDEX.NEEDS_LIME] = {
+		colors = {
+			[true] = {
+				MapOverlayGenerator.FRUIT_COLOR_NEEDS_LIME[true]
 			},
-			description = self.l10n:getText(MapOverlayGenerator.L10N_SYMBOL.SOIL_MAP_NEED_LIME)
-		}
-	end
+			[false] = {
+				MapOverlayGenerator.FRUIT_COLOR_NEEDS_LIME[false]
+			}
+		},
+		description = self.l10n:getText(MapOverlayGenerator.L10N_SYMBOL.SOIL_MAP_NEED_LIME)
+	}
 
 	if not GS_IS_MOBILE_VERSION then
 		res[MapOverlayGenerator.SOIL_STATE_INDEX.NEEDS_PLOWING] = {

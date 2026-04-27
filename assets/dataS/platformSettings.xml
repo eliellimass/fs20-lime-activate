@@ -50,12 +50,12 @@
 
         <!-- map -->
         <setting name="sprayLevelMaxValue" value="1" type="number"/>
-        <setting name="harvestScaleRation" value="1 0 0 0" type="vector"/> <!-- spray, plow, lime, weed -->
+        <setting name="harvestScaleRation" value="0.5 0.15 0.15 0.2" type="vector"/> <!-- spray, plow, lime, weed -->
         <setting name="useSprayDiffuseMaps" value="false" type="boolean"/>
         <setting name="useTerrainDetailAngle" value="false" type="boolean"/>
         <setting name="useMultipleSprayLevels" value="false" type="boolean"/>
         <setting name="usePlowCounter" value="false" type="boolean"/>
-        <setting name="useLimeCounter" value="false" type="boolean"/>
+        <setting name="useLimeCounter" value="true" type="boolean"/>
 
         <!-- vehicles -->
         <setting name="automaticDischarge" value="true" />

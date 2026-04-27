@@ -260,10 +260,10 @@
     <storeItem xmlFilename="$data/placeables/farmSilos/farmSiloLarge.xml" />
     <storeItem xmlFilename="$data/placeables/farmSilos/siloExtension.xml" />
     <storeItem xmlFilename="$data/placeables/hayLoft/hayLoft.xml" />
+-->
     <storeItem xmlFilename="$data/placeables/limeStation/limeStation.xml" />
     <storeItem xmlFilename="$data/placeables/limeStation/limeStation02.xml" />
     <storeItem xmlFilename="$data/placeables/limeStation/limeStation03.xml" />
--->
 <!-- Farm building
     <storeItem xmlFilename="$data/placeables/bunkerSilo/bunkerSiloSmall.xml" />
     <storeItem xmlFilename="$data/placeables/bunkerSilo/bunkerSiloMedium.xml" />
