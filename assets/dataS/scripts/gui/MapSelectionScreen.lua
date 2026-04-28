@@ -90,6 +90,14 @@ function MapSelectionScreen:onSelectionChanged(index, isInitialSetting)
 	self:updateSelectors()
 end
 
+function MapSelectionScreen:onClickBack()
+	if GS_IS_MOBILE_VERSION then
+		g_gui:showGui("CareerScreen")
+	else
+		MapSelectionScreen:superClass().onClickBack(self)
+	end
+end
+
 function MapSelectionScreen:onClickOk()
 	if self.selectedMapId > 0 then
 		local mapModName = g_mapManager:getModNameFromMapId(self.maps[self.selectedMapId].id)
