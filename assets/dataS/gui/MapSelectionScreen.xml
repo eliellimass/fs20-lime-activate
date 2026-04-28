@@ -11,24 +11,24 @@
 
         <GuiElement type="bitmap" profile="uiElementCenter">
 
-            <GuiElement type="bitmap" profile="headerBoxDocked">
-                <GuiElement type="bitmap" profile="mapSelectionIcon"/>
-                <GuiElement type="text" profile="headerText" text="$l10n_ui_selectAMap" />
+            <GuiElement type="bitmap" profile="mapSelectionHeaderBox">
+                <GuiElement type="bitmap" profile="mapSelectionIconSmall"/>
+                <GuiElement type="text" profile="mapSelectionHeaderText" text="$l10n_ui_selectAMap" />
             </GuiElement>
 
             <!-- Left and right clickable indicators -->
             <GuiElement type="slider" profile="sliderInvisible" onChanged="onClickMapSelection" dataElementId="mapList" id="mapSelector" handleFocus="false">
-                <GuiElement type="button" profile="largeSelectorRight" />
-                <GuiElement type="button" profile="largeSelectorLeft" />
+                <GuiElement type="button" profile="mapNavRight" />
+                <GuiElement type="button" profile="mapNavLeft" />
 
                 <GuiElement type="button" profile="largeSelectorRightGamepad" id="selectorRightGamepad" />
                 <GuiElement type="button" profile="largeSelectorLeftGamepad" id="selectorLeftGamepad" />
             </GuiElement>
 
             <!-- The list of maps, switches the map image -->
-            <GuiElement type="list" profile="mapPreviewList" id="mapList" onSelectionChanged="onSelectionChanged" handleFocus="false">
+            <GuiElement type="list" profile="mapPreviewListCompact" id="mapList" onSelectionChanged="onSelectionChanged" handleFocus="false">
                 <GuiElement type="listItem" profile="mapPreviewListItem" id="listItemTemplate" visible="false">
-                    <GuiElement type="bitmap" profile="mapPreview" onCreate="onCreateMapImage"/>
+                    <GuiElement type="bitmap" profile="mapPreviewCompact" onCreate="onCreateMapImage"/>
                 </GuiElement>
             </GuiElement>
 
@@ -39,7 +39,7 @@
             </GuiElement>
 
             <!-- Dots -->
-            <GuiElement type="indexState" profile="selectionStateBoxDocked" stateElementTemplateId="selectStateIconTemplate" indexableElementId="mapList">
+            <GuiElement type="indexState" profile="mapSelectionDotsBox" stateElementTemplateId="selectStateIconTemplate" indexableElementId="mapList">
                 <GuiElement type="bitmap" profile="selectionStateDocked" id="selectStateIconTemplate"/>
             </GuiElement>
 
