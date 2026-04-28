@@ -596,6 +596,54 @@
         </Variant>
     </Profile>
 
+    <!-- Map Selection Screen - Navigation arrows (larger, outside preview on mobile) -->
+    <Profile name="mapNavLeft" extends="largeSelectorLeft">
+        <Variant name="mobile">
+            <Value name="size" value="200px 520px"/>
+            <Value name="iconSize" value="48px 72px"/>
+            <Value name="iconTextOffset" value="64px 0px"/>
+        </Variant>
+    </Profile>
+
+    <Profile name="mapNavRight" extends="largeSelectorRight">
+        <Variant name="mobile">
+            <Value name="size" value="200px 520px"/>
+            <Value name="iconSize" value="48px 72px"/>
+            <Value name="iconTextOffset" value="-64px 0px"/>
+        </Variant>
+    </Profile>
+
+    <!-- Map Selection Screen - Smaller header for mobile -->
+    <Profile name="mapSelectionHeaderBox" extends="headerBoxDocked">
+        <Variant name="mobile">
+            <Value name="size" value="440px 60px"/>
+            <Value name="position" value="0px 60px"/>
+        </Variant>
+    </Profile>
+
+    <Profile name="mapSelectionHeaderText" extends="headerText">
+        <Variant name="mobile">
+            <Value name="textSize" value="30px"/>
+            <Value name="textOffset" value="50px 4px"/>
+        </Variant>
+    </Profile>
+
+    <Profile name="mapSelectionIconSmall" extends="mapSelectionIcon">
+        <Variant name="mobile">
+            <Value name="size" value="28px 28px"/>
+        </Variant>
+    </Profile>
+
+    <!-- Map Selection Screen - Dots at bottom-left -->
+    <Profile name="mapSelectionDotsBox" extends="selectionStateBoxDocked" with="anchorBottomLeft">
+        <Value name="alignmentX" value="left"/>
+        <Value name="reverseElements" value="false"/>
+
+        <Variant name="mobile" with="anchorBottomLeft">
+            <Value name="alignmentX" value="left"/>
+        </Variant>
+    </Profile>
+
     <Profile name="buttonBoxDialog" extends="buttonBoxDocked" />
 
     <Profile name="headerBoxDocked" extends="baseReference" with="anchorTopLeft">
@@ -1716,6 +1764,21 @@
 
         <Variant name="mobile">
             <Value name="size" value="1769px 732px"/>
+        </Variant>
+    </Profile>
+
+    <!-- Map Selection Screen - Compact preview for mobile (room for nav arrows) -->
+    <Profile name="mapPreviewCompact" extends="mapPreview">
+        <Variant name="mobile">
+            <Value name="size" value="1100px 520px"/>
+        </Variant>
+    </Profile>
+
+    <Profile name="mapPreviewListCompact" extends="mapPreviewList">
+        <Variant name="mobile">
+            <Value name="size" value="1100px 520px"/>
+            <Value name="listItemWidth" value="1100px"/>
+            <Value name="listItemHeight" value="520px"/>
         </Variant>
     </Profile>
 
