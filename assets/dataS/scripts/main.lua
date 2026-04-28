@@ -1508,7 +1508,7 @@ function init(args)
 	math.random()
 	updateLoadingBarProgress()
 	g_splitTypeManager:load()
-	addSplitShapesShaderParameterOverwrite("windScale", 0, nil, , )
+	addSplitShapesShaderParameterOverwrite("windScale", 0, nil, nil, nil)
 	g_mapManager:addMapItem("MapUSM", "dataS/scripts/missions/mission00.lua", "Mission00", "data/maps/mapUSM.xml", "data/maps/mapUSM_vehicles.xml", "data/maps/mapUSM_items.xml", "", "", "data/maps/mapUSM/mapUSM_preview.png", "", nil, true, false)
 	updateLoadingBarProgress()
 	g_playerModelManager:load("dataS2/character/humans/player/playerModels.xml")
@@ -1624,17 +1624,17 @@ function init(args)
 	g_gui:loadProfiles("dataS/gui/guiProfiles.xml")
 
 	local startMissionInfo = StartMissionInfo:new()
-	g_mainScreen = MainScreen:new(nil, , startMissionInfo)
-	g_creditsScreen = CreditsScreen:new(nil, , startMissionInfo)
+	g_mainScreen = MainScreen:new(nil, nil, startMissionInfo)
+	g_creditsScreen = CreditsScreen:new(nil, nil, startMissionInfo)
 
 	updateLoadingBarProgress()
 
 	local settingsModel = SettingsModel.new(g_gameSettings, g_savegameXML, g_i18n, g_soundMixer, GS_IS_CONSOLE_VERSION)
-	g_settingsScreen = SettingsScreen:new(nil, , g_messageCenter, g_i18n, g_inputBinding, settingsModel, GS_IS_CONSOLE_VERSION)
+	g_settingsScreen = SettingsScreen:new(nil, nil, g_messageCenter, g_i18n, g_inputBinding, settingsModel, GS_IS_CONSOLE_VERSION)
 	local savegameController = SavegameController:new()
-	g_careerScreen = CareerScreen:new(nil, , savegameController, startMissionInfo)
-	g_characterSelectionScreen = CharacterCreationScreen:new(nil, , startMissionInfo)
-	g_difficultyScreen = DifficultyScreen:new(nil, , startMissionInfo)
+	g_careerScreen = CareerScreen:new(nil, nil, savegameController, startMissionInfo)
+	g_characterSelectionScreen = CharacterCreationScreen:new(nil, nil, startMissionInfo)
+	g_difficultyScreen = DifficultyScreen:new(nil, nil, startMissionInfo)
 
 	updateLoadingBarProgress()
 
@@ -1662,11 +1662,11 @@ function init(args)
 	g_shopConfigScreen = ShopConfigScreen:new(shopController, g_messageCenter, g_i18n, g_i3DManager, g_brandManager, g_configurationManager, g_vehicleTypeManager, g_inputBinding, g_inputDisplayManager)
 	local guiTopDownCamera = GuiTopDownCamera:new(nil, g_messageCenter, g_i18n, g_inputBinding)
 	local placementController = PlacementScreenController:new(g_i18n, g_inputBinding, g_placeableTypeManager, guiTopDownCamera)
-	local placementScreen = PlacementScreen:new(nil, , g_messageCenter, g_inputBinding, placementController)
-	local inGameMenu = InGameMenu:new(nil, , g_messageCenter, g_i18n, g_inputBinding, savegameController, g_fruitTypeManager, g_fillTypeManager, GS_IS_CONSOLE_VERSION)
-	local shopMenu = ShopMenu:new(nil, , g_messageCenter, g_i18n, g_inputBinding, g_fruitTypeManager, g_fillTypeManager, g_storeManager, shopController, g_shopConfigScreen, placementScreen, GS_IS_CONSOLE_VERSION, inAppPurchaseController)
+	local placementScreen = PlacementScreen:new(nil, nil, g_messageCenter, g_inputBinding, placementController)
+	local inGameMenu = InGameMenu:new(nil, nil, g_messageCenter, g_i18n, g_inputBinding, savegameController, g_fruitTypeManager, g_fillTypeManager, GS_IS_CONSOLE_VERSION)
+	local shopMenu = ShopMenu:new(nil, nil, g_messageCenter, g_i18n, g_inputBinding, g_fruitTypeManager, g_fillTypeManager, g_storeManager, shopController, g_shopConfigScreen, placementScreen, GS_IS_CONSOLE_VERSION, inAppPurchaseController)
 	local landscapingController = LandscapingScreenController:new(g_messageCenter, g_i18n, g_inputBinding, guiTopDownCamera, g_i3DManager, g_farmlandManager, g_groundTypeManager)
-	local landscapingScreen = LandscapingScreen:new(nil, , g_messageCenter, g_i18n, g_inputBinding, landscapingController)
+	local landscapingScreen = LandscapingScreen:new(nil, nil, g_messageCenter, g_i18n, g_inputBinding, landscapingController)
 
 	updateLoadingBarProgress()
 
@@ -1684,7 +1684,7 @@ function init(args)
 
 	local banStorage = BanStorage:new()
 	local animalController = AnimalController:new(g_i18n)
-	g_animalScreen = AnimalScreen:new(nil, , animalController, g_i18n, g_messageCenter)
+	g_animalScreen = AnimalScreen:new(nil, nil, animalController, g_i18n, g_messageCenter)
 	local missionCollaborators = MissionCollaborators:new()
 	missionCollaborators.messageCenter = g_messageCenter
 	missionCollaborators.savegameController = savegameController
@@ -1704,10 +1704,10 @@ function init(args)
 	missionCollaborators.shopController = shopController
 	missionCollaborators.animalController = animalController
 	missionCollaborators.banStorage = banStorage
-	g_mpLoadingScreen = MPLoadingScreen:new(nil, , missionCollaborators, savegameController, OnLoadingScreen)
-	g_mapSelectionScreen = MapSelectionScreen:new(nil, , startMissionInfo)
-	g_modSelectionScreen = ModSelectionScreen:new(nil, , startMissionInfo, g_i18n, GS_IS_CONSOLE_VERSION)
-	g_achievementsScreen = AchievementsScreen:new(nil, , g_achievementManager)
+	g_mpLoadingScreen = MPLoadingScreen:new(nil, nil, missionCollaborators, savegameController, OnLoadingScreen)
+	g_mapSelectionScreen = MapSelectionScreen:new(nil, nil, startMissionInfo)
+	g_modSelectionScreen = ModSelectionScreen:new(nil, nil, startMissionInfo, g_i18n, GS_IS_CONSOLE_VERSION)
+	g_achievementsScreen = AchievementsScreen:new(nil, nil, g_achievementManager)
 
 	updateLoadingBarProgress()
 
@@ -1716,19 +1716,19 @@ function init(args)
 	end
 
 	g_createGameScreen = CreateGameScreen:new()
-	g_multiplayerScreen = MultiplayerScreen:new(nil, , startMissionInfo)
-	g_joinGameScreen = JoinGameScreen:new(nil, , startMissionInfo, g_messageCenter, g_inputBinding)
-	g_connectToMasterServerScreen = ConnectToMasterServerScreen:new(nil, , startMissionInfo)
+	g_multiplayerScreen = MultiplayerScreen:new(nil, nil, startMissionInfo)
+	g_joinGameScreen = JoinGameScreen:new(nil, nil, startMissionInfo, g_messageCenter, g_inputBinding)
+	g_connectToMasterServerScreen = ConnectToMasterServerScreen:new(nil, nil, startMissionInfo)
 
 	updateLoadingBarProgress()
 
-	g_selectMasterServerScreen = SelectMasterServerScreen:new(nil, , startMissionInfo)
+	g_selectMasterServerScreen = SelectMasterServerScreen:new(nil, nil, startMissionInfo)
 	g_serverDetailScreen = ServerDetailScreen:new()
 	g_messageDialog = MessageDialog:new()
 	g_yesNoDialog = YesNoDialog:new()
 	local sleepDialog = SleepDialog:new()
-	g_textInputDialog = TextInputDialog:new(nil, , g_inputBinding)
-	g_passwordDialog = TextInputDialog:new(nil, , g_inputBinding)
+	g_textInputDialog = TextInputDialog:new(nil, nil, g_inputBinding)
+	g_passwordDialog = TextInputDialog:new(nil, nil, g_inputBinding)
 	g_infoDialog = InfoDialog:new()
 	g_connectionFailedDialog = ConnectionFailedDialog:new()
 	g_colorPickerDialog = ColorPickerDialog:new()
@@ -1736,14 +1736,14 @@ function init(args)
 	g_denyAcceptDialog = DenyAcceptDialog:new()
 	g_siloDialog = SiloDialog:new()
 	g_animalDialog = AnimalDialog:new()
-	g_savegameConflictDialog = SavegameConflictDialog:new(nil, , g_i18n, savegameController)
+	g_savegameConflictDialog = SavegameConflictDialog:new(nil, nil, g_i18n, savegameController)
 	g_gameRateDialog = GameRateDialog:new()
 	local transferMoneyDialog = TransferMoneyDialog:new()
-	g_directSellDialog = DirectSellDialog:new(nil, , g_shopConfigScreen, g_messageCenter)
+	g_directSellDialog = DirectSellDialog:new(nil, nil, g_shopConfigScreen, g_messageCenter)
 	g_sellItemDialog = SellItemDialog:new()
-	local editFarmDialog = EditFarmDialog:new(nil, , g_i18n, g_farmManager)
-	local unBanDialog = UnBanDialog:new(nil, , g_i18n, banStorage)
-	local serverSettingsDialog = ServerSettingsDialog:new(nil, , g_i18n, settingsModel)
+	local editFarmDialog = EditFarmDialog:new(nil, nil, g_i18n, g_farmManager)
+	local unBanDialog = UnBanDialog:new(nil, nil, g_i18n, banStorage)
+	local serverSettingsDialog = ServerSettingsDialog:new(nil, nil, g_i18n, settingsModel)
 
 	if g_buildTypeParam == "CHINA" or g_buildTypeParam == "CHINA_GAPP" then
 		g_chinaAgeRatingDialog = ChinaAgeRatingDialog:new()
@@ -1753,7 +1753,7 @@ function init(args)
 	local voteDialog = nil
 
 	if not GS_IS_MOBILE_VERSION then
-		voteDialog = VoteDialog:new(nil, )
+		voteDialog = VoteDialog:new(nil, nil)
 	end
 
 	updateLoadingBarProgress()
@@ -1761,15 +1761,15 @@ function init(args)
 	g_modHubController = ModHubController:new(g_messageCenter, g_i18n, g_gameSettings)
 
 	if not GS_IS_MOBILE_VERSION then
-		g_modHubScreen = ModHubScreen:new(nil, , g_messageCenter, g_i18n, g_inputBinding, g_modHubController, GS_IS_CONSOLE_VERSION)
+		g_modHubScreen = ModHubScreen:new(nil, nil, g_messageCenter, g_i18n, g_inputBinding, g_modHubController, GS_IS_CONSOLE_VERSION)
 	end
 
-	g_gui:loadGui("dataS/gui/SettingsGeneralFrame.xml", "SettingsGeneralFrame", SettingsGeneralFrame:new(nil, , settingsModel, g_i18n), true)
-	g_gui:loadGui("dataS/gui/SettingsAdvancedFrame.xml", "SettingsAdvancedFrame", SettingsAdvancedFrame:new(nil, , settingsModel, g_i18n), true)
-	g_gui:loadGui("dataS/gui/SettingsDisplayFrame.xml", "SettingsDisplayFrame", SettingsDisplayFrame:new(nil, , settingsModel, g_i18n), true)
+	g_gui:loadGui("dataS/gui/SettingsGeneralFrame.xml", "SettingsGeneralFrame", SettingsGeneralFrame:new(nil, nil, settingsModel, g_i18n), true)
+	g_gui:loadGui("dataS/gui/SettingsAdvancedFrame.xml", "SettingsAdvancedFrame", SettingsAdvancedFrame:new(nil, nil, settingsModel, g_i18n), true)
+	g_gui:loadGui("dataS/gui/SettingsDisplayFrame.xml", "SettingsDisplayFrame", SettingsDisplayFrame:new(nil, nil, settingsModel, g_i18n), true)
 	g_gui:loadGui("dataS/gui/SettingsControlsFrame.xml", "SettingsControlsFrame", SettingsControlsFrame:new(nil, g_i18n), true)
-	g_gui:loadGui("dataS/gui/SettingsConsoleFrame.xml", "SettingsConsoleFrame", SettingsConsoleFrame:new(nil, , settingsModel, g_i18n), true)
-	g_gui:loadGui("dataS/gui/SettingsDeviceFrame.xml", "SettingsDeviceFrame", SettingsDeviceFrame:new(nil, , settingsModel, g_i18n), true)
+	g_gui:loadGui("dataS/gui/SettingsConsoleFrame.xml", "SettingsConsoleFrame", SettingsConsoleFrame:new(nil, nil, settingsModel, g_i18n), true)
+	g_gui:loadGui("dataS/gui/SettingsDeviceFrame.xml", "SettingsDeviceFrame", SettingsDeviceFrame:new(nil, nil, settingsModel, g_i18n), true)
 	g_gui:loadGui("dataS/gui/MainScreen.xml", "MainScreen", g_mainScreen)
 
 	if GS_IS_MOBILE_VERSION then
@@ -2205,7 +2205,7 @@ function update(dt)
 		g_showDeeplinkingFailedMessage = false
 
 		if GS_PLATFORM_TYPE == GS_PLATFORM_TYPE_XBOXONE then
-			if PlatformPrivilegeUtil.checkMultiplayer(onShowDeepLinkingErrorMsg, nil, , 30000) then
+			if PlatformPrivilegeUtil.checkMultiplayer(onShowDeepLinkingErrorMsg, nil, nil, 30000) then
 				onShowDeepLinkingErrorMsg()
 			end
 		else

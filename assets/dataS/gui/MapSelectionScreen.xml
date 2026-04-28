@@ -43,7 +43,7 @@
                 <GuiElement type="bitmap" profile="selectionStateDocked" id="selectStateIconTemplate"/>
             </GuiElement>
 
-            <GuiElement type="flowLayout" profile="buttonBoxDocked" id="buttonsPC">
+            <GuiElement type="flowLayout" profile="mapSelectionButtonBox" id="buttonsPC">
                 <GuiElement type="button" profile="buttonOK"   text="$l10n_button_continue" onClick="onClickOk" />
                 <GuiElement type="button" profile="buttonBack" text="$l10n_button_back"     onClick="onClickBack" />
             </GuiElement>
