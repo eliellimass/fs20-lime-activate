@@ -53,9 +53,9 @@ function MapSelectionScreen:onOpen()
 		self:onSelectionChanged(1, true)
 	end
 
-	if GS_IS_MOBILE_VERSION then
-		self:onClickOk()
-	end
+	-- if GS_IS_MOBILE_VERSION then
+	-- 	self:onClickOk()
+	-- end
 end
 
 function MapSelectionScreen:onCreateMapImage(element)
