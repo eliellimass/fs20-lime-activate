@@ -588,6 +588,14 @@
         </Variant>
     </Profile>
 
+    <Profile name="mapSelectionButtonBox" extends="buttonBoxDocked" with="anchorBottomCenter">
+        <Value name="alignmentX" value="center"/>
+
+        <Variant name="mobile" with="anchorBottomCenter">
+            <Value name="alignmentX" value="center"/>
+        </Variant>
+    </Profile>
+
     <Profile name="buttonBoxDialog" extends="buttonBoxDocked" />
 
     <Profile name="headerBoxDocked" extends="baseReference" with="anchorTopLeft">
