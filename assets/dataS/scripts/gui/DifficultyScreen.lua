@@ -60,9 +60,9 @@ function DifficultyScreen:onOpen()
 	self:setSoundSuppressed(false)
 	self.difficultyList:updateAbsolutePosition()
 
-	if GS_IS_MOBILE_VERSION then
-		self:onClickOk()
-	end
+	-- if GS_IS_MOBILE_VERSION then
+	-- 	self:onClickOk()
+	-- end
 end
 
 function DifficultyScreen:setIsMultiplayer(isMultiplayer)
